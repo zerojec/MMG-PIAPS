@@ -8,8 +8,7 @@ using MMG_PIAPS.classes;
 
 
 namespace MMG_PIAPS.modules
-{
-   
+{   
     public static class db
     {
         public static  Exception err;

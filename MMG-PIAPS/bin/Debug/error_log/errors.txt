@@ -1,1 +1,14 @@
-7/31/2015:Authentication to host 'localhost' for user 'root' using method 'mysql_native_password' failed with message: Access denied for user 'root'@'localhost' (using password: NO)
+7/31/2015:Field 'birthday' doesn't have a default value
+--------------------------------------------------------------
+7/31/2015:Field 'birthday' doesn't have a default value
+--------------------------------------------------------------
+11:21:28 AM:Field 'birthday' doesn't have a default value
+--------------------------------------------------------------
+7/31/2015 3:22:12 AM:Field 'birthday' doesn't have a default value
+--------------------------------------------------------------
+7/31/2015 3:23:37 AM:Column 'empid' cannot be null
+--------------------------------------------------------------
+7/31/2015 3:24:57 AM:Column 'gender' cannot be null
+--------------------------------------------------------------
+7/31/2015 3:25:35 AM:Column 'contactno' cannot be null
+--------------------------------------------------------------
