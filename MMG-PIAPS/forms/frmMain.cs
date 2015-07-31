@@ -1,5 +1,6 @@
 ﻿using MMG_PIAPS.classes;
 using MMG_PIAPS.modules;
+using MMG_PIAPS.userctrl;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -47,6 +48,20 @@ namespace MMG_PIAPS.forms
                 MessageBox.Show("Failed: " + db.err.Message.ToString());
             }
 
+        }
+
+        private void btnReferrals_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEmpolyee_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            emp_ctrl c = new emp_ctrl();
+            c.Width = pnlops.Width;
+            c.Height = pnlops.Height;
+            pnlops.Controls.Add(c);
         }
     }
 }

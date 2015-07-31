@@ -43,11 +43,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnSummary = new System.Windows.Forms.Button();
-            this.btnReferrals = new System.Windows.Forms.Button();
-            this.btnPatronage = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.btnEmpolyee = new System.Windows.Forms.Button();
+            this.btnPatronage = new System.Windows.Forms.Button();
+            this.btnReferrals = new System.Windows.Forms.Button();
+            this.btnSummary = new System.Windows.Forms.Button();
+            this.pnlops = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
@@ -230,6 +231,7 @@
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pnlops, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel2.Location = new System.Drawing.Point(352, 1);
@@ -252,7 +254,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.Controls.Add(this.button5, 4, 0);
-            this.tableLayoutPanel4.Controls.Add(this.button4, 3, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnEmpolyee, 3, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnPatronage, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnReferrals, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnSummary, 0, 0);
@@ -265,26 +267,26 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(655, 63);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // btnSummary
+            // button5
             // 
-            this.btnSummary.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSummary.Location = new System.Drawing.Point(3, 3);
-            this.btnSummary.Name = "btnSummary";
-            this.btnSummary.Size = new System.Drawing.Size(125, 57);
-            this.btnSummary.TabIndex = 0;
-            this.btnSummary.Text = "Summary";
-            this.btnSummary.UseVisualStyleBackColor = true;
-            this.btnSummary.Click += new System.EventHandler(this.btnSummary_Click);
+            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button5.Location = new System.Drawing.Point(527, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(125, 57);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "...";
+            this.button5.UseVisualStyleBackColor = true;
             // 
-            // btnReferrals
+            // btnEmpolyee
             // 
-            this.btnReferrals.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnReferrals.Location = new System.Drawing.Point(134, 3);
-            this.btnReferrals.Name = "btnReferrals";
-            this.btnReferrals.Size = new System.Drawing.Size(125, 57);
-            this.btnReferrals.TabIndex = 1;
-            this.btnReferrals.Text = "Referrals";
-            this.btnReferrals.UseVisualStyleBackColor = true;
+            this.btnEmpolyee.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEmpolyee.Location = new System.Drawing.Point(396, 3);
+            this.btnEmpolyee.Name = "btnEmpolyee";
+            this.btnEmpolyee.Size = new System.Drawing.Size(125, 57);
+            this.btnEmpolyee.TabIndex = 3;
+            this.btnEmpolyee.Text = "Employee";
+            this.btnEmpolyee.UseVisualStyleBackColor = true;
+            this.btnEmpolyee.Click += new System.EventHandler(this.btnEmpolyee_Click);
             // 
             // btnPatronage
             // 
@@ -296,25 +298,36 @@
             this.btnPatronage.Text = "Patronage";
             this.btnPatronage.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnReferrals
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Location = new System.Drawing.Point(396, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 57);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "...";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnReferrals.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnReferrals.Location = new System.Drawing.Point(134, 3);
+            this.btnReferrals.Name = "btnReferrals";
+            this.btnReferrals.Size = new System.Drawing.Size(125, 57);
+            this.btnReferrals.TabIndex = 1;
+            this.btnReferrals.Text = "Referrals";
+            this.btnReferrals.UseVisualStyleBackColor = true;
+            this.btnReferrals.Click += new System.EventHandler(this.btnReferrals_Click);
             // 
-            // button5
+            // btnSummary
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Location = new System.Drawing.Point(527, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(125, 57);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "...";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnSummary.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSummary.Location = new System.Drawing.Point(3, 3);
+            this.btnSummary.Name = "btnSummary";
+            this.btnSummary.Size = new System.Drawing.Size(125, 57);
+            this.btnSummary.TabIndex = 0;
+            this.btnSummary.Text = "Summary";
+            this.btnSummary.UseVisualStyleBackColor = true;
+            this.btnSummary.Click += new System.EventHandler(this.btnSummary_Click);
+            // 
+            // pnlops
+            // 
+            this.pnlops.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlops.Location = new System.Drawing.Point(0, 63);
+            this.pnlops.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlops.Name = "pnlops";
+            this.pnlops.Size = new System.Drawing.Size(655, 623);
+            this.pnlops.TabIndex = 1;
             // 
             // frmMain
             // 
@@ -356,8 +369,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Button btnSummary;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnEmpolyee;
         private System.Windows.Forms.Button btnPatronage;
         private System.Windows.Forms.Button btnReferrals;
+        private System.Windows.Forms.Panel pnlops;
     }
 }

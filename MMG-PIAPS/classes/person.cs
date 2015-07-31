@@ -59,9 +59,6 @@ namespace MMG_PIAPS.classes
                 return false;
             
             }
-
-
-
         }
         
     }
