@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 
 namespace MMG_PIAPS.classes
 {
@@ -11,14 +12,14 @@ namespace MMG_PIAPS.classes
         private String _fname;
         private String _lname;
         private String _mname;
-
+        private DateTime _birthdate;
+        private Image _pic;
+        
         public String id { get { return _id; } set { _id = value; } }
         public String fname { get { return _fname; } set { _fname = value; } }
         public String lname { get { return _lname; } set {_lname = value; } }
         public String mname { get { return _mname; } set { _mname = value; } }
-
-
-
-
+        public DateTime birthdate { get { return _birthdate; } set { _birthdate = value; } }
+        public Image pic { get { return _pic; } set { _pic = value; } }
     }
 }

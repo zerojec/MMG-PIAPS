@@ -1,9 +1,10 @@
-C:\projects\MMG-PIAPS\MMG-PIAPS\bin\Debug\MMG-PIAPS.exe
-C:\projects\MMG-PIAPS\MMG-PIAPS\bin\Debug\MMG-PIAPS.pdb
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.frmLogin.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.frmMain.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.Properties.Resources.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.csproj.GenerateResource.Cache
+C:\projects\MMG-PIAPS\MMG-PIAPS\bin\Debug\MMG-PIAPS.exe.config
+C:\projects\MMG-PIAPS\MMG-PIAPS\bin\Debug\MMG-PIAPS.exe
+C:\projects\MMG-PIAPS\MMG-PIAPS\bin\Debug\MMG-PIAPS.pdb
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.exe
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.pdb
-C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.frmLogin.resources
-C:\projects\MMG-PIAPS\MMG-PIAPS\bin\Debug\MMG-PIAPS.exe.config
-C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.frmMain.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.csprojResolveAssemblyReference.cache

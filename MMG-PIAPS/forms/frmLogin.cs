@@ -1,4 +1,5 @@
 ﻿using MMG_PIAPS.forms;
+using MMG_PIAPS.modules;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,15 +20,11 @@ namespace MMG_PIAPS
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+           
+        
         }
 
-        private void txtid_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            
-
-
-        }
+       
 
         private void txtid_KeyDown(object sender, KeyEventArgs e)
         {
