@@ -64,6 +64,7 @@ namespace MMG_PIAPS.userctrl.emp
                 emp.date_hired = dtemploymentdate.Value;
                 emp.emp_status = cboemploymentstatus.Text;
                 emp.branch = cbobranch.Text;
+                emp.position = cbopositions.Text;
 
 
                 if (pbEmpPic.Image != null){
@@ -84,6 +85,35 @@ namespace MMG_PIAPS.userctrl.emp
                     MessageBox.Show("Error : " + db.err.ToString() , "Saving...", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                 }
                            
+        }
+
+
+        public void LoadBranches() {
+            Branch b = new Branch();
+            DataTable dt = new DataTable();
+            dt = b.SELECT_ALL();
+
+            foreach (DataRow r in dt.Rows)
+            {
+                cbobranch.Items.Add(r["branch"].ToString());
+            }
+        }
+
+        public void LoadPositions()
+        {
+            Position p= new Position();
+            DataTable dt = new DataTable();
+            dt = p.SELECT_ALL();
+
+            foreach (DataRow r in dt.Rows)
+            {
+                cbopositions.Items.Add(r["positionname"].ToString());
+            }
+        }
+        private void emp_new_Load(object sender, EventArgs e)
+        {
+            LoadBranches();
+            LoadPositions();
         }
 
       

@@ -44,7 +44,8 @@ namespace MMG_PIAPS.classes
             cmd.Parameters.AddWithValue("_emp_status", emp_status);
             cmd.Parameters.AddWithValue("_imagearr", pic);
             cmd.Parameters.AddWithValue("_imagesize", pic.Length);
-
+            cmd.Parameters.AddWithValue("_emp_position", position);
+            
             try
             {
                 //db.con.Open();
@@ -53,7 +54,6 @@ namespace MMG_PIAPS.classes
                 p.empid = empid;
                 p.basic_pay = basic_pay;
                 p.date_updated = DateTime.Now;
-
                 
                 if (p.save()){
                     return true;
@@ -68,10 +68,21 @@ namespace MMG_PIAPS.classes
                 db.err = null;
                 db.err = e;
                 return false;
-
             }
         }
 
+
+        public DataTable SELECT_ALL() {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "EMP_SELECT_ALL");
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);           
+            return dt;
+
+        }
+    
+    
     }
    
      

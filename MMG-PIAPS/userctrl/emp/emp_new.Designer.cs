@@ -276,6 +276,8 @@
             // 
             // cboemploymentstatus
             // 
+            this.cboemploymentstatus.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cboemploymentstatus.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboemploymentstatus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cboemploymentstatus.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboemploymentstatus.FormattingEnabled = true;
@@ -321,12 +323,11 @@
             // 
             // cbopositions
             // 
+            this.cbopositions.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbopositions.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbopositions.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbopositions.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbopositions.FormattingEnabled = true;
-            this.cbopositions.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
             this.cbopositions.Location = new System.Drawing.Point(365, 4);
             this.cbopositions.Name = "cbopositions";
             this.cbopositions.Size = new System.Drawing.Size(103, 27);
@@ -424,6 +425,8 @@
             // 
             // cbogender
             // 
+            this.cbogender.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbogender.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbogender.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbogender.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbogender.FormattingEnabled = true;
@@ -511,12 +514,11 @@
             // 
             // cbobranch
             // 
+            this.cbobranch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbobranch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbobranch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbobranch.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbobranch.FormattingEnabled = true;
-            this.cbobranch.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
             this.cbobranch.Location = new System.Drawing.Point(365, 128);
             this.cbobranch.Name = "cbobranch";
             this.cbobranch.Size = new System.Drawing.Size(103, 27);
@@ -534,6 +536,7 @@
             this.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "emp_new";
             this.Size = new System.Drawing.Size(721, 329);
+            this.Load += new System.EventHandler(this.emp_new_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

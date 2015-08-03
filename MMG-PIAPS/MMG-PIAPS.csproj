@@ -46,9 +46,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\BasicPay.cs" />
+    <Compile Include="classes\Branch.cs" />
     <Compile Include="classes\Employee.cs" />
     <Compile Include="classes\Logger.cs" />
     <Compile Include="classes\Person.cs" />
+    <Compile Include="classes\Position.cs" />
     <Compile Include="forms\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
