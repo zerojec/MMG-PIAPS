@@ -34,5 +34,11 @@ namespace MMG_PIAPS.modules
                 return false;
             }
         }
+
+        public static void SET_COMMAND_PARAMS(MySqlCommand cmd, String sql) {
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Connection = con;
+            cmd.CommandText = sql;
+        }
     }
 }

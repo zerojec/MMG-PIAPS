@@ -30,6 +30,8 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.btncancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,8 +39,32 @@
             this.pbEmpPic = new System.Windows.Forms.PictureBox();
             this.btnBrowse = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.btncancel = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dtemploymentdate = new System.Windows.Forms.DateTimePicker();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cboemploymentstatus = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtbasicpay = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cbopositions = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbogender = new System.Windows.Forms.ComboBox();
+            this.dtBday = new System.Windows.Forms.DateTimePicker();
+            this.txtid = new System.Windows.Forms.TextBox();
+            this.txtlname = new System.Windows.Forms.TextBox();
+            this.txtfname = new System.Windows.Forms.TextBox();
+            this.txtmname = new System.Windows.Forms.TextBox();
+            this.txtaddress = new System.Windows.Forms.TextBox();
+            this.txtcontactno = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.cbobranch = new System.Windows.Forms.ComboBox();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -46,6 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -62,24 +89,48 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 255F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(721, 325);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(721, 329);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.tableLayoutPanel1.SetColumnSpan(this.panel2, 2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnsave);
             this.panel2.Controls.Add(this.btncancel);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 285);
+            this.panel2.Location = new System.Drawing.Point(0, 290);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(721, 40);
             this.panel2.TabIndex = 2;
+            // 
+            // btnsave
+            // 
+            this.btnsave.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnsave.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.Location = new System.Drawing.Point(602, 0);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(119, 40);
+            this.btnsave.TabIndex = 2;
+            this.btnsave.Text = "&Save";
+            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // btncancel
+            // 
+            this.btncancel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btncancel.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncancel.Location = new System.Drawing.Point(0, 0);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(119, 40);
+            this.btncancel.TabIndex = 1;
+            this.btncancel.Text = "&Cancel";
+            this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
             // panel1
             // 
@@ -128,7 +179,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.22222F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.77778F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(237, 244);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(237, 249);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // pbEmpPic
@@ -137,7 +188,7 @@
             this.pbEmpPic.Image = global::MMG_PIAPS.Properties.Resources.noimagefound;
             this.pbEmpPic.Location = new System.Drawing.Point(4, 4);
             this.pbEmpPic.Name = "pbEmpPic";
-            this.pbEmpPic.Size = new System.Drawing.Size(229, 201);
+            this.pbEmpPic.Size = new System.Drawing.Size(229, 206);
             this.pbEmpPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbEmpPic.TabIndex = 0;
             this.pbEmpPic.TabStop = false;
@@ -145,7 +196,7 @@
             // btnBrowse
             // 
             this.btnBrowse.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnBrowse.Location = new System.Drawing.Point(4, 212);
+            this.btnBrowse.Location = new System.Drawing.Point(4, 217);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(229, 28);
             this.btnBrowse.TabIndex = 1;
@@ -157,10 +208,36 @@
             // 
             this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel3.ColumnCount = 4;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.dtemploymentdate, 3, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label13, 2, 3);
+            this.tableLayoutPanel3.Controls.Add(this.cboemploymentstatus, 3, 2);
+            this.tableLayoutPanel3.Controls.Add(this.label12, 2, 2);
+            this.tableLayoutPanel3.Controls.Add(this.txtbasicpay, 3, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label11, 2, 1);
+            this.tableLayoutPanel3.Controls.Add(this.cbopositions, 3, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label10, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label4, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.label5, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label8, 0, 6);
+            this.tableLayoutPanel3.Controls.Add(this.label7, 0, 7);
+            this.tableLayoutPanel3.Controls.Add(this.label9, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.label6, 0, 5);
+            this.tableLayoutPanel3.Controls.Add(this.cbogender, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.dtBday, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.txtid, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txtlname, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.txtfname, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.txtmname, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.txtaddress, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.txtcontactno, 1, 7);
+            this.tableLayoutPanel3.Controls.Add(this.label15, 2, 4);
+            this.tableLayoutPanel3.Controls.Add(this.cbobranch, 3, 4);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(246, 38);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -174,31 +251,276 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(472, 244);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(472, 249);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
-            // btncancel
+            // dtemploymentdate
             // 
-            this.btncancel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btncancel.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncancel.Location = new System.Drawing.Point(0, 0);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(119, 40);
-            this.btncancel.TabIndex = 1;
-            this.btncancel.Text = "&Cancel";
-            this.btncancel.UseVisualStyleBackColor = true;
-            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
+            this.dtemploymentdate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtemploymentdate.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtemploymentdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtemploymentdate.Location = new System.Drawing.Point(365, 97);
+            this.dtemploymentdate.Name = "dtemploymentdate";
+            this.dtemploymentdate.Size = new System.Drawing.Size(103, 25);
+            this.dtemploymentdate.TabIndex = 24;
             // 
-            // button1
+            // label13
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(602, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 40);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "&Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(251, 101);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(107, 15);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "Employment Date :";
+            // 
+            // cboemploymentstatus
+            // 
+            this.cboemploymentstatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboemploymentstatus.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboemploymentstatus.FormattingEnabled = true;
+            this.cboemploymentstatus.Items.AddRange(new object[] {
+            "Job Order",
+            "Probationary",
+            "Regular",
+            "Resigned",
+            "Terminated"});
+            this.cboemploymentstatus.Location = new System.Drawing.Point(365, 66);
+            this.cboemploymentstatus.Name = "cboemploymentstatus";
+            this.cboemploymentstatus.Size = new System.Drawing.Size(103, 27);
+            this.cboemploymentstatus.TabIndex = 21;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(285, 70);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(73, 15);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "Emp. Status :";
+            // 
+            // txtbasicpay
+            // 
+            this.txtbasicpay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtbasicpay.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbasicpay.Location = new System.Drawing.Point(365, 35);
+            this.txtbasicpay.Name = "txtbasicpay";
+            this.txtbasicpay.Size = new System.Drawing.Size(103, 25);
+            this.txtbasicpay.TabIndex = 19;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(293, 39);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(65, 15);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Basic Pay :";
+            // 
+            // cbopositions
+            // 
+            this.cbopositions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbopositions.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbopositions.FormattingEnabled = true;
+            this.cbopositions.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cbopositions.Location = new System.Drawing.Point(365, 4);
+            this.cbopositions.Name = "cbopositions";
+            this.cbopositions.Size = new System.Drawing.Size(103, 27);
+            this.cbopositions.TabIndex = 17;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(304, 8);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(54, 15);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "Position :";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(83, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(25, 15);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "ID :";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(39, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 15);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Last Name :";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(38, 70);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(70, 15);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "First Name :";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(21, 101);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 15);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Middle Name :";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(53, 194);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 15);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "Address :";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(32, 225);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(76, 15);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Contact No. :";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(53, 132);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 15);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Gender :";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(50, 163);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 15);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Birthday :";
+            // 
+            // cbogender
+            // 
+            this.cbogender.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbogender.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbogender.FormattingEnabled = true;
+            this.cbogender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cbogender.Location = new System.Drawing.Point(115, 128);
+            this.cbogender.Name = "cbogender";
+            this.cbogender.Size = new System.Drawing.Size(103, 27);
+            this.cbogender.TabIndex = 8;
+            // 
+            // dtBday
+            // 
+            this.dtBday.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtBday.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtBday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtBday.Location = new System.Drawing.Point(115, 159);
+            this.dtBday.Name = "dtBday";
+            this.dtBday.Size = new System.Drawing.Size(103, 25);
+            this.dtBday.TabIndex = 9;
+            // 
+            // txtid
+            // 
+            this.txtid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtid.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtid.Location = new System.Drawing.Point(115, 4);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(103, 25);
+            this.txtid.TabIndex = 10;
+            // 
+            // txtlname
+            // 
+            this.txtlname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtlname.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtlname.Location = new System.Drawing.Point(115, 35);
+            this.txtlname.Name = "txtlname";
+            this.txtlname.Size = new System.Drawing.Size(103, 25);
+            this.txtlname.TabIndex = 11;
+            // 
+            // txtfname
+            // 
+            this.txtfname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtfname.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfname.Location = new System.Drawing.Point(115, 66);
+            this.txtfname.Name = "txtfname";
+            this.txtfname.Size = new System.Drawing.Size(103, 25);
+            this.txtfname.TabIndex = 12;
+            // 
+            // txtmname
+            // 
+            this.txtmname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtmname.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmname.Location = new System.Drawing.Point(115, 97);
+            this.txtmname.Name = "txtmname";
+            this.txtmname.Size = new System.Drawing.Size(103, 25);
+            this.txtmname.TabIndex = 13;
+            // 
+            // txtaddress
+            // 
+            this.txtaddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtaddress.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtaddress.Location = new System.Drawing.Point(115, 190);
+            this.txtaddress.Name = "txtaddress";
+            this.txtaddress.Size = new System.Drawing.Size(103, 25);
+            this.txtaddress.TabIndex = 14;
+            // 
+            // txtcontactno
+            // 
+            this.txtcontactno.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtcontactno.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcontactno.Location = new System.Drawing.Point(115, 221);
+            this.txtcontactno.Name = "txtcontactno";
+            this.txtcontactno.Size = new System.Drawing.Size(103, 25);
+            this.txtcontactno.TabIndex = 15;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(235, 132);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(123, 15);
+            this.label15.TabIndex = 26;
+            this.label15.Text = "MMG-Albay  Branch :";
+            // 
+            // cbobranch
+            // 
+            this.cbobranch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbobranch.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbobranch.FormattingEnabled = true;
+            this.cbobranch.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cbobranch.Location = new System.Drawing.Point(365, 128);
+            this.cbobranch.Name = "cbobranch";
+            this.cbobranch.Size = new System.Drawing.Size(103, 27);
+            this.cbobranch.TabIndex = 27;
             // 
             // ofd
             // 
@@ -211,7 +533,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "emp_new";
-            this.Size = new System.Drawing.Size(721, 325);
+            this.Size = new System.Drawing.Size(721, 329);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -219,6 +541,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -235,7 +559,33 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button btncancel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.OpenFileDialog ofd;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cbogender;
+        private System.Windows.Forms.DateTimePicker dtBday;
+        private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.TextBox txtlname;
+        private System.Windows.Forms.TextBox txtfname;
+        private System.Windows.Forms.TextBox txtmname;
+        private System.Windows.Forms.TextBox txtaddress;
+        private System.Windows.Forms.TextBox txtcontactno;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cbopositions;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtbasicpay;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cboemploymentstatus;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DateTimePicker dtemploymentdate;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox cbobranch;
     }
 }

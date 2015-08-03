@@ -16,3 +16,165 @@
 --------------------------------------------------------------
 7/31/2015 7:10:04 AM:Duplicate entry '10010' for key 'PRIMARY'
 --------------------------------------------------------------
+8/3/2015 2:30:42 AM:Duplicate entry '10010' for key 'PRIMARY'
+--------------------------------------------------------------
+8/3/2015 5:04:36 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Field 'datehired' doesn't have a default value
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 48
+--------------------------------------------------------------
+8/3/2015 5:17:55 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column '_emp_status' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------
+8/3/2015 5:18:40 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '1025' for key 'PRIMARY'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------
+8/3/2015 6:11:18 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Data too long for column '_imagearr' at row 1
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------
+8/3/2015 6:11:37 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Data too long for column '_imagearr' at row 1
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------
+8/3/2015 6:12:51 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Data too long for column '_imagearr' at row 1
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------
+8/3/2015 6:14:21 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Data too long for column '_imagearr' at row 1
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------
+8/3/2015 6:14:33 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Data too long for column '_imagearr' at row 1
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------
+8/3/2015 6:15:26 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Data too long for column '_imagearr' at row 1
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------
+8/3/2015 6:16:15 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Data too long for column '_imagearr' at row 1
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------
+8/3/2015 6:25:22 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Data too long for column '_imagearr' at row 1
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------
+8/3/2015 6:38:33 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'mmgmapiapsdb.tblpics' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------
+8/3/2015 6:39:39 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '567' for key 'PRIMARY'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------
+8/3/2015 6:40:23 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'date_updated' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------
+8/3/2015 6:41:19 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'date_updated' in 'field list'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------
+8/3/2015 6:42:48 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '5678' for key 'PRIMARY'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 51
+--------------------------------------------------------------

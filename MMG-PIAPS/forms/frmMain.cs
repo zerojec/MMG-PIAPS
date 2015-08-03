@@ -28,25 +28,8 @@ namespace MMG_PIAPS.forms
 
         private void btnSummary_Click(object sender, EventArgs e)
         {
-            Person p = new Person();
-
-            p.fname = "a";
-            p.lname = "b";
-            p.mname = "c";
-            p.empid = "1001" + num;
-            p.gender = "Male";
-            p.address="Tabaco City";
-            p.contactno = "09064418634";
-
-            p.birthdate = DateTime.Now;
-
-            if(p.save()){
-                MessageBox.Show("Success");
-                num++;
-            }else{
-                Logger.WriteErrorLog(db.err.Message.ToString());
-                MessageBox.Show("Failed: " + db.err.Message.ToString());
-            }
+            
+          
 
         }
 
