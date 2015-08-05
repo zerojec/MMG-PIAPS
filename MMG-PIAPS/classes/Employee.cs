@@ -9,7 +9,7 @@ using System.Data;
 
 namespace MMG_PIAPS.classes
 {
-    class Employee : Person
+    public class Employee : Person
     {
       
         private String _position;
@@ -22,9 +22,7 @@ namespace MMG_PIAPS.classes
         public String branch { get { return _branch; } set { _branch = value; } }
         public String emp_status { get { return _emp_status; } set { _emp_status = value; } }
         public Decimal basic_pay { get { return _basic_pay; } set { _basic_pay = value; } }
-        public DateTime date_hired { get { return _date_hired; } set { _date_hired = value; } }
-
-        
+        public DateTime date_hired { get { return _date_hired; } set { _date_hired = value; } }        
         
         public Boolean save()
         {
@@ -81,11 +79,67 @@ namespace MMG_PIAPS.classes
             return dt;
 
         }
-    
+
+        public Employee SELECT_BY_ID()
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "EMP_SELECT_BY_ID");
+            cmd.Parameters.AddWithValue("_empid", empid);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+
+            if (dt != null)
+            {
+                if (dt.Rows.Count > 0)
+                {
+                    Employee e = new Employee();
+                    foreach (DataRow r in dt.Rows)
+                    {
+                        e.empid = r["empid"].ToString();
+                        e.fname = r["fname"].ToString();
+                        e.lname = r["lname"].ToString();
+                        e.mname = r["mname"].ToString();
+                    }
+                    return e;
+                }
+                else { return null; }
+
+            }
+            else
+            {
+                return null;
+            }
+
+        }
+            public Byte[] GET_IMAGE_BY_ID(){
+                
+                DataTable dt = new DataTable();
+                MySqlCommand cmd = new MySqlCommand();
+                db.SET_COMMAND_PARAMS(cmd, "EMP_PIC_SELECT_BY_ID");
+                cmd.Parameters.AddWithValue("_empid", empid);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);           
+                
+                if(dt != null){
+                    if(dt.Rows.Count > 0){
+                     Byte[] image=dt.Rows[0].Field<Byte[]>("imagebyte");                     
+                        return image;
+                    }else{
+                        return null;
+                    }                   
+                }else{
+                    return null;
+                }
+                
+               
+            }
+        }
     
     }
    
      
 
    
-}
+

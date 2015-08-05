@@ -9,7 +9,8 @@ using System.Data;
 
 namespace MMG_PIAPS.classes
 {
-    class Person
+
+    public class Person
     {
         private String _empid;
         private String _fname;

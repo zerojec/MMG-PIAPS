@@ -49,6 +49,9 @@
             this.btnReferrals = new System.Windows.Forms.Button();
             this.btnSummary = new System.Windows.Forms.Button();
             this.pnlops = new System.Windows.Forms.Panel();
+            this.lbllname = new System.Windows.Forms.Label();
+            this.lblfname = new System.Windows.Forms.Label();
+            this.lblmname = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
@@ -94,6 +97,9 @@
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.lblmname, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.lblfname, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.lbllname, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.label3, 0, 1);
@@ -329,6 +335,36 @@
             this.pnlops.Size = new System.Drawing.Size(655, 623);
             this.pnlops.TabIndex = 1;
             // 
+            // lbllname
+            // 
+            this.lbllname.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbllname.AutoSize = true;
+            this.lbllname.Location = new System.Drawing.Point(160, 9);
+            this.lbllname.Name = "lbllname";
+            this.lbllname.Size = new System.Drawing.Size(21, 19);
+            this.lbllname.TabIndex = 1;
+            this.lbllname.Text = "...";
+            // 
+            // lblfname
+            // 
+            this.lblfname.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblfname.AutoSize = true;
+            this.lblfname.Location = new System.Drawing.Point(160, 45);
+            this.lblfname.Name = "lblfname";
+            this.lblfname.Size = new System.Drawing.Size(21, 19);
+            this.lblfname.TabIndex = 10;
+            this.lblfname.Text = "...";
+            // 
+            // lblmname
+            // 
+            this.lblmname.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblmname.AutoSize = true;
+            this.lblmname.Location = new System.Drawing.Point(160, 81);
+            this.lblmname.Name = "lblmname";
+            this.lblmname.Size = new System.Drawing.Size(21, 19);
+            this.lblmname.TabIndex = 11;
+            this.lblmname.Text = "...";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,6 +376,7 @@
             this.Text = "MMG-PIaPS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -373,5 +410,8 @@
         private System.Windows.Forms.Button btnPatronage;
         private System.Windows.Forms.Button btnReferrals;
         private System.Windows.Forms.Panel pnlops;
+        private System.Windows.Forms.Label lbllname;
+        private System.Windows.Forms.Label lblmname;
+        private System.Windows.Forms.Label lblfname;
     }
 }

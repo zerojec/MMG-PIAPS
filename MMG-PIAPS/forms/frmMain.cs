@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -45,6 +46,18 @@ namespace MMG_PIAPS.forms
             c.Width = pnlops.Width;
             c.Height = pnlops.Height;
             pnlops.Controls.Add(c);
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            lblfname.Text = Global.CURRENT_USER.fname;
+            lbllname.Text = Global.CURRENT_USER.lname;
+            lblmname.Text = Global.CURRENT_USER.mname;            
+            MemoryStream ms= new MemoryStream(Global.CURRENT_USER.pic);
+            CurrUserPic.Image = Image.FromStream(ms);
+            CurrUserPic.SizeMode = PictureBoxSizeMode.Zoom;
+
+            ms.Close();
         }
     }
 }

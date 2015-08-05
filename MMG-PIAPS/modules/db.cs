@@ -14,12 +14,13 @@ namespace MMG_PIAPS.modules
         public static  Exception err;
         private static String _constr;
         public static MySqlConnection con = new MySqlConnection();
-        public static String constr { get { return _constr; } set { _constr = value; } }
+        public static String constr { get { return _constr; } set { _constr = value; } }      
 
         public static void GETCONSTR() {
             constr = Properties.Settings.Default.CONSTR.ToString();
         }
 
+      
         public static Boolean CONNECT() {
             try
             {
@@ -40,5 +41,7 @@ namespace MMG_PIAPS.modules
             cmd.Connection = con;
             cmd.CommandText = sql;
         }
+
+        
     }
 }

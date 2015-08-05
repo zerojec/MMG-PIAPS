@@ -79,6 +79,9 @@ namespace MMG_PIAPS.userctrl.emp
              
                 if (emp.save()) {
                     MessageBox.Show("Successful", "Saving...", MessageBoxButtons.OK,MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                    this.Parent.Height = 0;
+                    this.Parent.Controls.Clear();
+                    this.Dispose();
                 }
                 else{
                     Logger.WriteErrorLog(db.err.ToString());
@@ -99,6 +102,7 @@ namespace MMG_PIAPS.userctrl.emp
             }
         }
 
+
         public void LoadPositions()
         {
             Position p= new Position();
@@ -110,13 +114,18 @@ namespace MMG_PIAPS.userctrl.emp
                 cbopositions.Items.Add(r["positionname"].ToString());
             }
         }
+
         private void emp_new_Load(object sender, EventArgs e)
         {
             LoadBranches();
             LoadPositions();
         }
 
-      
-      
+        private void btnrotate_Click(object sender, EventArgs e)
+        {
+            pbEmpPic.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            pbEmpPic.Refresh();
+
+        }          
     }
 }

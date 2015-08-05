@@ -58,5 +58,19 @@ namespace MMG_PIAPS.userctrl
         {
             LoadAllEployees();           
         }
+
+        private void lv_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            String id = lv.SelectedItems[0].SubItems[1].Text;
+           //MessageBox.Show(id);
+
+            Employee emp, emp1 = new Employee();
+            emp1.empid = id;
+            emp = emp1.SELECT_BY_ID();
+
+            MessageBox.Show(emp.lname + ", " + emp.fname + " " + emp.mname);
+
+
+        }
     }
 }

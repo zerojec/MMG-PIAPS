@@ -1,4 +1,5 @@
-﻿using MMG_PIAPS.modules;
+﻿using MMG_PIAPS.classes;
+using MMG_PIAPS.modules;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,14 +14,18 @@ namespace MMG_PIAPS
         /// </summary>
         [STAThread]
 
+       
       
         static void Main()
         {                               
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+           
+
+            
             if (db.CONNECT())
-            {
+            {                            
                 Application.Run(new frmLogin());
             }
             else
