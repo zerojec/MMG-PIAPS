@@ -36,8 +36,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pbEmpPic = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnrotate = new System.Windows.Forms.Button();
             this.btnBrowse = new System.Windows.Forms.Button();
+            this.pbEmpPic = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dtemploymentdate = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
@@ -66,16 +68,14 @@
             this.label15 = new System.Windows.Forms.Label();
             this.cbobranch = new System.Windows.Forms.ComboBox();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnrotate = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -185,16 +185,32 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(237, 249);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // pbEmpPic
+            // tableLayoutPanel4
             // 
-            this.pbEmpPic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbEmpPic.Image = global::MMG_PIAPS.Properties.Resources.noimagefound;
-            this.pbEmpPic.Location = new System.Drawing.Point(4, 4);
-            this.pbEmpPic.Name = "pbEmpPic";
-            this.pbEmpPic.Size = new System.Drawing.Size(229, 206);
-            this.pbEmpPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbEmpPic.TabIndex = 0;
-            this.pbEmpPic.TabStop = false;
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.23404F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.76596F));
+            this.tableLayoutPanel4.Controls.Add(this.btnrotate, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnBrowse, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(1, 214);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(235, 34);
+            this.tableLayoutPanel4.TabIndex = 3;
+            // 
+            // btnrotate
+            // 
+            this.btnrotate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnrotate.Location = new System.Drawing.Point(160, 3);
+            this.btnrotate.Name = "btnrotate";
+            this.btnrotate.Size = new System.Drawing.Size(72, 28);
+            this.btnrotate.TabIndex = 3;
+            this.btnrotate.Text = "Rotate";
+            this.btnrotate.UseVisualStyleBackColor = true;
+            this.btnrotate.Click += new System.EventHandler(this.btnrotate_Click);
             // 
             // btnBrowse
             // 
@@ -206,6 +222,17 @@
             this.btnBrowse.Text = "Browse Picture";
             this.btnBrowse.UseVisualStyleBackColor = true;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            // 
+            // pbEmpPic
+            // 
+            this.pbEmpPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbEmpPic.Image = global::MMG_PIAPS.Properties.Resources.noimagefound;
+            this.pbEmpPic.Location = new System.Drawing.Point(4, 4);
+            this.pbEmpPic.Name = "pbEmpPic";
+            this.pbEmpPic.Size = new System.Drawing.Size(229, 206);
+            this.pbEmpPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbEmpPic.TabIndex = 0;
+            this.pbEmpPic.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
@@ -531,33 +558,6 @@
             // 
             this.ofd.FileName = "openFileDialog1";
             // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.23404F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.76596F));
-            this.tableLayoutPanel4.Controls.Add(this.btnrotate, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btnBrowse, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(1, 214);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(235, 34);
-            this.tableLayoutPanel4.TabIndex = 3;
-            // 
-            // btnrotate
-            // 
-            this.btnrotate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnrotate.Location = new System.Drawing.Point(160, 3);
-            this.btnrotate.Name = "btnrotate";
-            this.btnrotate.Size = new System.Drawing.Size(72, 28);
-            this.btnrotate.TabIndex = 3;
-            this.btnrotate.Text = "Rotate";
-            this.btnrotate.UseVisualStyleBackColor = true;
-            this.btnrotate.Click += new System.EventHandler(this.btnrotate_Click);
-            // 
             // emp_new
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -573,10 +573,10 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

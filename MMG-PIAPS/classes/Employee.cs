@@ -100,6 +100,14 @@ namespace MMG_PIAPS.classes
                         e.fname = r["fname"].ToString();
                         e.lname = r["lname"].ToString();
                         e.mname = r["mname"].ToString();
+                        e.address = r["mname"].ToString();
+                        e.birthdate = Convert.ToDateTime(r["birthday"].ToString());
+                        e.contactno = r["contactno"].ToString();
+                        e.gender = r["gender"].ToString();
+                       // e.date_hired = Convert.ToDateTime(r["mname"].ToString());
+                       // e.position = r["position"].ToString();
+                       // e.branch = r["branch"].ToString();
+
                     }
                     return e;
                 }
@@ -131,10 +139,87 @@ namespace MMG_PIAPS.classes
                     }                   
                 }else{
                     return null;
-                }
-                
-               
+                }                              
             }
+
+            public String GET_EMPLOYMENT_STATUS() {
+                DataTable dt = new DataTable();
+                MySqlCommand cmd = new MySqlCommand();
+                db.SET_COMMAND_PARAMS(cmd, "EMP_STATUS_SELECT_LATEST_BY_ID");
+                cmd.Parameters.AddWithValue("_empid", empid);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+
+                if (dt != null){
+                    if (dt.Rows.Count > 0){
+                       String stats = dt.Rows[0].Field<String>("emp_status");
+                        return stats;
+                    }
+                    else{
+                        return null;
+                    }
+                }
+                else{
+                    return null;
+                }                
+
+            }
+
+            public Decimal GET_BASIC_PAY(){
+
+                DataTable dt = new DataTable();
+                MySqlCommand cmd = new MySqlCommand();
+                db.SET_COMMAND_PARAMS(cmd, "EMP_BASIC_PAY_SELECT_LATEST_BY_ID");
+                cmd.Parameters.AddWithValue("_empid", empid);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+
+                if (dt != null){
+                    if (dt.Rows.Count > 0){
+                        Decimal bp = dt.Rows[0].Field<Decimal>("basic_pay");
+                        return bp;
+                    }
+                    else{
+                        return 0;
+                    }
+                }
+                else{
+                    return 0;
+                }                
+            }
+
+
+            public String GET_CURRENT_POSITION()
+            {
+
+                DataTable dt = new DataTable();
+                MySqlCommand cmd = new MySqlCommand();
+                db.SET_COMMAND_PARAMS(cmd, "EMP_POSITION_SELECT_LATEST_BY_ID");
+                cmd.Parameters.AddWithValue("_empid", empid);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+
+                if (dt != null)
+                {
+                    if (dt.Rows.Count > 0)
+                    {
+                        String pos = dt.Rows[0].Field<String>("position_");
+                        return pos;
+                    }
+                    else
+                    {
+                        return "";
+                    }
+                }
+                else
+                {
+                    return "";
+                }
+            }
+
         }
     
     }

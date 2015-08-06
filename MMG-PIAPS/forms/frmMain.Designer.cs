@@ -28,39 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.CurrUserPic = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblmname = new System.Windows.Forms.Label();
+            this.lblfname = new System.Windows.Forms.Label();
+            this.lbllname = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btnEmpolyee = new System.Windows.Forms.Button();
-            this.btnPatronage = new System.Windows.Forms.Button();
-            this.btnReferrals = new System.Windows.Forms.Button();
-            this.btnSummary = new System.Windows.Forms.Button();
+            this.btnEmployee = new System.Windows.Forms.Button();
+            this.btnMembershipData = new System.Windows.Forms.Button();
             this.pnlops = new System.Windows.Forms.Panel();
-            this.lbllname = new System.Windows.Forms.Label();
-            this.lblfname = new System.Windows.Forms.Label();
-            this.lblmname = new System.Windows.Forms.Label();
+            this.lbladdress = new System.Windows.Forms.Label();
+            this.lblbirthday = new System.Windows.Forms.Label();
+            this.lblcontactno = new System.Windows.Forms.Label();
+            this.lblgender = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblCurrentUser = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblCurrentUserPosition = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.dbconstatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 350F));
@@ -68,13 +81,12 @@
             this.tableLayoutPanel1.Controls.Add(this.CurrUserPic, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.40902F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.59098F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1008, 688);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1008, 663);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // CurrUserPic
@@ -86,7 +98,7 @@
             this.CurrUserPic.Location = new System.Drawing.Point(11, 11);
             this.CurrUserPic.Margin = new System.Windows.Forms.Padding(10);
             this.CurrUserPic.Name = "CurrUserPic";
-            this.CurrUserPic.Size = new System.Drawing.Size(330, 236);
+            this.CurrUserPic.Size = new System.Drawing.Size(330, 226);
             this.CurrUserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CurrUserPic.TabIndex = 0;
             this.CurrUserPic.TabStop = false;
@@ -97,6 +109,10 @@
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.lblgender, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.lblcontactno, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.lblbirthday, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.lbladdress, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.lblmname, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.lblfname, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.lbllname, 1, 0);
@@ -107,12 +123,9 @@
             this.tableLayoutPanel3.Controls.Add(this.label5, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.label6, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.label7, 0, 6);
-            this.tableLayoutPanel3.Controls.Add(this.label8, 0, 7);
-            this.tableLayoutPanel3.Controls.Add(this.label9, 0, 9);
-            this.tableLayoutPanel3.Controls.Add(this.label10, 0, 8);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 261);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 251);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 14;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
@@ -129,8 +142,38 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(344, 423);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(344, 408);
             this.tableLayoutPanel3.TabIndex = 2;
+            // 
+            // lblmname
+            // 
+            this.lblmname.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblmname.AutoSize = true;
+            this.lblmname.Location = new System.Drawing.Point(160, 81);
+            this.lblmname.Name = "lblmname";
+            this.lblmname.Size = new System.Drawing.Size(21, 19);
+            this.lblmname.TabIndex = 11;
+            this.lblmname.Text = "...";
+            // 
+            // lblfname
+            // 
+            this.lblfname.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblfname.AutoSize = true;
+            this.lblfname.Location = new System.Drawing.Point(160, 45);
+            this.lblfname.Name = "lblfname";
+            this.lblfname.Size = new System.Drawing.Size(21, 19);
+            this.lblfname.TabIndex = 10;
+            this.lblfname.Text = "...";
+            // 
+            // lbllname
+            // 
+            this.lbllname.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbllname.AutoSize = true;
+            this.lbllname.Location = new System.Drawing.Point(160, 9);
+            this.lbllname.Name = "lbllname";
+            this.lbllname.Size = new System.Drawing.Size(21, 19);
+            this.lbllname.TabIndex = 1;
+            this.lbllname.Text = "...";
             // 
             // label1
             // 
@@ -192,46 +235,6 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Contact No. :";
             // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(20, 225);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(133, 19);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Capital Investment :";
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(24, 261);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(129, 19);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Membership Date :";
-            // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(18, 333);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(135, 19);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Membership Status :";
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(23, 297);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(130, 19);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Membership Type :";
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -247,7 +250,7 @@
             this.tableLayoutPanel1.SetRowSpan(this.tableLayoutPanel2, 2);
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.264706F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.73529F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(655, 686);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(655, 661);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // tableLayoutPanel4
@@ -259,117 +262,176 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel4.Controls.Add(this.button5, 4, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btnEmpolyee, 3, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btnPatronage, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btnReferrals, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btnSummary, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnMembershipData, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnEmployee, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(655, 63);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(655, 61);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // button5
+            // btnEmployee
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Location = new System.Drawing.Point(527, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(125, 57);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "...";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEmployee.Location = new System.Drawing.Point(134, 3);
+            this.btnEmployee.Name = "btnEmployee";
+            this.btnEmployee.Size = new System.Drawing.Size(125, 55);
+            this.btnEmployee.TabIndex = 3;
+            this.btnEmployee.Text = "Employee Data";
+            this.btnEmployee.UseVisualStyleBackColor = true;
+            this.btnEmployee.Click += new System.EventHandler(this.btnEmpolyee_Click);
             // 
-            // btnEmpolyee
+            // btnMembershipData
             // 
-            this.btnEmpolyee.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEmpolyee.Location = new System.Drawing.Point(396, 3);
-            this.btnEmpolyee.Name = "btnEmpolyee";
-            this.btnEmpolyee.Size = new System.Drawing.Size(125, 57);
-            this.btnEmpolyee.TabIndex = 3;
-            this.btnEmpolyee.Text = "Employee";
-            this.btnEmpolyee.UseVisualStyleBackColor = true;
-            this.btnEmpolyee.Click += new System.EventHandler(this.btnEmpolyee_Click);
-            // 
-            // btnPatronage
-            // 
-            this.btnPatronage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPatronage.Location = new System.Drawing.Point(265, 3);
-            this.btnPatronage.Name = "btnPatronage";
-            this.btnPatronage.Size = new System.Drawing.Size(125, 57);
-            this.btnPatronage.TabIndex = 2;
-            this.btnPatronage.Text = "Patronage";
-            this.btnPatronage.UseVisualStyleBackColor = true;
-            // 
-            // btnReferrals
-            // 
-            this.btnReferrals.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnReferrals.Location = new System.Drawing.Point(134, 3);
-            this.btnReferrals.Name = "btnReferrals";
-            this.btnReferrals.Size = new System.Drawing.Size(125, 57);
-            this.btnReferrals.TabIndex = 1;
-            this.btnReferrals.Text = "Referrals";
-            this.btnReferrals.UseVisualStyleBackColor = true;
-            this.btnReferrals.Click += new System.EventHandler(this.btnReferrals_Click);
-            // 
-            // btnSummary
-            // 
-            this.btnSummary.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSummary.Location = new System.Drawing.Point(3, 3);
-            this.btnSummary.Name = "btnSummary";
-            this.btnSummary.Size = new System.Drawing.Size(125, 57);
-            this.btnSummary.TabIndex = 0;
-            this.btnSummary.Text = "Summary";
-            this.btnSummary.UseVisualStyleBackColor = true;
-            this.btnSummary.Click += new System.EventHandler(this.btnSummary_Click);
+            this.btnMembershipData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMembershipData.Location = new System.Drawing.Point(3, 3);
+            this.btnMembershipData.Name = "btnMembershipData";
+            this.btnMembershipData.Size = new System.Drawing.Size(125, 55);
+            this.btnMembershipData.TabIndex = 0;
+            this.btnMembershipData.Text = "Membership Data";
+            this.btnMembershipData.UseVisualStyleBackColor = true;
+            
             // 
             // pnlops
             // 
             this.pnlops.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlops.Location = new System.Drawing.Point(0, 63);
+            this.pnlops.Location = new System.Drawing.Point(0, 61);
             this.pnlops.Margin = new System.Windows.Forms.Padding(0);
             this.pnlops.Name = "pnlops";
-            this.pnlops.Size = new System.Drawing.Size(655, 623);
+            this.pnlops.Size = new System.Drawing.Size(655, 600);
             this.pnlops.TabIndex = 1;
             // 
-            // lbllname
+            // lbladdress
             // 
-            this.lbllname.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbllname.AutoSize = true;
-            this.lbllname.Location = new System.Drawing.Point(160, 9);
-            this.lbllname.Name = "lbllname";
-            this.lbllname.Size = new System.Drawing.Size(21, 19);
-            this.lbllname.TabIndex = 1;
-            this.lbllname.Text = "...";
+            this.lbladdress.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbladdress.AutoSize = true;
+            this.lbladdress.Location = new System.Drawing.Point(160, 153);
+            this.lbladdress.Name = "lbladdress";
+            this.lbladdress.Size = new System.Drawing.Size(21, 19);
+            this.lbladdress.TabIndex = 2;
+            this.lbladdress.Text = "...";
             // 
-            // lblfname
+            // lblbirthday
             // 
-            this.lblfname.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblfname.AutoSize = true;
-            this.lblfname.Location = new System.Drawing.Point(160, 45);
-            this.lblfname.Name = "lblfname";
-            this.lblfname.Size = new System.Drawing.Size(21, 19);
-            this.lblfname.TabIndex = 10;
-            this.lblfname.Text = "...";
+            this.lblbirthday.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblbirthday.AutoSize = true;
+            this.lblbirthday.Location = new System.Drawing.Point(160, 117);
+            this.lblbirthday.Name = "lblbirthday";
+            this.lblbirthday.Size = new System.Drawing.Size(21, 19);
+            this.lblbirthday.TabIndex = 12;
+            this.lblbirthday.Text = "...";
             // 
-            // lblmname
+            // lblcontactno
             // 
-            this.lblmname.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblmname.AutoSize = true;
-            this.lblmname.Location = new System.Drawing.Point(160, 81);
-            this.lblmname.Name = "lblmname";
-            this.lblmname.Size = new System.Drawing.Size(21, 19);
-            this.lblmname.TabIndex = 11;
-            this.lblmname.Text = "...";
+            this.lblcontactno.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblcontactno.AutoSize = true;
+            this.lblcontactno.Location = new System.Drawing.Point(160, 189);
+            this.lblcontactno.Name = "lblcontactno";
+            this.lblcontactno.Size = new System.Drawing.Size(21, 19);
+            this.lblcontactno.TabIndex = 13;
+            this.lblcontactno.Text = "...";
+            // 
+            // lblgender
+            // 
+            this.lblgender.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblgender.AutoSize = true;
+            this.lblgender.Location = new System.Drawing.Point(160, 225);
+            this.lblgender.Name = "lblgender";
+            this.lblgender.Size = new System.Drawing.Size(21, 19);
+            this.lblgender.TabIndex = 14;
+            this.lblgender.Text = "...";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(87, 225);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 19);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Gender :";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.lblCurrentUser,
+            this.toolStripStatusLabel2,
+            this.toolStripStatusLabel3,
+            this.lblCurrentUserPosition,
+            this.toolStripStatusLabel4,
+            this.toolStripStatusLabel5,
+            this.dbconstatus});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 664);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1008, 24);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(95, 19);
+            this.toolStripStatusLabel1.Text = "Current User :";
+            // 
+            // lblCurrentUser
+            // 
+            this.lblCurrentUser.Name = "lblCurrentUser";
+            this.lblCurrentUser.Size = new System.Drawing.Size(21, 19);
+            this.lblCurrentUser.Text = "...";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(17, 19);
+            this.toolStripStatusLabel2.Text = "|";
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(63, 19);
+            this.toolStripStatusLabel3.Text = "Position :";
+            // 
+            // lblCurrentUserPosition
+            // 
+            this.lblCurrentUserPosition.Name = "lblCurrentUserPosition";
+            this.lblCurrentUserPosition.Size = new System.Drawing.Size(21, 19);
+            this.lblCurrentUserPosition.Text = "...";
+            // 
+            // toolStripStatusLabel4
+            // 
+            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(17, 19);
+            this.toolStripStatusLabel4.Text = "|";
+            // 
+            // toolStripStatusLabel5
+            // 
+            this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
+            this.toolStripStatusLabel5.Size = new System.Drawing.Size(193, 19);
+            this.toolStripStatusLabel5.Text = "Database Connection Status :";
+            // 
+            // dbconstatus
+            // 
+            this.dbconstatus.Name = "dbconstatus";
+            this.dbconstatus.Size = new System.Drawing.Size(21, 19);
+            this.dbconstatus.Text = "...";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 250;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 688);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "frmMain";
@@ -383,7 +445,10 @@
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -398,20 +463,28 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Button btnSummary;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button btnEmpolyee;
-        private System.Windows.Forms.Button btnPatronage;
-        private System.Windows.Forms.Button btnReferrals;
+        private System.Windows.Forms.Button btnMembershipData;
+        private System.Windows.Forms.Button btnEmployee;
         private System.Windows.Forms.Panel pnlops;
         private System.Windows.Forms.Label lbllname;
         private System.Windows.Forms.Label lblmname;
         private System.Windows.Forms.Label lblfname;
+        private System.Windows.Forms.Label lblgender;
+        private System.Windows.Forms.Label lblcontactno;
+        private System.Windows.Forms.Label lblbirthday;
+        private System.Windows.Forms.Label lbladdress;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel lblCurrentUser;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.ToolStripStatusLabel lblCurrentUserPosition;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel5;
+        private System.Windows.Forms.ToolStripStatusLabel dbconstatus;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -8,6 +8,9 @@ using System.Text;
 using System.Windows.Forms;
 using MMG_PIAPS.userctrl.emp;
 using MMG_PIAPS.classes;
+using MMG_PIAPS.modules;
+using MMG_PIAPS.forms;
+using System.IO;
 
 namespace MMG_PIAPS.userctrl
 {
@@ -61,7 +64,100 @@ namespace MMG_PIAPS.userctrl
 
         private void lv_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            String id = lv.SelectedItems[0].SubItems[1].Text;
+           
+
+
+        }
+
+        private void viewProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(lv.SelectedItems.Count > 0){
+
+
+                String id = lv.SelectedItems[0].SubItems[1].Text;
+                //MessageBox.Show(id);
+
+                Employee emp1 = new Employee();
+                emp1.empid = id;
+                Global.SELECTED_EMP = null;
+                Global.SELECTED_EMP = emp1.SELECT_BY_ID();
+
+              
+                Global.SELECTED_EMP.basic_pay = emp1.GET_BASIC_PAY();
+                Global.SELECTED_EMP.emp_status = emp1.GET_EMPLOYMENT_STATUS();
+
+                
+                //FIND THE MAIN FORM                                   
+                Form f = lv.Parent.Parent.FindForm();
+             
+                Control[] fname = f.Controls.Find("lblfname", true);
+                fname[0].Text = Global.SELECTED_EMP.fname.ToString();
+
+                Control[] lname = f.Controls.Find("lbllname", true);
+                lname[0].Text = Global.SELECTED_EMP.lname.ToString();
+
+                Control[] mname = f.Controls.Find("lblmname", true);
+                mname[0].Text = Global.SELECTED_EMP.mname.ToString();
+
+                Control[] gender = f.Controls.Find("lblgender", true);
+                gender[0].Text = Global.SELECTED_EMP.gender.ToString();
+
+                Control[] birthday = f.Controls.Find("lblbirthday", true);
+                birthday[0].Text = Global.SELECTED_EMP.birthdate.ToString();
+
+                Control[] address = f.Controls.Find("lbladdress", true);
+                address[0].Text = Global.SELECTED_EMP.address.ToString();
+
+                Control[] contactno = f.Controls.Find("lblcontactno", true);
+                contactno[0].Text = Global.SELECTED_EMP.contactno.ToString();
+
+
+                Global.SELECTED_EMP.pic = emp1.GET_IMAGE_BY_ID();
+
+
+                if (Global.SELECTED_EMP.pic != null)
+                {
+
+                    Control[] pb = f.Controls.Find("CurrUserPic", true);
+
+                    MemoryStream ms = new MemoryStream(Global.SELECTED_EMP.pic);
+
+                    //FIND THE PICTUREBOX IN THE FORM
+                    foreach (Control c in f.Controls[1].Controls)
+                    {
+                        if (c.GetType() == typeof(PictureBox))
+                        {
+                            PictureBox p = c as PictureBox;
+                            p.Image = Image.FromStream(ms);
+                            p.SizeMode = PictureBoxSizeMode.Zoom;
+                        }
+                    }
+                    //  pb.Image = Image.FromStream(ms);
+                    //  pb.SizeMode = PictureBoxSizeMode.Zoom;                                     
+                }
+                else {
+
+                    foreach (Control c in f.Controls[1].Controls)
+                    {
+                        if (c.GetType() == typeof(PictureBox))
+                        {
+                            PictureBox p = c as PictureBox;
+                            p.Image = Properties.Resources.noimagefound;
+                            p.SizeMode = PictureBoxSizeMode.Zoom;
+                        }
+                    }     
+                }
+               
+              
+              
+            }
+        }
+
+        private void updateInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (lv.SelectedItems.Count > 0)
+            {
+                 String id = lv.SelectedItems[0].SubItems[1].Text;
            //MessageBox.Show(id);
 
             Employee emp, emp1 = new Employee();
@@ -69,8 +165,7 @@ namespace MMG_PIAPS.userctrl
             emp = emp1.SELECT_BY_ID();
 
             MessageBox.Show(emp.lname + ", " + emp.fname + " " + emp.mname);
-
-
+            }
         }
     }
 }

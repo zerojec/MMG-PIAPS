@@ -15,7 +15,6 @@ namespace MMG_PIAPS.forms
 {
     public partial class frmMain : Form
     {
-
         public int num = 0;
         public frmMain()
         {
@@ -27,17 +26,7 @@ namespace MMG_PIAPS.forms
             Application.Exit();
         }
 
-        private void btnSummary_Click(object sender, EventArgs e)
-        {
-            
-          
-
-        }
-
-        private void btnReferrals_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void btnEmpolyee_Click(object sender, EventArgs e)
         {
@@ -50,14 +39,57 @@ namespace MMG_PIAPS.forms
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+
+            String Fullname=Global.CURRENT_USER.lname + ", " + Global.CURRENT_USER.fname;
             lblfname.Text = Global.CURRENT_USER.fname;
             lbllname.Text = Global.CURRENT_USER.lname;
-            lblmname.Text = Global.CURRENT_USER.mname;            
+            lblmname.Text = Global.CURRENT_USER.mname;
+            lbladdress.Text = Global.CURRENT_USER.address;
+            lblbirthday.Text = Global.CURRENT_USER.birthdate.ToShortDateString();            
+            lblcontactno.Text = Global.CURRENT_USER.contactno;
+            lblgender.Text = Global.CURRENT_USER.gender;
+
+            lblCurrentUser.Text = Fullname;
+            lblCurrentUserPosition.Text = Global.CURRENT_USER.position;
+            //lblcapitalinvestment.Text=  Global.CURRENT_USER.capitalinvestment //FORWARDED CAPITAL AS OF SOFTWARE IMPLEMENTATION
+            //lbldate.Text=  Global.CURRENT_USER.membershipdate //WHEN DID HE?SHE BECAME AN MMG MEMBER
+            //lblstatus.Text = Global.CURRENT_USER.membershipstatus;//IN_GOOD_STANDING ? NOT_IN_GOOD_STANDING
+            //lbltype.Text = Global.CURRENT_USER.membershiptype;    //REGULAR?ASSOCIATE
+
             MemoryStream ms= new MemoryStream(Global.CURRENT_USER.pic);
             CurrUserPic.Image = Image.FromStream(ms);
             CurrUserPic.SizeMode = PictureBoxSizeMode.Zoom;
 
             ms.Close();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            dbconstatus.Text = db.con.State.ToString();
+        }
+
+
+        public Image CurrUserImage
+        {
+            get { return CurrUserPic.Image; }
+            set
+            {
+                //do some checks if neccessary
+                CurrUserPic.Image = value;
+            }
+        }
+
+
+        //==========================================================//
+        //DELEGATE FOR FORM_TO_FORM PASSAGE OF DATA                 //
+        //==========================================================//
+
+        public delegate void ChangeFname(String n);
+        public delegate void ChangeLname(String n);
+        public delegate void ChangeMname(String n);
+        public delegate void ChangeAddress(String n);
+        public delegate void ChangeBirthday(DateTime n);
+
+
     }
 }
