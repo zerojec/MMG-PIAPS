@@ -39,6 +39,9 @@ namespace MMG_PIAPS
                     Global.CURRENT_USER.pic = emp.GET_IMAGE_BY_ID();
                     Global.CURRENT_USER.basic_pay = emp.GET_BASIC_PAY();
                     Global.CURRENT_USER.emp_status = emp.GET_EMPLOYMENT_STATUS();
+                    Global.CURRENT_USER.position = emp.GET_CURRENT_POSITION();
+                    Global.CURRENT_USER.branch = emp.GET_BRANCH_ASSIGNMENT();
+
 
                     frmMain f = new frmMain();
                     f.Show();

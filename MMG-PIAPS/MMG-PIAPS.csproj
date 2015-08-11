@@ -11,6 +11,21 @@
     <AssemblyName>MMG-PIAPS</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -21,6 +36,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,6 +46,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.8.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
@@ -51,6 +70,30 @@
     <Compile Include="classes\Logger.cs" />
     <Compile Include="classes\Person.cs" />
     <Compile Include="classes\Position.cs" />
+    <Compile Include="forms\emp\frmEmpBasicPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\emp\frmEmpBasicPay.Designer.cs">
+      <DependentUpon>frmEmpBasicPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\emp\frmEmpBranchAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\emp\frmEmpBranchAssignment.Designer.cs">
+      <DependentUpon>frmEmpBranchAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\emp\frmEmpPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\emp\frmEmpPosition.Designer.cs">
+      <DependentUpon>frmEmpPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\emp\frmEmpStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\emp\frmEmpStatus.Designer.cs">
+      <DependentUpon>frmEmpStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +110,11 @@
     <Compile Include="modules\Global.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\emp\emp_ctrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -79,6 +127,24 @@
     <Compile Include="userctrl\emp\emp_new.Designer.cs">
       <DependentUpon>emp_new.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\emp\emp_update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\emp\emp_update.Designer.cs">
+      <DependentUpon>emp_update.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="forms\emp\frmEmpBasicPay.resx">
+      <DependentUpon>frmEmpBasicPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\emp\frmEmpBranchAssignment.resx">
+      <DependentUpon>frmEmpBranchAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\emp\frmEmpPosition.resx">
+      <DependentUpon>frmEmpPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\emp\frmEmpStatus.resx">
+      <DependentUpon>frmEmpStatus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,19 +153,17 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="userctrl\emp\emp_ctrl.resx">
       <DependentUpon>emp_ctrl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\emp\emp_new.resx">
       <DependentUpon>emp_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\emp\emp_update.resx">
+      <DependentUpon>emp_update.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
@@ -129,6 +193,247 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_139.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_140.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_141.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_142.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_143.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_144.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_145.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_108.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_109.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_110.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_111.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_112.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_113.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_114.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_123.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_124.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_125.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_126.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_127.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_128.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_129.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_130.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_146.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_91.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_92.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_93.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_94.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_95.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_96.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_97.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_98.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_107.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_62.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_63.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_64.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_65.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_66.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_75.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_76.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_77.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_78.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_79.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_80.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_81.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_82.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_49.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_50.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_59.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_60.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_61.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_27.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_28.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_30.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_31.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_33.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_34.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_43.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_44.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_45.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_46.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_47.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_48.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_03.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_05.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_07.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_09.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_13.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_15.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons-intuit-qb-mac-small_17.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1_46.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

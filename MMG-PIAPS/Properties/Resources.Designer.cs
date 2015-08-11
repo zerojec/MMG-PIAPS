@@ -63,6 +63,726 @@ namespace MMG_PIAPS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_03 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_03", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_05 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_05", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_07 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_07", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_09 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_09", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_107 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_107", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_108 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_108", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_109 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_109", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_11 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_110 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_110", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_111 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_111", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_112 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_112", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_113 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_113", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_114 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_114", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_123 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_123", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_124 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_124", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_125 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_125", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_126 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_126", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_127 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_127", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_128 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_129 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_129", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_13 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_130 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_130", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_139 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_139", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_140 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_140", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_141 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_141", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_142 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_142", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_143 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_143", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_144 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_144", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_145 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_145", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_146 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_146", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_15 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_17 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_17", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_27 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_27", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_28 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_29 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_31 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_33 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_33", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_34 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_34", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_43 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_43", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_44 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_44", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_45 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_45", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_46 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_46", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_47 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_47", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_49 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_49", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_59 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_59", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_60 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_60", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_61 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_61", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_62 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_62", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_63 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_63", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_65 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_65", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_66 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_66", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_75 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_75", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_76 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_76", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_77 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_77", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_78 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_78", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_79 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_79", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_80 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_81 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_81", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_82 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_82", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_91 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_91", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_92 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_92", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_93 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_93", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_94 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_94", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_95 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_95", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_97 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_97", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_98 {
+            get {
+                object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_98", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
@@ -96,6 +816,16 @@ namespace MMG_PIAPS.Properties {
         internal static System.Drawing.Bitmap noimagefound {
             get {
                 object obj = ResourceManager.GetObject("noimagefound", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Untitled_1_46 {
+            get {
+                object obj = ResourceManager.GetObject("Untitled_1_46", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

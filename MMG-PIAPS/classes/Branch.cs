@@ -5,6 +5,7 @@ using System.Text;
 using MySql.Data.MySqlClient;
 using MMG_PIAPS.modules;
 using System.Data;
+using System.Windows.Forms;
 
 namespace MMG_PIAPS.classes
 {
@@ -36,6 +37,18 @@ namespace MMG_PIAPS.classes
             da.Fill(dt);
             return dt;
 
+        }
+
+        public void LoadBranches(ComboBox cbo)
+        {
+            Branch b = new Branch();
+            DataTable dt = new DataTable();
+            dt = b.SELECT_ALL();
+
+            foreach (DataRow r in dt.Rows)
+            {
+                cbo.Items.Add(r["id"].ToString() + "-" + r["branch"].ToString());
+            }
         }
     }
 }

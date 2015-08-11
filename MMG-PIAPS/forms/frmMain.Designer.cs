@@ -30,8 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.CurrUserPic = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblbranch = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblposition = new System.Windows.Forms.Label();
+            this.lblgender = new System.Windows.Forms.Label();
+            this.lblcontactno = new System.Windows.Forms.Label();
+            this.lblbirthday = new System.Windows.Forms.Label();
+            this.lbladdress = new System.Windows.Forms.Label();
             this.lblmname = new System.Windows.Forms.Label();
             this.lblfname = new System.Windows.Forms.Label();
             this.lbllname = new System.Windows.Forms.Label();
@@ -41,16 +47,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnEmployee = new System.Windows.Forms.Button();
             this.btnMembershipData = new System.Windows.Forms.Button();
+            this.btnEmployee = new System.Windows.Forms.Button();
             this.pnlops = new System.Windows.Forms.Panel();
-            this.lbladdress = new System.Windows.Forms.Label();
-            this.lblbirthday = new System.Windows.Forms.Label();
-            this.lblcontactno = new System.Windows.Forms.Label();
-            this.lblgender = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblCurrentUser = new System.Windows.Forms.ToolStripStatusLabel();
@@ -59,14 +63,16 @@
             this.lblCurrentUserPosition = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.dbconstatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbldbcon = new System.Windows.Forms.ToolStripStatusLabel();
+            this.CurrUserPic = new System.Windows.Forms.PictureBox();
+            this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblCurrentDateAndTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -89,26 +95,15 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1008, 663);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // CurrUserPic
-            // 
-            this.CurrUserPic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CurrUserPic.ErrorImage = global::MMG_PIAPS.Properties.Resources.noimagefound;
-            this.CurrUserPic.Image = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
-            this.CurrUserPic.InitialImage = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
-            this.CurrUserPic.Location = new System.Drawing.Point(11, 11);
-            this.CurrUserPic.Margin = new System.Windows.Forms.Padding(10);
-            this.CurrUserPic.Name = "CurrUserPic";
-            this.CurrUserPic.Size = new System.Drawing.Size(330, 226);
-            this.CurrUserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CurrUserPic.TabIndex = 0;
-            this.CurrUserPic.TabStop = false;
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.lblbranch, 1, 8);
+            this.tableLayoutPanel3.Controls.Add(this.label9, 0, 8);
+            this.tableLayoutPanel3.Controls.Add(this.lblposition, 1, 7);
             this.tableLayoutPanel3.Controls.Add(this.lblgender, 1, 6);
             this.tableLayoutPanel3.Controls.Add(this.lblcontactno, 1, 5);
             this.tableLayoutPanel3.Controls.Add(this.lblbirthday, 1, 3);
@@ -123,6 +118,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label5, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.label6, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.label7, 0, 6);
+            this.tableLayoutPanel3.Controls.Add(this.label8, 0, 7);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 251);
@@ -144,6 +140,76 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(344, 408);
             this.tableLayoutPanel3.TabIndex = 2;
+            // 
+            // lblbranch
+            // 
+            this.lblbranch.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblbranch.AutoSize = true;
+            this.lblbranch.Location = new System.Drawing.Point(160, 297);
+            this.lblbranch.Name = "lblbranch";
+            this.lblbranch.Size = new System.Drawing.Size(21, 19);
+            this.lblbranch.TabIndex = 16;
+            this.lblbranch.Text = "...";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(94, 297);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(59, 19);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Branch :";
+            // 
+            // lblposition
+            // 
+            this.lblposition.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblposition.AutoSize = true;
+            this.lblposition.Location = new System.Drawing.Point(160, 261);
+            this.lblposition.Name = "lblposition";
+            this.lblposition.Size = new System.Drawing.Size(21, 19);
+            this.lblposition.TabIndex = 15;
+            this.lblposition.Text = "...";
+            // 
+            // lblgender
+            // 
+            this.lblgender.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblgender.AutoSize = true;
+            this.lblgender.Location = new System.Drawing.Point(160, 225);
+            this.lblgender.Name = "lblgender";
+            this.lblgender.Size = new System.Drawing.Size(21, 19);
+            this.lblgender.TabIndex = 14;
+            this.lblgender.Text = "...";
+            // 
+            // lblcontactno
+            // 
+            this.lblcontactno.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblcontactno.AutoSize = true;
+            this.lblcontactno.Location = new System.Drawing.Point(160, 189);
+            this.lblcontactno.Name = "lblcontactno";
+            this.lblcontactno.Size = new System.Drawing.Size(21, 19);
+            this.lblcontactno.TabIndex = 13;
+            this.lblcontactno.Text = "...";
+            // 
+            // lblbirthday
+            // 
+            this.lblbirthday.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblbirthday.AutoSize = true;
+            this.lblbirthday.Location = new System.Drawing.Point(160, 117);
+            this.lblbirthday.Name = "lblbirthday";
+            this.lblbirthday.Size = new System.Drawing.Size(21, 19);
+            this.lblbirthday.TabIndex = 12;
+            this.lblbirthday.Text = "...";
+            // 
+            // lbladdress
+            // 
+            this.lbladdress.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbladdress.AutoSize = true;
+            this.lbladdress.Location = new System.Drawing.Point(160, 153);
+            this.lbladdress.Name = "lbladdress";
+            this.lbladdress.Size = new System.Drawing.Size(21, 19);
+            this.lbladdress.TabIndex = 2;
+            this.lbladdress.Text = "...";
             // 
             // lblmname
             // 
@@ -235,6 +301,26 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Contact No. :";
             // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(87, 225);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 19);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Gender :";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(90, 261);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 19);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Position :";
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -273,6 +359,16 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(655, 61);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
+            // btnMembershipData
+            // 
+            this.btnMembershipData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMembershipData.Location = new System.Drawing.Point(3, 3);
+            this.btnMembershipData.Name = "btnMembershipData";
+            this.btnMembershipData.Size = new System.Drawing.Size(125, 55);
+            this.btnMembershipData.TabIndex = 0;
+            this.btnMembershipData.Text = "Membership Data";
+            this.btnMembershipData.UseVisualStyleBackColor = true;
+            // 
             // btnEmployee
             // 
             this.btnEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -284,17 +380,6 @@
             this.btnEmployee.UseVisualStyleBackColor = true;
             this.btnEmployee.Click += new System.EventHandler(this.btnEmpolyee_Click);
             // 
-            // btnMembershipData
-            // 
-            this.btnMembershipData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMembershipData.Location = new System.Drawing.Point(3, 3);
-            this.btnMembershipData.Name = "btnMembershipData";
-            this.btnMembershipData.Size = new System.Drawing.Size(125, 55);
-            this.btnMembershipData.TabIndex = 0;
-            this.btnMembershipData.Text = "Membership Data";
-            this.btnMembershipData.UseVisualStyleBackColor = true;
-            
-            // 
             // pnlops
             // 
             this.pnlops.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -304,58 +389,15 @@
             this.pnlops.Size = new System.Drawing.Size(655, 600);
             this.pnlops.TabIndex = 1;
             // 
-            // lbladdress
+            // timer1
             // 
-            this.lbladdress.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbladdress.AutoSize = true;
-            this.lbladdress.Location = new System.Drawing.Point(160, 153);
-            this.lbladdress.Name = "lbladdress";
-            this.lbladdress.Size = new System.Drawing.Size(21, 19);
-            this.lbladdress.TabIndex = 2;
-            this.lbladdress.Text = "...";
-            // 
-            // lblbirthday
-            // 
-            this.lblbirthday.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblbirthday.AutoSize = true;
-            this.lblbirthday.Location = new System.Drawing.Point(160, 117);
-            this.lblbirthday.Name = "lblbirthday";
-            this.lblbirthday.Size = new System.Drawing.Size(21, 19);
-            this.lblbirthday.TabIndex = 12;
-            this.lblbirthday.Text = "...";
-            // 
-            // lblcontactno
-            // 
-            this.lblcontactno.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblcontactno.AutoSize = true;
-            this.lblcontactno.Location = new System.Drawing.Point(160, 189);
-            this.lblcontactno.Name = "lblcontactno";
-            this.lblcontactno.Size = new System.Drawing.Size(21, 19);
-            this.lblcontactno.TabIndex = 13;
-            this.lblcontactno.Text = "...";
-            // 
-            // lblgender
-            // 
-            this.lblgender.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblgender.AutoSize = true;
-            this.lblgender.Location = new System.Drawing.Point(160, 225);
-            this.lblgender.Name = "lblgender";
-            this.lblgender.Size = new System.Drawing.Size(21, 19);
-            this.lblgender.TabIndex = 14;
-            this.lblgender.Text = "...";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(87, 225);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 19);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Gender :";
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 250;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // statusStrip1
             // 
+            this.statusStrip1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.statusStrip1.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
@@ -365,7 +407,9 @@
             this.lblCurrentUserPosition,
             this.toolStripStatusLabel4,
             this.toolStripStatusLabel5,
-            this.dbconstatus});
+            this.lbldbcon,
+            this.toolStripStatusLabel6,
+            this.lblCurrentDateAndTime});
             this.statusStrip1.Location = new System.Drawing.Point(0, 664);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1008, 24);
@@ -374,57 +418,88 @@
             // 
             // toolStripStatusLabel1
             // 
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.White;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(95, 19);
             this.toolStripStatusLabel1.Text = "Current User :";
             // 
             // lblCurrentUser
             // 
+            this.lblCurrentUser.ForeColor = System.Drawing.Color.White;
             this.lblCurrentUser.Name = "lblCurrentUser";
             this.lblCurrentUser.Size = new System.Drawing.Size(21, 19);
             this.lblCurrentUser.Text = "...";
             // 
             // toolStripStatusLabel2
             // 
+            this.toolStripStatusLabel2.ForeColor = System.Drawing.Color.White;
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(17, 19);
             this.toolStripStatusLabel2.Text = "|";
             // 
             // toolStripStatusLabel3
             // 
+            this.toolStripStatusLabel3.ForeColor = System.Drawing.Color.White;
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
             this.toolStripStatusLabel3.Size = new System.Drawing.Size(63, 19);
             this.toolStripStatusLabel3.Text = "Position :";
             // 
             // lblCurrentUserPosition
             // 
+            this.lblCurrentUserPosition.ForeColor = System.Drawing.Color.White;
             this.lblCurrentUserPosition.Name = "lblCurrentUserPosition";
             this.lblCurrentUserPosition.Size = new System.Drawing.Size(21, 19);
             this.lblCurrentUserPosition.Text = "...";
             // 
             // toolStripStatusLabel4
             // 
+            this.toolStripStatusLabel4.ForeColor = System.Drawing.Color.White;
             this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
             this.toolStripStatusLabel4.Size = new System.Drawing.Size(17, 19);
             this.toolStripStatusLabel4.Text = "|";
             // 
             // toolStripStatusLabel5
             // 
+            this.toolStripStatusLabel5.ForeColor = System.Drawing.Color.White;
             this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
             this.toolStripStatusLabel5.Size = new System.Drawing.Size(193, 19);
             this.toolStripStatusLabel5.Text = "Database Connection Status :";
             // 
-            // dbconstatus
+            // lbldbcon
             // 
-            this.dbconstatus.Name = "dbconstatus";
-            this.dbconstatus.Size = new System.Drawing.Size(21, 19);
-            this.dbconstatus.Text = "...";
+            this.lbldbcon.ForeColor = System.Drawing.Color.White;
+            this.lbldbcon.Name = "lbldbcon";
+            this.lbldbcon.Size = new System.Drawing.Size(21, 19);
+            this.lbldbcon.Text = "...";
+            this.lbldbcon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // timer1
+            // CurrUserPic
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 250;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.CurrUserPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CurrUserPic.ErrorImage = global::MMG_PIAPS.Properties.Resources.noimagefound;
+            this.CurrUserPic.Image = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
+            this.CurrUserPic.InitialImage = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
+            this.CurrUserPic.Location = new System.Drawing.Point(11, 11);
+            this.CurrUserPic.Margin = new System.Windows.Forms.Padding(10);
+            this.CurrUserPic.Name = "CurrUserPic";
+            this.CurrUserPic.Size = new System.Drawing.Size(330, 226);
+            this.CurrUserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CurrUserPic.TabIndex = 0;
+            this.CurrUserPic.TabStop = false;
+            // 
+            // toolStripStatusLabel6
+            // 
+            this.toolStripStatusLabel6.ForeColor = System.Drawing.Color.White;
+            this.toolStripStatusLabel6.Name = "toolStripStatusLabel6";
+            this.toolStripStatusLabel6.Size = new System.Drawing.Size(17, 19);
+            this.toolStripStatusLabel6.Text = "|";
+            // 
+            // lblCurrentDateAndTime
+            // 
+            this.lblCurrentDateAndTime.ForeColor = System.Drawing.Color.White;
+            this.lblCurrentDateAndTime.Name = "lblCurrentDateAndTime";
+            this.lblCurrentDateAndTime.Size = new System.Drawing.Size(21, 19);
+            this.lblCurrentDateAndTime.Text = "...";
             // 
             // frmMain
             // 
@@ -440,13 +515,13 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -475,7 +550,12 @@
         private System.Windows.Forms.Label lblcontactno;
         private System.Windows.Forms.Label lblbirthday;
         private System.Windows.Forms.Label lbladdress;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label7;      
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblposition;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblbranch;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel lblCurrentUser;
@@ -484,7 +564,8 @@
         private System.Windows.Forms.ToolStripStatusLabel lblCurrentUserPosition;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel5;
-        private System.Windows.Forms.ToolStripStatusLabel dbconstatus;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripStatusLabel lbldbcon;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel6;
+        private System.Windows.Forms.ToolStripStatusLabel lblCurrentDateAndTime;
     }
 }

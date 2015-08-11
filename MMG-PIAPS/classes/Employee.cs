@@ -42,12 +42,15 @@ namespace MMG_PIAPS.classes
             cmd.Parameters.AddWithValue("_emp_status", emp_status);
             cmd.Parameters.AddWithValue("_imagearr", pic);
             cmd.Parameters.AddWithValue("_imagesize", pic.Length);
-            cmd.Parameters.AddWithValue("_emp_position", position);
+            cmd.Parameters.AddWithValue("_emp_position", position); 
+            cmd.Parameters.AddWithValue("_branchid", branch);
             
+
             try
             {
                 //db.con.Open();
                 cmd.ExecuteNonQuery();
+                
                 BasicPay p = new BasicPay();
                 p.empid = empid;
                 p.basic_pay = basic_pay;
@@ -58,8 +61,7 @@ namespace MMG_PIAPS.classes
                 }
                 else {
                     return false;
-                }
-                               
+                }                               
             }
             catch (Exception e)
             {
@@ -132,8 +134,10 @@ namespace MMG_PIAPS.classes
                 
                 if(dt != null){
                     if(dt.Rows.Count > 0){
-                     Byte[] image=dt.Rows[0].Field<Byte[]>("imagebyte");                     
-                        return image;
+                     Byte[] image=dt.Rows[0].Field<Byte[]>("imagebyte");
+                     pic = image;
+                     return image;
+                       
                     }else{
                         return null;
                     }                   
@@ -154,6 +158,7 @@ namespace MMG_PIAPS.classes
                 if (dt != null){
                     if (dt.Rows.Count > 0){
                        String stats = dt.Rows[0].Field<String>("emp_status");
+                       emp_status = stats;
                         return stats;
                     }
                     else{
@@ -163,6 +168,31 @@ namespace MMG_PIAPS.classes
                 else{
                     return null;
                 }                
+
+            }//end GET_EMPLOYMENT_STATUS
+
+            public Boolean SET_EMPLOYMENT_STATUS()
+            {
+
+
+                DataTable dt = new DataTable();
+                MySqlCommand cmd = new MySqlCommand();
+                db.SET_COMMAND_PARAMS(cmd, "EMP_STATUS_INSERT");
+                cmd.Parameters.AddWithValue("_empid", empid);
+                cmd.Parameters.AddWithValue("_emp_status", emp_status);
+
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                catch (Exception e)
+                {
+                    db.err = null;
+                    db.err = e;
+                    return false;
+                }
+
 
             }
 
@@ -179,6 +209,7 @@ namespace MMG_PIAPS.classes
                 if (dt != null){
                     if (dt.Rows.Count > 0){
                         Decimal bp = dt.Rows[0].Field<Decimal>("basic_pay");
+                        basic_pay = bp;
                         return bp;
                     }
                     else{
@@ -207,6 +238,7 @@ namespace MMG_PIAPS.classes
                     if (dt.Rows.Count > 0)
                     {
                         String pos = dt.Rows[0].Field<String>("position_");
+                        position = pos;
                         return pos;
                     }
                     else
@@ -219,6 +251,89 @@ namespace MMG_PIAPS.classes
                     return "";
                 }
             }
+
+            public Boolean SET_CURRENT_POSITION() {
+
+
+                DataTable dt = new DataTable();
+                MySqlCommand cmd = new MySqlCommand();
+                db.SET_COMMAND_PARAMS(cmd, "EMP_POSITION_INSERT");
+                cmd.Parameters.AddWithValue("_empid", empid);
+                cmd.Parameters.AddWithValue("_emp_position", position);
+
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                catch (Exception e) {
+                    db.err = null;
+                    db.err = e;
+                    return false;
+                }
+              
+
+            }
+
+            public String GET_BRANCH_ASSIGNMENT()
+            {
+
+                DataTable dt = new DataTable();
+                MySqlCommand cmd = new MySqlCommand();
+                db.SET_COMMAND_PARAMS(cmd, "EMP_BRANCH_ASS_SELECT_BY_ID");
+                cmd.Parameters.AddWithValue("_empid", empid);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+
+                if (dt != null)
+                {
+                    if (dt.Rows.Count > 0)
+                    {
+                        String ba = dt.Rows[0].Field<UInt32>("branchid") + "-" + dt.Rows[0].Field<String>("branchname");
+                        branch = ba;
+                        return ba;
+                    }
+                    else
+                    {
+                        return "";
+                    }
+                }
+                else
+                {
+                    return "";
+                }
+            }// end GET_BRANCH_ASSIGNMENT
+
+
+            public Boolean SET_BRANCH_ASSIGNMENT()
+            {
+
+
+                DataTable dt = new DataTable();
+                MySqlCommand cmd = new MySqlCommand();
+                db.SET_COMMAND_PARAMS(cmd, "EMP_BRANCH_ASSIGNMENT_INSERT");
+                cmd.Parameters.AddWithValue("_empid", empid);
+                cmd.Parameters.AddWithValue("_branchid", branch);
+
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                catch (Exception e)
+                {
+                    db.err = null;
+                    db.err = e;
+                    return false;
+                }
+
+
+            }
+
+
+
+
 
         }
     

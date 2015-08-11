@@ -48,9 +48,12 @@ namespace MMG_PIAPS.forms
             lblbirthday.Text = Global.CURRENT_USER.birthdate.ToShortDateString();            
             lblcontactno.Text = Global.CURRENT_USER.contactno;
             lblgender.Text = Global.CURRENT_USER.gender;
+            lblposition.Text = Global.CURRENT_USER.position;
+            lblbranch.Text = Global.CURRENT_USER.branch;
 
             lblCurrentUser.Text = Fullname;
             lblCurrentUserPosition.Text = Global.CURRENT_USER.position;
+            
             //lblcapitalinvestment.Text=  Global.CURRENT_USER.capitalinvestment //FORWARDED CAPITAL AS OF SOFTWARE IMPLEMENTATION
             //lbldate.Text=  Global.CURRENT_USER.membershipdate //WHEN DID HE?SHE BECAME AN MMG MEMBER
             //lblstatus.Text = Global.CURRENT_USER.membershipstatus;//IN_GOOD_STANDING ? NOT_IN_GOOD_STANDING
@@ -65,7 +68,8 @@ namespace MMG_PIAPS.forms
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            dbconstatus.Text = db.con.State.ToString();
+            lbldbcon.Text = db.con.State.ToString();
+            lblCurrentDateAndTime.Text = "Today is : " +  DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToLongTimeString();
         }
 
 

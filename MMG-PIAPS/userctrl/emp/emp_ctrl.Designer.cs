@@ -41,10 +41,10 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.pnlops = new System.Windows.Forms.Panel();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.viewProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pnlops = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -173,16 +173,6 @@
             this.columnHeader6.Text = "Address";
             this.columnHeader6.Width = 250;
             // 
-            // pnlops
-            // 
-            this.pnlops.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlops.Location = new System.Drawing.Point(0, 40);
-            this.pnlops.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlops.Name = "pnlops";
-            this.pnlops.Size = new System.Drawing.Size(738, 0);
-            this.pnlops.TabIndex = 2;
-            // 
             // contextMenu
             // 
             this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -190,7 +180,7 @@
             this.updateInfoToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
             this.contextMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.contextMenu.Size = new System.Drawing.Size(154, 74);
+            this.contextMenu.Size = new System.Drawing.Size(154, 52);
             // 
             // viewProfileToolStripMenuItem
             // 
@@ -207,6 +197,16 @@
             this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
             this.updateInfoToolStripMenuItem.Text = "Update Info";
             this.updateInfoToolStripMenuItem.Click += new System.EventHandler(this.updateInfoToolStripMenuItem_Click);
+            // 
+            // pnlops
+            // 
+            this.pnlops.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlops.Location = new System.Drawing.Point(0, 40);
+            this.pnlops.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlops.Name = "pnlops";
+            this.pnlops.Size = new System.Drawing.Size(738, 0);
+            this.pnlops.TabIndex = 2;
             // 
             // emp_ctrl
             // 

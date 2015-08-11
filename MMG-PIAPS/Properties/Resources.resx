@@ -133,4 +133,223 @@
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons_intuit_qb_mac_small_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_03.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_05.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_07.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_09.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_107" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_107.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_108" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_108.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_109" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_109.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_11.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_110.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_111.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_112" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_112.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_113" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_113.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_114" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_114.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_123" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_123.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_124" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_124.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_125" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_125.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_126" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_126.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_127" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_127.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_128.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_129" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_129.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_13.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_130" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_130.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_139" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_139.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_140" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_140.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_141" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_141.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_142" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_142.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_143" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_143.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_144" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_144.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_145" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_145.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_146" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_146.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_15.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_17.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_27.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_28.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_29.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_30.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_31.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_32.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_33.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_34.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_43.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_44.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_45.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_46" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_46.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_47.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_48.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_49.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_50.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_59" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_59.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_60.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_61.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_62.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_63" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_63.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_64.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_65" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_65.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_66" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_66.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_75.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_76" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_76.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_77" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_77.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_78" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_78.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_79" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_79.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_80.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_81.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_82" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_82.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_91" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_91.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_92" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_92.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_93" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_93.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_94" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_94.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_95" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_95.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_96.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_97" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_97.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons_intuit_qb_mac_small_98" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons-intuit-qb-mac-small_98.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled_1_46" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-1_46.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

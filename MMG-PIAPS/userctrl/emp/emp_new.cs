@@ -63,7 +63,9 @@ namespace MMG_PIAPS.userctrl.emp
                 emp.basic_pay = Convert.ToDecimal(txtbasicpay.Text);
                 emp.date_hired = dtemploymentdate.Value;
                 emp.emp_status = cboemploymentstatus.Text;
-                emp.branch = cbobranch.Text;
+                string[] branchid = cbobranch.Text.Split('-');
+                emp.branch = branchid[0];
+
                 emp.position = cbopositions.Text;
 
 
@@ -91,16 +93,7 @@ namespace MMG_PIAPS.userctrl.emp
         }
 
 
-        public void LoadBranches() {
-            Branch b = new Branch();
-            DataTable dt = new DataTable();
-            dt = b.SELECT_ALL();
-
-            foreach (DataRow r in dt.Rows)
-            {
-                cbobranch.Items.Add(r["branch"].ToString());
-            }
-        }
+      
 
 
         public void LoadPositions()
@@ -117,8 +110,12 @@ namespace MMG_PIAPS.userctrl.emp
 
         private void emp_new_Load(object sender, EventArgs e)
         {
-            LoadBranches();
-            LoadPositions();
+            Branch b = new Branch();
+            b.LoadBranches(cbobranch);
+
+            Position p = new Position();
+            p.LoadPositions(cbopositions);
+
         }
 
         private void btnrotate_Click(object sender, EventArgs e)

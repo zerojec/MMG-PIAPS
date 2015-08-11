@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace MMG_PIAPS.classes
 {
@@ -35,6 +36,19 @@ namespace MMG_PIAPS.classes
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
             da.Fill(dt);
             return dt;
+        }
+
+
+        public void LoadPositions(ComboBox cbo)
+        {
+            Position p = new Position();
+            DataTable dt = new DataTable();
+            dt = p.SELECT_ALL();
+
+            foreach (DataRow r in dt.Rows)
+            {
+                cbo.Items.Add(r["positionname"].ToString());
+            }
         }
     }
 }

@@ -13,24 +13,16 @@ namespace MMG_PIAPS
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-
-       
-      
+           
         static void Main()
         {                               
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-           
-
-            
-            if (db.CONNECT())
-            {                            
+                      
+            if (db.CONNECT()){                            
                 Application.Run(new frmLogin());
-            }
-            else
-            {
-                MessageBox.Show("Unable to Connect to Database : \n\n" + db.err.Message.ToString(), "Error");
+            }else{
+                MessageBox.Show("There is a problem with database connection : \n\n" + db.err.Message.ToString(), "Error");
             }
             
         }

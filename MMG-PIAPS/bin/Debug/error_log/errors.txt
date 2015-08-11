@@ -198,3 +198,12 @@
    at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
    at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 52
 --------------------------------------------------------------
+8/8/2015 12:56:25 AM:System.ArgumentException: Parameter '_branchid' not found in the collection.
+   at MySql.Data.MySqlClient.MySqlParameterCollection.GetParameterFlexible(String parameterName, Boolean throwOnNotFound)
+   at MySql.Data.MySqlClient.StoredProcedure.GetAndFixParameter(String spName, MySqlSchemaRow param, Boolean realAsFloat, MySqlParameter returnParameter)
+   at MySql.Data.MySqlClient.StoredProcedure.CheckParameters(String spName)
+   at MySql.Data.MySqlClient.StoredProcedure.Resolve(Boolean preparing)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 52
+--------------------------------------------------------------
