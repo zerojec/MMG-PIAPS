@@ -63,6 +63,16 @@ namespace MMG_PIAPS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap down {
+            get {
+                object obj = ResourceManager.GetObject("down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons_intuit_qb_mac_small_03 {
             get {
                 object obj = ResourceManager.GetObject("icons_intuit_qb_mac_small_03", resourceCulture);
@@ -826,6 +836,16 @@ namespace MMG_PIAPS.Properties {
         internal static System.Drawing.Bitmap Untitled_1_46 {
             get {
                 object obj = ResourceManager.GetObject("Untitled_1_46", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap up {
+            get {
+                object obj = ResourceManager.GetObject("up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

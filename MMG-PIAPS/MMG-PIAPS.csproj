@@ -67,9 +67,11 @@
     <Compile Include="classes\BasicPay.cs" />
     <Compile Include="classes\Branch.cs" />
     <Compile Include="classes\Employee.cs" />
+    <Compile Include="classes\Employee_Schedule.cs" />
     <Compile Include="classes\Logger.cs" />
     <Compile Include="classes\Person.cs" />
     <Compile Include="classes\Position.cs" />
+    <Compile Include="classes\Schedule.cs" />
     <Compile Include="forms\emp\frmEmpBasicPay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +117,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\custom\mit_sched_template.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\custom\mit_sched_template.Designer.cs">
+      <DependentUpon>mit_sched_template.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\custom\mit_time_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\custom\mit_time_ctrl.Designer.cs">
+      <DependentUpon>mit_time_ctrl.cs</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\emp\emp_ctrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,6 +146,30 @@
     </Compile>
     <Compile Include="userctrl\emp\emp_update.Designer.cs">
       <DependentUpon>emp_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\emp_sched\emp_sched_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\emp_sched\emp_sched_ctrl.Designer.cs">
+      <DependentUpon>emp_sched_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\emp_sched\emp_sched_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\emp_sched\emp_sched_new.Designer.cs">
+      <DependentUpon>emp_sched_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\schedule\sched_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\schedule\sched_ctrl.Designer.cs">
+      <DependentUpon>sched_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\schedule\sched_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\schedule\sched_new.Designer.cs">
+      <DependentUpon>sched_new.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="forms\emp\frmEmpBasicPay.resx">
       <DependentUpon>frmEmpBasicPay.cs</DependentUpon>
@@ -156,6 +194,12 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\custom\mit_sched_template.resx">
+      <DependentUpon>mit_sched_template.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\custom\mit_time_ctrl.resx">
+      <DependentUpon>mit_time_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userctrl\emp\emp_ctrl.resx">
       <DependentUpon>emp_ctrl.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +208,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\emp\emp_update.resx">
       <DependentUpon>emp_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\emp_sched\emp_sched_ctrl.resx">
+      <DependentUpon>emp_sched_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\emp_sched\emp_sched_new.resx">
+      <DependentUpon>emp_sched_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\schedule\sched_ctrl.resx">
+      <DependentUpon>sched_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\schedule\sched_new.resx">
+      <DependentUpon>sched_new.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
@@ -434,6 +490,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Untitled-1_46.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -207,3 +207,22 @@
    at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
    at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 52
 --------------------------------------------------------------
+8/11/2015 6:50:27 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '5678' for key 'PRIMARY'
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 52
+--------------------------------------------------------------
+8/11/2015 8:41:47 AM:System.ArgumentException: Parameter '_bdate' not found in the collection.
+   at MySql.Data.MySqlClient.MySqlParameterCollection.GetParameterFlexible(String parameterName, Boolean throwOnNotFound)
+   at MySql.Data.MySqlClient.StoredProcedure.GetAndFixParameter(String spName, MySqlSchemaRow param, Boolean realAsFloat, MySqlParameter returnParameter)
+   at MySql.Data.MySqlClient.StoredProcedure.CheckParameters(String spName)
+   at MySql.Data.MySqlClient.StoredProcedure.Resolve(Boolean preparing)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Employee.update() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 100
+--------------------------------------------------------------

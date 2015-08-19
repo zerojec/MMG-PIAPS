@@ -6,6 +6,7 @@ using System.Drawing;
 using MySql.Data.MySqlClient;
 using MMG_PIAPS.modules;
 using System.Data;
+using System.Windows.Forms;
 
 namespace MMG_PIAPS.classes
 {
@@ -62,6 +63,43 @@ namespace MMG_PIAPS.classes
                 else {
                     return false;
                 }                               
+            }
+            catch (Exception e)
+            {
+                db.err = null;
+                db.err = e;
+                return false;
+            }
+        }//end save
+
+
+        public Boolean update()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = db.con;
+            cmd.CommandText = "EMP_UPDATE";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("_empid", empid);
+            cmd.Parameters.AddWithValue("_fname", fname);
+            cmd.Parameters.AddWithValue("_lname", lname);
+            cmd.Parameters.AddWithValue("_mname", mname);
+            cmd.Parameters.AddWithValue("_bdate", birthdate);
+            cmd.Parameters.AddWithValue("_contactno", contactno);
+            cmd.Parameters.AddWithValue("_gender", gender);
+            cmd.Parameters.AddWithValue("_address", address);
+            cmd.Parameters.AddWithValue("_emp_status", emp_status);
+            cmd.Parameters.AddWithValue("_imagearr", pic);
+            cmd.Parameters.AddWithValue("_imagesize", pic.Length);
+            cmd.Parameters.AddWithValue("_emp_position", position);
+            //cmd.Parameters.AddWithValue("_branchid", branch);
+
+
+            try
+            {
+                //db.con.Open();
+                cmd.ExecuteNonQuery();            
+                return true;              
             }
             catch (Exception e)
             {
@@ -332,6 +370,20 @@ namespace MMG_PIAPS.classes
             }
 
 
+
+            public void LoadEmployee(ComboBox cbo) {
+
+                Employee e = new Employee();
+                DataTable dt = new DataTable();
+
+                dt = e.SELECT_ALL();
+                if (dt != null) {
+                    foreach (DataRow r in dt.Rows) {
+                        cbo.Items.Add(r["lname"] + ", " + r["fname"] + " " + r["mname"] + "-" + r["empid"]);
+                    }
+                }
+
+            }
 
 
 

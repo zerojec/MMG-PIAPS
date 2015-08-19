@@ -1,6 +1,8 @@
 ﻿using MMG_PIAPS.classes;
 using MMG_PIAPS.modules;
 using MMG_PIAPS.userctrl;
+using MMG_PIAPS.userctrl.emp_sched;
+using MMG_PIAPS.userctrl.schedule;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -93,6 +95,25 @@ namespace MMG_PIAPS.forms
         public delegate void ChangeMname(String n);
         public delegate void ChangeAddress(String n);
         public delegate void ChangeBirthday(DateTime n);
+
+        private void btnSchedule_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            sched_ctrl c = new sched_ctrl();
+            c.Width = pnlops.Width;
+            c.Height = pnlops.Height;
+            pnlops.Controls.Add(c);
+
+        }
+
+        private void btnEmployeeSchedule_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            emp_sched_ctrl c = new emp_sched_ctrl();
+            c.Width = pnlops.Width;
+            c.Height = pnlops.Height;
+            pnlops.Controls.Add(c);
+        }
 
 
     }

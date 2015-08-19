@@ -100,7 +100,7 @@ namespace MMG_PIAPS.userctrl
 
                 Control[] birthday = f.Controls.Find("lblbirthday", true);
                 //birthday[0].Text = "";
-                birthday[0].Text = Global.SELECTED_EMP.birthdate.ToString();
+                birthday[0].Text = Global.SELECTED_EMP.birthdate.ToShortDateString();
 
                 Control[] address = f.Controls.Find("lbladdress", true);
                 //address[0].Text = "";
@@ -180,6 +180,7 @@ namespace MMG_PIAPS.userctrl
 
             pnlops.Controls.Add(c);
 
+            
             }
         }
 

@@ -56,12 +56,13 @@ namespace MMG_PIAPS.userctrl.emp
             cboemploymentstatus.Text = emp.emp_status;
             cbopositions.Text = emp.position;
 
+            dtBday.Value = emp.birthdate;
+            //dtemploymentdate.Value= 
 
 
             //IF EMPLOYEE PICTURE IS NOT EMPTY OR NULL
             if (emp.pic != null)
             {
-
                 MemoryStream ms = new MemoryStream(emp.pic);
                 pbEmpPic.Image = Image.FromStream(ms);
                 pbEmpPic.SizeMode = PictureBoxSizeMode.Zoom;
@@ -96,21 +97,25 @@ namespace MMG_PIAPS.userctrl.emp
             emp.basic_pay = Convert.ToDecimal(txtbasicpay.Text);
             emp.date_hired = dtemploymentdate.Value;
            
+            long filesize;
+            MemoryStream mstream = new MemoryStream();
+            pbEmpPic.Image.Save(mstream, System.Drawing.Imaging.ImageFormat.Jpeg);
+            Byte[] arrImage = mstream.GetBuffer();
+            filesize = mstream.Length;
+            
+           
 
-            if (pbEmpPic.Image != null)
+           
+
+            if (pbEmpPic.Image != null && (arrImage != emp.pic))
             {
-                long filesize;
-                MemoryStream mstream = new MemoryStream();
-                pbEmpPic.Image.Save(mstream, System.Drawing.Imaging.ImageFormat.Jpeg);
-                Byte[] arrImage = mstream.GetBuffer();
-                filesize = mstream.Length;
                 emp.pic = arrImage;
             }
 
 
-            if (emp.save())
+            if (emp.update())
             {
-                MessageBox.Show("Successful", "Saving...", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                MessageBox.Show("Successful", "Updating...", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                 this.Parent.Height = 0;
                 this.Parent.Controls.Clear();
                 this.Dispose();
@@ -118,7 +123,7 @@ namespace MMG_PIAPS.userctrl.emp
             else
             {
                 Logger.WriteErrorLog(db.err.ToString());
-                MessageBox.Show("Error : " + db.err.ToString(), "Saving...", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                MessageBox.Show("Error : " + db.err.ToString(), "Updating...", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
             }
                            
         }
@@ -154,6 +159,34 @@ namespace MMG_PIAPS.userctrl.emp
             frm.emp = emp;
             frm.SetDesktopLocation(MousePosition.X - frm.Width, MousePosition.Y);
             frm.ShowDialog();
+        }
+
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            // image filters
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                // display image in picture box
+                pbEmpPic.Image = new Bitmap(open.FileName);
+                // image file path
+                //textBox1.Text = open.FileName;
+
+                long filesize;
+                MemoryStream mstream = new MemoryStream();
+                pbEmpPic.Image.Save(mstream, System.Drawing.Imaging.ImageFormat.Jpeg);
+                Byte[] arrImage = mstream.GetBuffer();
+                filesize = mstream.Length;
+                // emp.pic = arrImage;
+                MessageBox.Show(filesize.ToString());
+            }
+        }
+
+        private void btnrotate_Click(object sender, EventArgs e)
+        {
+            pbEmpPic.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            pbEmpPic.Refresh();
         }
     }
 }

@@ -33,11 +33,13 @@
             this.btnupdate = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnrotate = new System.Windows.Forms.Button();
             this.btnBrowse = new System.Windows.Forms.Button();
+            this.pbEmpPic = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.cboemploymentstatus = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -61,24 +63,22 @@
             this.txtmname = new System.Windows.Forms.TextBox();
             this.txtaddress = new System.Windows.Forms.TextBox();
             this.txtcontactno = new System.Windows.Forms.TextBox();
+            this.btnChangePosition = new System.Windows.Forms.Button();
+            this.btnBasicPay = new System.Windows.Forms.Button();
+            this.btnEmpStatus = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.cbobranch = new System.Windows.Forms.ComboBox();
             this.dtemploymentdate = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pbEmpPic = new System.Windows.Forms.PictureBox();
-            this.btnChangePosition = new System.Windows.Forms.Button();
-            this.btnBasicPay = new System.Windows.Forms.Button();
-            this.btnEmpStatus = new System.Windows.Forms.Button();
             this.btnBranch = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -151,6 +151,16 @@
             this.panel1.Size = new System.Drawing.Size(721, 35);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -203,6 +213,7 @@
             this.btnrotate.TabIndex = 3;
             this.btnrotate.Text = "Rotate";
             this.btnrotate.UseVisualStyleBackColor = true;
+            this.btnrotate.Click += new System.EventHandler(this.btnrotate_Click);
             // 
             // btnBrowse
             // 
@@ -213,6 +224,18 @@
             this.btnBrowse.TabIndex = 1;
             this.btnBrowse.Text = "Browse Picture";
             this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            // 
+            // pbEmpPic
+            // 
+            this.pbEmpPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbEmpPic.Image = global::MMG_PIAPS.Properties.Resources.noimagefound;
+            this.pbEmpPic.Location = new System.Drawing.Point(4, 4);
+            this.pbEmpPic.Name = "pbEmpPic";
+            this.pbEmpPic.Size = new System.Drawing.Size(229, 206);
+            this.pbEmpPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbEmpPic.TabIndex = 0;
+            this.pbEmpPic.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
@@ -222,7 +245,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.tableLayoutPanel3.Controls.Add(this.cboemploymentstatus, 3, 2);
             this.tableLayoutPanel3.Controls.Add(this.label12, 2, 2);
             this.tableLayoutPanel3.Controls.Add(this.txtbasicpay, 3, 1);
@@ -283,16 +306,16 @@
             "Regular",
             "Resigned",
             "Terminated"});
-            this.cboemploymentstatus.Location = new System.Drawing.Point(346, 66);
+            this.cboemploymentstatus.Location = new System.Drawing.Point(345, 66);
             this.cboemploymentstatus.Name = "cboemploymentstatus";
-            this.cboemploymentstatus.Size = new System.Drawing.Size(84, 27);
+            this.cboemploymentstatus.Size = new System.Drawing.Size(83, 27);
             this.cboemploymentstatus.TabIndex = 21;
             // 
             // label12
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(266, 70);
+            this.label12.Location = new System.Drawing.Point(265, 70);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(73, 15);
             this.label12.TabIndex = 20;
@@ -303,9 +326,9 @@
             this.txtbasicpay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtbasicpay.Enabled = false;
             this.txtbasicpay.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbasicpay.Location = new System.Drawing.Point(346, 35);
+            this.txtbasicpay.Location = new System.Drawing.Point(345, 35);
             this.txtbasicpay.Name = "txtbasicpay";
-            this.txtbasicpay.Size = new System.Drawing.Size(84, 25);
+            this.txtbasicpay.Size = new System.Drawing.Size(83, 25);
             this.txtbasicpay.TabIndex = 19;
             this.txtbasicpay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -313,7 +336,7 @@
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(274, 39);
+            this.label11.Location = new System.Drawing.Point(273, 39);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 15);
             this.label11.TabIndex = 18;
@@ -327,16 +350,16 @@
             this.cbopositions.Enabled = false;
             this.cbopositions.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbopositions.FormattingEnabled = true;
-            this.cbopositions.Location = new System.Drawing.Point(346, 4);
+            this.cbopositions.Location = new System.Drawing.Point(345, 4);
             this.cbopositions.Name = "cbopositions";
-            this.cbopositions.Size = new System.Drawing.Size(84, 27);
+            this.cbopositions.Size = new System.Drawing.Size(83, 27);
             this.cbopositions.TabIndex = 17;
             // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(285, 8);
+            this.label10.Location = new System.Drawing.Point(284, 8);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(54, 15);
             this.label10.TabIndex = 16;
@@ -434,7 +457,7 @@
             "Female"});
             this.cbogender.Location = new System.Drawing.Point(115, 128);
             this.cbogender.Name = "cbogender";
-            this.cbogender.Size = new System.Drawing.Size(84, 27);
+            this.cbogender.Size = new System.Drawing.Size(83, 27);
             this.cbogender.TabIndex = 8;
             // 
             // dtBday
@@ -444,7 +467,7 @@
             this.dtBday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtBday.Location = new System.Drawing.Point(115, 159);
             this.dtBday.Name = "dtBday";
-            this.dtBday.Size = new System.Drawing.Size(84, 25);
+            this.dtBday.Size = new System.Drawing.Size(83, 25);
             this.dtBday.TabIndex = 9;
             // 
             // txtid
@@ -453,7 +476,7 @@
             this.txtid.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtid.Location = new System.Drawing.Point(115, 4);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(84, 25);
+            this.txtid.Size = new System.Drawing.Size(83, 25);
             this.txtid.TabIndex = 10;
             // 
             // txtlname
@@ -462,7 +485,7 @@
             this.txtlname.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtlname.Location = new System.Drawing.Point(115, 35);
             this.txtlname.Name = "txtlname";
-            this.txtlname.Size = new System.Drawing.Size(84, 25);
+            this.txtlname.Size = new System.Drawing.Size(83, 25);
             this.txtlname.TabIndex = 11;
             // 
             // txtfname
@@ -471,7 +494,7 @@
             this.txtfname.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfname.Location = new System.Drawing.Point(115, 66);
             this.txtfname.Name = "txtfname";
-            this.txtfname.Size = new System.Drawing.Size(84, 25);
+            this.txtfname.Size = new System.Drawing.Size(83, 25);
             this.txtfname.TabIndex = 12;
             // 
             // txtmname
@@ -480,7 +503,7 @@
             this.txtmname.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmname.Location = new System.Drawing.Point(115, 97);
             this.txtmname.Name = "txtmname";
-            this.txtmname.Size = new System.Drawing.Size(84, 25);
+            this.txtmname.Size = new System.Drawing.Size(83, 25);
             this.txtmname.TabIndex = 13;
             // 
             // txtaddress
@@ -489,7 +512,7 @@
             this.txtaddress.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtaddress.Location = new System.Drawing.Point(115, 190);
             this.txtaddress.Name = "txtaddress";
-            this.txtaddress.Size = new System.Drawing.Size(84, 25);
+            this.txtaddress.Size = new System.Drawing.Size(83, 25);
             this.txtaddress.TabIndex = 14;
             // 
             // txtcontactno
@@ -498,14 +521,47 @@
             this.txtcontactno.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcontactno.Location = new System.Drawing.Point(115, 221);
             this.txtcontactno.Name = "txtcontactno";
-            this.txtcontactno.Size = new System.Drawing.Size(84, 25);
+            this.txtcontactno.Size = new System.Drawing.Size(83, 25);
             this.txtcontactno.TabIndex = 15;
+            // 
+            // btnChangePosition
+            // 
+            this.btnChangePosition.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChangePosition.Image = global::MMG_PIAPS.Properties.Resources.icons_intuit_qb_mac_small_79;
+            this.btnChangePosition.Location = new System.Drawing.Point(435, 4);
+            this.btnChangePosition.Name = "btnChangePosition";
+            this.btnChangePosition.Size = new System.Drawing.Size(33, 24);
+            this.btnChangePosition.TabIndex = 28;
+            this.btnChangePosition.UseVisualStyleBackColor = true;
+            this.btnChangePosition.Click += new System.EventHandler(this.btnChangePosition_Click);
+            // 
+            // btnBasicPay
+            // 
+            this.btnBasicPay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBasicPay.Image = global::MMG_PIAPS.Properties.Resources.icons_intuit_qb_mac_small_79;
+            this.btnBasicPay.Location = new System.Drawing.Point(435, 35);
+            this.btnBasicPay.Name = "btnBasicPay";
+            this.btnBasicPay.Size = new System.Drawing.Size(33, 24);
+            this.btnBasicPay.TabIndex = 29;
+            this.btnBasicPay.UseVisualStyleBackColor = true;
+            this.btnBasicPay.Click += new System.EventHandler(this.btnBasicPay_Click);
+            // 
+            // btnEmpStatus
+            // 
+            this.btnEmpStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEmpStatus.Image = global::MMG_PIAPS.Properties.Resources.icons_intuit_qb_mac_small_79;
+            this.btnEmpStatus.Location = new System.Drawing.Point(435, 66);
+            this.btnEmpStatus.Name = "btnEmpStatus";
+            this.btnEmpStatus.Size = new System.Drawing.Size(33, 24);
+            this.btnEmpStatus.TabIndex = 30;
+            this.btnEmpStatus.UseVisualStyleBackColor = true;
+            this.btnEmpStatus.Click += new System.EventHandler(this.btnEmpStatus_Click);
             // 
             // label15
             // 
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(216, 101);
+            this.label15.Location = new System.Drawing.Point(215, 101);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(123, 15);
             this.label15.TabIndex = 26;
@@ -519,9 +575,9 @@
             this.cbobranch.Enabled = false;
             this.cbobranch.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbobranch.FormattingEnabled = true;
-            this.cbobranch.Location = new System.Drawing.Point(346, 97);
+            this.cbobranch.Location = new System.Drawing.Point(345, 97);
             this.cbobranch.Name = "cbobranch";
-            this.cbobranch.Size = new System.Drawing.Size(84, 27);
+            this.cbobranch.Size = new System.Drawing.Size(83, 27);
             this.cbobranch.TabIndex = 27;
             // 
             // dtemploymentdate
@@ -530,82 +586,28 @@
             this.dtemploymentdate.Enabled = false;
             this.dtemploymentdate.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtemploymentdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtemploymentdate.Location = new System.Drawing.Point(346, 128);
+            this.dtemploymentdate.Location = new System.Drawing.Point(345, 128);
             this.dtemploymentdate.Name = "dtemploymentdate";
-            this.dtemploymentdate.Size = new System.Drawing.Size(84, 25);
+            this.dtemploymentdate.Size = new System.Drawing.Size(83, 25);
             this.dtemploymentdate.TabIndex = 24;
             // 
             // label13
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(232, 132);
+            this.label13.Location = new System.Drawing.Point(231, 132);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(107, 15);
             this.label13.TabIndex = 22;
             this.label13.Text = "Employment Date :";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pbEmpPic
-            // 
-            this.pbEmpPic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbEmpPic.Image = global::MMG_PIAPS.Properties.Resources.noimagefound;
-            this.pbEmpPic.Location = new System.Drawing.Point(4, 4);
-            this.pbEmpPic.Name = "pbEmpPic";
-            this.pbEmpPic.Size = new System.Drawing.Size(229, 206);
-            this.pbEmpPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbEmpPic.TabIndex = 0;
-            this.pbEmpPic.TabStop = false;
-            // 
-            // btnChangePosition
-            // 
-            this.btnChangePosition.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnChangePosition.Image = global::MMG_PIAPS.Properties.Resources.icons_intuit_qb_mac_small_79;
-            this.btnChangePosition.Location = new System.Drawing.Point(437, 4);
-            this.btnChangePosition.Name = "btnChangePosition";
-            this.btnChangePosition.Size = new System.Drawing.Size(31, 24);
-            this.btnChangePosition.TabIndex = 28;
-            this.btnChangePosition.UseVisualStyleBackColor = true;
-            this.btnChangePosition.Click += new System.EventHandler(this.btnChangePosition_Click);
-            // 
-            // btnBasicPay
-            // 
-            this.btnBasicPay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnBasicPay.Image = global::MMG_PIAPS.Properties.Resources.icons_intuit_qb_mac_small_79;
-            this.btnBasicPay.Location = new System.Drawing.Point(437, 35);
-            this.btnBasicPay.Name = "btnBasicPay";
-            this.btnBasicPay.Size = new System.Drawing.Size(31, 24);
-            this.btnBasicPay.TabIndex = 29;
-            this.btnBasicPay.UseVisualStyleBackColor = true;
-            this.btnBasicPay.Click += new System.EventHandler(this.btnBasicPay_Click);
-            // 
-            // btnEmpStatus
-            // 
-            this.btnEmpStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEmpStatus.Image = global::MMG_PIAPS.Properties.Resources.icons_intuit_qb_mac_small_79;
-            this.btnEmpStatus.Location = new System.Drawing.Point(437, 66);
-            this.btnEmpStatus.Name = "btnEmpStatus";
-            this.btnEmpStatus.Size = new System.Drawing.Size(31, 24);
-            this.btnEmpStatus.TabIndex = 30;
-            this.btnEmpStatus.UseVisualStyleBackColor = true;
-            this.btnEmpStatus.Click += new System.EventHandler(this.btnEmpStatus_Click);
-            // 
             // btnBranch
             // 
             this.btnBranch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnBranch.Image = global::MMG_PIAPS.Properties.Resources.icons_intuit_qb_mac_small_79;
-            this.btnBranch.Location = new System.Drawing.Point(437, 97);
+            this.btnBranch.Location = new System.Drawing.Point(435, 97);
             this.btnBranch.Name = "btnBranch";
-            this.btnBranch.Size = new System.Drawing.Size(31, 24);
+            this.btnBranch.Size = new System.Drawing.Size(33, 24);
             this.btnBranch.TabIndex = 31;
             this.btnBranch.UseVisualStyleBackColor = true;
             this.btnBranch.Click += new System.EventHandler(this.btnBranch_Click);
@@ -623,12 +625,12 @@
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).EndInit();
             this.ResumeLayout(false);
 
         }

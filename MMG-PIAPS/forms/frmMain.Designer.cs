@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.CurrUserPic = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblbranch = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -53,6 +54,7 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnMembershipData = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
+            this.btnSchedule = new System.Windows.Forms.Button();
             this.pnlops = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -64,15 +66,15 @@
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lbldbcon = new System.Windows.Forms.ToolStripStatusLabel();
-            this.CurrUserPic = new System.Windows.Forms.PictureBox();
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblCurrentDateAndTime = new System.Windows.Forms.ToolStripStatusLabel();
+            this.btnEmployeeSchedule = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -94,6 +96,20 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.59098F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1008, 663);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // CurrUserPic
+            // 
+            this.CurrUserPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CurrUserPic.ErrorImage = global::MMG_PIAPS.Properties.Resources.noimagefound;
+            this.CurrUserPic.Image = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
+            this.CurrUserPic.InitialImage = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
+            this.CurrUserPic.Location = new System.Drawing.Point(11, 11);
+            this.CurrUserPic.Margin = new System.Windows.Forms.Padding(10);
+            this.CurrUserPic.Name = "CurrUserPic";
+            this.CurrUserPic.Size = new System.Drawing.Size(330, 226);
+            this.CurrUserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CurrUserPic.TabIndex = 0;
+            this.CurrUserPic.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
@@ -350,6 +366,8 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.Controls.Add(this.btnMembershipData, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnEmployee, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnSchedule, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnEmployeeSchedule, 3, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
@@ -379,6 +397,17 @@
             this.btnEmployee.Text = "Employee Data";
             this.btnEmployee.UseVisualStyleBackColor = true;
             this.btnEmployee.Click += new System.EventHandler(this.btnEmpolyee_Click);
+            // 
+            // btnSchedule
+            // 
+            this.btnSchedule.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSchedule.Location = new System.Drawing.Point(265, 3);
+            this.btnSchedule.Name = "btnSchedule";
+            this.btnSchedule.Size = new System.Drawing.Size(125, 55);
+            this.btnSchedule.TabIndex = 4;
+            this.btnSchedule.Text = "Schedule Template";
+            this.btnSchedule.UseVisualStyleBackColor = true;
+            this.btnSchedule.Click += new System.EventHandler(this.btnSchedule_Click);
             // 
             // pnlops
             // 
@@ -473,20 +502,6 @@
             this.lbldbcon.Text = "...";
             this.lbldbcon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // CurrUserPic
-            // 
-            this.CurrUserPic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CurrUserPic.ErrorImage = global::MMG_PIAPS.Properties.Resources.noimagefound;
-            this.CurrUserPic.Image = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
-            this.CurrUserPic.InitialImage = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
-            this.CurrUserPic.Location = new System.Drawing.Point(11, 11);
-            this.CurrUserPic.Margin = new System.Windows.Forms.Padding(10);
-            this.CurrUserPic.Name = "CurrUserPic";
-            this.CurrUserPic.Size = new System.Drawing.Size(330, 226);
-            this.CurrUserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CurrUserPic.TabIndex = 0;
-            this.CurrUserPic.TabStop = false;
-            // 
             // toolStripStatusLabel6
             // 
             this.toolStripStatusLabel6.ForeColor = System.Drawing.Color.White;
@@ -500,6 +515,17 @@
             this.lblCurrentDateAndTime.Name = "lblCurrentDateAndTime";
             this.lblCurrentDateAndTime.Size = new System.Drawing.Size(21, 19);
             this.lblCurrentDateAndTime.Text = "...";
+            // 
+            // btnEmployeeSchedule
+            // 
+            this.btnEmployeeSchedule.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEmployeeSchedule.Location = new System.Drawing.Point(396, 3);
+            this.btnEmployeeSchedule.Name = "btnEmployeeSchedule";
+            this.btnEmployeeSchedule.Size = new System.Drawing.Size(125, 55);
+            this.btnEmployeeSchedule.TabIndex = 5;
+            this.btnEmployeeSchedule.Text = "Employee Schedule";
+            this.btnEmployeeSchedule.UseVisualStyleBackColor = true;
+            this.btnEmployeeSchedule.Click += new System.EventHandler(this.btnEmployeeSchedule_Click);
             // 
             // frmMain
             // 
@@ -515,13 +541,13 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -567,5 +593,7 @@
         private System.Windows.Forms.ToolStripStatusLabel lbldbcon;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel6;
         private System.Windows.Forms.ToolStripStatusLabel lblCurrentDateAndTime;
+        private System.Windows.Forms.Button btnSchedule;
+        private System.Windows.Forms.Button btnEmployeeSchedule;
     }
 }
