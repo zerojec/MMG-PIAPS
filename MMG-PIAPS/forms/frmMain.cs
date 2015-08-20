@@ -1,6 +1,7 @@
 ﻿using MMG_PIAPS.classes;
 using MMG_PIAPS.modules;
 using MMG_PIAPS.userctrl;
+using MMG_PIAPS.userctrl.attendance;
 using MMG_PIAPS.userctrl.emp_sched;
 using MMG_PIAPS.userctrl.schedule;
 using System;
@@ -110,6 +111,15 @@ namespace MMG_PIAPS.forms
         {
             pnlops.Controls.Clear();
             emp_sched_ctrl c = new emp_sched_ctrl();
+            c.Width = pnlops.Width;
+            c.Height = pnlops.Height;
+            pnlops.Controls.Add(c);
+        }
+
+        private void btnAttendance_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            attendance_ctrl c = new attendance_ctrl();
             c.Width = pnlops.Width;
             c.Height = pnlops.Height;
             pnlops.Controls.Add(c);

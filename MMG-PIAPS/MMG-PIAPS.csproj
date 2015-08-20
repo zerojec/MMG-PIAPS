@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\Attendance.cs" />
     <Compile Include="classes\BasicPay.cs" />
     <Compile Include="classes\Branch.cs" />
     <Compile Include="classes\Employee.cs" />
@@ -116,6 +117,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\attendance\attendance_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\attendance\attendance_ctrl.Designer.cs">
+      <DependentUpon>attendance_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\attendance\attendance_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\attendance\attendance_new.Designer.cs">
+      <DependentUpon>attendance_new.cs</DependentUpon>
     </Compile>
     <Compile Include="userctrl\custom\mit_sched_template.cs">
       <SubType>UserControl</SubType>
@@ -193,6 +206,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\attendance\attendance_ctrl.resx">
+      <DependentUpon>attendance_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\attendance\attendance_new.resx">
+      <DependentUpon>attendance_new.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\custom\mit_sched_template.resx">
       <DependentUpon>mit_sched_template.cs</DependentUpon>
