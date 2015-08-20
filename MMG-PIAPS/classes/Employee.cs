@@ -136,7 +136,7 @@ namespace MMG_PIAPS.classes
                     Employee e = new Employee();
                     foreach (DataRow r in dt.Rows)
                     {
-                        e.empid = r["empid"].ToString();
+                        e.empid = Convert.ToInt32(r["empid"].ToString());
                         e.fname = r["fname"].ToString();
                         e.lname = r["lname"].ToString();
                         e.mname = r["mname"].ToString();
@@ -275,7 +275,8 @@ namespace MMG_PIAPS.classes
                 {
                     if (dt.Rows.Count > 0)
                     {
-                        String pos = dt.Rows[0].Field<String>("position_");
+                        String pos = "";
+                        pos = (dt.Rows[0].Field<String>("position_") != null) ? dt.Rows[0].Field<String>("position_") : "";                        
                         position = pos;
                         return pos;
                     }
@@ -329,6 +330,8 @@ namespace MMG_PIAPS.classes
                     if (dt.Rows.Count > 0)
                     {
                         String ba = dt.Rows[0].Field<UInt32>("branchid") + "-" + dt.Rows[0].Field<String>("branchname");
+                        //ba = (ba != "") ? ba : "";
+                        //ba!=null ? branch=ba : branch="";
                         branch = ba;
                         return ba;
                     }

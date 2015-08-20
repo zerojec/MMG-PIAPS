@@ -42,7 +42,7 @@ namespace MMG_PIAPS.userctrl.emp
             
             
             
-            txtid.Text = emp.empid;
+            txtid.Text = emp.empid.ToString();
             txtfname.Text = emp.fname;
             txtlname.Text = emp.lname;
             txtmname.Text = emp.mname;
@@ -85,7 +85,7 @@ namespace MMG_PIAPS.userctrl.emp
         private void btnupdate_Click(object sender, EventArgs e)
         {
             Employee emp = new Employee();
-            emp.empid = txtid.Text;
+            emp.empid = Convert.ToInt32(txtid.Text);
             emp.fname = txtfname.Text;
             emp.lname = txtlname.Text;
             emp.mname = txtmname.Text;

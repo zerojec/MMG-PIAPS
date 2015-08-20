@@ -31,19 +31,19 @@
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.txttemplate_name = new System.Windows.Forms.TextBox();
+            this.first_half = new MMG_PIAPS.userctrl.custom.mit_time_ctrl();
+            this.second_half = new MMG_PIAPS.userctrl.custom.mit_time_ctrl();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnsave = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.txttemplate_name = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.first_half = new MMG_PIAPS.userctrl.custom.mit_time_ctrl();
-            this.second_half = new MMG_PIAPS.userctrl.custom.mit_time_ctrl();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -57,7 +57,7 @@
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 338F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 392F));
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label4, 0, 2);
@@ -87,6 +87,16 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Template Name :";
             // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(48, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 15);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "First Half :";
+            // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -96,6 +106,42 @@
             this.label4.Size = new System.Drawing.Size(79, 15);
             this.label4.TabIndex = 2;
             this.label4.Text = "Second Half :";
+            // 
+            // txttemplate_name
+            // 
+            this.txttemplate_name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txttemplate_name.Enabled = false;
+            this.txttemplate_name.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttemplate_name.Location = new System.Drawing.Point(115, 4);
+            this.txttemplate_name.Name = "txttemplate_name";
+            this.txttemplate_name.Size = new System.Drawing.Size(239, 25);
+            this.txttemplate_name.TabIndex = 10;
+            // 
+            // first_half
+            // 
+            this.first_half.ampm = "AM";
+            this.first_half.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.first_half.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.first_half.hour_in = 0;
+            this.first_half.Location = new System.Drawing.Point(112, 32);
+            this.first_half.Margin = new System.Windows.Forms.Padding(0);
+            this.first_half.min_in = 0;
+            this.first_half.Name = "first_half";
+            this.first_half.Size = new System.Drawing.Size(245, 30);
+            this.first_half.TabIndex = 11;
+            // 
+            // second_half
+            // 
+            this.second_half.ampm = "PM";
+            this.second_half.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.second_half.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.second_half.hour_in = 0;
+            this.second_half.Location = new System.Drawing.Point(112, 63);
+            this.second_half.Margin = new System.Windows.Forms.Padding(0);
+            this.second_half.min_in = 0;
+            this.second_half.Name = "second_half";
+            this.second_half.Size = new System.Drawing.Size(245, 30);
+            this.second_half.TabIndex = 12;
             // 
             // tableLayoutPanel1
             // 
@@ -163,6 +209,16 @@
             this.panel1.Size = new System.Drawing.Size(757, 35);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -178,58 +234,6 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(48, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 15);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "First Half :";
-            // 
-            // txttemplate_name
-            // 
-            this.txttemplate_name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txttemplate_name.Enabled = false;
-            this.txttemplate_name.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttemplate_name.Location = new System.Drawing.Point(115, 4);
-            this.txttemplate_name.Name = "txttemplate_name";
-            this.txttemplate_name.Size = new System.Drawing.Size(293, 25);
-            this.txttemplate_name.TabIndex = 10;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // first_half
-            // 
-            this.first_half.ampm = "AM";
-            this.first_half.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.first_half.hour_in = 0;
-            this.first_half.Location = new System.Drawing.Point(115, 35);
-            this.first_half.min_in = 0;
-            this.first_half.Name = "first_half";
-            this.first_half.Size = new System.Drawing.Size(293, 24);
-            this.first_half.TabIndex = 11;
-            // 
-            // second_half
-            // 
-            this.second_half.ampm = "PM";
-            this.second_half.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.second_half.hour_in = 0;
-            this.second_half.Location = new System.Drawing.Point(115, 66);
-            this.second_half.min_in = 0;
-            this.second_half.Name = "second_half";
-            this.second_half.Size = new System.Drawing.Size(293, 24);
-            this.second_half.TabIndex = 12;
             // 
             // sched_new
             // 

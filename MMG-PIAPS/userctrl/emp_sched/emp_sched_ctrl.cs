@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using MMG_PIAPS.classes;
 
 namespace MMG_PIAPS.userctrl.emp_sched
 {
@@ -24,6 +25,13 @@ namespace MMG_PIAPS.userctrl.emp_sched
             c.Width = pnlops.Width;
             pnlops.Height = c.Height;
             pnlops.Controls.Add(c);
+        }
+
+        private void emp_sched_ctrl_Load(object sender, EventArgs e)
+        {
+            Emp_Sched es = new Emp_Sched();
+            es.LoadEmpSchedInListView(lv);
+
         }
     }
 }

@@ -67,7 +67,7 @@
     <Compile Include="classes\BasicPay.cs" />
     <Compile Include="classes\Branch.cs" />
     <Compile Include="classes\Employee.cs" />
-    <Compile Include="classes\Employee_Schedule.cs" />
+    <Compile Include="classes\Emp_Sched.cs" />
     <Compile Include="classes\Logger.cs" />
     <Compile Include="classes\Person.cs" />
     <Compile Include="classes\Position.cs" />

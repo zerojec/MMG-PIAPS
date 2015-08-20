@@ -82,7 +82,9 @@ namespace MMG_PIAPS.classes
 
                     s.first_half_in = Convert.ToDateTime(r["first_half_in"].ToString());
                     s.first_half_out = Convert.ToDateTime(r["first_half_out"].ToString());
-
+                    s.second_half_in = Convert.ToDateTime(r["second_half_in"].ToString());
+                    s.second_half_out = Convert.ToDateTime(r["second_half_out"].ToString());
+                    s.hours_allocated = Convert.ToInt32(r["hours_allocated"].ToString());
                     return s;
                 }
                 else {
