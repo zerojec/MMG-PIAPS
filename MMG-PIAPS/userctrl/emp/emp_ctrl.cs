@@ -33,7 +33,7 @@ namespace MMG_PIAPS.userctrl
                     li.Text = num.ToString();
                     li.SubItems.Add(r["empid"].ToString());
                     li.SubItems.Add(r["lname"].ToString() + ", " + r["fname"].ToString() + " " + r["mname"].ToString());
-                    li.SubItems.Add("position");//r["position"].ToString());
+                    li.SubItems.Add(r["position_"].ToString());//r["position"].ToString());
                     li.SubItems.Add(r["contactno"].ToString());
                     //li.SubItems.Add(r["gender"].ToString());
                     li.SubItems.Add(r["address"].ToString());

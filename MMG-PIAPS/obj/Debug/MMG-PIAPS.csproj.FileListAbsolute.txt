@@ -22,3 +22,4 @@ C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.custom.mit_sched_te
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.emp_sched.emp_sched_new.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.attendance.attendance_ctrl.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.attendance.attendance_new.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.csprojResolveAssemblyReference.cache

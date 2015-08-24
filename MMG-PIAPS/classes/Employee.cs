@@ -115,10 +115,18 @@ namespace MMG_PIAPS.classes
             MySqlCommand cmd = new MySqlCommand();
             db.SET_COMMAND_PARAMS(cmd, "EMP_SELECT_ALL");
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            da.Fill(dt);           
-            return dt;
-
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog(e.Message);
+                return null;
+            }
         }
+
 
         public Employee SELECT_BY_ID()
         {

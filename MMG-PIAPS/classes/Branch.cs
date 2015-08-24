@@ -34,8 +34,16 @@ namespace MMG_PIAPS.classes
             MySqlCommand cmd = new MySqlCommand();
             db.SET_COMMAND_PARAMS(cmd, "BRANCH_SELECT_ALL");
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            da.Fill(dt);
-            return dt;
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog(e.Message);
+                return null;
+            }
 
         }
 
@@ -45,10 +53,13 @@ namespace MMG_PIAPS.classes
             DataTable dt = new DataTable();
             dt = b.SELECT_ALL();
 
-            foreach (DataRow r in dt.Rows)
-            {
-                cbo.Items.Add(r["id"].ToString() + "-" + r["branch"].ToString());
+            if (dt != null) {
+                foreach (DataRow r in dt.Rows)
+                {
+                    cbo.Items.Add(r["id"].ToString() + "-" + r["branch"].ToString());
+                }
             }
+            
         }
     }
 }

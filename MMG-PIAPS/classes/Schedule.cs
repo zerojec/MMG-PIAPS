@@ -48,8 +48,15 @@ namespace MMG_PIAPS.classes
             MySqlCommand cmd = new MySqlCommand();
             db.SET_COMMAND_PARAMS(cmd, "SCHEDULE_SELECT_ALL");
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            da.Fill(dt);
-            return dt;
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }catch (Exception e) {
+                Logger.WriteErrorLog(e.Message);
+                return null;            
+            }
+            
         }
 
 
@@ -106,22 +113,25 @@ namespace MMG_PIAPS.classes
             DataTable dt = new DataTable();
 
             dt = s.SELECT_ALL();
-            int ctr = 1;
-            foreach (DataRow r in dt.Rows)
-            {
-                ListViewItem li = new ListViewItem();
-                li.Text = ctr.ToString();
-                li.SubItems.Add(r["template_name"].ToString());
-                li.SubItems.Add(r["first_half_in"].ToString());
-                li.SubItems.Add(r["first_half_out"].ToString());
-                li.SubItems.Add(r["second_half_in"].ToString());
-                li.SubItems.Add(r["second_half_out"].ToString());
-                li.SubItems.Add(r["hours_allocated"].ToString() + " Hours");
+            if (dt != null) {
+                int ctr = 1;
+                foreach (DataRow r in dt.Rows)
+                {
+                    ListViewItem li = new ListViewItem();
+                    li.Text = ctr.ToString();
+                    li.SubItems.Add(r["template_name"].ToString());
+                    li.SubItems.Add(r["first_half_in"].ToString());
+                    li.SubItems.Add(r["first_half_out"].ToString());
+                    li.SubItems.Add(r["second_half_in"].ToString());
+                    li.SubItems.Add(r["second_half_out"].ToString());
+                    li.SubItems.Add(r["hours_allocated"].ToString() + " Hours");
 
-                lv.Items.Add(li);
+                    lv.Items.Add(li);
 
-                ctr++;
+                    ctr++;
+                }
             }
+           
         }
 
     }

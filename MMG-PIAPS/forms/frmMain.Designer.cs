@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.CurrUserPic = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblbranch = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -51,6 +52,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnAttendance = new System.Windows.Forms.Button();
             this.btnMembershipData = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.btnSchedule = new System.Windows.Forms.Button();
@@ -68,14 +70,12 @@
             this.lbldbcon = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblCurrentDateAndTime = new System.Windows.Forms.ToolStripStatusLabel();
-            this.btnAttendance = new System.Windows.Forms.Button();
-            this.CurrUserPic = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -97,6 +97,20 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.59098F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1008, 663);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // CurrUserPic
+            // 
+            this.CurrUserPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CurrUserPic.ErrorImage = global::MMG_PIAPS.Properties.Resources.noimagefound;
+            this.CurrUserPic.Image = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
+            this.CurrUserPic.InitialImage = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
+            this.CurrUserPic.Location = new System.Drawing.Point(11, 11);
+            this.CurrUserPic.Margin = new System.Windows.Forms.Padding(10);
+            this.CurrUserPic.Name = "CurrUserPic";
+            this.CurrUserPic.Size = new System.Drawing.Size(330, 226);
+            this.CurrUserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CurrUserPic.TabIndex = 0;
+            this.CurrUserPic.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
@@ -365,6 +379,17 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(655, 61);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
+            // btnAttendance
+            // 
+            this.btnAttendance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAttendance.Location = new System.Drawing.Point(527, 3);
+            this.btnAttendance.Name = "btnAttendance";
+            this.btnAttendance.Size = new System.Drawing.Size(125, 55);
+            this.btnAttendance.TabIndex = 6;
+            this.btnAttendance.Text = "Attendance";
+            this.btnAttendance.UseVisualStyleBackColor = true;
+            this.btnAttendance.Click += new System.EventHandler(this.btnAttendance_Click);
+            // 
             // btnMembershipData
             // 
             this.btnMembershipData.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -374,6 +399,7 @@
             this.btnMembershipData.TabIndex = 0;
             this.btnMembershipData.Text = "Membership Data";
             this.btnMembershipData.UseVisualStyleBackColor = true;
+            this.btnMembershipData.Click += new System.EventHandler(this.btnMembershipData_Click);
             // 
             // btnEmployee
             // 
@@ -515,30 +541,6 @@
             this.lblCurrentDateAndTime.Size = new System.Drawing.Size(21, 19);
             this.lblCurrentDateAndTime.Text = "...";
             // 
-            // btnAttendance
-            // 
-            this.btnAttendance.Location = new System.Drawing.Point(527, 3);
-            this.btnAttendance.Name = "btnAttendance";
-            this.btnAttendance.Size = new System.Drawing.Size(125, 55);
-            this.btnAttendance.TabIndex = 6;
-            this.btnAttendance.Text = "Attendance";
-            this.btnAttendance.UseVisualStyleBackColor = true;
-            this.btnAttendance.Click += new System.EventHandler(this.btnAttendance_Click);
-            // 
-            // CurrUserPic
-            // 
-            this.CurrUserPic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CurrUserPic.ErrorImage = global::MMG_PIAPS.Properties.Resources.noimagefound;
-            this.CurrUserPic.Image = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
-            this.CurrUserPic.InitialImage = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
-            this.CurrUserPic.Location = new System.Drawing.Point(11, 11);
-            this.CurrUserPic.Margin = new System.Windows.Forms.Padding(10);
-            this.CurrUserPic.Name = "CurrUserPic";
-            this.CurrUserPic.Size = new System.Drawing.Size(330, 226);
-            this.CurrUserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CurrUserPic.TabIndex = 0;
-            this.CurrUserPic.TabStop = false;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -553,13 +555,13 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

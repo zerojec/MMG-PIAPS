@@ -25,15 +25,94 @@ namespace MMG_PIAPS.userctrl.attendance
 
         private void btnOpenFile_Click(object sender, EventArgs e)
         {
-            pb.Maximum = 0;
-            total = getlinetotal();
-            pb.Maximum = total;
-            lblstatus.Text = "0/" + total.ToString();
-            if(total!=0){            
-                bgAnalyzer.RunWorkerAsync();
+            
+            
+            if (btnOpenFile.Text == "Cancel")
+            {
+
+             
+
+                if (bgAnalyzer.IsBusy) {
+                    if (bgAnalyzer.WorkerSupportsCancellation)
+                    {
+                        bgAnalyzer.CancelAsync();
+                        btnOpenFile.Text = "Open Attendance Log";
+                        ENABLE_MAIN_BUTTONS();
+                      
+                    }
+                }
+               
             }
+            else {
+              
+                pb.Maximum = 0;
+                total = getlinetotal();
+                pb.Maximum = total;
+                lblstatus.Text = "0/" + total.ToString();
+                if (total != 0)
+                {
+                    bgAnalyzer.RunWorkerAsync();
+                    btnOpenFile.Text = "Cancel";
+                    DISABLE_MAIN_BUTTONS();
+                   
+                }
+            }
+           
 
         }//END OPEN_FILE
+
+
+        public void DISABLE_MAIN_BUTTONS() {
+
+            Form f = btnOpenFile.Parent.Parent.FindForm();
+
+            Control[] btnEmp = f.Controls.Find("btnEmployee", true);
+            btnEmp[0].Enabled = false;
+
+            Control[] btnMembershiData = f.Controls.Find("btnMembershipData", true);
+            btnMembershiData[0].Enabled = false;
+
+            Control[] btnEmployeeSchedule = f.Controls.Find("btnEmployeeSchedule", true);
+            btnEmployeeSchedule[0].Enabled = false;
+
+            Control[] btnAttendance = f.Controls.Find("btnAttendance", true);
+            btnAttendance[0].Enabled = false;
+
+            Control[] btnSchedule = f.Controls.Find("btnSchedule", true);
+            btnSchedule[0].Enabled = false;
+
+            Control[] btnNew = this.Parent.Parent.Controls.Find("btnNew", true);
+            btnNew[0].Enabled = false;
+
+            btnCancel.Enabled = false;
+        }
+
+
+        public void ENABLE_MAIN_BUTTONS()
+        {
+
+            Form f = btnOpenFile.Parent.Parent.FindForm();
+
+            Control[] btnEmp = f.Controls.Find("btnEmployee", true);
+            btnEmp[0].Enabled = true;
+
+            Control[] btnMembershiData = f.Controls.Find("btnMembershipData", true);
+            btnMembershiData[0].Enabled = true;
+
+            Control[] btnEmployeeSchedule = f.Controls.Find("btnEmployeeSchedule", true);
+            btnEmployeeSchedule[0].Enabled = true;
+
+            Control[] btnAttendance = f.Controls.Find("btnAttendance", true);
+            btnAttendance[0].Enabled = true;
+
+            Control[] btnSchedule = f.Controls.Find("btnSchedule", true);
+            btnSchedule[0].Enabled = true;
+
+            Control[] btnNew = this.Parent.Parent.Controls.Find("btnNew", true);
+            btnNew[0].Enabled = true;
+            
+            btnCancel.Enabled = true;
+        }
 
 
         private int getlinetotal() {
@@ -60,6 +139,7 @@ namespace MMG_PIAPS.userctrl.attendance
                 t = 0;
             }
             return t;
+
         }//END GETLINETOTAL
 
         private void bgAnalyzer_DoWork(object sender, DoWorkEventArgs e)
@@ -72,29 +152,38 @@ namespace MMG_PIAPS.userctrl.attendance
             string line="";
             while ((line = r.ReadLine()) != null)
                 {
-                    //line = r.ReadLine();
-                    String[] str= line.Split('\t');
-                    String empid, date_time, state,work_code;
-                    empid = str[0];
-                    date_time = str[1];
-                    state = str[2];
-                    work_code= str[3];
-
-                    Attendance a = new Attendance();
-                    a.empid = Convert.ToInt32(empid);
-                    a.date_time = Convert.ToDateTime(date_time);
-                    a.state = Convert.ToInt32(state);
-                    a.work_code = Convert.ToInt32(work_code);
-                    a.work_code = 1;
-
-                    if (a.save())
+                    if (bgAnalyzer.CancellationPending)
                     {
-                        ctr++;
-                        bgAnalyzer.ReportProgress(ctr);
-                        System.Threading.Thread.Sleep(10);
+                        //bgAnalyzer.ReportProgress(100);
+                        e.Cancel = true;
                     }
-                  
-                    
+                    else {
+                        //line = r.ReadLine();
+                        String[] str = line.Split('\t');
+                        String empid, date_time, state, work_code;
+                        empid = str[0];
+                        date_time = str[1];
+                        state = str[2];
+                        work_code = str[3];
+
+                        Attendance a = new Attendance();
+                        a.empid = Convert.ToInt32(empid);
+                        a.date_time = Convert.ToDateTime(date_time);
+                        a.state = Convert.ToInt32(state);
+                        a.work_code = Convert.ToInt32(work_code);
+                        a.work_code = 1;
+
+                        if (a.save())
+                        {
+                            ctr++;
+                            bgAnalyzer.ReportProgress(ctr);
+                            System.Threading.Thread.Sleep(10);
+                        }
+
+                    }
+                   
+                   
+                   
                 }             
         }
 
@@ -107,6 +196,17 @@ namespace MMG_PIAPS.userctrl.attendance
         private void bgAnalyzer_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             MessageBox.Show("Finished","Reading Attendance Log");
+            pb.Value = 0;
+            lblstatus.Text = "0/0";
+
+            ENABLE_MAIN_BUTTONS();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Parent.Height = 0;
+            this.Parent.Controls.Clear();      
+            this.Dispose();
         }
            
       }//END USER CONTROL

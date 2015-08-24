@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using MySql.Data.MySqlClient;
 using MMG_PIAPS.modules;
+using System.Data;
+using System.Windows.Forms;
 
 namespace MMG_PIAPS.classes
 {
@@ -35,6 +37,126 @@ namespace MMG_PIAPS.classes
                 Logger.WriteErrorLog(e.Message.ToString());
                 return false;
             }            
+        }//end save
+
+
+
+        public DataTable SELECT_ALL()
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "ATTENDANCE_SELECT_ALL");
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog(e.Message);
+                return null;
+            }
+
+        }//end select all
+
+
+        public DataTable SELECT_BETWEEN_DATES(DateTime from, DateTime to)
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "ATTENDANCE_BW_DATES");
+            cmd.Parameters.AddWithValue("_from", from);
+            cmd.Parameters.AddWithValue("_to", to);
+
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog(e.Message);
+                return null;
+            }
+
+        }//end select bween dates
+
+
+
+
+        public DataTable SELECT_BY_EMPID()
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "ATTENDANCE_BY_EMPID");
+            cmd.Parameters.AddWithValue("_empid", empid);
+         
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog(e.Message);
+                return null;
+            }
+
+        }//end select bween dates
+
+
+
+        public DataTable SELECT_BY_EMPID_BW_DATES(DateTime from, DateTime to)
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "ATTENDANCE_BY_EMPID_BW_DATES");
+            cmd.Parameters.AddWithValue("_empid", empid);
+            cmd.Parameters.AddWithValue("_from", from);
+            cmd.Parameters.AddWithValue("_to", to);
+
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog(e.Message);
+                return null;
+            }
+
+        }//end select bween dates
+
+
+        public void LoadAttendanceInListView(ListView lv)
+        {
+
+            Attendance a = new Attendance();
+            DataTable dt = new DataTable();
+
+            dt = a.SELECT_ALL();
+            if (dt != null)
+            {
+                int ctr = 1;
+                foreach (DataRow r in dt.Rows)
+                {
+                    ListViewItem li = new ListViewItem();
+                    li.Text = ctr.ToString();
+                    li.SubItems.Add(r["fullname"].ToString());                  
+                    li.SubItems.Add(r["position_"].ToString());
+                    li.SubItems.Add(r["date_time"].ToString());
+                    li.SubItems.Add(r["state"].ToString());
+                // li.SubItems.Add(Convert.ToDateTime(r["date_updated"].ToString()).ToLongDateString());
+                    lv.Items.Add(li);
+                    ctr++;
+                }
+            }
+
         }
 
     }

@@ -24,7 +24,7 @@ namespace MMG_PIAPS.classes
             catch (Exception e) {
                 db.err = null;
                 db.err = e;
-            return false;
+                return false;
             }
         }
 
@@ -34,8 +34,16 @@ namespace MMG_PIAPS.classes
             MySqlCommand cmd = new MySqlCommand();
             db.SET_COMMAND_PARAMS(cmd, "POSITION_SELECT_ALL");
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            da.Fill(dt);
-            return dt;
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog(e.Message);
+                return null;
+            }
         }
 
 
@@ -44,11 +52,13 @@ namespace MMG_PIAPS.classes
             Position p = new Position();
             DataTable dt = new DataTable();
             dt = p.SELECT_ALL();
-
-            foreach (DataRow r in dt.Rows)
-            {
-                cbo.Items.Add(r["positionname"].ToString());
+            if (dt != null) {
+                foreach (DataRow r in dt.Rows)
+                {
+                    cbo.Items.Add(r["positionname"].ToString());
+                }
             }
+            
         }
     }
 }

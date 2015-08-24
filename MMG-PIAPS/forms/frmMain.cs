@@ -61,12 +61,17 @@ namespace MMG_PIAPS.forms
             //lbldate.Text=  Global.CURRENT_USER.membershipdate //WHEN DID HE?SHE BECAME AN MMG MEMBER
             //lblstatus.Text = Global.CURRENT_USER.membershipstatus;//IN_GOOD_STANDING ? NOT_IN_GOOD_STANDING
             //lbltype.Text = Global.CURRENT_USER.membershiptype;    //REGULAR?ASSOCIATE
-
-            MemoryStream ms= new MemoryStream(Global.CURRENT_USER.pic);
-            CurrUserPic.Image = Image.FromStream(ms);
-            CurrUserPic.SizeMode = PictureBoxSizeMode.Zoom;
-
-            ms.Close();
+            if(Global.CURRENT_USER.pic!=null){
+                MemoryStream ms = new MemoryStream(Global.CURRENT_USER.pic);
+                CurrUserPic.Image = Image.FromStream(ms);
+             ms.Close();
+                CurrUserPic.SizeMode = PictureBoxSizeMode.Zoom;
+            }else{    
+                
+                //CurrUserPic.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+           
+         
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -123,6 +128,11 @@ namespace MMG_PIAPS.forms
             c.Width = pnlops.Width;
             c.Height = pnlops.Height;
             pnlops.Controls.Add(c);
+        }
+
+        private void btnMembershipData_Click(object sender, EventArgs e)
+        {
+
         }
 
 
