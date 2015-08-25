@@ -41,7 +41,7 @@ namespace MMG_PIAPS.classes
             }
             catch (Exception e)
             {
-                Logger.WriteErrorLog(e.Message);
+                Logger.WriteErrorLog("BRANCH SELECT_ALL MODULE :" + e.Message);
                 return null;
             }
 

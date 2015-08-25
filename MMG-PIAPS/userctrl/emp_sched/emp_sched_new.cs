@@ -91,5 +91,12 @@ namespace MMG_PIAPS.userctrl.emp_sched
                 MessageBox.Show("There was a problem saving new Employee Schedule : \n\n" + db.err.Message , "Failed");
             }                        
         }
+
+        private void btncancel_Click(object sender, EventArgs e)
+        {
+            this.Parent.Height = 0;
+            this.Parent.Controls.Clear();
+            this.Dispose();
+        }
     }
 }

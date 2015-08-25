@@ -201,5 +201,40 @@ namespace MMG_PIAPS.userctrl
 
           
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contextMenu_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void pnlops_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -226,3 +226,9 @@
    at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
    at MMG_PIAPS.classes.Employee.update() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Employee.cs:line 100
 --------------------------------------------------------------
+8/25/2015 3:23:36 AM:Index was outside the bounds of the array.
+--------------------------------------------------------------
+8/25/2015 3:24:11 AM:Index was outside the bounds of the array.
+--------------------------------------------------------------
+8/25/2015 3:24:12 AM:Index was outside the bounds of the array.
+--------------------------------------------------------------

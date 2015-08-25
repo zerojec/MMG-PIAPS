@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.CurrUserPic = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblbranch = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -55,8 +55,6 @@
             this.btnAttendance = new System.Windows.Forms.Button();
             this.btnMembershipData = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
-            this.btnSchedule = new System.Windows.Forms.Button();
-            this.btnEmployeeSchedule = new System.Windows.Forms.Button();
             this.pnlops = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -70,12 +68,20 @@
             this.lbldbcon = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblCurrentDateAndTime = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel7 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripDropDownSettings = new System.Windows.Forms.ToolStripDropDownButton();
+            this.scheduleTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.templateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.benefitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CurrUserPic = new System.Windows.Forms.PictureBox();
+            this.setEmployeesBenefitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -97,20 +103,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.59098F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1008, 663);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // CurrUserPic
-            // 
-            this.CurrUserPic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CurrUserPic.ErrorImage = global::MMG_PIAPS.Properties.Resources.noimagefound;
-            this.CurrUserPic.Image = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
-            this.CurrUserPic.InitialImage = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
-            this.CurrUserPic.Location = new System.Drawing.Point(11, 11);
-            this.CurrUserPic.Margin = new System.Windows.Forms.Padding(10);
-            this.CurrUserPic.Name = "CurrUserPic";
-            this.CurrUserPic.Size = new System.Drawing.Size(330, 226);
-            this.CurrUserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CurrUserPic.TabIndex = 0;
-            this.CurrUserPic.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
@@ -368,8 +360,6 @@
             this.tableLayoutPanel4.Controls.Add(this.btnAttendance, 4, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnMembershipData, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnEmployee, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btnSchedule, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btnEmployeeSchedule, 3, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
@@ -412,28 +402,6 @@
             this.btnEmployee.UseVisualStyleBackColor = true;
             this.btnEmployee.Click += new System.EventHandler(this.btnEmpolyee_Click);
             // 
-            // btnSchedule
-            // 
-            this.btnSchedule.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSchedule.Location = new System.Drawing.Point(265, 3);
-            this.btnSchedule.Name = "btnSchedule";
-            this.btnSchedule.Size = new System.Drawing.Size(125, 55);
-            this.btnSchedule.TabIndex = 4;
-            this.btnSchedule.Text = "Schedule Template";
-            this.btnSchedule.UseVisualStyleBackColor = true;
-            this.btnSchedule.Click += new System.EventHandler(this.btnSchedule_Click);
-            // 
-            // btnEmployeeSchedule
-            // 
-            this.btnEmployeeSchedule.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEmployeeSchedule.Location = new System.Drawing.Point(396, 3);
-            this.btnEmployeeSchedule.Name = "btnEmployeeSchedule";
-            this.btnEmployeeSchedule.Size = new System.Drawing.Size(125, 55);
-            this.btnEmployeeSchedule.TabIndex = 5;
-            this.btnEmployeeSchedule.Text = "Employee Schedule";
-            this.btnEmployeeSchedule.UseVisualStyleBackColor = true;
-            this.btnEmployeeSchedule.Click += new System.EventHandler(this.btnEmployeeSchedule_Click);
-            // 
             // pnlops
             // 
             this.pnlops.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -463,7 +431,9 @@
             this.toolStripStatusLabel5,
             this.lbldbcon,
             this.toolStripStatusLabel6,
-            this.lblCurrentDateAndTime});
+            this.lblCurrentDateAndTime,
+            this.toolStripStatusLabel7,
+            this.toolStripDropDownSettings});
             this.statusStrip1.Location = new System.Drawing.Point(0, 664);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1008, 24);
@@ -541,6 +511,83 @@
             this.lblCurrentDateAndTime.Size = new System.Drawing.Size(21, 19);
             this.lblCurrentDateAndTime.Text = "...";
             // 
+            // toolStripStatusLabel7
+            // 
+            this.toolStripStatusLabel7.ForeColor = System.Drawing.Color.White;
+            this.toolStripStatusLabel7.Name = "toolStripStatusLabel7";
+            this.toolStripStatusLabel7.Size = new System.Drawing.Size(17, 19);
+            this.toolStripStatusLabel7.Text = "|";
+            // 
+            // toolStripDropDownSettings
+            // 
+            this.toolStripDropDownSettings.BackColor = System.Drawing.Color.Transparent;
+            this.toolStripDropDownSettings.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripDropDownSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.scheduleTemplateToolStripMenuItem,
+            this.benefitsToolStripMenuItem});
+            this.toolStripDropDownSettings.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownSettings.Image")));
+            this.toolStripDropDownSettings.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownSettings.Name = "toolStripDropDownSettings";
+            this.toolStripDropDownSettings.Size = new System.Drawing.Size(29, 22);
+            this.toolStripDropDownSettings.Text = "toolStripDropDownButton1";
+            // 
+            // scheduleTemplateToolStripMenuItem
+            // 
+            this.scheduleTemplateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.templateToolStripMenuItem,
+            this.employeeToolStripMenuItem});
+            this.scheduleTemplateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("scheduleTemplateToolStripMenuItem.Image")));
+            this.scheduleTemplateToolStripMenuItem.Name = "scheduleTemplateToolStripMenuItem";
+            this.scheduleTemplateToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.scheduleTemplateToolStripMenuItem.Text = "Schedule";
+            // 
+            // templateToolStripMenuItem
+            // 
+            this.templateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("templateToolStripMenuItem.Image")));
+            this.templateToolStripMenuItem.Name = "templateToolStripMenuItem";
+            this.templateToolStripMenuItem.Size = new System.Drawing.Size(232, 24);
+            this.templateToolStripMenuItem.Text = "Template";
+            this.templateToolStripMenuItem.Click += new System.EventHandler(this.templateToolStripMenuItem_Click);
+            // 
+            // employeeToolStripMenuItem
+            // 
+            this.employeeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("employeeToolStripMenuItem.Image")));
+            this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
+            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(232, 24);
+            this.employeeToolStripMenuItem.Text = "Set Employee\'s Schedule";
+            this.employeeToolStripMenuItem.Click += new System.EventHandler(this.employeeToolStripMenuItem_Click);
+            // 
+            // benefitsToolStripMenuItem
+            // 
+            this.benefitsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.setEmployeesBenefitsToolStripMenuItem});
+            this.benefitsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("benefitsToolStripMenuItem.Image")));
+            this.benefitsToolStripMenuItem.Name = "benefitsToolStripMenuItem";
+            this.benefitsToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.benefitsToolStripMenuItem.Text = "Benefits";
+            this.benefitsToolStripMenuItem.Click += new System.EventHandler(this.benefitsToolStripMenuItem_Click);
+            // 
+            // CurrUserPic
+            // 
+            this.CurrUserPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CurrUserPic.ErrorImage = global::MMG_PIAPS.Properties.Resources.noimagefound;
+            this.CurrUserPic.Image = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
+            this.CurrUserPic.InitialImage = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
+            this.CurrUserPic.Location = new System.Drawing.Point(11, 11);
+            this.CurrUserPic.Margin = new System.Windows.Forms.Padding(10);
+            this.CurrUserPic.Name = "CurrUserPic";
+            this.CurrUserPic.Size = new System.Drawing.Size(330, 226);
+            this.CurrUserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CurrUserPic.TabIndex = 0;
+            this.CurrUserPic.TabStop = false;
+            // 
+            // setEmployeesBenefitsToolStripMenuItem
+            // 
+            this.setEmployeesBenefitsToolStripMenuItem.Name = "setEmployeesBenefitsToolStripMenuItem";
+            this.setEmployeesBenefitsToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
+            this.setEmployeesBenefitsToolStripMenuItem.Text = "Set Employee\'s Benefits";
+            this.setEmployeesBenefitsToolStripMenuItem.Click += new System.EventHandler(this.setEmployeesBenefitsToolStripMenuItem_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -555,13 +602,13 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -607,8 +654,13 @@
         private System.Windows.Forms.ToolStripStatusLabel lbldbcon;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel6;
         private System.Windows.Forms.ToolStripStatusLabel lblCurrentDateAndTime;
-        private System.Windows.Forms.Button btnSchedule;
-        private System.Windows.Forms.Button btnEmployeeSchedule;
         private System.Windows.Forms.Button btnAttendance;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel7;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownSettings;
+        private System.Windows.Forms.ToolStripMenuItem scheduleTemplateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem templateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem employeeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem benefitsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem setEmployeesBenefitsToolStripMenuItem;
     }
 }

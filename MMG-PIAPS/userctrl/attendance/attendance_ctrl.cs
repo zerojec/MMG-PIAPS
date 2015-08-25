@@ -34,7 +34,7 @@ namespace MMG_PIAPS.userctrl.attendance
             emp.LoadEmployee(cboEmp);
 
             Attendance a = new Attendance();
-            a.LoadAttendanceInListView(lv);
+            a.LoadInListView(lv);
 
             chkDate.Checked = true;
             chkEmp.Checked = true;
@@ -156,31 +156,35 @@ namespace MMG_PIAPS.userctrl.attendance
             Attendance a = new Attendance();
             DataTable dt = new DataTable();
             //get empid from combobox
-            String[] eid = cboEmp.Text.Split('-');
-            a.empid = Convert.ToInt32(eid[1]);
+            if (cboEmp.Text != "") { 
 
-            dt = a.SELECT_BY_EMPID_BW_DATES(dtpFrom.Value, dtpTo.Value);
+                String[] eid = cboEmp.Text.Split('-');
+                a.empid = Convert.ToInt32(eid[1]);
 
-            if (dt != null)
-            {
-                lv.Items.Clear();
-                int ctr = 1;
-                foreach (DataRow r in dt.Rows)
+                dt = a.SELECT_BY_EMPID_BW_DATES(dtpFrom.Value, dtpTo.Value);
+
+                if (dt != null)
                 {
-                    ListViewItem li = new ListViewItem();
-                    li.Text = ctr.ToString();
-                    li.SubItems.Add(r["fullname"].ToString());
-                    li.SubItems.Add(r["position_"].ToString());
-                    li.SubItems.Add(r["date_time"].ToString());
-                    li.SubItems.Add(r["state"].ToString());
-                    // li.SubItems.Add(Convert.ToDateTime(r["date_updated"].ToString()).ToLongDateString());
-                    lv.Items.Add(li);
-                    ctr++;
+                    lv.Items.Clear();
+                    int ctr = 1;
+                    foreach (DataRow r in dt.Rows)
+                    {
+                        ListViewItem li = new ListViewItem();
+                        li.Text = ctr.ToString();
+                        li.SubItems.Add(r["fullname"].ToString());
+                        li.SubItems.Add(r["position_"].ToString());
+                        li.SubItems.Add(r["date_time"].ToString());
+                        li.SubItems.Add(r["state"].ToString());
+                        // li.SubItems.Add(Convert.ToDateTime(r["date_updated"].ToString()).ToLongDateString());
+                        lv.Items.Add(li);
+                        ctr++;
+                    }
                 }
-            }
-            else
-            {
-                MessageBox.Show("Error");
+                else
+                {
+                    MessageBox.Show("Error");
+                }
+
             }
 
         }// end load between dates

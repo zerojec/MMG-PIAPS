@@ -66,8 +66,10 @@
   <ItemGroup>
     <Compile Include="classes\Attendance.cs" />
     <Compile Include="classes\BasicPay.cs" />
+    <Compile Include="classes\Benefit.cs" />
     <Compile Include="classes\Branch.cs" />
     <Compile Include="classes\Employee.cs" />
+    <Compile Include="classes\Emp_Benefit.cs" />
     <Compile Include="classes\Emp_Sched.cs" />
     <Compile Include="classes\Logger.cs" />
     <Compile Include="classes\Person.cs" />
@@ -130,6 +132,18 @@
     <Compile Include="userctrl\attendance\attendance_new.Designer.cs">
       <DependentUpon>attendance_new.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\benefit\benefit_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\benefit\benefit_ctrl.Designer.cs">
+      <DependentUpon>benefit_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\benefit\benefit_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\benefit\benefit_new.Designer.cs">
+      <DependentUpon>benefit_new.cs</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\custom\mit_sched_template.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -159,6 +173,18 @@
     </Compile>
     <Compile Include="userctrl\emp\emp_update.Designer.cs">
       <DependentUpon>emp_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\emp_benefit\emp_benefit_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\emp_benefit\emp_benefit_ctrl.Designer.cs">
+      <DependentUpon>emp_benefit_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\emp_benefit\emp_benefit_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\emp_benefit\emp_benefit_new.Designer.cs">
+      <DependentUpon>emp_benefit_new.cs</DependentUpon>
     </Compile>
     <Compile Include="userctrl\emp_sched\emp_sched_ctrl.cs">
       <SubType>UserControl</SubType>
@@ -213,6 +239,12 @@
     <EmbeddedResource Include="userctrl\attendance\attendance_new.resx">
       <DependentUpon>attendance_new.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\benefit\benefit_ctrl.resx">
+      <DependentUpon>benefit_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\benefit\benefit_new.resx">
+      <DependentUpon>benefit_new.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userctrl\custom\mit_sched_template.resx">
       <DependentUpon>mit_sched_template.cs</DependentUpon>
     </EmbeddedResource>
@@ -227,6 +259,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\emp\emp_update.resx">
       <DependentUpon>emp_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\emp_benefit\emp_benefit_ctrl.resx">
+      <DependentUpon>emp_benefit_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\emp_benefit\emp_benefit_new.resx">
+      <DependentUpon>emp_benefit_new.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\emp_sched\emp_sched_ctrl.resx">
       <DependentUpon>emp_sched_ctrl.cs</DependentUpon>

@@ -2,6 +2,8 @@
 using MMG_PIAPS.modules;
 using MMG_PIAPS.userctrl;
 using MMG_PIAPS.userctrl.attendance;
+using MMG_PIAPS.userctrl.benefit;
+using MMG_PIAPS.userctrl.emp_benefit;
 using MMG_PIAPS.userctrl.emp_sched;
 using MMG_PIAPS.userctrl.schedule;
 using System;
@@ -104,21 +106,13 @@ namespace MMG_PIAPS.forms
 
         private void btnSchedule_Click(object sender, EventArgs e)
         {
-            pnlops.Controls.Clear();
-            sched_ctrl c = new sched_ctrl();
-            c.Width = pnlops.Width;
-            c.Height = pnlops.Height;
-            pnlops.Controls.Add(c);
+           
 
         }
 
         private void btnEmployeeSchedule_Click(object sender, EventArgs e)
         {
-            pnlops.Controls.Clear();
-            emp_sched_ctrl c = new emp_sched_ctrl();
-            c.Width = pnlops.Width;
-            c.Height = pnlops.Height;
-            pnlops.Controls.Add(c);
+            
         }
 
         private void btnAttendance_Click(object sender, EventArgs e)
@@ -133,6 +127,42 @@ namespace MMG_PIAPS.forms
         private void btnMembershipData_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void templateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            sched_ctrl c = new sched_ctrl();
+            c.Width = pnlops.Width;
+            c.Height = pnlops.Height;
+            pnlops.Controls.Add(c);
+        }
+
+        private void employeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            emp_sched_ctrl c = new emp_sched_ctrl();
+            c.Width = pnlops.Width;
+            c.Height = pnlops.Height;
+            pnlops.Controls.Add(c);
+        }
+
+        private void benefitsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            benefit_ctrl c = new benefit_ctrl();
+            c.Width = pnlops.Width;
+            c.Height = pnlops.Height;
+            pnlops.Controls.Add(c);
+        }
+
+        private void setEmployeesBenefitsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            emp_benefit_ctrl c = new emp_benefit_ctrl();
+            c.Width = pnlops.Width;
+            c.Height = pnlops.Height;
+            pnlops.Controls.Add(c);
         }
 
 

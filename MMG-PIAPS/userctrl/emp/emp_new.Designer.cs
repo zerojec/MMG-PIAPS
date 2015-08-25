@@ -33,13 +33,11 @@
             this.btnsave = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnrotate = new System.Windows.Forms.Button();
             this.btnBrowse = new System.Windows.Forms.Button();
-            this.pbEmpPic = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.dtemploymentdate = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
@@ -68,14 +66,16 @@
             this.label15 = new System.Windows.Forms.Label();
             this.cbobranch = new System.Windows.Forms.ComboBox();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbEmpPic = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -148,16 +148,6 @@
             this.panel1.Size = new System.Drawing.Size(721, 35);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -222,17 +212,6 @@
             this.btnBrowse.Text = "Browse Picture";
             this.btnBrowse.UseVisualStyleBackColor = true;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
-            // 
-            // pbEmpPic
-            // 
-            this.pbEmpPic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbEmpPic.Image = global::MMG_PIAPS.Properties.Resources.noimagefound;
-            this.pbEmpPic.Location = new System.Drawing.Point(4, 4);
-            this.pbEmpPic.Name = "pbEmpPic";
-            this.pbEmpPic.Size = new System.Drawing.Size(229, 206);
-            this.pbEmpPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbEmpPic.TabIndex = 0;
-            this.pbEmpPic.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
@@ -558,6 +537,27 @@
             // 
             this.ofd.FileName = "openFileDialog1";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pbEmpPic
+            // 
+            this.pbEmpPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbEmpPic.Image = global::MMG_PIAPS.Properties.Resources.noimagefound;
+            this.pbEmpPic.Location = new System.Drawing.Point(4, 4);
+            this.pbEmpPic.Name = "pbEmpPic";
+            this.pbEmpPic.Size = new System.Drawing.Size(229, 206);
+            this.pbEmpPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbEmpPic.TabIndex = 0;
+            this.pbEmpPic.TabStop = false;
+            // 
             // emp_new
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -571,12 +571,12 @@
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).EndInit();
             this.ResumeLayout(false);
 
         }

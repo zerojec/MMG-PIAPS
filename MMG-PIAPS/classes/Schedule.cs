@@ -107,8 +107,7 @@ namespace MMG_PIAPS.classes
         }
 
 
-           public void LoadScheduleOnListView(ListView lv)
-        {
+           public void LoadScheduleOnListView(ListView lv){
             Schedule s = new Schedule();
             DataTable dt = new DataTable();
 

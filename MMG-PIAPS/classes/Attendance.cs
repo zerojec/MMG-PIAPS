@@ -54,7 +54,7 @@ namespace MMG_PIAPS.classes
             }
             catch (Exception e)
             {
-                Logger.WriteErrorLog(e.Message);
+                Logger.WriteErrorLog("ATTENDANCE SELECT_ALL MODULE :" + e.Message);
                 return null;
             }
 
@@ -77,7 +77,7 @@ namespace MMG_PIAPS.classes
             }
             catch (Exception e)
             {
-                Logger.WriteErrorLog(e.Message);
+                Logger.WriteErrorLog("ATTENDANCE SELECT_BW_DATES MODULE :" + e.Message);
                 return null;
             }
 
@@ -101,7 +101,7 @@ namespace MMG_PIAPS.classes
             }
             catch (Exception e)
             {
-                Logger.WriteErrorLog(e.Message);
+                Logger.WriteErrorLog("ATTENDANCE SELECT_BY_EMPID MODULE :" + e.Message);
                 return null;
             }
 
@@ -126,14 +126,14 @@ namespace MMG_PIAPS.classes
             }
             catch (Exception e)
             {
-                Logger.WriteErrorLog(e.Message);
+                Logger.WriteErrorLog("ATTENDANCE_BY_EMPID_BW_DATES MODULE:" +e.Message);
                 return null;
             }
 
         }//end select bween dates
 
 
-        public void LoadAttendanceInListView(ListView lv)
+        public void LoadInListView(ListView lv)
         {
 
             Attendance a = new Attendance();

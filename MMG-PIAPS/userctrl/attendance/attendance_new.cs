@@ -64,33 +64,33 @@ namespace MMG_PIAPS.userctrl.attendance
 
         public void DISABLE_MAIN_BUTTONS() {
 
-            Form f = btnOpenFile.Parent.Parent.FindForm();
+            try {
+                Form f = btnOpenFile.Parent.Parent.FindForm();
 
-            Control[] btnEmp = f.Controls.Find("btnEmployee", true);
-            btnEmp[0].Enabled = false;
+                Control[] btnEmp = f.Controls.Find("btnEmployee", true);
+                btnEmp[0].Enabled = false;
 
-            Control[] btnMembershiData = f.Controls.Find("btnMembershipData", true);
-            btnMembershiData[0].Enabled = false;
+                Control[] btnMembershiData = f.Controls.Find("btnMembershipData", true);
+                btnMembershiData[0].Enabled = false;
 
-            Control[] btnEmployeeSchedule = f.Controls.Find("btnEmployeeSchedule", true);
-            btnEmployeeSchedule[0].Enabled = false;
+                Control[] btnAttendance = f.Controls.Find("btnAttendance", true);
+                btnAttendance[0].Enabled = false;
 
-            Control[] btnAttendance = f.Controls.Find("btnAttendance", true);
-            btnAttendance[0].Enabled = false;
+             Control[] btnNew = this.Parent.Parent.Controls.Find("btnNew", true);
+                btnNew[0].Enabled = false;
 
-            Control[] btnSchedule = f.Controls.Find("btnSchedule", true);
-            btnSchedule[0].Enabled = false;
-
-            Control[] btnNew = this.Parent.Parent.Controls.Find("btnNew", true);
-            btnNew[0].Enabled = false;
-
-            btnCancel.Enabled = false;
+                btnCancel.Enabled = false;
+            }catch(Exception err){
+                Logger.WriteErrorLog(err.Message);
+            }
+           
         }
 
 
         public void ENABLE_MAIN_BUTTONS()
         {
 
+            try { 
             Form f = btnOpenFile.Parent.Parent.FindForm();
 
             Control[] btnEmp = f.Controls.Find("btnEmployee", true);
@@ -99,19 +99,18 @@ namespace MMG_PIAPS.userctrl.attendance
             Control[] btnMembershiData = f.Controls.Find("btnMembershipData", true);
             btnMembershiData[0].Enabled = true;
 
-            Control[] btnEmployeeSchedule = f.Controls.Find("btnEmployeeSchedule", true);
-            btnEmployeeSchedule[0].Enabled = true;
-
             Control[] btnAttendance = f.Controls.Find("btnAttendance", true);
             btnAttendance[0].Enabled = true;
 
-            Control[] btnSchedule = f.Controls.Find("btnSchedule", true);
-            btnSchedule[0].Enabled = true;
-
+          
             Control[] btnNew = this.Parent.Parent.Controls.Find("btnNew", true);
             btnNew[0].Enabled = true;
             
             btnCancel.Enabled = true;
+                }catch(Exception err){
+                    Logger.WriteErrorLog(err.Message);
+                }
+
         }
 
 

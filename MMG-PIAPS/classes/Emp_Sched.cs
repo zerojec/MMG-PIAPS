@@ -59,7 +59,7 @@ namespace MMG_PIAPS.classes
             }
             catch (Exception e)
             {
-                Logger.WriteErrorLog(e.Message);
+                Logger.WriteErrorLog("EMP_SCHED_SELECT_ALL MODULE :" + e.Message);
                 return null;
             }
 
