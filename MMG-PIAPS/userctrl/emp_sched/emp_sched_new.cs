@@ -42,19 +42,20 @@ namespace MMG_PIAPS.userctrl.emp_sched
 
         private void cboEmp_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cboEmp.Text != "") { 
-            String[] c = cboEmp.Text.ToString().Split('-');
-            String id = c[1];
-            Employee emp1, emp2 = new Employee();
-            emp2.empid = Convert.ToInt32(id);
+            if (cboEmp.Text != "") 
+            { 
+                String[] c = cboEmp.Text.ToString().Split('-');
+                String id = c[1];
+                Employee emp1, emp2 = new Employee();
+                emp2.empid = Convert.ToInt32(id);
 
-            emp1=emp2.SELECT_BY_ID();
-            emp = emp1;
-            //emp1.SELECT_BY_ID();
-            emp1.GET_IMAGE_BY_ID();
+                emp1=emp2.SELECT_BY_ID();
+                emp = emp1;
+                //emp1.SELECT_BY_ID();
+                emp1.GET_IMAGE_BY_ID();
             
-            String pos = (emp1.GET_CURRENT_POSITION() != "") ? emp1.position.ToString() : "NO_POSITION_INDICATED";
-            lblemp.Text = emp1.lname.ToUpper() + ", " + emp1.fname.ToUpper() + " " + emp1.mname.ToUpper() + " - " + pos;                   
+                String pos = (emp1.GET_CURRENT_POSITION() != "") ? emp1.position.ToString() : "NO_POSITION_INDICATED";
+                lblemp.Text = emp1.lname.ToUpper() + ", " + emp1.fname.ToUpper() + " " + emp1.mname.ToUpper() + " - " + pos;                   
 
                 if (emp1.pic != null)
                     {

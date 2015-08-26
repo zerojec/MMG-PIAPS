@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace MMG_PIAPS.classes
 {
-    class Schedule
+    public class Schedule
     {
         public String template_name { get; set; }
         public DateTime first_half_in { get; set; }
@@ -58,6 +58,8 @@ namespace MMG_PIAPS.classes
             }
             
         }
+
+
 
 
         public void LoadSchedules(ComboBox cbo)

@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace MMG_PIAPS.classes
 {
-    class Benefit
+    public class Benefit
     {
         public String code { get; set; }
         public String name_ { get; set; }

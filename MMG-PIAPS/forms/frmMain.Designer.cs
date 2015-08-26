@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.CurrUserPic = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblbranch = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAttendance = new System.Windows.Forms.Button();
-            this.btnMembershipData = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.pnlops = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -74,14 +74,13 @@
             this.templateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.benefitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CurrUserPic = new System.Windows.Forms.PictureBox();
             this.setEmployeesBenefitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -103,6 +102,20 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.59098F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1008, 663);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // CurrUserPic
+            // 
+            this.CurrUserPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CurrUserPic.ErrorImage = global::MMG_PIAPS.Properties.Resources.noimagefound;
+            this.CurrUserPic.Image = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
+            this.CurrUserPic.InitialImage = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
+            this.CurrUserPic.Location = new System.Drawing.Point(11, 11);
+            this.CurrUserPic.Margin = new System.Windows.Forms.Padding(10);
+            this.CurrUserPic.Name = "CurrUserPic";
+            this.CurrUserPic.Size = new System.Drawing.Size(330, 226);
+            this.CurrUserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CurrUserPic.TabIndex = 0;
+            this.CurrUserPic.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
@@ -357,9 +370,8 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel4.Controls.Add(this.btnAttendance, 4, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btnMembershipData, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btnEmployee, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnEmployee, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnAttendance, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
@@ -372,7 +384,7 @@
             // btnAttendance
             // 
             this.btnAttendance.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAttendance.Location = new System.Drawing.Point(527, 3);
+            this.btnAttendance.Location = new System.Drawing.Point(134, 3);
             this.btnAttendance.Name = "btnAttendance";
             this.btnAttendance.Size = new System.Drawing.Size(125, 55);
             this.btnAttendance.TabIndex = 6;
@@ -380,21 +392,10 @@
             this.btnAttendance.UseVisualStyleBackColor = true;
             this.btnAttendance.Click += new System.EventHandler(this.btnAttendance_Click);
             // 
-            // btnMembershipData
-            // 
-            this.btnMembershipData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMembershipData.Location = new System.Drawing.Point(3, 3);
-            this.btnMembershipData.Name = "btnMembershipData";
-            this.btnMembershipData.Size = new System.Drawing.Size(125, 55);
-            this.btnMembershipData.TabIndex = 0;
-            this.btnMembershipData.Text = "Membership Data";
-            this.btnMembershipData.UseVisualStyleBackColor = true;
-            this.btnMembershipData.Click += new System.EventHandler(this.btnMembershipData_Click);
-            // 
             // btnEmployee
             // 
             this.btnEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEmployee.Location = new System.Drawing.Point(134, 3);
+            this.btnEmployee.Location = new System.Drawing.Point(3, 3);
             this.btnEmployee.Name = "btnEmployee";
             this.btnEmployee.Size = new System.Drawing.Size(125, 55);
             this.btnEmployee.TabIndex = 3;
@@ -538,7 +539,7 @@
             this.employeeToolStripMenuItem});
             this.scheduleTemplateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("scheduleTemplateToolStripMenuItem.Image")));
             this.scheduleTemplateToolStripMenuItem.Name = "scheduleTemplateToolStripMenuItem";
-            this.scheduleTemplateToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.scheduleTemplateToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
             this.scheduleTemplateToolStripMenuItem.Text = "Schedule";
             // 
             // templateToolStripMenuItem
@@ -563,23 +564,9 @@
             this.setEmployeesBenefitsToolStripMenuItem});
             this.benefitsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("benefitsToolStripMenuItem.Image")));
             this.benefitsToolStripMenuItem.Name = "benefitsToolStripMenuItem";
-            this.benefitsToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.benefitsToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
             this.benefitsToolStripMenuItem.Text = "Benefits";
             this.benefitsToolStripMenuItem.Click += new System.EventHandler(this.benefitsToolStripMenuItem_Click);
-            // 
-            // CurrUserPic
-            // 
-            this.CurrUserPic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CurrUserPic.ErrorImage = global::MMG_PIAPS.Properties.Resources.noimagefound;
-            this.CurrUserPic.Image = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
-            this.CurrUserPic.InitialImage = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
-            this.CurrUserPic.Location = new System.Drawing.Point(11, 11);
-            this.CurrUserPic.Margin = new System.Windows.Forms.Padding(10);
-            this.CurrUserPic.Name = "CurrUserPic";
-            this.CurrUserPic.Size = new System.Drawing.Size(330, 226);
-            this.CurrUserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CurrUserPic.TabIndex = 0;
-            this.CurrUserPic.TabStop = false;
             // 
             // setEmployeesBenefitsToolStripMenuItem
             // 
@@ -602,13 +589,13 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -627,7 +614,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Button btnMembershipData;
         private System.Windows.Forms.Button btnEmployee;
         private System.Windows.Forms.Panel pnlops;
         private System.Windows.Forms.Label lbllname;

@@ -236,5 +236,63 @@ namespace MMG_PIAPS.userctrl
         {
 
         }
+
+        private void viewBenefitsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (lv.SelectedItems.Count > 0)
+            {
+                String id = lv.SelectedItems[0].SubItems[1].Text;
+                //MessageBox.Show(id);
+
+                Employee emp, emp1 = new Employee();
+                emp1.empid = Convert.ToInt32(id);
+                emp = emp1.SELECT_BY_ID();
+                emp.GET_BASIC_PAY();
+                emp.GET_BRANCH_ASSIGNMENT();
+                emp.GET_EMPLOYMENT_STATUS();
+                emp.GET_IMAGE_BY_ID();
+                emp.GET_CURRENT_POSITION();
+                emp.LIST_BENEFITS();
+                pnlops.Controls.Clear();
+
+                emp_view_benefit c = new emp_view_benefit();
+                c.emp = emp;
+                c.Width = pnlops.Width;
+                pnlops.Height = c.Height;
+
+                pnlops.Controls.Add(c);
+
+
+            }
+        }
+
+        private void viewScheduleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            String id = lv.SelectedItems[0].SubItems[1].Text;
+            //MessageBox.Show(id);
+
+            Employee emp, emp1 = new Employee();
+            emp1.empid = Convert.ToInt32(id);
+            emp = emp1.SELECT_BY_ID();
+            emp.GET_BASIC_PAY();
+            emp.GET_BRANCH_ASSIGNMENT();
+            emp.GET_EMPLOYMENT_STATUS();
+            emp.GET_IMAGE_BY_ID();
+            emp.GET_CURRENT_POSITION();
+            emp.LIST_BENEFITS();
+            pnlops.Controls.Clear();
+
+            Emp_Sched es = new Emp_Sched();
+            es.empid = emp.empid;
+            emp.schedule= es.SELECT_BY_EMPID();
+
+
+            emp_view_sched c = new emp_view_sched();
+            c.emp = emp;
+            c.Width = pnlops.Width;
+            pnlops.Height = c.Height;
+
+            pnlops.Controls.Add(c);
+        }
     }
 }

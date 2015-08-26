@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace MMG_PIAPS.classes
 {
-    class Emp_Sched
+    public class Emp_Sched
     {
         public int empid { get; set; }
         public String mon { get; set; }
@@ -43,6 +43,58 @@ namespace MMG_PIAPS.classes
                 return false;
             }                   
         }//end save
+
+
+
+
+        public Emp_Sched SELECT_BY_EMPID()
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "EMP_SCHED_SELECT_BY_EMPID");
+            cmd.Parameters.AddWithValue("_empid", empid);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+
+            if (dt != null)
+            {
+                if (dt.Rows.Count > 0)
+                {
+                    DataRow r = dt.Rows[0];
+
+                    Emp_Sched es = new Emp_Sched();
+                 
+                    es.empid = Convert.ToInt32(r["empid"].ToString());
+                    es.mon = r["mon"].ToString();
+                    es.tue = r["tue"].ToString();
+                    es.wed = r["wed"].ToString();
+                    es.thu = r["thu"].ToString();
+                    es.fri = r["fri"].ToString();
+                    es.sat = r["sat"].ToString();
+                    es.sun = r["sun"].ToString();
+                  
+                      
+                   
+                    return es;
+                }
+                else { return null; }
+
+            }
+            else
+            {
+                return null;
+            }
+
+        }
+
+
+
+
+
+
+
+
+
 
 
 

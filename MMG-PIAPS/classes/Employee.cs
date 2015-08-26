@@ -18,13 +18,23 @@ namespace MMG_PIAPS.classes
         private String _emp_status;
         private Decimal _basic_pay;
         private String _branch;
-        
+        public  List<Benefit> benefits = new List<Benefit> { };
+        public Emp_Sched schedule = new Emp_Sched();
+
         public String position { get { return _position; } set { _position = value; } }
         public String branch { get { return _branch; } set { _branch = value; } }
         public String emp_status { get { return _emp_status; } set { _emp_status = value; } }
         public Decimal basic_pay { get { return _basic_pay; } set { _basic_pay = value; } }
-        public DateTime date_hired { get { return _date_hired; } set { _date_hired = value; } }        
-        
+        public DateTime date_hired { get { return _date_hired; } set { _date_hired = value; } }
+
+       
+      
+
+
+
+
+
+
         public Boolean save()
         {
             MySqlCommand cmd = new MySqlCommand();
@@ -128,6 +138,7 @@ namespace MMG_PIAPS.classes
         }
 
 
+
         public Employee SELECT_BY_ID()
         {
             DataTable dt = new DataTable();
@@ -148,7 +159,7 @@ namespace MMG_PIAPS.classes
                         e.fname = r["fname"].ToString();
                         e.lname = r["lname"].ToString();
                         e.mname = r["mname"].ToString();
-                        e.address = r["mname"].ToString();
+                        e.address = r["address"].ToString();
                         e.birthdate = Convert.ToDateTime(r["birthday"].ToString());
                         e.contactno = r["contactno"].ToString();
                         e.gender = r["gender"].ToString();
@@ -379,6 +390,34 @@ namespace MMG_PIAPS.classes
 
 
             }
+
+
+
+
+            public void LIST_BENEFITS() {
+
+                MySqlCommand cmd = new MySqlCommand();
+                DataTable dt = new DataTable();
+                db.SET_COMMAND_PARAMS(cmd, "BENEFIT_SELECT_BY_EMPID");
+                cmd.Parameters.AddWithValue("_empid", empid);                
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+
+                if (dt != null)
+                {
+                    if (dt.Rows.Count > 0)
+                    {
+                        foreach(DataRow r in dt.Rows){
+                         Benefit b = new Benefit();
+                         b.code = r["benefit_code"].ToString();
+                         b.name_ = r["emp_benefit_code"].ToString();
+                         benefits.Add(b);
+                        }
+                    }                 
+                }                
+            }
+
+
 
 
 
