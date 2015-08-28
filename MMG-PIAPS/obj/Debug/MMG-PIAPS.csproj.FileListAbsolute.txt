@@ -28,3 +28,4 @@ C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.emp_benefit.emp_ben
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.emp_benefit.emp_benefit_new.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.emp.emp_view_benefit.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.emp.emp_view_sched.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.csprojResolveAssemblyReference.cache

@@ -68,7 +68,15 @@ namespace MMG_PIAPS.userctrl.emp_benefit
                 Emp_Benefit eb = new Emp_Benefit();
                 eb.empid = Convert.ToInt32(id);
                 eb.benefit_code = cboBenefits.Text;
-                eb.emp_benefit_code = txtemp_benefit_code.Text;
+
+                if (chkNa.Checked)
+                {
+                    eb.emp_benefit_code = "N/A";
+                }
+                else {
+                    eb.emp_benefit_code = txtemp_benefit_code.Text;
+                }
+                
 
                 if (eb.save())
                 {
@@ -88,6 +96,18 @@ namespace MMG_PIAPS.userctrl.emp_benefit
             this.Parent.Height = 0;
             this.Parent.Controls.Clear();
             this.Dispose();
+        }
+
+        private void chkNa_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkNa.Checked)
+            {
+                txtemp_benefit_code.Text = "";
+                txtemp_benefit_code.Enabled = false;               
+            }
+            else {
+                txtemp_benefit_code.Enabled = true;
+            }
         }
     }
 }

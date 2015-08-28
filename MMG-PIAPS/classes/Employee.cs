@@ -410,7 +410,7 @@ namespace MMG_PIAPS.classes
                         foreach(DataRow r in dt.Rows){
                          Benefit b = new Benefit();
                          b.code = r["benefit_code"].ToString();
-                         b.name_ = r["emp_benefit_code"].ToString();
+                         b.name_ = r["emp_benefit_code"].ToString();                           
                          benefits.Add(b);
                         }
                     }                 

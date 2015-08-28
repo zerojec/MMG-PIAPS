@@ -80,9 +80,9 @@
             // 
             this.btnNew.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnNew.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.Location = new System.Drawing.Point(368, 3);
+            this.btnNew.Location = new System.Drawing.Point(366, 3);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(129, 34);
+            this.btnNew.Size = new System.Drawing.Size(131, 34);
             this.btnNew.TabIndex = 0;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
@@ -95,7 +95,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 135F));
             this.tableLayoutPanel2.Controls.Add(this.btnNew, 3, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(164, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";

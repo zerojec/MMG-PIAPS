@@ -72,10 +72,9 @@ namespace MMG_PIAPS.classes
                     es.fri = r["fri"].ToString();
                     es.sat = r["sat"].ToString();
                     es.sun = r["sun"].ToString();
-                  
-                      
-                   
+                                                           
                     return es;
+
                 }
                 else { return null; }
 

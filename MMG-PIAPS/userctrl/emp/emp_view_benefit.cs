@@ -33,7 +33,9 @@ namespace MMG_PIAPS.userctrl.emp
 
             String pos = (emp.GET_CURRENT_POSITION() != "") ? emp.position.ToString() : "NO_POSITION_INDICATED";
             lblemp.Text = emp.lname.ToUpper() + ", " + emp.fname.ToUpper() + " " + emp.mname.ToUpper() + " - " + pos;
-           
+
+          
+
             if (emp.pic != null)
             {
                 MemoryStream ms = new MemoryStream(emp.pic);
@@ -48,24 +50,26 @@ namespace MMG_PIAPS.userctrl.emp
 
             if (emp.benefits.Count > 0)
             {
+
                 int ctr = 1;
                 foreach (Benefit b in emp.benefits)
                 {
-                    lstbenefits.Items.Add(ctr.ToString() + "-" + b.code + "------ ID:[" + b.name_ + "]");
+                    decimal amount = b.GET_AMOUNT(emp.basic_pay);
+                    ListViewItem li = new ListViewItem();
+                    li.Text = ctr.ToString();
+                    li.SubItems.Add(b.code);
+                    li.SubItems.Add(b.name_);
+                    //li.SubItems.Add();// GET THE BENEFIT IDENTIFICATION SUPPLIED BY INSTITUTIONS
+                    li.SubItems.Add(amount.ToString("#,##0.00"));
+                    lvbenefits.Items.Add(li);
+
                     ctr++;
                 }
             }
             else {
-                lstbenefits.Items.Add("Nothing found...");
+               
             }
         }
-
-
         
-
-
-
-
-
     }
 }

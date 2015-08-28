@@ -23,14 +23,24 @@ namespace MMG_PIAPS.userctrl.benefit
             Benefit b = new Benefit();
             b.code = txtcode.Text;
             b.name_ = txtname.Text;
+            if (chkBracket.Checked)
+            {
+                b.amount_lookup = cboBracket.Text;
+                b.amount = 0;
+            }
+            else {
+                b.amount_lookup = "here";
+                b.amount = Convert.ToDecimal(txtamount.Text);
+            }
+            //b.amount_lookup = txtamount_lookup.Text;
+            
 
             if (b.save())
             {
                 MessageBox.Show("Successful", "Save");
                 this.Parent.Height = 0;
                 this.Parent.Controls.Clear();
-                this.Dispose();
-                
+                this.Dispose();                
             }
             else {
                 MessageBox.Show("There was a problem saving new benefit: \n" + db.err.Message);
@@ -45,6 +55,23 @@ namespace MMG_PIAPS.userctrl.benefit
             this.Parent.Height = 0;
             this.Parent.Controls.Clear();
             this.Dispose();
+        }
+
+        private void chkBracket_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBracket.Checked)
+            {
+                cboBracket.Text = "";
+                cboBracket.Enabled = true;
+                txtamount.Enabled = false;
+            }
+            else
+            {
+                cboBracket.Text = "";
+                cboBracket.Enabled =false;
+                txtamount.Enabled = true;
+                
+            }
         }
     }
 }

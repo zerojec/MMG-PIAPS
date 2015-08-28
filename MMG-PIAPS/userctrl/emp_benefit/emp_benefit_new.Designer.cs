@@ -35,25 +35,28 @@
             this.btncancel = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pb = new System.Windows.Forms.PictureBox();
-            this.lblemp = new System.Windows.Forms.Label();
-            this.cboEmp = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cboEmp = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblemp = new System.Windows.Forms.Label();
+            this.pb = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cboBenefits = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtemp_benefit_code = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.chkNa = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
-            this.tableLayoutPanel3.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -119,6 +122,16 @@
             this.panel1.Size = new System.Drawing.Size(708, 35);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
@@ -137,15 +150,61 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(708, 176);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
-            // pictureBox1
+            // tableLayoutPanel3
             // 
-            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel3.Controls.Add(this.label4, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.cboEmp, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel2, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.cboBenefits, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.panel3, 1, 2);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 38);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 3;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(702, 94);
+            this.tableLayoutPanel3.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(4, 70);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(104, 15);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Identification No. :";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(5, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 15);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Select Employee :";
+            // 
+            // cboEmp
+            // 
+            this.cboEmp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboEmp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboEmp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboEmp.FormattingEnabled = true;
+            this.cboEmp.Location = new System.Drawing.Point(115, 4);
+            this.cboEmp.Name = "cboEmp";
+            this.cboEmp.Size = new System.Drawing.Size(170, 23);
+            this.cboEmp.TabIndex = 17;
+            this.cboEmp.SelectedIndexChanged += new System.EventHandler(this.cboEmp_SelectedIndexChanged);
             // 
             // tableLayoutPanel2
             // 
@@ -163,15 +222,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(412, 30);
             this.tableLayoutPanel2.TabIndex = 25;
             // 
-            // pb
-            // 
-            this.pb.Location = new System.Drawing.Point(0, 0);
-            this.pb.Margin = new System.Windows.Forms.Padding(0);
-            this.pb.Name = "pb";
-            this.pb.Size = new System.Drawing.Size(50, 30);
-            this.pb.TabIndex = 1;
-            this.pb.TabStop = false;
-            // 
             // lblemp
             // 
             this.lblemp.AutoSize = true;
@@ -186,51 +236,14 @@
             this.lblemp.Text = "...";
             this.lblemp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // cboEmp
+            // pb
             // 
-            this.cboEmp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboEmp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboEmp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cboEmp.FormattingEnabled = true;
-            this.cboEmp.Location = new System.Drawing.Point(115, 4);
-            this.cboEmp.Name = "cboEmp";
-            this.cboEmp.Size = new System.Drawing.Size(170, 23);
-            this.cboEmp.TabIndex = 17;
-            this.cboEmp.SelectedIndexChanged += new System.EventHandler(this.cboEmp_SelectedIndexChanged);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Select Employee :";
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel3.Controls.Add(this.label4, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.cboEmp, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel2, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.cboBenefits, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.txtemp_benefit_code, 1, 2);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 38);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 3;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(702, 94);
-            this.tableLayoutPanel3.TabIndex = 3;
+            this.pb.Location = new System.Drawing.Point(0, 0);
+            this.pb.Margin = new System.Windows.Forms.Padding(0);
+            this.pb.Name = "pb";
+            this.pb.Size = new System.Drawing.Size(50, 30);
+            this.pb.TabIndex = 1;
+            this.pb.TabStop = false;
             // 
             // label3
             // 
@@ -253,23 +266,37 @@
             this.cboBenefits.Size = new System.Drawing.Size(170, 23);
             this.cboBenefits.TabIndex = 27;
             // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 70);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 15);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Identification No. :";
-            // 
             // txtemp_benefit_code
             // 
-            this.txtemp_benefit_code.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtemp_benefit_code.Location = new System.Drawing.Point(115, 66);
+            this.txtemp_benefit_code.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtemp_benefit_code.Location = new System.Drawing.Point(3, 4);
             this.txtemp_benefit_code.Name = "txtemp_benefit_code";
-            this.txtemp_benefit_code.Size = new System.Drawing.Size(170, 22);
+            this.txtemp_benefit_code.Size = new System.Drawing.Size(58, 22);
             this.txtemp_benefit_code.TabIndex = 29;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.chkNa);
+            this.panel3.Controls.Add(this.txtemp_benefit_code);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(112, 63);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Padding = new System.Windows.Forms.Padding(3);
+            this.panel3.Size = new System.Drawing.Size(176, 30);
+            this.panel3.TabIndex = 30;
+            // 
+            // chkNa
+            // 
+            this.chkNa.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.chkNa.AutoSize = true;
+            this.chkNa.Location = new System.Drawing.Point(64, 7);
+            this.chkNa.Name = "chkNa";
+            this.chkNa.Size = new System.Drawing.Size(106, 19);
+            this.chkNa.TabIndex = 30;
+            this.chkNa.Text = "Not Applicable";
+            this.chkNa.UseVisualStyleBackColor = true;
+            this.chkNa.CheckedChanged += new System.EventHandler(this.chkNa_CheckedChanged);
             // 
             // emp_benefit_new
             // 
@@ -283,13 +310,15 @@
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -314,5 +343,7 @@
         private System.Windows.Forms.ComboBox cboBenefits;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtemp_benefit_code;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.CheckBox chkNa;
     }
 }

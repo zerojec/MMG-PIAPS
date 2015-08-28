@@ -13,6 +13,8 @@ namespace MMG_PIAPS.classes
     {
         public String code { get; set; }
         public String name_ { get; set; }
+        public String amount_lookup { get; set; }
+        public decimal amount { get; set; }
 
         public Boolean save()
         {
@@ -21,6 +23,8 @@ namespace MMG_PIAPS.classes
             db.SET_COMMAND_PARAMS(cmd, "BENEFIT_INSERT");
             cmd.Parameters.AddWithValue("_code", code);
             cmd.Parameters.AddWithValue("_name", name_);
+            cmd.Parameters.AddWithValue("_amount_lookup", amount_lookup);
+            cmd.Parameters.AddWithValue("_amount", amount);
             
             try
             {
@@ -74,9 +78,9 @@ namespace MMG_PIAPS.classes
                     li.Text = ctr.ToString();
                     li.SubItems.Add(r["code"].ToString());
                     li.SubItems.Add(r["name_"].ToString());
-                                   
+                    li.SubItems.Add(r["amount_lookup"].ToString());
+                    li.SubItems.Add(r["amount"].ToString());           
                     lv.Items.Add(li);
-
                     ctr++;
                 }
             }
@@ -91,8 +95,7 @@ namespace MMG_PIAPS.classes
 
             dt = s.SELECT_ALL();
             if (dt != null)
-            {
-              
+            {              
                 foreach (DataRow r in dt.Rows)
                 {                   
                     cbo.Items.Add(r["code"].ToString());                                      
@@ -100,6 +103,37 @@ namespace MMG_PIAPS.classes
             }
 
         }//end load benefits
+
+
+
+        public Decimal GET_AMOUNT(Decimal _basic_salary) {
+            decimal d = 0;
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "BENEFIT_SELECT_AMOUNT_BYID");
+            cmd.Parameters.AddWithValue("_code", code);
+            cmd.Parameters.AddWithValue("_basic_salary", _basic_salary);
+
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+
+            if (dt != null)
+            {
+                if (dt.Rows.Count > 0)
+                {
+                    DataRow r = dt.Rows[0];
+                    d = Convert.ToDecimal(r["amount"].ToString());
+                    return d;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            else {
+                return 0;
+            }
+        }
 
     }
 }
