@@ -51,7 +51,7 @@ namespace MMG_PIAPS.userctrl.emp
         private void btnsave_Click(object sender, EventArgs e)
         {
                 Employee emp = new Employee();
-                emp.empid= Convert.ToInt32(txtid.Text);
+                emp.empid = txtid.Text;
                 emp.fname= txtfname.Text;
                 emp.lname = txtlname.Text;
                 emp.mname = txtmname.Text;

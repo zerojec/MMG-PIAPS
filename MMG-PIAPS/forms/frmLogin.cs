@@ -30,7 +30,7 @@ namespace MMG_PIAPS
             {
 
                 Employee emp, emp1 = new Employee();
-                emp1.empid = Convert.ToInt32(txtid.Text);
+                emp1.empid = txtid.Text;
                 emp = emp1.SELECT_BY_ID();
 
                 if (emp != null) {

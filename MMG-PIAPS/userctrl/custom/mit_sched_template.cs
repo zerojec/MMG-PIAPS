@@ -8,16 +8,19 @@ using System.Text;
 using System.Windows.Forms;
 using MMG_PIAPS.classes;
 using MySql.Data.MySqlClient;
+using MMG_PIAPS.userctrl.emp_sched;
 
 namespace MMG_PIAPS.userctrl.custom
 {
     public partial class mit_sched_template : UserControl
     {
-        public int hours_allocated { get; set; }
+        public TimeSpan hours_allocated { get; set; }
         public String day { get; set; }
-        public int empid { get; set; }
-        public Boolean ischecked { get { return chk.Checked; } }
+        public String empid { get; set; }
+        public Boolean ischecked { get { return (chk.Checked == true) ? true : false; } set { chk.Checked = value; } }
         public ComboBox combobox { get { return cbo; } }
+       
+        
         public mit_sched_template()
         {
             InitializeComponent();
@@ -25,7 +28,15 @@ namespace MMG_PIAPS.userctrl.custom
 
         private void mit_sched_template_Load(object sender, EventArgs e)
         {
-            hours_allocated = 0;
+            hours_allocated = TimeSpan.Parse("0:00:00");
+            chk.CheckState = CheckState.Checked;
+            if (chk.Checked)
+            {
+                cbo.Enabled = true;
+            }
+            else {
+                cbo.Enabled = false;
+            }
         }
 
         private void cbo_KeyPress(object sender, KeyPressEventArgs e)
@@ -61,13 +72,14 @@ namespace MMG_PIAPS.userctrl.custom
                 lblpmin.Text = "PM_IN :";
                 lblpmout.Text = "PM_OUT :";
                 lblhour.Text = "HOUR :";
-                hours_allocated = 0;
+                hours_allocated = TimeSpan.Parse("0:00:00");
             }
-
         }
 
+
+
         private void chk_CheckedChanged(object sender, EventArgs e)
-        {
+        {           
             if (chk.Checked)
             {
                 cbo.Enabled = true;
@@ -82,7 +94,7 @@ namespace MMG_PIAPS.userctrl.custom
         {
             if (cbo.Text == "")
             {
-                hours_allocated = 0;
+                hours_allocated = TimeSpan.Parse("0:00:00");
                 lblamin.Text = "AM_IN :";
                 lblamout.Text = "AM_OUT :";
                 lblpmin.Text = "PM_IN :";
@@ -90,8 +102,6 @@ namespace MMG_PIAPS.userctrl.custom
                 lblhour.Text = "HOURS :" + hours_allocated.ToString();
                 
             }
-        }
-
-
+        }       
     }
 }

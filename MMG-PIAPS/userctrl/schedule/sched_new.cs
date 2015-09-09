@@ -38,7 +38,7 @@ namespace MMG_PIAPS.userctrl.schedule
 
             s.template_name = txttemplate_name.Text;
 
-            s.hours_allocated = Convert.ToInt32(this.first_half.hoursallocated) + Convert.ToInt32(this.second_half.hoursallocated);
+            s.hours_allocated = this.first_half.hoursallocated + this.second_half.hoursallocated;
             //MessageBox.Show(s.am_in.ToLongTimeString());
             if (s.save())
             {

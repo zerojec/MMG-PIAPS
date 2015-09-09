@@ -30,22 +30,22 @@
         {
             this.lstsched = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.pbEmpPic = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btncancel = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblemp = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pbEmpPic = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).BeginInit();
             this.SuspendLayout();
             // 
             // lstsched
@@ -73,6 +73,17 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(201, 194);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
+            // pbEmpPic
+            // 
+            this.pbEmpPic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbEmpPic.Image = global::MMG_PIAPS.Properties.Resources.noimagefound;
+            this.pbEmpPic.Location = new System.Drawing.Point(4, 4);
+            this.pbEmpPic.Name = "pbEmpPic";
+            this.pbEmpPic.Size = new System.Drawing.Size(193, 186);
+            this.pbEmpPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbEmpPic.TabIndex = 0;
+            this.pbEmpPic.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -97,6 +108,16 @@
             this.panel1.Size = new System.Drawing.Size(739, 35);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // btncancel
             // 
             this.btncancel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -107,6 +128,7 @@
             this.btncancel.TabIndex = 1;
             this.btncancel.Text = "&Cancel";
             this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -170,27 +192,6 @@
             this.panel2.Size = new System.Drawing.Size(739, 40);
             this.panel2.TabIndex = 2;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pbEmpPic
-            // 
-            this.pbEmpPic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbEmpPic.Image = global::MMG_PIAPS.Properties.Resources.noimagefound;
-            this.pbEmpPic.Location = new System.Drawing.Point(4, 4);
-            this.pbEmpPic.Name = "pbEmpPic";
-            this.pbEmpPic.Size = new System.Drawing.Size(193, 186);
-            this.pbEmpPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbEmpPic.TabIndex = 0;
-            this.pbEmpPic.TabStop = false;
-            // 
             // emp_view_sched
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
@@ -202,14 +203,14 @@
             this.Size = new System.Drawing.Size(739, 294);
             this.Load += new System.EventHandler(this.emp_view_sched_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).EndInit();
             this.ResumeLayout(false);
 
         }

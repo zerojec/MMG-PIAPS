@@ -31,7 +31,7 @@ namespace MMG_PIAPS.forms.emp
             newbasicpay = Convert.ToDecimal(txtBasicPay.Text);
             if (emp.basic_pay != newbasicpay) {
                 BasicPay bp = new BasicPay();
-                bp.empid = Convert.ToInt32(emp.empid);
+                bp.empid = emp.empid;
                 bp.basic_pay = newbasicpay;
 
                 if (bp.save())

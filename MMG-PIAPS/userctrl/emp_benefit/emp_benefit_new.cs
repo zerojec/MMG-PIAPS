@@ -32,9 +32,9 @@ namespace MMG_PIAPS.userctrl.emp_benefit
             if (cboEmp.Text != "")
             {
                 String[] c = cboEmp.Text.ToString().Split('-');
-                String id = c[1];
+                String id = c[1] + "-" + c[2];
                 Employee emp1, emp2 = new Employee();
-                emp2.empid = Convert.ToInt32(id);
+                emp2.empid = id;
 
                 emp1 = emp2.SELECT_BY_ID();
                 emp = emp1;
@@ -66,7 +66,7 @@ namespace MMG_PIAPS.userctrl.emp_benefit
                 String id = c[1];
 
                 Emp_Benefit eb = new Emp_Benefit();
-                eb.empid = Convert.ToInt32(id);
+                eb.empid = id;
                 eb.benefit_code = cboBenefits.Text;
 
                 if (chkNa.Checked)

@@ -52,5 +52,12 @@ namespace MMG_PIAPS.userctrl.emp
                 lstsched.Items.Add("Nothing found...");
             }
         }
+
+        private void btncancel_Click(object sender, EventArgs e)
+        {
+            this.Parent.Height = 0;
+            this.Parent.Controls.Clear();
+            this.Dispose();
+        }
     }
 }

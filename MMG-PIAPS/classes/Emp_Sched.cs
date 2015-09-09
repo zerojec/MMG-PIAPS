@@ -11,7 +11,7 @@ namespace MMG_PIAPS.classes
 {
     public class Emp_Sched
     {
-        public int empid { get; set; }
+        public String empid { get; set; }
         public String mon { get; set; }
         public String tue { get; set; }
         public String wed { get; set; }
@@ -22,7 +22,7 @@ namespace MMG_PIAPS.classes
 
 
         public Boolean save() { 
-         MySqlCommand cmd = new MySqlCommand();
+            MySqlCommand cmd = new MySqlCommand();
             db.SET_COMMAND_PARAMS(cmd, "EMP_SCHEDULE_INSERT");
             cmd.Parameters.AddWithValue("_empid", empid);
             cmd.Parameters.AddWithValue("_mon", mon);
@@ -63,8 +63,8 @@ namespace MMG_PIAPS.classes
                     DataRow r = dt.Rows[0];
 
                     Emp_Sched es = new Emp_Sched();
-                 
-                    es.empid = Convert.ToInt32(r["empid"].ToString());
+
+                    es.empid = r["empid"].ToString();
                     es.mon = r["mon"].ToString();
                     es.tue = r["tue"].ToString();
                     es.wed = r["wed"].ToString();
@@ -119,7 +119,6 @@ namespace MMG_PIAPS.classes
 
         public void LoadEmpSched(ComboBox cbo)
         {
-
             Emp_Sched es = new Emp_Sched();
             DataTable dt = new DataTable();
 
@@ -133,8 +132,6 @@ namespace MMG_PIAPS.classes
             }
 
         }
-
-
 
         public void LoadEmpSchedInListView(ListView lv)
         {
@@ -158,12 +155,11 @@ namespace MMG_PIAPS.classes
                     li.SubItems.Add(r["fri"].ToString());
                     li.SubItems.Add(r["sat"].ToString());
                     li.SubItems.Add(r["sun"].ToString());
-                    li.SubItems.Add(Convert.ToDateTime(r["date_updated"].ToString()).ToLongDateString());
+                    li.SubItems.Add(Convert.ToDateTime(r["date_updated"].ToString()).ToShortDateString());
                     lv.Items.Add(li);
                     ctr++;
                 }
             }
-
         }
 
 

@@ -11,7 +11,7 @@ namespace MMG_PIAPS.classes
 {
     class Emp_Benefit
     {
-        public int empid { get; set; }
+        public String empid { get; set; }
         public string benefit_code { get; set; }
         public string emp_benefit_code { get; set; }//IDENTIFICATION SUPPLIED BY INSTITUTIONS
 

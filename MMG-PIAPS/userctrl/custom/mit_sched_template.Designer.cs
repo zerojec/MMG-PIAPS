@@ -69,6 +69,8 @@
             // 
             this.chk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.chk.AutoSize = true;
+            this.chk.Checked = true;
+            this.chk.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chk.Location = new System.Drawing.Point(3, 11);
             this.chk.Name = "chk";
             this.chk.Size = new System.Drawing.Size(15, 14);

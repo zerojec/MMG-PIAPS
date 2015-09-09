@@ -5,6 +5,8 @@ using MMG_PIAPS.userctrl.attendance;
 using MMG_PIAPS.userctrl.benefit;
 using MMG_PIAPS.userctrl.emp_benefit;
 using MMG_PIAPS.userctrl.emp_sched;
+using MMG_PIAPS.userctrl.leave;
+using MMG_PIAPS.userctrl.passslip;
 using MMG_PIAPS.userctrl.schedule;
 using System;
 using System.Collections.Generic;
@@ -149,11 +151,6 @@ namespace MMG_PIAPS.forms
 
         private void benefitsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pnlops.Controls.Clear();
-            benefit_ctrl c = new benefit_ctrl();
-            c.Width = pnlops.Width;
-            c.Height = pnlops.Height;
-            pnlops.Controls.Add(c);
         }
 
         private void setEmployeesBenefitsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -165,6 +162,31 @@ namespace MMG_PIAPS.forms
             pnlops.Controls.Add(c);
         }
 
+        private void viewBenefitsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            benefit_ctrl c = new benefit_ctrl();
+            c.Width = pnlops.Width;
+            c.Height = pnlops.Height;
+            pnlops.Controls.Add(c);
+        }
 
+        private void btnPassSlip_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            passslip_ctrl c = new passslip_ctrl();
+            c.Width = pnlops.Width;
+            c.Height = pnlops.Height;
+            pnlops.Controls.Add(c);
+        }
+
+        private void btnleave_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            leave_ctrl c = new leave_ctrl();
+            c.Width = pnlops.Width;
+            c.Height = pnlops.Height;
+            pnlops.Controls.Add(c);
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace MMG_PIAPS.classes
 
     public class Person
     {
-        private int _empid;
+        private String _empid;
         private String _fname;
         private String _lname;
         private String _mname;
@@ -22,7 +22,7 @@ namespace MMG_PIAPS.classes
         private String _address;
         private Byte[] _pic;
 
-        public int empid { get { return _empid; } set { _empid = value; } }
+        public String empid { get { return _empid; } set { _empid = value; } }
         public String fname { get { return _fname; } set { _fname = value; } }
         public String lname { get { return _lname; } set {_lname = value; } }
         public String mname { get { return _mname; } set { _mname = value; } }

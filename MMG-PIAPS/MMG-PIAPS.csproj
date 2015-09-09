@@ -71,7 +71,10 @@
     <Compile Include="classes\Employee.cs" />
     <Compile Include="classes\Emp_Benefit.cs" />
     <Compile Include="classes\Emp_Sched.cs" />
+    <Compile Include="classes\Emp_Sched_Adjustment.cs" />
+    <Compile Include="classes\Leave.cs" />
     <Compile Include="classes\Logger.cs" />
+    <Compile Include="classes\PassSlip.cs" />
     <Compile Include="classes\Person.cs" />
     <Compile Include="classes\Position.cs" />
     <Compile Include="classes\Schedule.cs" />
@@ -210,6 +213,30 @@
     <Compile Include="userctrl\emp_sched\emp_sched_new.Designer.cs">
       <DependentUpon>emp_sched_new.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\leave\leave_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\leave\leave_ctrl.Designer.cs">
+      <DependentUpon>leave_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\leave\leave_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\leave\leave_new.Designer.cs">
+      <DependentUpon>leave_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\passslip\passslip_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\passslip\passslip_ctrl.Designer.cs">
+      <DependentUpon>passslip_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\passslip\passslip_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\passslip\passslip_new.Designer.cs">
+      <DependentUpon>passslip_new.cs</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\schedule\sched_ctrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -289,6 +316,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\emp_sched\emp_sched_new.resx">
       <DependentUpon>emp_sched_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\leave\leave_ctrl.resx">
+      <DependentUpon>leave_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\leave\leave_new.resx">
+      <DependentUpon>leave_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\passslip\passslip_ctrl.resx">
+      <DependentUpon>passslip_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\passslip\passslip_new.resx">
+      <DependentUpon>passslip_new.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\schedule\sched_ctrl.resx">
       <DependentUpon>sched_ctrl.cs</DependentUpon>

@@ -166,7 +166,7 @@ namespace MMG_PIAPS.userctrl.attendance
                         work_code = str[3];
 
                         Attendance a = new Attendance();
-                        a.empid = Convert.ToInt32(empid);
+                        a.empid = empid;
                         a.date_time = Convert.ToDateTime(date_time);
                         a.state = Convert.ToInt32(state);
                         a.work_code = Convert.ToInt32(work_code);

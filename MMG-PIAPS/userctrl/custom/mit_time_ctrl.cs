@@ -12,37 +12,19 @@ namespace MMG_PIAPS.userctrl.custom
 {
     public partial class mit_time_ctrl : UserControl
     {
-
-        public int hour_in { get; set; }
-        public int min_in { get; set; }
-        public int hour_out { get {
-            if (txtEndTime.Text.Equals(""))
-            {
-                return 0;
-            }
-            else {
-                String[] time = txtEndTime.Text.Split(':');
-                int _hour_out = Convert.ToInt32(time[0]);
-                int _min_out = Convert.ToInt32(time[1]);
-                return _hour_out;
-            }   
-            }         
-        }
-        public int min_out { get {
-            if (txtEndTime.Text.Equals(""))
-            {
-                return 0;
-            }
-            else
-            {
-                String[] time = txtEndTime.Text.Split(':');
-                int _hour_out = Convert.ToInt32(time[0]);
-                int _min_out = Convert.ToInt32(time[1]);
-                return _min_out;
-            }
-        } }
+        public int hour_in { get{ return dtin.Value.Hour;} }
+        public int min_in { get{ return dtin.Value.Minute;} }
+        public int hour_out { get { return dtout.Value.Hour; }  }
+        public int min_out { get{ return dtout.Value.Minute;}  }
         public String ampm { get; set; }
-        public Decimal hoursallocated { get { return nm.Value; } }
+        
+        public TimeSpan hoursallocated { get {
+            string startTime = dtin.Value.ToShortTimeString();
+            string endTime = dtout.Value.ToShortTimeString();
+
+            TimeSpan duration = DateTime.Parse(endTime).Subtract(DateTime.Parse(startTime));
+            return duration;
+        } }
               
         public mit_time_ctrl()
         {
@@ -51,72 +33,26 @@ namespace MMG_PIAPS.userctrl.custom
 
      
 
-        private void txtTime_KeyDown(object sender, KeyEventArgs e)
-        {
-            //MessageBox.Show(e.KeyValue.ToString());
-            if (e.KeyValue == 13) {
-                if (IsValidTime(txtStartTime.Text))
-                {
-                    DateTime start = new DateTime(1, 1, 1, hour_in, min_in, 0);
-                    DateTime end = start.AddHours(Convert.ToDouble(nm.Value));
-                    txtEndTime.Text = end.ToString("HH:mm");
-                    nm.Enabled = true;
-                }
-                else {
-                    nm.Enabled = false;
-                }               
-            }
-        }
+      
+
 
         private void nm_ValueChanged(object sender, EventArgs e)
         {    
             //check if valid time
-            if (IsValidTime(txtStartTime.Text))
-            {
-                DateTime start = new DateTime(1, 1, 1, hour_in, min_in, 0);
-                DateTime end = start.AddHours(Convert.ToDouble(nm.Value));
-                txtEndTime.Text = end.ToString("HH:mm");
-            }
-            else
-            {
-                nm.Enabled = false;
-            }                         
-
-
+                              
         }
 
-        private Boolean IsValidTime(String i) {
-            try
-            {
-                String[] time = txtStartTime.Text.Split(':');
-                hour_in = Convert.ToInt32(time[0]);
-                min_in = Convert.ToInt32(time[1]);                              
-                DateTime d = new DateTime(1, 1, 1, hour_in, min_in, 0);
-                return true;
-            }
-            catch (Exception e) {
-                Global.error = e;
-                return false;
-            }
-        }
-
-        private void txtEndTime_KeyDown(object sender, KeyEventArgs e)
+        private void mit_time_ctrl_Load(object sender, EventArgs e)
         {
-            if (e.KeyValue == 13)
-            {
-                if (IsValidTime(txtStartTime.Text))
-                {
-                    DateTime start = new DateTime(1, 1, 1, hour_in, min_in, 0);
-                    DateTime end = start.AddHours(Convert.ToDouble(nm.Value));
-                    txtEndTime.Text = end.ToString("HH:mm");
-                    nm.Enabled = true;
-                }
-                else
-                {
-                    nm.Enabled = false;
-                }
-            }
-
+            dtin.Value = Convert.ToDateTime("7:00:00 AM");
+            dtout.Value = Convert.ToDateTime("12:00:00 PM");
         }
+
+     
+
+       
+
+
+
     }
 }

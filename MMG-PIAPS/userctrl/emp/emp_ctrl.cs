@@ -67,7 +67,7 @@ namespace MMG_PIAPS.userctrl
         {
             if(lv.SelectedItems.Count > 0){
 
-                int id = Convert.ToInt32(lv.SelectedItems[0].SubItems[1].Text);
+                String id = lv.SelectedItems[0].SubItems[1].Text;
                 //MessageBox.Show(id);
 
                 Employee emp1 = new Employee();
@@ -163,8 +163,10 @@ namespace MMG_PIAPS.userctrl
            //MessageBox.Show(id);
 
             Employee emp, emp1 = new Employee();
-            emp1.empid = Convert.ToInt32(id);
+            emp1.empid = id;
+
             emp = emp1.SELECT_BY_ID();
+
             emp.GET_BASIC_PAY();
             emp.GET_BRANCH_ASSIGNMENT();
             emp.GET_EMPLOYMENT_STATUS();
@@ -189,7 +191,7 @@ namespace MMG_PIAPS.userctrl
             String id = lv.SelectedItems[0].SubItems[1].Text;
 
             Employee emp, emp1 = new Employee();
-            emp1.empid = Convert.ToInt32(id);
+            emp1.empid = id;
             emp = emp1.SELECT_BY_ID();
             emp.GET_BASIC_PAY();
             //emp.GET_BRANCH_ASSIGNMENT();
@@ -245,7 +247,7 @@ namespace MMG_PIAPS.userctrl
                 //MessageBox.Show(id);
 
                 Employee emp, emp1 = new Employee();
-                emp1.empid = Convert.ToInt32(id);
+                emp1.empid = id;
                 emp = emp1.SELECT_BY_ID();
                 emp.GET_BASIC_PAY();
                 emp.GET_BRANCH_ASSIGNMENT();
@@ -272,7 +274,7 @@ namespace MMG_PIAPS.userctrl
             //MessageBox.Show(id);
 
             Employee emp, emp1 = new Employee();
-            emp1.empid = Convert.ToInt32(id);
+            emp1.empid = id;
             emp = emp1.SELECT_BY_ID();
             emp.GET_BASIC_PAY();
             emp.GET_BRANCH_ASSIGNMENT();

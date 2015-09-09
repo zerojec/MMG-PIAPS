@@ -155,7 +155,7 @@ namespace MMG_PIAPS.classes
                     Employee e = new Employee();
                     foreach (DataRow r in dt.Rows)
                     {
-                        e.empid = Convert.ToInt32(r["empid"].ToString());
+                        e.empid = r["empid"].ToString();
                         e.fname = r["fname"].ToString();
                         e.lname = r["lname"].ToString();
                         e.mname = r["mname"].ToString();
@@ -179,7 +179,9 @@ namespace MMG_PIAPS.classes
             }
 
         }
-            public Byte[] GET_IMAGE_BY_ID(){
+
+
+        public Byte[] GET_IMAGE_BY_ID(){
                 
                 DataTable dt = new DataTable();
                 MySqlCommand cmd = new MySqlCommand();
@@ -202,6 +204,11 @@ namespace MMG_PIAPS.classes
                     return null;
                 }                              
             }
+
+
+
+
+
 
             public String GET_EMPLOYMENT_STATUS() {
                 DataTable dt = new DataTable();
@@ -227,6 +234,9 @@ namespace MMG_PIAPS.classes
                 }                
 
             }//end GET_EMPLOYMENT_STATUS
+
+
+
 
             public Boolean SET_EMPLOYMENT_STATUS()
             {

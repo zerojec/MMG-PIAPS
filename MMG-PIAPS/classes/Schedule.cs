@@ -16,7 +16,7 @@ namespace MMG_PIAPS.classes
         public DateTime first_half_out { get; set; }
         public DateTime second_half_in { get; set; }
         public DateTime second_half_out{ get; set; }
-        public int hours_allocated { get; set; }
+        public TimeSpan hours_allocated { get; set; }
         
         public Boolean save() {
             MySqlCommand cmd = new MySqlCommand();
@@ -27,6 +27,7 @@ namespace MMG_PIAPS.classes
             cmd.Parameters.AddWithValue("_second_half_in", second_half_in);
             cmd.Parameters.AddWithValue("_second_half_out", second_half_out);
             cmd.Parameters.AddWithValue("_hours_allocated", hours_allocated);   
+          
             try
             {
                 cmd.ExecuteNonQuery();
@@ -93,7 +94,11 @@ namespace MMG_PIAPS.classes
                     s.first_half_out = Convert.ToDateTime(r["first_half_out"].ToString());
                     s.second_half_in = Convert.ToDateTime(r["second_half_in"].ToString());
                     s.second_half_out = Convert.ToDateTime(r["second_half_out"].ToString());
-                    s.hours_allocated = Convert.ToInt32(r["hours_allocated"].ToString());
+
+                    DateTime dateTime = DateTime.Parse(r["hours_allocated"].ToString());
+                    TimeSpan timeSpan = TimeSpan.Parse(dateTime.ToString("hh:mm:ss"));
+                    
+                    s.hours_allocated = timeSpan;
                     return s;
                 }
                 else {
@@ -133,7 +138,21 @@ namespace MMG_PIAPS.classes
                 }
             }
            
-        }
+        }//end load ins listview
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }

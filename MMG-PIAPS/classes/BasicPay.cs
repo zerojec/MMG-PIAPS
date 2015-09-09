@@ -10,7 +10,7 @@ namespace MMG_PIAPS.classes
 {
     class BasicPay
     {
-        public int empid { get; set; }
+        public String empid { get; set; }
         public decimal basic_pay { get; set; }
         public DateTime date_updated { get; set; }
 

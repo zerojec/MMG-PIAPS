@@ -11,7 +11,7 @@ namespace MMG_PIAPS.classes
 {
     class Attendance
     {
-        public int empid{get;set;}
+        public String empid{get;set;}
         public int state{get;set;}
         public DateTime date_time{get;set;}   
         public int work_code{get;set;}
