@@ -53,6 +53,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnRestrictions = new System.Windows.Forms.Button();
+            this.btnLoan = new System.Windows.Forms.Button();
             this.btnleave = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.btnAttendance = new System.Windows.Forms.Button();
@@ -367,12 +369,15 @@
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.tableLayoutPanel4.ColumnCount = 5;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.ColumnCount = 6;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.665F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.665F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.665F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.665F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.665F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.675F));
+            this.tableLayoutPanel4.Controls.Add(this.btnRestrictions, 5, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnLoan, 4, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnleave, 3, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnEmployee, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnAttendance, 1, 0);
@@ -386,12 +391,34 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(705, 61);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
+            // btnRestrictions
+            // 
+            this.btnRestrictions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnRestrictions.Location = new System.Drawing.Point(588, 3);
+            this.btnRestrictions.Name = "btnRestrictions";
+            this.btnRestrictions.Size = new System.Drawing.Size(114, 55);
+            this.btnRestrictions.TabIndex = 10;
+            this.btnRestrictions.Text = "Restrictions";
+            this.btnRestrictions.UseVisualStyleBackColor = true;
+            this.btnRestrictions.Click += new System.EventHandler(this.btnRestrictions_Click);
+            // 
+            // btnLoan
+            // 
+            this.btnLoan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnLoan.Location = new System.Drawing.Point(471, 3);
+            this.btnLoan.Name = "btnLoan";
+            this.btnLoan.Size = new System.Drawing.Size(111, 55);
+            this.btnLoan.TabIndex = 9;
+            this.btnLoan.Text = "Loan";
+            this.btnLoan.UseVisualStyleBackColor = true;
+            this.btnLoan.Click += new System.EventHandler(this.btnLoan_Click);
+            // 
             // btnleave
             // 
             this.btnleave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnleave.Location = new System.Drawing.Point(426, 3);
+            this.btnleave.Location = new System.Drawing.Point(354, 3);
             this.btnleave.Name = "btnleave";
-            this.btnleave.Size = new System.Drawing.Size(135, 55);
+            this.btnleave.Size = new System.Drawing.Size(111, 55);
             this.btnleave.TabIndex = 8;
             this.btnleave.Text = "Leave";
             this.btnleave.UseVisualStyleBackColor = true;
@@ -402,7 +429,7 @@
             this.btnEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEmployee.Location = new System.Drawing.Point(3, 3);
             this.btnEmployee.Name = "btnEmployee";
-            this.btnEmployee.Size = new System.Drawing.Size(135, 55);
+            this.btnEmployee.Size = new System.Drawing.Size(111, 55);
             this.btnEmployee.TabIndex = 3;
             this.btnEmployee.Text = "Employee Data";
             this.btnEmployee.UseVisualStyleBackColor = true;
@@ -411,9 +438,9 @@
             // btnAttendance
             // 
             this.btnAttendance.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAttendance.Location = new System.Drawing.Point(144, 3);
+            this.btnAttendance.Location = new System.Drawing.Point(120, 3);
             this.btnAttendance.Name = "btnAttendance";
-            this.btnAttendance.Size = new System.Drawing.Size(135, 55);
+            this.btnAttendance.Size = new System.Drawing.Size(111, 55);
             this.btnAttendance.TabIndex = 6;
             this.btnAttendance.Text = "Attendance";
             this.btnAttendance.UseVisualStyleBackColor = true;
@@ -422,9 +449,9 @@
             // btnPassSlip
             // 
             this.btnPassSlip.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPassSlip.Location = new System.Drawing.Point(285, 3);
+            this.btnPassSlip.Location = new System.Drawing.Point(237, 3);
             this.btnPassSlip.Name = "btnPassSlip";
-            this.btnPassSlip.Size = new System.Drawing.Size(135, 55);
+            this.btnPassSlip.Size = new System.Drawing.Size(111, 55);
             this.btnPassSlip.TabIndex = 7;
             this.btnPassSlip.Text = "Pass Slip";
             this.btnPassSlip.UseVisualStyleBackColor = true;
@@ -566,7 +593,7 @@
             this.employeeToolStripMenuItem});
             this.scheduleTemplateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("scheduleTemplateToolStripMenuItem.Image")));
             this.scheduleTemplateToolStripMenuItem.Name = "scheduleTemplateToolStripMenuItem";
-            this.scheduleTemplateToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
+            this.scheduleTemplateToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.scheduleTemplateToolStripMenuItem.Text = "Schedule";
             // 
             // templateToolStripMenuItem
@@ -592,7 +619,7 @@
             this.viewBenefitsToolStripMenuItem});
             this.benefitsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("benefitsToolStripMenuItem.Image")));
             this.benefitsToolStripMenuItem.Name = "benefitsToolStripMenuItem";
-            this.benefitsToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
+            this.benefitsToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.benefitsToolStripMenuItem.Text = "Benefit";
             this.benefitsToolStripMenuItem.Click += new System.EventHandler(this.benefitsToolStripMenuItem_Click);
             // 
@@ -686,5 +713,7 @@
         private System.Windows.Forms.ToolStripMenuItem viewBenefitsToolStripMenuItem;
         private System.Windows.Forms.Button btnPassSlip;
         private System.Windows.Forms.Button btnleave;
+        private System.Windows.Forms.Button btnLoan;
+        private System.Windows.Forms.Button btnRestrictions;
     }
 }

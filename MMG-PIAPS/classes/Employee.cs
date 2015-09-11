@@ -139,6 +139,38 @@ namespace MMG_PIAPS.classes
 
 
 
+
+
+
+        public DataTable SELECT_REGULAR()
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "EMP_SELECT_REGULAR");
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog(e.Message);
+                return null;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
         public Employee SELECT_BY_ID()
         {
             DataTable dt = new DataTable();
@@ -444,6 +476,85 @@ namespace MMG_PIAPS.classes
                 }
 
             }
+
+
+
+
+
+
+
+
+            public void LoadRegularEmployee(ComboBox cbo)
+            {
+
+                Employee e = new Employee();
+                DataTable dt = new DataTable();
+
+                dt = e.SELECT_REGULAR();
+                if (dt != null)
+                {
+                    foreach (DataRow r in dt.Rows)
+                    {
+                        cbo.Items.Add(r["lname"] + ", " + r["fname"] + " " + r["mname"] + "-" + r["empid"]);
+                    }
+                }
+
+            }//end Load Regular Employees
+
+
+
+
+
+
+            public DateTime GET_REGULAR_STATUS_DATE() {
+
+                DateTime d = new DateTime(1521,3,17);
+                
+                MySqlCommand cmd = new MySqlCommand();
+                DataTable dt = new DataTable();
+
+                //GET THE DATE THE EMPLOYEE BECOMES A "REGULAR" EMPLOYEE
+                db.SET_COMMAND_PARAMS(cmd, "EMP_GET_REGULAR_STATUS_DATE");
+                cmd.Parameters.AddWithValue("_empid", empid);
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+              
+                try
+                {
+                    da.Fill(dt);
+                    if (dt != null)
+                    {
+                        if (dt.Rows.Count > 0)
+                        {
+                            DataRow r = dt.Rows[0];
+                            return Convert.ToDateTime(r["date_updated"].ToString());
+                        }
+                        else
+                        {
+                            return d;
+                        }
+                    }
+                    else {
+                        return d;
+                    }        
+                }
+                catch (Exception e) {
+                   
+                    db.err = null;
+                    db.err = e;
+                    return d;                
+                }                                                    
+            }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -125,6 +125,7 @@
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(194, 29);
             this.txtid.TabIndex = 1;
+            this.txtid.Text = "TAB-001";
             this.txtid.TextChanged += new System.EventHandler(this.txtid_TextChanged);
             this.txtid.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtid_KeyDown);
             // 

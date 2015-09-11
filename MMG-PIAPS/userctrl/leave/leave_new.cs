@@ -15,19 +15,34 @@ namespace MMG_PIAPS.userctrl.leave
     public partial class leave_new : UserControl
     {
 
+
+
+
+
+
         Employee emp = new Employee();
+
+
+
+
+
 
         public leave_new()
         {
             InitializeComponent();
         }
 
+
+
+
+
+
         private void cboEmp_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboEmp.Text != "")
             {
                 String[] c = cboEmp.Text.ToString().Split('-');
-                String id = c[1];
+                String id = c[1] + "-" + c[2];
                 Employee emp1, emp2 = new Employee();
                 emp2.empid = id;
 
@@ -53,10 +68,20 @@ namespace MMG_PIAPS.userctrl.leave
             }
         }
 
+
+
+
+
         private void leave_new_Load(object sender, EventArgs e)
         {
             emp.LoadEmployee(cboEmp);
         }
+
+
+
+
+
+
 
         private void btncancel_Click(object sender, EventArgs e)
         {
@@ -64,6 +89,12 @@ namespace MMG_PIAPS.userctrl.leave
             this.Parent.Controls.Clear();
             this.Dispose();
         }
+
+
+
+
+
+
 
         private void btnsave_Click(object sender, EventArgs e)
         {
@@ -83,7 +114,16 @@ namespace MMG_PIAPS.userctrl.leave
             else {
                 MessageBox.Show("There was a problem saving leave :\n" + db.err.Message);
             }
-
         }
+
+
+
+
+
+
+
+
+
+
     }
 }

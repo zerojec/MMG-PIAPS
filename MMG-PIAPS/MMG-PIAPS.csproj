@@ -28,7 +28,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -68,11 +68,14 @@
     <Compile Include="classes\BasicPay.cs" />
     <Compile Include="classes\Benefit.cs" />
     <Compile Include="classes\Branch.cs" />
+    <Compile Include="classes\Member.cs" />
     <Compile Include="classes\Employee.cs" />
     <Compile Include="classes\Emp_Benefit.cs" />
+    <Compile Include="classes\Emp_Restriction.cs" />
     <Compile Include="classes\Emp_Sched.cs" />
     <Compile Include="classes\Emp_Sched_Adjustment.cs" />
     <Compile Include="classes\Leave.cs" />
+    <Compile Include="classes\Loan.cs" />
     <Compile Include="classes\Logger.cs" />
     <Compile Include="classes\PassSlip.cs" />
     <Compile Include="classes\Person.cs" />
@@ -101,6 +104,12 @@
     </Compile>
     <Compile Include="forms\emp\frmEmpStatus.Designer.cs">
       <DependentUpon>frmEmpStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmConnectXLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmConnectXLS.Designer.cs">
+      <DependentUpon>frmConnectXLS.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\frmLogin.cs">
       <SubType>Form</SubType>
@@ -201,6 +210,12 @@
     <Compile Include="userctrl\emp_benefit\emp_benefit_new.Designer.cs">
       <DependentUpon>emp_benefit_new.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\emp_restriction\emp_restriction_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\emp_restriction\emp_restriction_ctrl.Designer.cs">
+      <DependentUpon>emp_restriction_ctrl.cs</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\emp_sched\emp_sched_ctrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -224,6 +239,24 @@
     </Compile>
     <Compile Include="userctrl\leave\leave_new.Designer.cs">
       <DependentUpon>leave_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\loan\loan_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\loan\loan_ctrl.Designer.cs">
+      <DependentUpon>loan_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\loan\loan_micro_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\loan\loan_micro_new.Designer.cs">
+      <DependentUpon>loan_micro_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\loan\loan_salary_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\loan\loan_salary_new.Designer.cs">
+      <DependentUpon>loan_salary_new.cs</DependentUpon>
     </Compile>
     <Compile Include="userctrl\passslip\passslip_ctrl.cs">
       <SubType>UserControl</SubType>
@@ -260,6 +293,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\emp\frmEmpStatus.resx">
       <DependentUpon>frmEmpStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmConnectXLS.resx">
+      <DependentUpon>frmConnectXLS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -311,6 +347,9 @@
     <EmbeddedResource Include="userctrl\emp_benefit\emp_benefit_new.resx">
       <DependentUpon>emp_benefit_new.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\emp_restriction\emp_restriction_ctrl.resx">
+      <DependentUpon>emp_restriction_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userctrl\emp_sched\emp_sched_ctrl.resx">
       <DependentUpon>emp_sched_ctrl.cs</DependentUpon>
     </EmbeddedResource>
@@ -322,6 +361,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\leave\leave_new.resx">
       <DependentUpon>leave_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\loan\loan_ctrl.resx">
+      <DependentUpon>loan_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\loan\loan_micro_new.resx">
+      <DependentUpon>loan_micro_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\loan\loan_salary_new.resx">
+      <DependentUpon>loan_salary_new.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\passslip\passslip_ctrl.resx">
       <DependentUpon>passslip_ctrl.cs</DependentUpon>
