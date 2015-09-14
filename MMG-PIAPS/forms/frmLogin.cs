@@ -45,12 +45,7 @@ namespace MMG_PIAPS
 
                     frmMain f = new frmMain();
                     f.Show();
-
-
-                    frmConnectXLS fx = new frmConnectXLS();
-                    fx.Show();
-
-
+                 
                     this.Hide(); 
                               
                 }

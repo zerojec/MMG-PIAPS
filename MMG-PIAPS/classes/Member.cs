@@ -18,8 +18,7 @@ namespace MMG_PIAPS.classes
         public String typeofmembership { get; set; }
         public String standing { get; set; }
         public DateTime dateofmembership { get; set; }
-
-
+        public String status { get; set; } //withdrawns or deceased etc..
 
 
 
@@ -27,21 +26,21 @@ namespace MMG_PIAPS.classes
         {
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = db.con;
-            cmd.CommandText = "MEM_INSERT";
+            cmd.CommandText = "MEMBER_INSERT";
             cmd.CommandType = CommandType.StoredProcedure;
 
 
-            cmd.Parameters.AddWithValue("_empid", empid);
+            cmd.Parameters.AddWithValue("_memid", memid);
             cmd.Parameters.AddWithValue("_fname", fname);
             cmd.Parameters.AddWithValue("_lname", lname);
             cmd.Parameters.AddWithValue("_mname", mname);
-            cmd.Parameters.AddWithValue("_birthday", birthdate);
-            cmd.Parameters.AddWithValue("_contactno", contactno);
-            cmd.Parameters.AddWithValue("_gender", gender);
-            cmd.Parameters.AddWithValue("_address", address);
-            cmd.Parameters.AddWithValue("_dateofmembership", typeofmembership);
-            cmd.Parameters.AddWithValue("_imagearr", pic);
-            cmd.Parameters.AddWithValue("_imagesize", pic.Length);
+            cmd.Parameters.AddWithValue("_status", status);
+            //cmd.Parameters.AddWithValue("_contactno", contactno);
+            //cmd.Parameters.AddWithValue("_gender", gender);
+            //cmd.Parameters.AddWithValue("_address", address);
+            //cmd.Parameters.AddWithValue("_dateofmembership", typeofmembership);
+            //cmd.Parameters.AddWithValue("_imagearr", pic);
+            //cmd.Parameters.AddWithValue("_imagesize", pic.Length);
              
 
             try
@@ -54,6 +53,7 @@ namespace MMG_PIAPS.classes
             {
                 db.err = null;
                 db.err = e;
+                Logger.WriteErrorLog("Error MEMBER_CLASS_SAVE: " + e.Message);
                 return false;
             }
         }//end save
@@ -63,20 +63,20 @@ namespace MMG_PIAPS.classes
         {
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = db.con;
-            cmd.CommandText = "EMP_UPDATE";
+            cmd.CommandText = "MEMBER_UPDATE";
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.AddWithValue("_empid", empid);
+            cmd.Parameters.AddWithValue("_memid", memid);
             cmd.Parameters.AddWithValue("_fname", fname);
             cmd.Parameters.AddWithValue("_lname", lname);
             cmd.Parameters.AddWithValue("_mname", mname);
-            cmd.Parameters.AddWithValue("_birthday", birthdate);
-            cmd.Parameters.AddWithValue("_contactno", contactno);
-            cmd.Parameters.AddWithValue("_gender", gender);
-            cmd.Parameters.AddWithValue("_address", address);
-            cmd.Parameters.AddWithValue("_dateofmembership", typeofmembership);
-            cmd.Parameters.AddWithValue("_imagearr", pic);
-            cmd.Parameters.AddWithValue("_imagesize", pic.Length);
+            //cmd.Parameters.AddWithValue("_birthday", birthdate);
+            //cmd.Parameters.AddWithValue("_contactno", contactno);
+            //cmd.Parameters.AddWithValue("_gender", gender);
+            //cmd.Parameters.AddWithValue("_address", address);
+            //cmd.Parameters.AddWithValue("_dateofmembership", typeofmembership);
+            //cmd.Parameters.AddWithValue("_imagearr", pic);
+            //cmd.Parameters.AddWithValue("_imagesize", pic.Length);
            
 
             try
@@ -97,7 +97,7 @@ namespace MMG_PIAPS.classes
         public DataTable SELECT_ALL() {
             DataTable dt = new DataTable();
             MySqlCommand cmd = new MySqlCommand();
-            db.SET_COMMAND_PARAMS(cmd, "MEM_SELECT_ALL");
+            db.SET_COMMAND_PARAMS(cmd, "MEMBER_SELECT_ALL");
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
             try
             {
@@ -123,7 +123,7 @@ namespace MMG_PIAPS.classes
         {
             DataTable dt = new DataTable();
             MySqlCommand cmd = new MySqlCommand();
-            db.SET_COMMAND_PARAMS(cmd, "MEM_SELECT_REGULAR");
+            db.SET_COMMAND_PARAMS(cmd, "MEMBER_SELECT_REGULAR");
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
             try
             {
@@ -152,7 +152,7 @@ namespace MMG_PIAPS.classes
         {
             DataTable dt = new DataTable();
             MySqlCommand cmd = new MySqlCommand();
-            db.SET_COMMAND_PARAMS(cmd, "MEM_SELECT_BY_ID");
+            db.SET_COMMAND_PARAMS(cmd, "MEMBER_SELECT_BY_ID");
             cmd.Parameters.AddWithValue("_memid", memid);
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
             da.Fill(dt);
@@ -168,10 +168,10 @@ namespace MMG_PIAPS.classes
                         e.fname = r["fname"].ToString();
                         e.lname = r["lname"].ToString();
                         e.mname = r["mname"].ToString();
-                        e.address = r["address"].ToString();
-                        e.birthdate = Convert.ToDateTime(r["birthday"].ToString());
-                        e.contactno = r["contactno"].ToString();
-                        e.gender = r["gender"].ToString();
+                        //e.address = r["address"].ToString();
+                        //e.birthdate = Convert.ToDateTime(r["birthday"].ToString());
+                        //e.contactno = r["contactno"].ToString();
+                        //e.gender = r["gender"].ToString();
               
 
                     }
@@ -192,7 +192,7 @@ namespace MMG_PIAPS.classes
                 
                 DataTable dt = new DataTable();
                 MySqlCommand cmd = new MySqlCommand();
-                db.SET_COMMAND_PARAMS(cmd, "MEM_PIC_SELECT_BY_ID");
+                db.SET_COMMAND_PARAMS(cmd, "MEMBER_PIC_SELECT_BY_ID");
                 cmd.Parameters.AddWithValue("_memid", memid);
 
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
@@ -220,7 +220,7 @@ namespace MMG_PIAPS.classes
             public String GET_MEMBERSHIP_STANDING() {
                 DataTable dt = new DataTable();
                 MySqlCommand cmd = new MySqlCommand();
-                db.SET_COMMAND_PARAMS(cmd, "MEM_STANDING_SELECT_LATEST_BY_ID");
+                db.SET_COMMAND_PARAMS(cmd, "MEMMBER_STANDING_SELECT_LATEST_BY_ID");
                 cmd.Parameters.AddWithValue("_memid", memid);
 
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);

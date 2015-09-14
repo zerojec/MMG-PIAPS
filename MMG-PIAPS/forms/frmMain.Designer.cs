@@ -80,6 +80,8 @@
             this.benefitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setEmployeesBenefitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewBenefitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.memberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataImportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
@@ -579,7 +581,8 @@
             this.toolStripDropDownSettings.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripDropDownSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.scheduleTemplateToolStripMenuItem,
-            this.benefitsToolStripMenuItem});
+            this.benefitsToolStripMenuItem,
+            this.memberToolStripMenuItem});
             this.toolStripDropDownSettings.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownSettings.Image")));
             this.toolStripDropDownSettings.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownSettings.Name = "toolStripDropDownSettings";
@@ -636,6 +639,21 @@
             this.viewBenefitsToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
             this.viewBenefitsToolStripMenuItem.Text = "View Benefits";
             this.viewBenefitsToolStripMenuItem.Click += new System.EventHandler(this.viewBenefitsToolStripMenuItem_Click);
+            // 
+            // memberToolStripMenuItem
+            // 
+            this.memberToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dataImportToolStripMenuItem});
+            this.memberToolStripMenuItem.Name = "memberToolStripMenuItem";
+            this.memberToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.memberToolStripMenuItem.Text = "Member";
+            // 
+            // dataImportToolStripMenuItem
+            // 
+            this.dataImportToolStripMenuItem.Name = "dataImportToolStripMenuItem";
+            this.dataImportToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
+            this.dataImportToolStripMenuItem.Text = "Data-Import";
+            this.dataImportToolStripMenuItem.Click += new System.EventHandler(this.dataImportToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -715,5 +733,7 @@
         private System.Windows.Forms.Button btnleave;
         private System.Windows.Forms.Button btnLoan;
         private System.Windows.Forms.Button btnRestrictions;
+        private System.Windows.Forms.ToolStripMenuItem memberToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataImportToolStripMenuItem;
     }
 }

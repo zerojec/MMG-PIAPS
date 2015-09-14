@@ -208,5 +208,11 @@ namespace MMG_PIAPS.forms
             c.Height = pnlops.Height;
             pnlops.Controls.Add(c);
         }
+
+        private void dataImportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConnectXLS frm = new frmConnectXLS();
+            frm.ShowDialog();
+        }
     }
 }

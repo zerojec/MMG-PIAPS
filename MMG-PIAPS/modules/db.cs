@@ -27,21 +27,10 @@ namespace MMG_PIAPS.modules
         
 
 
-         public static Boolean CONNECTEXCEL() {
-
-
-             ExcelFilePath = System.Reflection.Assembly.GetExecutingAssembly().Location.ToString();
-             directory = System.IO.Path.GetDirectoryName(ExcelFilePath);
-             directory += "\\Membership.xlsx";
-            
-
+         public static Boolean CONNECTEXCEL(String directory) {                    
              
-             //String connectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source='" + directory +"';" + "Extended Properties=Excel 8.0;";
-             //String connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source='" + directory + "';" + "Extended Properties='Excel 8.0;HDR=YES;';";
-             //Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Docs\\Book2.xlsx;Extended Properties='Excel 12.0 xml;HDR=YES;'"
              String connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + directory + ";Extended Properties=\"Excel 12.0;HDR=Yes;IMEX=2\"";
-            // String OledbProviderString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\OlsonWindows.xls;Extended Properties='Excel 8.0;HDR=YES;';";                          
-            
+           
                        
              try
             {
