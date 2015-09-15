@@ -31,12 +31,13 @@
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.txtprincipal = new System.Windows.Forms.TextBox();
-            this.lblemp = new System.Windows.Forms.Label();
-            this.lblloanableamount = new System.Windows.Forms.Label();
-            this.lblpaidupcapital = new System.Windows.Forms.Label();
+            this.lblmem = new System.Windows.Forms.Label();
+            this.lblmemdata2 = new System.Windows.Forms.Label();
+            this.lblmemdata = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cboEmp = new System.Windows.Forms.ComboBox();
+            this.cboMem = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.pb = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnsave = new System.Windows.Forms.Button();
@@ -47,6 +48,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.dtfilingdate = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtinterest = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -57,16 +59,14 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtinterest_amort = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pb = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmamortperiod)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -82,41 +82,41 @@
             this.txtprincipal.TabIndex = 36;
             this.txtprincipal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // lblemp
+            // lblmem
             // 
-            this.lblemp.AutoSize = true;
-            this.lblemp.BackColor = System.Drawing.Color.Black;
-            this.lblemp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblemp.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblemp.ForeColor = System.Drawing.Color.White;
-            this.lblemp.Location = new System.Drawing.Point(53, 0);
-            this.lblemp.Name = "lblemp";
-            this.lblemp.Size = new System.Drawing.Size(265, 30);
-            this.lblemp.TabIndex = 0;
-            this.lblemp.Text = "...";
-            this.lblemp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblmem.AutoSize = true;
+            this.lblmem.BackColor = System.Drawing.Color.Black;
+            this.lblmem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblmem.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmem.ForeColor = System.Drawing.Color.White;
+            this.lblmem.Location = new System.Drawing.Point(53, 0);
+            this.lblmem.Name = "lblmem";
+            this.lblmem.Size = new System.Drawing.Size(265, 30);
+            this.lblmem.TabIndex = 0;
+            this.lblmem.Text = "...";
+            this.lblmem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblloanableamount
+            // lblmemdata2
             // 
-            this.lblloanableamount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblloanableamount.AutoSize = true;
-            this.lblloanableamount.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblloanableamount.Location = new System.Drawing.Point(309, 67);
-            this.lblloanableamount.Name = "lblloanableamount";
-            this.lblloanableamount.Size = new System.Drawing.Size(315, 19);
-            this.lblloanableamount.TabIndex = 4;
-            this.lblloanableamount.Text = "...";
+            this.lblmemdata2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblmemdata2.AutoSize = true;
+            this.lblmemdata2.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmemdata2.Location = new System.Drawing.Point(309, 67);
+            this.lblmemdata2.Name = "lblmemdata2";
+            this.lblmemdata2.Size = new System.Drawing.Size(315, 19);
+            this.lblmemdata2.TabIndex = 4;
+            this.lblmemdata2.Text = "PAID-UP-CAPITAL : ";
             // 
-            // lblpaidupcapital
+            // lblmemdata
             // 
-            this.lblpaidupcapital.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblpaidupcapital.AutoSize = true;
-            this.lblpaidupcapital.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpaidupcapital.Location = new System.Drawing.Point(309, 37);
-            this.lblpaidupcapital.Name = "lblpaidupcapital";
-            this.lblpaidupcapital.Size = new System.Drawing.Size(315, 19);
-            this.lblpaidupcapital.TabIndex = 3;
-            this.lblpaidupcapital.Text = "...";
+            this.lblmemdata.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblmemdata.AutoSize = true;
+            this.lblmemdata.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmemdata.Location = new System.Drawing.Point(309, 37);
+            this.lblmemdata.Name = "lblmemdata";
+            this.lblmemdata.Size = new System.Drawing.Size(315, 19);
+            this.lblmemdata.TabIndex = 3;
+            this.lblmemdata.Text = "...";
             // 
             // label2
             // 
@@ -128,23 +128,24 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Select Member";
             // 
-            // cboEmp
+            // cboMem
             // 
-            this.cboEmp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboEmp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboEmp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cboEmp.FormattingEnabled = true;
-            this.cboEmp.Location = new System.Drawing.Point(171, 4);
-            this.cboEmp.Name = "cboEmp";
-            this.cboEmp.Size = new System.Drawing.Size(131, 23);
-            this.cboEmp.TabIndex = 17;
+            this.cboMem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboMem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboMem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboMem.FormattingEnabled = true;
+            this.cboMem.Location = new System.Drawing.Point(171, 4);
+            this.cboMem.Name = "cboMem";
+            this.cboMem.Size = new System.Drawing.Size(131, 23);
+            this.cboMem.TabIndex = 17;
+            this.cboMem.SelectedIndexChanged += new System.EventHandler(this.cboMem_SelectedIndexChanged);
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.lblemp, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblmem, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.pb, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(306, 1);
@@ -154,6 +155,15 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(321, 30);
             this.tableLayoutPanel2.TabIndex = 25;
+            // 
+            // pb
+            // 
+            this.pb.Location = new System.Drawing.Point(0, 0);
+            this.pb.Margin = new System.Windows.Forms.Padding(0);
+            this.pb.Name = "pb";
+            this.pb.Size = new System.Drawing.Size(50, 30);
+            this.pb.TabIndex = 1;
+            this.pb.TabStop = false;
             // 
             // label3
             // 
@@ -198,6 +208,7 @@
             this.btncancel.TabIndex = 1;
             this.btncancel.Text = "&Cancel";
             this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
             // nmamortperiod
             // 
@@ -274,6 +285,16 @@
             this.panel1.Size = new System.Drawing.Size(634, 35);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -330,10 +351,10 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel3.Controls.Add(this.lblloanableamount, 2, 2);
-            this.tableLayoutPanel3.Controls.Add(this.lblpaidupcapital, 2, 1);
+            this.tableLayoutPanel3.Controls.Add(this.lblmemdata2, 2, 2);
+            this.tableLayoutPanel3.Controls.Add(this.lblmemdata, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.cboEmp, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.cboMem, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel2, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.txtprincipal, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.label3, 0, 1);
@@ -418,25 +439,6 @@
             this.txtinterest_amort.TabIndex = 38;
             this.txtinterest_amort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pb
-            // 
-            this.pb.Location = new System.Drawing.Point(0, 0);
-            this.pb.Margin = new System.Windows.Forms.Padding(0);
-            this.pb.Name = "pb";
-            this.pb.Size = new System.Drawing.Size(50, 30);
-            this.pb.TabIndex = 1;
-            this.pb.TabStop = false;
-            // 
             // loan_micro_new
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -448,15 +450,15 @@
             this.Load += new System.EventHandler(this.loan_micro_new_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nmamortperiod)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -465,12 +467,12 @@
 
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox txtprincipal;
-        private System.Windows.Forms.Label lblemp;
+        private System.Windows.Forms.Label lblmem;
         private System.Windows.Forms.PictureBox pb;
-        private System.Windows.Forms.Label lblloanableamount;
-        private System.Windows.Forms.Label lblpaidupcapital;
+        private System.Windows.Forms.Label lblmemdata2;
+        private System.Windows.Forms.Label lblmemdata;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cboEmp;
+        private System.Windows.Forms.ComboBox cboMem;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label3;

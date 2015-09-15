@@ -12,15 +12,17 @@ namespace MMG_PIAPS.classes
 {
     public class Member : Person
     {
+
       
 
         public String memid { get;set ;  }
+        public String fullname { get; set; }
         public String typeofmembership { get; set; }
         public String standing { get; set; }
-        public DateTime dateofmembership { get; set; }
+        public DateTime acceptance_date { get; set; }
         public String status { get; set; } //withdrawns or deceased etc..
-
-
+        public String occupation { get; set; }
+        public String email { get; set; }
 
         public Boolean save()
         {
@@ -31,16 +33,17 @@ namespace MMG_PIAPS.classes
 
 
             cmd.Parameters.AddWithValue("_memid", memid);
-            cmd.Parameters.AddWithValue("_fname", fname);
-            cmd.Parameters.AddWithValue("_lname", lname);
-            cmd.Parameters.AddWithValue("_mname", mname);
+            cmd.Parameters.AddWithValue("_fullname", fullname);
             cmd.Parameters.AddWithValue("_status", status);
-            //cmd.Parameters.AddWithValue("_contactno", contactno);
-            //cmd.Parameters.AddWithValue("_gender", gender);
-            //cmd.Parameters.AddWithValue("_address", address);
-            //cmd.Parameters.AddWithValue("_dateofmembership", typeofmembership);
-            //cmd.Parameters.AddWithValue("_imagearr", pic);
-            //cmd.Parameters.AddWithValue("_imagesize", pic.Length);
+            cmd.Parameters.AddWithValue("_contactno", contactno);
+            cmd.Parameters.AddWithValue("_email", email);
+            cmd.Parameters.AddWithValue("_address", address);
+            cmd.Parameters.AddWithValue("_acceptance_date", acceptance_date);
+            cmd.Parameters.AddWithValue("_occupation", occupation);
+            cmd.Parameters.AddWithValue("_typeofmembership", typeofmembership);
+            cmd.Parameters.AddWithValue("_standing", standing);
+            cmd.Parameters.AddWithValue("_imagearr", pic);
+            cmd.Parameters.AddWithValue("_imagesize", pic.Length);
              
 
             try
@@ -67,18 +70,16 @@ namespace MMG_PIAPS.classes
             cmd.CommandType = CommandType.StoredProcedure;
 
             cmd.Parameters.AddWithValue("_memid", memid);
-            cmd.Parameters.AddWithValue("_fname", fname);
-            cmd.Parameters.AddWithValue("_lname", lname);
-            cmd.Parameters.AddWithValue("_mname", mname);
-            //cmd.Parameters.AddWithValue("_birthday", birthdate);
-            //cmd.Parameters.AddWithValue("_contactno", contactno);
-            //cmd.Parameters.AddWithValue("_gender", gender);
-            //cmd.Parameters.AddWithValue("_address", address);
-            //cmd.Parameters.AddWithValue("_dateofmembership", typeofmembership);
-            //cmd.Parameters.AddWithValue("_imagearr", pic);
-            //cmd.Parameters.AddWithValue("_imagesize", pic.Length);
-           
-
+            cmd.Parameters.AddWithValue("_fullname", fullname);
+            cmd.Parameters.AddWithValue("_status", status);
+            cmd.Parameters.AddWithValue("_contactno", contactno);
+            cmd.Parameters.AddWithValue("_email", email);
+            cmd.Parameters.AddWithValue("_address", address);
+            cmd.Parameters.AddWithValue("_acceptance_date", acceptance_date);
+            cmd.Parameters.AddWithValue("_occupation", occupation);
+            cmd.Parameters.AddWithValue("_typeofmembership", typeofmembership);
+            cmd.Parameters.AddWithValue("_imagearr", pic);
+            cmd.Parameters.AddWithValue("_imagesize", pic.Length);
             try
             {
                 //db.con.Open();
@@ -92,6 +93,57 @@ namespace MMG_PIAPS.classes
                 return false;
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+        public Boolean delete()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = db.con;
+            cmd.CommandText = "MEMBER_DELETE";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("_memid", memid);
+                      try
+            {
+                //db.con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                db.err = null;
+                db.err = e;
+                return false;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         public DataTable SELECT_ALL() {
@@ -157,35 +209,51 @@ namespace MMG_PIAPS.classes
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
             da.Fill(dt);
 
-            if (dt != null)
+
+            try
             {
-                if (dt.Rows.Count > 0)
+
+                if (dt != null)
                 {
-                    Member e = new Member();
-                    foreach (DataRow r in dt.Rows)
+                    if (dt.Rows.Count > 0)
                     {
-                        e.empid = r["memid"].ToString();
-                        e.fname = r["fname"].ToString();
-                        e.lname = r["lname"].ToString();
-                        e.mname = r["mname"].ToString();
-                        //e.address = r["address"].ToString();
-                        //e.birthdate = Convert.ToDateTime(r["birthday"].ToString());
-                        //e.contactno = r["contactno"].ToString();
-                        //e.gender = r["gender"].ToString();
-              
+                        Member e = new Member();
+                        
+                        foreach (DataRow r in dt.Rows)
+                        {
+                            e.memid = r["memid"].ToString();
+                            e.fullname = r["fullname"].ToString();
+                            e.address = r["address"].ToString();
+                            e.contactno = r["contactno"].ToString();
+                            e.status = r["status_"].ToString();
+                            e.standing = r["standing"].ToString();
+                            e.typeofmembership = r["typeofmembership"].ToString();
+                            e.occupation = r["occupation"].ToString();
+                            e.email = r["email"].ToString();
+                            e.acceptance_date = Convert.ToDateTime(r["acceptance_date"].ToString());
+                            e.address = r["address"].ToString();
+                        }
+                        return e;
 
                     }
-                    return e;
+                    else
+                    {
+
+                        return null;
+                    }
                 }
-                else { return null; }
-
+                else
+                {
+                    return null;
+                }
             }
-            else
-            {
+            catch (Exception err) {
+                Logger.WriteErrorLog("ERROR ON MEMBERS_SELECT_BY_ID MODULE :" + err.Message);
                 return null;
-            }
-
+            }           
         }
+
+
 
 
         public Byte[] GET_IMAGE_BY_ID(){
@@ -286,9 +354,10 @@ namespace MMG_PIAPS.classes
                 dt = e.SELECT_ALL();
                 if (dt != null) {
                     foreach (DataRow r in dt.Rows) {
-                        cbo.Items.Add(r["lname"] + ", " + r["fname"] + " " + r["mname"] + "-" + r["memid"]);
+                        cbo.Items.Add(r["fullname"] + "-" + r["memid"]);
                     }
                 }
+
 
             }
 
@@ -310,17 +379,54 @@ namespace MMG_PIAPS.classes
                 {
                     foreach (DataRow r in dt.Rows)
                     {
-                        cbo.Items.Add(r["lname"] + ", " + r["fname"] + " " + r["mname"] + "-" + r["memid"]);
+                        cbo.Items.Add(r["fullname"] + "-" + r["memid"]);
                     }
                 }
 
             }//end Load Regular Members
 
 
+            public void LoadMembersInListView(ListView lv)
+            {
+
+                Member e = new Member();
+                DataTable dt = new DataTable();
+
+                dt = e.SELECT_ALL();
+                if (dt != null)
+                {
+                    int ctr=1;
+                    foreach (DataRow r in dt.Rows)
+                    {
+                        ListViewItem li = new ListViewItem();
+                        li.Text = ctr.ToString();
+                        li.SubItems.Add(r["memid"].ToString());
+                        li.SubItems.Add(r["fullname"].ToString());
+                        li.SubItems.Add(r["address"].ToString());
+                        li.SubItems.Add(r["contactno"].ToString());
+                        li.SubItems.Add(r["status_"].ToString());
+
+                        lv.Items.Add(li);
+                        ctr++;
+                        
+                    }
+                }
+
+            }//end LoadMembersInListView
 
 
 
-        
+
+
+
+
+
+
+            public Decimal GET_TOTAL_PAIDUP_CAPITAL() {
+                return 0;
+            }
+
+
 
 
 

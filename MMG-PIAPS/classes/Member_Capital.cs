@@ -22,8 +22,6 @@ namespace MMG_PIAPS.classes
             cmd.Connection = db.con;
             cmd.CommandText = "MEMBER_CAPITAL_INSERT";
             cmd.CommandType = CommandType.StoredProcedure;
-
-
             cmd.Parameters.AddWithValue("_memid", memid);
             cmd.Parameters.AddWithValue("_paid_up_capital", paid_up_capital);
             cmd.Parameters.AddWithValue("_paid_up_capital_ref", paid_up_capital_ref);

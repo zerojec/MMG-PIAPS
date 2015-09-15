@@ -34,40 +34,40 @@
             this.btnsave = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblloancategory = new System.Windows.Forms.Label();
-            this.txtinterest_amort = new System.Windows.Forms.TextBox();
-            this.txtprincipal_amort = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.lblemployement = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cboEmp = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblemp = new System.Windows.Forms.Label();
-            this.pb = new System.Windows.Forms.PictureBox();
+            this.lstloanbracket = new System.Windows.Forms.ListBox();
             this.txtprincipal = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.nmamortperiod = new System.Windows.Forms.NumericUpDown();
             this.txtinterest = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.nmamortperiod = new System.Windows.Forms.NumericUpDown();
-            this.dtfilingdate = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.txtprincipal_amort = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtinterest_amort = new System.Windows.Forms.TextBox();
             this.txttotal_amort = new System.Windows.Forms.TextBox();
-            this.lstloanbracket = new System.Windows.Forms.ListBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dtfilingdate = new System.Windows.Forms.DateTimePicker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pb = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmamortperiod)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -135,16 +135,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(601, 35);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -214,56 +204,6 @@
             this.lblloancategory.TabIndex = 4;
             this.lblloancategory.Text = "...";
             // 
-            // txtinterest_amort
-            // 
-            this.txtinterest_amort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtinterest_amort.Enabled = false;
-            this.txtinterest_amort.Location = new System.Drawing.Point(171, 160);
-            this.txtinterest_amort.Name = "txtinterest_amort";
-            this.txtinterest_amort.Size = new System.Drawing.Size(121, 22);
-            this.txtinterest_amort.TabIndex = 38;
-            this.txtinterest_amort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtprincipal_amort
-            // 
-            this.txtprincipal_amort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtprincipal_amort.Enabled = false;
-            this.txtprincipal_amort.Location = new System.Drawing.Point(171, 129);
-            this.txtprincipal_amort.Name = "txtprincipal_amort";
-            this.txtprincipal_amort.Size = new System.Drawing.Size(121, 22);
-            this.txtprincipal_amort.TabIndex = 38;
-            this.txtprincipal_amort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(26, 163);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(138, 15);
-            this.label10.TabIndex = 31;
-            this.label10.Text = "Amortization on Interest :";
-            // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(18, 132);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(146, 15);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "Amortization on Principal :";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(45, 69);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 15);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "Amortization Period :";
-            // 
             // lblemployement
             // 
             this.lblemployement.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -274,16 +214,6 @@
             this.lblemployement.Size = new System.Drawing.Size(292, 19);
             this.lblemployement.TabIndex = 3;
             this.lblemployement.Text = "...";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(109, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 15);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "Principal:";
             // 
             // label2
             // 
@@ -337,14 +267,16 @@
             this.lblemp.Text = "...";
             this.lblemp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pb
+            // lstloanbracket
             // 
-            this.pb.Location = new System.Drawing.Point(0, 0);
-            this.pb.Margin = new System.Windows.Forms.Padding(0);
-            this.pb.Name = "pb";
-            this.pb.Size = new System.Drawing.Size(50, 30);
-            this.pb.TabIndex = 1;
-            this.pb.TabStop = false;
+            this.lstloanbracket.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstloanbracket.FormattingEnabled = true;
+            this.lstloanbracket.ItemHeight = 15;
+            this.lstloanbracket.Location = new System.Drawing.Point(299, 95);
+            this.lstloanbracket.Name = "lstloanbracket";
+            this.tableLayoutPanel3.SetRowSpan(this.lstloanbracket, 6);
+            this.lstloanbracket.Size = new System.Drawing.Size(292, 181);
+            this.lstloanbracket.TabIndex = 40;
             // 
             // txtprincipal
             // 
@@ -355,25 +287,25 @@
             this.txtprincipal.TabIndex = 36;
             this.txtprincipal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtinterest
+            // label3
             // 
-            this.txtinterest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtinterest.Enabled = false;
-            this.txtinterest.Location = new System.Drawing.Point(171, 97);
-            this.txtinterest.Name = "txtinterest";
-            this.txtinterest.Size = new System.Drawing.Size(121, 22);
-            this.txtinterest.TabIndex = 37;
-            this.txtinterest.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(109, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 15);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Principal:";
             // 
-            // label6
+            // label5
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(113, 100);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 15);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "Interest :";
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(45, 69);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(119, 15);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "Amortization Period :";
             // 
             // nmamortperiod
             // 
@@ -400,34 +332,65 @@
             0});
             this.nmamortperiod.ValueChanged += new System.EventHandler(this.nmamortperiod_ValueChanged);
             // 
-            // dtfilingdate
+            // txtinterest
             // 
-            this.dtfilingdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtfilingdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtfilingdate.Location = new System.Drawing.Point(171, 222);
-            this.dtfilingdate.Name = "dtfilingdate";
-            this.dtfilingdate.Size = new System.Drawing.Size(121, 22);
-            this.dtfilingdate.TabIndex = 31;
+            this.txtinterest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtinterest.Enabled = false;
+            this.txtinterest.Location = new System.Drawing.Point(171, 97);
+            this.txtinterest.Name = "txtinterest";
+            this.txtinterest.Size = new System.Drawing.Size(121, 22);
+            this.txtinterest.TabIndex = 37;
+            this.txtinterest.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label7
+            // label6
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(95, 225);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 15);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "Date Filed :";
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(113, 100);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(51, 15);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Interest :";
             // 
-            // label8
+            // txtprincipal_amort
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(54, 194);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 15);
-            this.label8.TabIndex = 39;
-            this.label8.Text = "Total Amortization :";
+            this.txtprincipal_amort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtprincipal_amort.Enabled = false;
+            this.txtprincipal_amort.Location = new System.Drawing.Point(171, 129);
+            this.txtprincipal_amort.Name = "txtprincipal_amort";
+            this.txtprincipal_amort.Size = new System.Drawing.Size(121, 22);
+            this.txtprincipal_amort.TabIndex = 38;
+            this.txtprincipal_amort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(18, 132);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(146, 15);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "Amortization on Principal :";
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(26, 163);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(138, 15);
+            this.label10.TabIndex = 31;
+            this.label10.Text = "Amortization on Interest :";
+            // 
+            // txtinterest_amort
+            // 
+            this.txtinterest_amort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtinterest_amort.Enabled = false;
+            this.txtinterest_amort.Location = new System.Drawing.Point(171, 160);
+            this.txtinterest_amort.Name = "txtinterest_amort";
+            this.txtinterest_amort.Size = new System.Drawing.Size(121, 22);
+            this.txtinterest_amort.TabIndex = 38;
+            this.txtinterest_amort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txttotal_amort
             // 
@@ -439,20 +402,57 @@
             this.txttotal_amort.TabIndex = 38;
             this.txttotal_amort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // lstloanbracket
+            // label8
             // 
-            this.lstloanbracket.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lstloanbracket.FormattingEnabled = true;
-            this.lstloanbracket.ItemHeight = 15;
-            this.lstloanbracket.Location = new System.Drawing.Point(299, 95);
-            this.lstloanbracket.Name = "lstloanbracket";
-            this.tableLayoutPanel3.SetRowSpan(this.lstloanbracket, 6);
-            this.lstloanbracket.Size = new System.Drawing.Size(292, 181);
-            this.lstloanbracket.TabIndex = 40;
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(54, 194);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(110, 15);
+            this.label8.TabIndex = 39;
+            this.label8.Text = "Total Amortization :";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(95, 225);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(69, 15);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "Date Filed :";
+            // 
+            // dtfilingdate
+            // 
+            this.dtfilingdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtfilingdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtfilingdate.Location = new System.Drawing.Point(171, 222);
+            this.dtfilingdate.Name = "dtfilingdate";
+            this.dtfilingdate.Size = new System.Drawing.Size(121, 22);
+            this.dtfilingdate.TabIndex = 31;
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pb
+            // 
+            this.pb.Location = new System.Drawing.Point(0, 0);
+            this.pb.Margin = new System.Windows.Forms.Padding(0);
+            this.pb.Name = "pb";
+            this.pb.Size = new System.Drawing.Size(50, 30);
+            this.pb.TabIndex = 1;
+            this.pb.TabStop = false;
             // 
             // loan_salary_new
             // 
@@ -467,13 +467,13 @@
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmamortperiod)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
             this.ResumeLayout(false);
 
         }

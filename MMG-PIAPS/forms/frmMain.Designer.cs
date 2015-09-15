@@ -82,6 +82,7 @@
             this.viewBenefitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataImportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnMembers = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
@@ -371,13 +372,15 @@
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.tableLayoutPanel4.ColumnCount = 6;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.665F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.665F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.665F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.665F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.665F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.675F));
+            this.tableLayoutPanel4.ColumnCount = 7;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel4.Controls.Add(this.btnMembers, 6, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnRestrictions, 5, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnLoan, 4, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnleave, 3, 0);
@@ -396,9 +399,9 @@
             // btnRestrictions
             // 
             this.btnRestrictions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRestrictions.Location = new System.Drawing.Point(588, 3);
+            this.btnRestrictions.Location = new System.Drawing.Point(503, 3);
             this.btnRestrictions.Name = "btnRestrictions";
-            this.btnRestrictions.Size = new System.Drawing.Size(114, 55);
+            this.btnRestrictions.Size = new System.Drawing.Size(94, 55);
             this.btnRestrictions.TabIndex = 10;
             this.btnRestrictions.Text = "Restrictions";
             this.btnRestrictions.UseVisualStyleBackColor = true;
@@ -407,9 +410,9 @@
             // btnLoan
             // 
             this.btnLoan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnLoan.Location = new System.Drawing.Point(471, 3);
+            this.btnLoan.Location = new System.Drawing.Point(403, 3);
             this.btnLoan.Name = "btnLoan";
-            this.btnLoan.Size = new System.Drawing.Size(111, 55);
+            this.btnLoan.Size = new System.Drawing.Size(94, 55);
             this.btnLoan.TabIndex = 9;
             this.btnLoan.Text = "Loan";
             this.btnLoan.UseVisualStyleBackColor = true;
@@ -418,9 +421,9 @@
             // btnleave
             // 
             this.btnleave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnleave.Location = new System.Drawing.Point(354, 3);
+            this.btnleave.Location = new System.Drawing.Point(303, 3);
             this.btnleave.Name = "btnleave";
-            this.btnleave.Size = new System.Drawing.Size(111, 55);
+            this.btnleave.Size = new System.Drawing.Size(94, 55);
             this.btnleave.TabIndex = 8;
             this.btnleave.Text = "Leave";
             this.btnleave.UseVisualStyleBackColor = true;
@@ -431,7 +434,7 @@
             this.btnEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEmployee.Location = new System.Drawing.Point(3, 3);
             this.btnEmployee.Name = "btnEmployee";
-            this.btnEmployee.Size = new System.Drawing.Size(111, 55);
+            this.btnEmployee.Size = new System.Drawing.Size(94, 55);
             this.btnEmployee.TabIndex = 3;
             this.btnEmployee.Text = "Employee Data";
             this.btnEmployee.UseVisualStyleBackColor = true;
@@ -440,9 +443,9 @@
             // btnAttendance
             // 
             this.btnAttendance.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAttendance.Location = new System.Drawing.Point(120, 3);
+            this.btnAttendance.Location = new System.Drawing.Point(103, 3);
             this.btnAttendance.Name = "btnAttendance";
-            this.btnAttendance.Size = new System.Drawing.Size(111, 55);
+            this.btnAttendance.Size = new System.Drawing.Size(94, 55);
             this.btnAttendance.TabIndex = 6;
             this.btnAttendance.Text = "Attendance";
             this.btnAttendance.UseVisualStyleBackColor = true;
@@ -451,9 +454,9 @@
             // btnPassSlip
             // 
             this.btnPassSlip.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPassSlip.Location = new System.Drawing.Point(237, 3);
+            this.btnPassSlip.Location = new System.Drawing.Point(203, 3);
             this.btnPassSlip.Name = "btnPassSlip";
-            this.btnPassSlip.Size = new System.Drawing.Size(111, 55);
+            this.btnPassSlip.Size = new System.Drawing.Size(94, 55);
             this.btnPassSlip.TabIndex = 7;
             this.btnPassSlip.Text = "Pass Slip";
             this.btnPassSlip.UseVisualStyleBackColor = true;
@@ -596,7 +599,7 @@
             this.employeeToolStripMenuItem});
             this.scheduleTemplateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("scheduleTemplateToolStripMenuItem.Image")));
             this.scheduleTemplateToolStripMenuItem.Name = "scheduleTemplateToolStripMenuItem";
-            this.scheduleTemplateToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.scheduleTemplateToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
             this.scheduleTemplateToolStripMenuItem.Text = "Schedule";
             // 
             // templateToolStripMenuItem
@@ -622,7 +625,7 @@
             this.viewBenefitsToolStripMenuItem});
             this.benefitsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("benefitsToolStripMenuItem.Image")));
             this.benefitsToolStripMenuItem.Name = "benefitsToolStripMenuItem";
-            this.benefitsToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.benefitsToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
             this.benefitsToolStripMenuItem.Text = "Benefit";
             this.benefitsToolStripMenuItem.Click += new System.EventHandler(this.benefitsToolStripMenuItem_Click);
             // 
@@ -645,7 +648,7 @@
             this.memberToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dataImportToolStripMenuItem});
             this.memberToolStripMenuItem.Name = "memberToolStripMenuItem";
-            this.memberToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.memberToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
             this.memberToolStripMenuItem.Text = "Member";
             // 
             // dataImportToolStripMenuItem
@@ -654,6 +657,17 @@
             this.dataImportToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.dataImportToolStripMenuItem.Text = "Data-Import";
             this.dataImportToolStripMenuItem.Click += new System.EventHandler(this.dataImportToolStripMenuItem_Click);
+            // 
+            // btnMembers
+            // 
+            this.btnMembers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMembers.Location = new System.Drawing.Point(603, 3);
+            this.btnMembers.Name = "btnMembers";
+            this.btnMembers.Size = new System.Drawing.Size(99, 55);
+            this.btnMembers.TabIndex = 11;
+            this.btnMembers.Text = "Members";
+            this.btnMembers.UseVisualStyleBackColor = true;
+            this.btnMembers.Click += new System.EventHandler(this.btnMembers_Click);
             // 
             // frmMain
             // 
@@ -735,5 +749,6 @@
         private System.Windows.Forms.Button btnRestrictions;
         private System.Windows.Forms.ToolStripMenuItem memberToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dataImportToolStripMenuItem;
+        private System.Windows.Forms.Button btnMembers;
     }
 }

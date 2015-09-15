@@ -30,6 +30,7 @@ C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.leave.leave_new.res
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.loan.loan_ctrl.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.loan.loan_micro_new.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.loan.loan_salary_new.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.member.mem_ctrl.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.passslip.passslip_ctrl.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.passslip.passslip_new.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.schedule.sched_ctrl.resources
@@ -37,3 +38,4 @@ C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.schedule.sched_new.
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.csproj.GenerateResource.Cache
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.exe
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.pdb
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.member.mem_new.resources

@@ -259,6 +259,18 @@
     <Compile Include="userctrl\loan\loan_salary_new.Designer.cs">
       <DependentUpon>loan_salary_new.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\member\mem_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\member\mem_ctrl.Designer.cs">
+      <DependentUpon>mem_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\member\mem_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\member\mem_new.Designer.cs">
+      <DependentUpon>mem_new.cs</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\passslip\passslip_ctrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -371,6 +383,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\loan\loan_salary_new.resx">
       <DependentUpon>loan_salary_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\member\mem_ctrl.resx">
+      <DependentUpon>mem_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\member\mem_new.resx">
+      <DependentUpon>mem_new.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\passslip\passslip_ctrl.resx">
       <DependentUpon>passslip_ctrl.cs</DependentUpon>

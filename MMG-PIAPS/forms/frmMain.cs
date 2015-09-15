@@ -8,6 +8,7 @@ using MMG_PIAPS.userctrl.emp_restriction;
 using MMG_PIAPS.userctrl.emp_sched;
 using MMG_PIAPS.userctrl.leave;
 using MMG_PIAPS.userctrl.loan;
+using MMG_PIAPS.userctrl.member;
 using MMG_PIAPS.userctrl.passslip;
 using MMG_PIAPS.userctrl.schedule;
 using System;
@@ -213,6 +214,15 @@ namespace MMG_PIAPS.forms
         {
             frmConnectXLS frm = new frmConnectXLS();
             frm.ShowDialog();
+        }
+
+        private void btnMembers_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            mem_ctrl c = new mem_ctrl();
+            c.Width = pnlops.Width;
+            c.Height = pnlops.Height;
+            pnlops.Controls.Add(c);
         }
     }
 }

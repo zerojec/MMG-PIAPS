@@ -33,20 +33,46 @@ namespace MMG_PIAPS.forms
             // image filters
 
             open.Filter = "Microsoft Excel Files|*.xlsx";
+
             if (open.ShowDialog() == DialogResult.OK) {
-                
+
+                dTable = null;
+                dtmigrated = null;
+                bindingSource = null;
+                bs = null;
+                dgvExcelList.DataSource = null;
+                dgvimport.DataSource = null;
 
                 if (db.CONNECTEXCEL(open.FileName))
                 {
-                    string strSQL = "SELECT * FROM [sheet$A1:F10000]";
+                    dTable = new DataTable();
+                    bindingSource = new BindingSource();
+
+                    //WRITE TO OUTPUT WINDOw
+                    System.Diagnostics.Debug.Write(open.FileName);
+
+                    //CREATE DATAtable to retrieve the excel sheet schema
+                    DataTable schemadt = db.excelcon.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
+                    
+                    //GET THE FIRST SHEET OF EXCEL FILE
+                    DataRow r = schemadt.Rows[0];
+
+                    //GET THE NAME OF THE FIRST SHEET
+                    String sheetname = r["TABLE_NAME"].ToString();
+
+
+                    //QUERY THE FIRST SHEET FROM CELL RANGE "A1 To H1000"
+                    string strSQL = "SELECT * FROM [" + sheetname + "A1:H1000]";
 
                     OleDbCommand dbCommand = new OleDbCommand(strSQL, db.excelcon);
                     OleDbDataAdapter dataAdapter = new OleDbDataAdapter(dbCommand);
+
 
                     // create data table                   
 
                     dataAdapter.Fill(dTable);
 
+                    System.Diagnostics.Debug.Write(dTable.TableName.ToString());
                     // bind the datasource
                     bindingSource.DataSource = dTable;
                     // assign the dataBindingSrc to the DataGridView
@@ -77,48 +103,32 @@ namespace MMG_PIAPS.forms
 
             foreach (DataRow row in dt.Rows)
             {
-                Member m = new Member();
-                //STATUS 2==WITHDRAWN
-                if (Convert.ToInt16(row["status"].ToString()) == 2)
-                {
-                    m.status = "WITHDRAWN";
-                }
-                else if (Convert.ToInt16(row["status"].ToString()) == 1)
-                {
-                    m.status = "STAFF";
-                }
-                else {
-                    m.status = "REGULAR";
-                }
-
-                String[] names = row["name"].ToString().Split(',');
-
-                m.lname = names[0];
-
-                String[] fmname = names[1].Split(' ');
-                
-                String fname = "";
-                for (int x = 0; x < fmname.Length-1; x++) {
-                    fname += fmname[x].Trim() + " ";
-                }
-
-                m.mname = fmname[fmname.Length-1];
-
-                m.fname = fname;
-                m.memid = row["name"].ToString().Substring(0, 3) + "-" + row["No"].ToString();
+                Member m = new Member();                   
+                m.memid = row["Membership_Registry_Number"].ToString();              
+                m.fullname = row["Name of Member"].ToString();
+                m.address = row["Address"].ToString();
+                m.email = row["Email"].ToString();
+                m.acceptance_date = Convert.ToDateTime(row["Acceptance_Date"].ToString());
+                m.contactno = row["Contact_No"].ToString();
+                m.occupation = row["Occupation"].ToString();
+                m.status = "ACTIVE"; //STATUS = ACTIVE, STAFF, WITHDRAWN
+                m.standing = "IN_GOOD_STANDING"; // STANDING = IN_GOO_STANDING, NOT_IN_GOOD_STANDING
+                m.typeofmembership = "REGULAR"; // REGULAR, ASSOCIATE
 
                 if (m.save())
                 {
-                    dtmigrated.ImportRow(row);     
+                    System.Diagnostics.Debug.WriteLine(m.memid + "-" + m.fullname + " -->Record Saved");
                 }
-               
-                 
+                else {
+                    System.Diagnostics.Debug.WriteLine("Error :" + db.err.Message);
+                }
             }
-          
-            bs.DataSource = dtmigrated;
-            dgvimport.DataSource = bs;
+            bs = new BindingSource();
 
-            dgvimport.Refresh();
+            bs.DataSource = dtmigrated;
+            //dgvimport.DataSource = bs;
+
+            //dgvimport.Refresh();
 
         }
 
