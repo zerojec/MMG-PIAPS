@@ -144,7 +144,7 @@ namespace MMG_PIAPS.userctrl.emp_sched
                 {
                     if (es.save())
                     {
-                        if(sched_adjustment.ischecked)
+                        if (sched_adjustment.ischecked)
                         {
                             Emp_Sched_Adjustment esa = new Emp_Sched_Adjustment();
 
@@ -156,12 +156,15 @@ namespace MMG_PIAPS.userctrl.emp_sched
 
                             if (esa.save())
                             {
-                                MessageBox.Show("Successful", "Save");
+                                MessageBox.Show("Successful \n\n Including Schedule Adjustments", "Save");
                             }
                             else
                             {
                                 MessageBox.Show("There was a problem saving SCHEDULE_ADJUSTMENT :\n" + db.err.Message);
                             }
+                        }
+                        else {
+                            MessageBox.Show("Successful\n\nSchedule Adjustments not detected.", "Save");
                         }
                     }
                     else

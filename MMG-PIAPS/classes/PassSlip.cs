@@ -16,6 +16,7 @@ namespace MMG_PIAPS.classes
         public DateTime datetime_in { get; set; }
         public DateTime datetime_out { get; set; }
         public string destination { get; set; }
+        public string purpose { get; set; }
         public decimal allowance { get; set; }
 
 
@@ -52,6 +53,30 @@ namespace MMG_PIAPS.classes
         }//end save
 
 
+
+        public Boolean apply_new()
+        {
+
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "PASSSLIP_APPLY_NEW");
+            cmd.Parameters.AddWithValue("_empid", empid);
+            cmd.Parameters.AddWithValue("_passtype", passtype);
+            cmd.Parameters.AddWithValue("_destination", destination);
+            cmd.Parameters.AddWithValue("_purpose", purpose);
+            cmd.Parameters.AddWithValue("_allowance", allowance);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                db.err = null;
+                db.err = e;
+                return false;
+            }
+        }//end save
 
 
 
@@ -97,9 +122,11 @@ namespace MMG_PIAPS.classes
                     li.SubItems.Add(r["fullname"].ToString());
                     li.SubItems.Add(r["passtype"].ToString());
                     li.SubItems.Add(r["destination"].ToString());
+                    li.SubItems.Add(r["purpose"].ToString());
                     li.SubItems.Add(r["datetime_in"].ToString());
                     li.SubItems.Add(r["datetime_out"].ToString());
                     li.SubItems.Add(r["allowance"].ToString());
+                    li.SubItems.Add(r["status_"].ToString());
 
                     lv.Items.Add(li);
 

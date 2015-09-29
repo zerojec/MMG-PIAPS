@@ -145,6 +145,12 @@
     <Compile Include="userctrl\attendance\attendance_new.Designer.cs">
       <DependentUpon>attendance_new.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\attendance\attendance_current_user.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\attendance\attendance_current_user.Designer.cs">
+      <DependentUpon>attendance_current_user.cs</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\benefit\benefit_ctrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -180,6 +186,12 @@
     </Compile>
     <Compile Include="userctrl\emp\emp_new.Designer.cs">
       <DependentUpon>emp_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\emp\emp_profile_current_user.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\emp\emp_profile_current_user.Designer.cs">
+      <DependentUpon>emp_profile_current_user.cs</DependentUpon>
     </Compile>
     <Compile Include="userctrl\emp\emp_update.cs">
       <SubType>UserControl</SubType>
@@ -217,11 +229,23 @@
     <Compile Include="userctrl\emp_restriction\emp_restriction_ctrl.Designer.cs">
       <DependentUpon>emp_restriction_ctrl.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\emp_restriction\emp_restriction_current_user.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\emp_restriction\emp_restriction_current_user.Designer.cs">
+      <DependentUpon>emp_restriction_current_user.cs</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\emp_sched\emp_sched_ctrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="userctrl\emp_sched\emp_sched_ctrl.Designer.cs">
       <DependentUpon>emp_sched_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\emp_sched\emp_sched_current_user.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\emp_sched\emp_sched_current_user.Designer.cs">
+      <DependentUpon>emp_sched_current_user.cs</DependentUpon>
     </Compile>
     <Compile Include="userctrl\emp_sched\emp_sched_new.cs">
       <SubType>UserControl</SubType>
@@ -235,6 +259,12 @@
     <Compile Include="userctrl\leave\leave_ctrl.Designer.cs">
       <DependentUpon>leave_ctrl.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\leave\leave_current_user.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\leave\leave_current_user.Designer.cs">
+      <DependentUpon>leave_current_user.cs</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\leave\leave_new.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -246,6 +276,12 @@
     </Compile>
     <Compile Include="userctrl\loan\loan_ctrl.Designer.cs">
       <DependentUpon>loan_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\loan\loan_current_user.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\loan\loan_current_user.Designer.cs">
+      <DependentUpon>loan_current_user.cs</DependentUpon>
     </Compile>
     <Compile Include="userctrl\loan\loan_micro_new.cs">
       <SubType>UserControl</SubType>
@@ -271,11 +307,23 @@
     <Compile Include="userctrl\member\mem_new.Designer.cs">
       <DependentUpon>mem_new.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\passslip\passslip_apply_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\passslip\passslip_apply_new.Designer.cs">
+      <DependentUpon>passslip_apply_new.cs</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\passslip\passslip_ctrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="userctrl\passslip\passslip_ctrl.Designer.cs">
       <DependentUpon>passslip_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\passslip\passslip_current_user.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\passslip\passslip_current_user.Designer.cs">
+      <DependentUpon>passslip_current_user.cs</DependentUpon>
     </Compile>
     <Compile Include="userctrl\passslip\passslip_new.cs">
       <SubType>UserControl</SubType>
@@ -294,6 +342,30 @@
     </Compile>
     <Compile Include="userctrl\schedule\sched_new.Designer.cs">
       <DependentUpon>sched_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\service_request\service_request_apply_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\service_request\service_request_apply_new.Designer.cs">
+      <DependentUpon>service_request_apply_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\service_request\service_request_current_user.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\service_request\service_request_current_user.Designer.cs">
+      <DependentUpon>service_request_current_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\supply_request\supply_request_apply_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\supply_request\supply_request_apply_new.Designer.cs">
+      <DependentUpon>supply_request_apply_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\supply_request\supply_request_current_user.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\supply_request\supply_request_current_user.Designer.cs">
+      <DependentUpon>supply_request_current_user.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="forms\emp\frmEmpBasicPay.resx">
       <DependentUpon>frmEmpBasicPay.cs</DependentUpon>
@@ -324,6 +396,9 @@
     <EmbeddedResource Include="userctrl\attendance\attendance_ctrl.resx">
       <DependentUpon>attendance_ctrl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\attendance\attendance_current_user.resx">
+      <DependentUpon>attendance_current_user.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userctrl\attendance\attendance_new.resx">
       <DependentUpon>attendance_new.cs</DependentUpon>
     </EmbeddedResource>
@@ -345,6 +420,9 @@
     <EmbeddedResource Include="userctrl\emp\emp_new.resx">
       <DependentUpon>emp_new.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\emp\emp_profile_current_user.resx">
+      <DependentUpon>emp_profile_current_user.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userctrl\emp\emp_update.resx">
       <DependentUpon>emp_update.cs</DependentUpon>
     </EmbeddedResource>
@@ -363,8 +441,14 @@
     <EmbeddedResource Include="userctrl\emp_restriction\emp_restriction_ctrl.resx">
       <DependentUpon>emp_restriction_ctrl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\emp_restriction\emp_restriction_current_user.resx">
+      <DependentUpon>emp_restriction_current_user.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userctrl\emp_sched\emp_sched_ctrl.resx">
       <DependentUpon>emp_sched_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\emp_sched\emp_sched_current_user.resx">
+      <DependentUpon>emp_sched_current_user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\emp_sched\emp_sched_new.resx">
       <DependentUpon>emp_sched_new.cs</DependentUpon>
@@ -372,11 +456,17 @@
     <EmbeddedResource Include="userctrl\leave\leave_ctrl.resx">
       <DependentUpon>leave_ctrl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\leave\leave_current_user.resx">
+      <DependentUpon>leave_current_user.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userctrl\leave\leave_new.resx">
       <DependentUpon>leave_new.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\loan\loan_ctrl.resx">
       <DependentUpon>loan_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\loan\loan_current_user.resx">
+      <DependentUpon>loan_current_user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\loan\loan_micro_new.resx">
       <DependentUpon>loan_micro_new.cs</DependentUpon>
@@ -390,8 +480,14 @@
     <EmbeddedResource Include="userctrl\member\mem_new.resx">
       <DependentUpon>mem_new.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\passslip\passslip_apply_new.resx">
+      <DependentUpon>passslip_apply_new.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userctrl\passslip\passslip_ctrl.resx">
       <DependentUpon>passslip_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\passslip\passslip_current_user.resx">
+      <DependentUpon>passslip_current_user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\passslip\passslip_new.resx">
       <DependentUpon>passslip_new.cs</DependentUpon>
@@ -401,6 +497,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\schedule\sched_new.resx">
       <DependentUpon>sched_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\service_request\service_request_apply_new.resx">
+      <DependentUpon>service_request_apply_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\service_request\service_request_current_user.resx">
+      <DependentUpon>service_request_current_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\supply_request\supply_request_apply_new.resx">
+      <DependentUpon>supply_request_apply_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\supply_request\supply_request_current_user.resx">
+      <DependentUpon>supply_request_current_user.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
@@ -677,6 +785,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_restriction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eomployee profile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leave.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\members.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\service_request.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supply_request.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attendance.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

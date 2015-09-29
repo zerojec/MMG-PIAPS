@@ -88,7 +88,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 135F));
             this.tableLayoutPanel2.Controls.Add(this.btnNew, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(164, 0);
@@ -102,9 +102,9 @@
             // 
             this.btnNew.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnNew.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.Location = new System.Drawing.Point(362, 3);
+            this.btnNew.Location = new System.Drawing.Point(360, 3);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(129, 34);
+            this.btnNew.Size = new System.Drawing.Size(131, 34);
             this.btnNew.TabIndex = 0;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
@@ -120,7 +120,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
             this.tableLayoutPanel3.Controls.Add(this.dtpTo, 4, 0);
             this.tableLayoutPanel3.Controls.Add(this.chkDate, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.chkEmp, 0, 0);
@@ -133,16 +133,16 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(359, 40);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(357, 40);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // dtpTo
             // 
             this.dtpTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpTo.Location = new System.Drawing.Point(232, 9);
+            this.dtpTo.Location = new System.Drawing.Point(230, 9);
             this.dtpTo.Name = "dtpTo";
-            this.dtpTo.Size = new System.Drawing.Size(38, 22);
+            this.dtpTo.Size = new System.Drawing.Size(37, 22);
             this.dtpTo.TabIndex = 4;
             // 
             // chkDate
@@ -150,7 +150,7 @@
             this.chkDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.chkDate.AutoSize = true;
             this.chkDate.ForeColor = System.Drawing.Color.White;
-            this.chkDate.Location = new System.Drawing.Point(115, 10);
+            this.chkDate.Location = new System.Drawing.Point(114, 10);
             this.chkDate.Margin = new System.Windows.Forms.Padding(0);
             this.chkDate.Name = "chkDate";
             this.chkDate.Size = new System.Drawing.Size(70, 19);
@@ -179,27 +179,27 @@
             this.cboEmp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cboEmp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboEmp.FormattingEnabled = true;
-            this.cboEmp.Location = new System.Drawing.Point(73, 8);
+            this.cboEmp.Location = new System.Drawing.Point(73, 9);
             this.cboEmp.Name = "cboEmp";
-            this.cboEmp.Size = new System.Drawing.Size(39, 23);
+            this.cboEmp.Size = new System.Drawing.Size(38, 23);
             this.cboEmp.TabIndex = 1;
             // 
             // dtpFrom
             // 
             this.dtpFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFrom.Location = new System.Drawing.Point(188, 9);
+            this.dtpFrom.Location = new System.Drawing.Point(187, 9);
             this.dtpFrom.Name = "dtpFrom";
-            this.dtpFrom.Size = new System.Drawing.Size(38, 22);
+            this.dtpFrom.Size = new System.Drawing.Size(37, 22);
             this.dtpFrom.TabIndex = 3;
             // 
             // btnFilter
             // 
             this.btnFilter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnFilter.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilter.Location = new System.Drawing.Point(276, 3);
+            this.btnFilter.Location = new System.Drawing.Point(273, 3);
             this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(80, 34);
+            this.btnFilter.Size = new System.Drawing.Size(81, 34);
             this.btnFilter.TabIndex = 5;
             this.btnFilter.Text = "Filter";
             this.btnFilter.UseVisualStyleBackColor = true;

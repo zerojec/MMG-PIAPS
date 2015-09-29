@@ -43,14 +43,14 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Tw Cen MT", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(186, 15);
+            this.label1.Location = new System.Drawing.Point(181, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(297, 62);
+            this.label1.Size = new System.Drawing.Size(308, 62);
             this.label1.TabIndex = 1;
-            this.label1.Text = "MMG-Albay";
+            this.label1.Text = "MMG-ALBAY";
             // 
             // panel1
             // 
@@ -61,7 +61,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(15);
-            this.panel1.Size = new System.Drawing.Size(545, 89);
+            this.panel1.Size = new System.Drawing.Size(504, 89);
             this.panel1.TabIndex = 2;
             // 
             // pictureBox1
@@ -79,13 +79,14 @@
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Tw Cen MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(0, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(545, 30);
+            this.label2.Size = new System.Drawing.Size(504, 30);
             this.label2.TabIndex = 3;
             this.label2.Text = "Personnel Information and Payroll System";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
             // 
@@ -100,9 +101,9 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(545, 224);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(504, 224);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // label3
@@ -110,10 +111,10 @@
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Right;
             this.label3.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(103, 87);
+            this.label3.Location = new System.Drawing.Point(83, 94);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.label3.Size = new System.Drawing.Size(66, 50);
+            this.label3.Size = new System.Drawing.Size(66, 35);
             this.label3.TabIndex = 0;
             this.label3.Text = "Enter ID :";
             // 
@@ -121,7 +122,7 @@
             // 
             this.txtid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtid.Location = new System.Drawing.Point(175, 90);
+            this.txtid.Location = new System.Drawing.Point(155, 97);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(194, 29);
             this.txtid.TabIndex = 1;
@@ -134,7 +135,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(545, 343);
+            this.ClientSize = new System.Drawing.Size(504, 343);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label2);

@@ -192,6 +192,24 @@ namespace MMG_PIAPS.classes
 
 
 
+        public DataTable SELECT_BY_NAME(String input)
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "MEMBER_SELECT_BY_NAME");
+            cmd.Parameters.AddWithValue("_input", input);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog(e.Message);
+                return null;
+            }
+        }
 
 
 
@@ -404,7 +422,7 @@ namespace MMG_PIAPS.classes
                         li.SubItems.Add(r["fullname"].ToString());
                         li.SubItems.Add(r["address"].ToString());
                         li.SubItems.Add(r["contactno"].ToString());
-                        li.SubItems.Add(r["status_"].ToString());
+                        li.SubItems.Add(r["standing"].ToString());
 
                         lv.Items.Add(li);
                         ctr++;
@@ -417,6 +435,37 @@ namespace MMG_PIAPS.classes
 
 
 
+
+            public void Load_Searched_MembersInListView(ListView lv, String input)
+            {
+
+                Member e = new Member();
+                DataTable dt = new DataTable();
+
+                dt = e.SELECT_BY_NAME(input);
+
+                lv.Items.Clear();
+
+                if (dt != null)
+                {
+                    int ctr = 1;
+                    foreach (DataRow r in dt.Rows)
+                    {
+                        ListViewItem li = new ListViewItem();
+                        li.Text = ctr.ToString();
+                        li.SubItems.Add(r["memid"].ToString());
+                        li.SubItems.Add(r["fullname"].ToString());
+                        li.SubItems.Add(r["address"].ToString());
+                        li.SubItems.Add(r["contactno"].ToString());
+                        li.SubItems.Add(r["standing"].ToString());
+
+                        lv.Items.Add(li);
+                        ctr++;
+
+                    }
+                }
+
+            }//end LoadMembersInListView
 
 
 

@@ -34,13 +34,15 @@
             this.cbomembershiptype = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtoccupation = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtemail = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cbogender = new System.Windows.Forms.ComboBox();
@@ -51,6 +53,7 @@
             this.txtmname = new System.Windows.Forms.TextBox();
             this.txtaddress = new System.Windows.Forms.TextBox();
             this.txtcontactno = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.pbEmpPic = new System.Windows.Forms.PictureBox();
             this.btnBrowse = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -63,9 +66,6 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnrotate = new System.Windows.Forms.Button();
-            this.txtemail = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtoccupation = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -173,6 +173,34 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(484, 249);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
+            // txtoccupation
+            // 
+            this.txtoccupation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtoccupation.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtoccupation.Location = new System.Drawing.Point(371, 4);
+            this.txtoccupation.Name = "txtoccupation";
+            this.txtoccupation.Size = new System.Drawing.Size(109, 25);
+            this.txtoccupation.TabIndex = 16;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(322, 101);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(42, 15);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "Email :";
+            // 
+            // txtemail
+            // 
+            this.txtemail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtemail.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemail.Location = new System.Drawing.Point(371, 97);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(109, 25);
+            this.txtemail.TabIndex = 16;
+            // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -232,16 +260,6 @@
             this.label8.Size = new System.Drawing.Size(55, 15);
             this.label8.TabIndex = 6;
             this.label8.Text = "Address :";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(288, 132);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 15);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Contact No. :";
             // 
             // label9
             // 
@@ -343,6 +361,16 @@
             this.txtcontactno.Name = "txtcontactno";
             this.txtcontactno.Size = new System.Drawing.Size(109, 25);
             this.txtcontactno.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(288, 132);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(76, 15);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Contact No. :";
             // 
             // pbEmpPic
             // 
@@ -499,34 +527,6 @@
             this.btnrotate.Text = "Rotate";
             this.btnrotate.UseVisualStyleBackColor = true;
             this.btnrotate.Click += new System.EventHandler(this.btnrotate_Click);
-            // 
-            // txtemail
-            // 
-            this.txtemail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtemail.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.Location = new System.Drawing.Point(371, 97);
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(109, 25);
-            this.txtemail.TabIndex = 16;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(322, 101);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 15);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "Email :";
-            // 
-            // txtoccupation
-            // 
-            this.txtoccupation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtoccupation.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtoccupation.Location = new System.Drawing.Point(371, 4);
-            this.txtoccupation.Name = "txtoccupation";
-            this.txtoccupation.Size = new System.Drawing.Size(109, 25);
-            this.txtoccupation.TabIndex = 16;
             // 
             // mem_new
             // 

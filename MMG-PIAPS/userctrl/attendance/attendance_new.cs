@@ -157,10 +157,12 @@ namespace MMG_PIAPS.userctrl.attendance
                         e.Cancel = true;
                     }
                     else {
+                        
                         //line = r.ReadLine();
+
                         String[] str = line.Split('\t');
                         String empid, date_time, state, work_code;
-                        empid = str[0];
+                        empid = "TAB-" + str[0];
                         date_time = str[1];
                         state = str[2];
                         work_code = str[3];
@@ -201,12 +203,17 @@ namespace MMG_PIAPS.userctrl.attendance
             ENABLE_MAIN_BUTTONS();
         }
 
+
+
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Parent.Height = 0;
             this.Parent.Controls.Clear();      
             this.Dispose();
         }
+
+
+
            
       }//END USER CONTROL
 }//END NAMESPACE

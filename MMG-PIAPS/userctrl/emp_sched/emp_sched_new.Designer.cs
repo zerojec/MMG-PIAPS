@@ -30,6 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.thu = new MMG_PIAPS.userctrl.custom.mit_sched_template();
+            this.wed = new MMG_PIAPS.userctrl.custom.mit_sched_template();
+            this.sun = new MMG_PIAPS.userctrl.custom.mit_sched_template();
+            this.sat = new MMG_PIAPS.userctrl.custom.mit_sched_template();
+            this.fri = new MMG_PIAPS.userctrl.custom.mit_sched_template();
+            this.mon = new MMG_PIAPS.userctrl.custom.mit_sched_template();
+            this.tue = new MMG_PIAPS.userctrl.custom.mit_sched_template();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -54,20 +61,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnsave = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.cbofirst = new System.Windows.Forms.ComboBox();
-            this.cboday = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.thu = new MMG_PIAPS.userctrl.custom.mit_sched_template();
-            this.wed = new MMG_PIAPS.userctrl.custom.mit_sched_template();
-            this.sun = new MMG_PIAPS.userctrl.custom.mit_sched_template();
-            this.sat = new MMG_PIAPS.userctrl.custom.mit_sched_template();
-            this.fri = new MMG_PIAPS.userctrl.custom.mit_sched_template();
-            this.mon = new MMG_PIAPS.userctrl.custom.mit_sched_template();
-            this.tue = new MMG_PIAPS.userctrl.custom.mit_sched_template();
+            this.cboday = new System.Windows.Forms.ComboBox();
+            this.cbofirst = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.sched_adjustment = new MMG_PIAPS.userctrl.custom.mit_sched_template();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
@@ -118,6 +118,111 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(752, 262);
             this.tableLayoutPanel3.TabIndex = 3;
+            // 
+            // thu
+            // 
+            this.tableLayoutPanel3.SetColumnSpan(this.thu, 2);
+            this.thu.day = null;
+            this.thu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.thu.empid = null;
+            this.thu.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thu.hours_allocated = System.TimeSpan.Parse("00:00:00");
+            this.thu.ischecked = true;
+            this.thu.Location = new System.Drawing.Point(114, 130);
+            this.thu.Margin = new System.Windows.Forms.Padding(0);
+            this.thu.Name = "thu";
+            this.thu.Size = new System.Drawing.Size(636, 30);
+            this.thu.TabIndex = 29;
+            // 
+            // wed
+            // 
+            this.tableLayoutPanel3.SetColumnSpan(this.wed, 2);
+            this.wed.day = null;
+            this.wed.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wed.empid = null;
+            this.wed.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wed.hours_allocated = System.TimeSpan.Parse("00:00:00");
+            this.wed.ischecked = true;
+            this.wed.Location = new System.Drawing.Point(114, 98);
+            this.wed.Margin = new System.Windows.Forms.Padding(0);
+            this.wed.Name = "wed";
+            this.wed.Size = new System.Drawing.Size(636, 30);
+            this.wed.TabIndex = 29;
+            // 
+            // sun
+            // 
+            this.tableLayoutPanel3.SetColumnSpan(this.sun, 2);
+            this.sun.day = null;
+            this.sun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sun.empid = null;
+            this.sun.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sun.hours_allocated = System.TimeSpan.Parse("00:00:00");
+            this.sun.ischecked = true;
+            this.sun.Location = new System.Drawing.Point(114, 226);
+            this.sun.Margin = new System.Windows.Forms.Padding(0);
+            this.sun.Name = "sun";
+            this.sun.Size = new System.Drawing.Size(636, 30);
+            this.sun.TabIndex = 29;
+            // 
+            // sat
+            // 
+            this.tableLayoutPanel3.SetColumnSpan(this.sat, 2);
+            this.sat.day = null;
+            this.sat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sat.empid = null;
+            this.sat.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sat.hours_allocated = System.TimeSpan.Parse("00:00:00");
+            this.sat.ischecked = true;
+            this.sat.Location = new System.Drawing.Point(114, 194);
+            this.sat.Margin = new System.Windows.Forms.Padding(0);
+            this.sat.Name = "sat";
+            this.sat.Size = new System.Drawing.Size(636, 30);
+            this.sat.TabIndex = 29;
+            // 
+            // fri
+            // 
+            this.tableLayoutPanel3.SetColumnSpan(this.fri, 2);
+            this.fri.day = null;
+            this.fri.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fri.empid = null;
+            this.fri.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fri.hours_allocated = System.TimeSpan.Parse("00:00:00");
+            this.fri.ischecked = true;
+            this.fri.Location = new System.Drawing.Point(114, 162);
+            this.fri.Margin = new System.Windows.Forms.Padding(0);
+            this.fri.Name = "fri";
+            this.fri.Size = new System.Drawing.Size(636, 30);
+            this.fri.TabIndex = 28;
+            // 
+            // mon
+            // 
+            this.tableLayoutPanel3.SetColumnSpan(this.mon, 2);
+            this.mon.day = null;
+            this.mon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mon.empid = null;
+            this.mon.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mon.hours_allocated = System.TimeSpan.Parse("00:00:00");
+            this.mon.ischecked = true;
+            this.mon.Location = new System.Drawing.Point(114, 34);
+            this.mon.Margin = new System.Windows.Forms.Padding(0);
+            this.mon.Name = "mon";
+            this.mon.Size = new System.Drawing.Size(636, 30);
+            this.mon.TabIndex = 27;
+            // 
+            // tue
+            // 
+            this.tableLayoutPanel3.SetColumnSpan(this.tue, 2);
+            this.tue.day = null;
+            this.tue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tue.empid = null;
+            this.tue.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tue.hours_allocated = System.TimeSpan.Parse("00:00:00");
+            this.tue.ischecked = true;
+            this.tue.Location = new System.Drawing.Point(114, 66);
+            this.tue.Margin = new System.Windows.Forms.Padding(0);
+            this.tue.Name = "tue";
+            this.tue.Size = new System.Drawing.Size(636, 30);
+            this.tue.TabIndex = 28;
             // 
             // label2
             // 
@@ -384,12 +489,6 @@
             this.btncancel.UseVisualStyleBackColor = true;
             this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 528;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -412,33 +511,16 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(752, 74);
             this.tableLayoutPanel4.TabIndex = 16;
             // 
-            // label14
+            // label15
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(8, 5);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(177, 19);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "SCHEDULE ADJUSTMENT :";
-            // 
-            // cbofirst
-            // 
-            this.cbofirst.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbofirst.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbofirst.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbofirst.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbofirst.FormattingEnabled = true;
-            this.cbofirst.Items.AddRange(new object[] {
-            "FIRST",
-            "SECOND",
-            "THIRD",
-            "LAST"});
-            this.cbofirst.Location = new System.Drawing.Point(191, 3);
-            this.cbofirst.Name = "cbofirst";
-            this.cbofirst.Size = new System.Drawing.Size(182, 27);
-            this.cbofirst.TabIndex = 18;
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(567, 5);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(112, 19);
+            this.label15.TabIndex = 20;
+            this.label15.Text = "OF THE MONTH";
             // 
             // cboday
             // 
@@ -460,121 +542,33 @@
             this.cboday.Size = new System.Drawing.Size(182, 27);
             this.cboday.TabIndex = 19;
             // 
-            // label15
+            // cbofirst
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(567, 5);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(112, 19);
-            this.label15.TabIndex = 20;
-            this.label15.Text = "OF THE MONTH";
+            this.cbofirst.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbofirst.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbofirst.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbofirst.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbofirst.FormattingEnabled = true;
+            this.cbofirst.Items.AddRange(new object[] {
+            "FIRST",
+            "SECOND",
+            "THIRD",
+            "LAST"});
+            this.cbofirst.Location = new System.Drawing.Point(191, 3);
+            this.cbofirst.Name = "cbofirst";
+            this.cbofirst.Size = new System.Drawing.Size(182, 27);
+            this.cbofirst.TabIndex = 18;
             // 
-            // thu
+            // label14
             // 
-            this.tableLayoutPanel3.SetColumnSpan(this.thu, 2);
-            this.thu.day = null;
-            this.thu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.thu.empid = null;
-            this.thu.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thu.hours_allocated = System.TimeSpan.Parse("00:00:00");
-            this.thu.ischecked = true;
-            this.thu.Location = new System.Drawing.Point(114, 130);
-            this.thu.Margin = new System.Windows.Forms.Padding(0);
-            this.thu.Name = "thu";
-            this.thu.Size = new System.Drawing.Size(636, 30);
-            this.thu.TabIndex = 29;
-            // 
-            // wed
-            // 
-            this.tableLayoutPanel3.SetColumnSpan(this.wed, 2);
-            this.wed.day = null;
-            this.wed.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wed.empid = null;
-            this.wed.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wed.hours_allocated = System.TimeSpan.Parse("00:00:00");
-            this.wed.ischecked = true;
-            this.wed.Location = new System.Drawing.Point(114, 98);
-            this.wed.Margin = new System.Windows.Forms.Padding(0);
-            this.wed.Name = "wed";
-            this.wed.Size = new System.Drawing.Size(636, 30);
-            this.wed.TabIndex = 29;
-            // 
-            // sun
-            // 
-            this.tableLayoutPanel3.SetColumnSpan(this.sun, 2);
-            this.sun.day = null;
-            this.sun.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sun.empid = null;
-            this.sun.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sun.hours_allocated = System.TimeSpan.Parse("00:00:00");
-            this.sun.ischecked = true;
-            this.sun.Location = new System.Drawing.Point(114, 226);
-            this.sun.Margin = new System.Windows.Forms.Padding(0);
-            this.sun.Name = "sun";
-            this.sun.Size = new System.Drawing.Size(636, 30);
-            this.sun.TabIndex = 29;
-            // 
-            // sat
-            // 
-            this.tableLayoutPanel3.SetColumnSpan(this.sat, 2);
-            this.sat.day = null;
-            this.sat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sat.empid = null;
-            this.sat.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sat.hours_allocated = System.TimeSpan.Parse("00:00:00");
-            this.sat.ischecked = true;
-            this.sat.Location = new System.Drawing.Point(114, 194);
-            this.sat.Margin = new System.Windows.Forms.Padding(0);
-            this.sat.Name = "sat";
-            this.sat.Size = new System.Drawing.Size(636, 30);
-            this.sat.TabIndex = 29;
-            // 
-            // fri
-            // 
-            this.tableLayoutPanel3.SetColumnSpan(this.fri, 2);
-            this.fri.day = null;
-            this.fri.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fri.empid = null;
-            this.fri.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fri.hours_allocated = System.TimeSpan.Parse("00:00:00");
-            this.fri.ischecked = true;
-            this.fri.Location = new System.Drawing.Point(114, 162);
-            this.fri.Margin = new System.Windows.Forms.Padding(0);
-            this.fri.Name = "fri";
-            this.fri.Size = new System.Drawing.Size(636, 30);
-            this.fri.TabIndex = 28;
-            // 
-            // mon
-            // 
-            this.tableLayoutPanel3.SetColumnSpan(this.mon, 2);
-            this.mon.day = null;
-            this.mon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mon.empid = null;
-            this.mon.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mon.hours_allocated = System.TimeSpan.Parse("00:00:00");
-            this.mon.ischecked = true;
-            this.mon.Location = new System.Drawing.Point(114, 34);
-            this.mon.Margin = new System.Windows.Forms.Padding(0);
-            this.mon.Name = "mon";
-            this.mon.Size = new System.Drawing.Size(636, 30);
-            this.mon.TabIndex = 27;
-            // 
-            // tue
-            // 
-            this.tableLayoutPanel3.SetColumnSpan(this.tue, 2);
-            this.tue.day = null;
-            this.tue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tue.empid = null;
-            this.tue.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tue.hours_allocated = System.TimeSpan.Parse("00:00:00");
-            this.tue.ischecked = true;
-            this.tue.Location = new System.Drawing.Point(114, 66);
-            this.tue.Margin = new System.Windows.Forms.Padding(0);
-            this.tue.Name = "tue";
-            this.tue.Size = new System.Drawing.Size(636, 30);
-            this.tue.TabIndex = 28;
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(8, 5);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(177, 19);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "SCHEDULE ADJUSTMENT :";
             // 
             // sched_adjustment
             // 
@@ -589,6 +583,12 @@
             this.sched_adjustment.Name = "sched_adjustment";
             this.sched_adjustment.Size = new System.Drawing.Size(746, 38);
             this.sched_adjustment.TabIndex = 21;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 528;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // emp_sched_new
             // 

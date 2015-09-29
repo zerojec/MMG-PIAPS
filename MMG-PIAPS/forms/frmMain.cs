@@ -3,6 +3,7 @@ using MMG_PIAPS.modules;
 using MMG_PIAPS.userctrl;
 using MMG_PIAPS.userctrl.attendance;
 using MMG_PIAPS.userctrl.benefit;
+using MMG_PIAPS.userctrl.emp;
 using MMG_PIAPS.userctrl.emp_benefit;
 using MMG_PIAPS.userctrl.emp_restriction;
 using MMG_PIAPS.userctrl.emp_sched;
@@ -11,6 +12,8 @@ using MMG_PIAPS.userctrl.loan;
 using MMG_PIAPS.userctrl.member;
 using MMG_PIAPS.userctrl.passslip;
 using MMG_PIAPS.userctrl.schedule;
+using MMG_PIAPS.userctrl.service_request;
+using MMG_PIAPS.userctrl.supply_request;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,8 +41,9 @@ namespace MMG_PIAPS.forms
 
       
 
-        private void btnEmpolyee_Click(object sender, EventArgs e)
-        {
+    
+
+        private void LOAD_EMPLOYEE_CONTROL() {
             pnlops.Controls.Clear();
             emp_ctrl c = new emp_ctrl();
             c.Width = pnlops.Width;
@@ -77,9 +81,339 @@ namespace MMG_PIAPS.forms
                 
                 //CurrUserPic.SizeMode = PictureBoxSizeMode.Zoom;
             }
-           
+
+
+            //CREATE THE NECESSARY BUTTONS ACCORDING TO RESTRICTION
+            CREATE_BUTTONS();
          
         }
+
+
+        //CREATE THE NECESSARY BUTTONS ACCORDING TO RESTRICTION
+        //FUNCTION DEFINITION
+        private void CREATE_BUTTONS() {
+
+
+            //IF CURRENT USER CAN VIEW_PROFILE
+            if (Global.CURRENT_USER.restriction.CAN_VIEW_PROFILE)
+            {
+                Button b = new Button();
+                b.Dock = DockStyle.Top;
+                b.Image = Image.FromHbitmap(Properties.Resources.eomployee_profile.GetHbitmap());
+                b.ImageAlign = ContentAlignment.MiddleCenter;   
+                pnlbuttons.Controls.Add(b);
+                b.Width = pnlbuttons.Width;
+                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
+                b.BackColor = Color.White;
+                b.Click += view_profile_Click;
+            }
+
+
+            //IF CURRENT USER CAN VIEW ATTENDANCE
+            if (Global.CURRENT_USER.restriction.CAN_VIEW_ATTENDANCE)
+            {
+                Button b = new Button();
+                b.Dock = DockStyle.Top;
+                b.Image = Image.FromHbitmap(Properties.Resources.attendance.GetHbitmap());
+                b.ImageAlign = ContentAlignment.MiddleCenter;   
+                pnlbuttons.Controls.Add(b);
+                b.Width = pnlbuttons.Width;
+                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
+                b.BackColor = Color.White;
+                b.Click += view_attendance_Click;
+            }
+
+
+
+
+            //IF CURRENT USER CAN VIEW EMPLOYEE
+            if (Global.CURRENT_USER.restriction.CAN_VIEW_EMPLOYEE)
+            {
+                Button b = new Button();
+                b.Dock = DockStyle.Top;
+                b.Image = Image.FromHbitmap(Properties.Resources.employees.GetHbitmap());
+                b.ImageAlign = ContentAlignment.MiddleCenter;   
+                pnlbuttons.Controls.Add(b);
+                b.Width = pnlbuttons.Width;
+                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
+                b.BackColor = Color.White;
+                b.Click += view_employee_Click;
+            }
+
+
+
+
+            //IF CURRENT USER CAN VIEW RESTRICTION
+            if (Global.CURRENT_USER.restriction.CAN_VIEW_RESTRICTION)
+            {
+                Button b = new Button();
+                b.Dock = DockStyle.Top;
+                b.Image = Image.FromHbitmap(Properties.Resources.user_restriction.GetHbitmap());
+                b.ImageAlign = ContentAlignment.MiddleCenter;   
+                pnlbuttons.Controls.Add(b);
+                b.Width = pnlbuttons.Width;
+                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
+                b.BackColor = Color.White;
+                b.Click += view_restriction_Click;
+            }
+
+
+            //IF CURRENT USER CAN VIEW LOAN
+            if (Global.CURRENT_USER.restriction.CAN_VIEW_LOAN)
+            {
+                Button b = new Button();
+                b.Dock = DockStyle.Top;
+                b.Image = Image.FromHbitmap(Properties.Resources.loan.GetHbitmap());
+                b.ImageAlign = ContentAlignment.MiddleCenter;   
+                pnlbuttons.Controls.Add(b);
+                b.Width = pnlbuttons.Width;
+                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
+                b.BackColor = Color.White;
+                b.Click += view_loan_Click;
+            }
+
+
+            //IF CURRENT USER CAN VIEW SCHEDULE
+            if (Global.CURRENT_USER.restriction.CAN_VIEW_EMP_SCHEDULE)
+            {
+                Button b = new Button();
+                b.Dock = DockStyle.Top;
+                b.Image = Image.FromHbitmap(Properties.Resources.schedule.GetHbitmap());
+                b.ImageAlign = ContentAlignment.MiddleCenter;   
+                pnlbuttons.Controls.Add(b);
+                b.Width = pnlbuttons.Width;
+                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
+                b.BackColor = Color.White;
+                b.Click += view_emp_schedule_Click;
+            }
+
+
+            //IF CURRENT USER CAN VIEW LEAVE
+            if (Global.CURRENT_USER.restriction.CAN_VIEW_LEAVE)
+            {
+                Button b = new Button();
+                b.Dock = DockStyle.Top;
+                //b.Text = "Leave";
+               b.Image = Image.FromHbitmap(Properties.Resources.leave.GetHbitmap());
+                b.ImageAlign = ContentAlignment.MiddleCenter;             
+                b.Width = pnlbuttons.Width;
+                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
+                b.BackColor = Color.White;
+                pnlbuttons.Controls.Add(b);
+                b.Click += view_leave_Click;
+            }
+
+            //IF CURRENT USER CAN VIEW PASS SLIP
+            if (Global.CURRENT_USER.restriction.CAN_VIEW_PASS_SLIP)
+            {
+                Button b = new Button();
+                b.Dock = DockStyle.Top;
+                b.Image = Image.FromHbitmap(Properties.Resources.guard.GetHbitmap());
+                b.ImageAlign = ContentAlignment.MiddleCenter;   
+                pnlbuttons.Controls.Add(b);
+                b.Width = pnlbuttons.Width;
+                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
+                b.BackColor = Color.White;
+                b.Click += view_pass_slip_Click;
+            }
+
+
+            //IF CURRENT USER CAN VIEW MEMBER
+            if (Global.CURRENT_USER.restriction.CAN_VIEW_MEMBERS)
+            {
+                Button b = new Button();
+                b.Dock = DockStyle.Top;
+                b.Image = Image.FromHbitmap(Properties.Resources.members.GetHbitmap());
+                b.ImageAlign = ContentAlignment.MiddleCenter;   
+                pnlbuttons.Controls.Add(b);
+                b.Width = pnlbuttons.Width;
+                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
+                b.BackColor = Color.White;
+                b.Click += view_members_Click;
+            }
+
+
+            //IF CURRENT USER CAN VIEW SERVICE_REQUEST
+            if (Global.CURRENT_USER.restriction.CAN_VIEW_SERVICE_REQUEST)
+            {
+                Button b = new Button();
+                b.Dock = DockStyle.Top;
+                b.Image = Image.FromHbitmap(Properties.Resources.service_request.GetHbitmap());
+                b.ImageAlign = ContentAlignment.MiddleCenter;              
+              
+                pnlbuttons.Controls.Add(b);
+                b.Width = pnlbuttons.Width;
+                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
+                b.BackColor = Color.White;
+                b.Click += view_service_request_Click;
+            }
+
+
+
+
+            //IF CURRENT USER CAN VIEW SUPPLY_REQUEST
+            if (Global.CURRENT_USER.restriction.CAN_VIEW_SUPPLY_REQUEST)
+            {
+                Button b = new Button();
+                b.Dock = DockStyle.Top;
+                b.Image = Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap());                                                                    
+                b.ImageAlign = ContentAlignment.MiddleCenter;              
+                b.Width = pnlbuttons.Width;
+                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
+                b.BackColor = Color.White;
+                b.Click += view_supply_request_Click;
+
+
+                pnlbuttons.Controls.Add(b);
+
+
+              
+            }
+
+
+        }
+
+
+
+        void view_supply_request_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            supply_request_current_user eu = new supply_request_current_user();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+        void view_service_request_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            service_request_current_user eu = new service_request_current_user();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+
+        void view_members_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            mem_ctrl eu = new mem_ctrl();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;            
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+
+
+        void view_profile_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            emp_profile_current_user eu = new emp_profile_current_user();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            eu.emp = Global.CURRENT_USER;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+        void view_pass_slip_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            passslip_current_user eu = new passslip_current_user();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+        void view_leave_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            leave_current_user eu = new leave_current_user();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+
+        void view_emp_schedule_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            emp_sched_current_user eu = new emp_sched_current_user();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+
+        void view_loan_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            loan_current_user eu = new loan_current_user();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+        void view_restriction_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            emp_restriction_current_user eu = new emp_restriction_current_user();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+            //throw new NotImplementedException();
+        }
+
+        void view_employee_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            emp_ctrl eu = new emp_ctrl();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+            //throw new NotImplementedException();
+        }
+
+
+
+        void view_attendance_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            attendance_current_user eu = new attendance_current_user();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;            
+            pnlops.Controls.Add(eu); 
+            //throw new NotImplementedException();
+        }
+
+        void update_employee_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            emp_update eu = new emp_update();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            eu.emp = Global.CURRENT_USER;
+            pnlops.Controls.Add(eu);          
+            //throw new NotImplementedException();
+        }
+
+
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -109,19 +443,11 @@ namespace MMG_PIAPS.forms
         public delegate void ChangeAddress(String n);
         public delegate void ChangeBirthday(DateTime n);
 
-        private void btnSchedule_Click(object sender, EventArgs e)
-        {
-           
 
-        }
+     
 
-        private void btnEmployeeSchedule_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnAttendance_Click(object sender, EventArgs e)
-        {
+    
+        private void LOAD_ATTENDANCE_CONTROL() {
             pnlops.Controls.Clear();
             attendance_ctrl c = new attendance_ctrl();
             c.Width = pnlops.Width;
@@ -129,10 +455,7 @@ namespace MMG_PIAPS.forms
             pnlops.Controls.Add(c);
         }
 
-        private void btnMembershipData_Click(object sender, EventArgs e)
-        {
-
-        }
+    
 
         private void templateToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -174,8 +497,7 @@ namespace MMG_PIAPS.forms
             pnlops.Controls.Add(c);
         }
 
-        private void btnPassSlip_Click(object sender, EventArgs e)
-        {
+        private void LOAD_PASS_SLIP_CONTROL(){
             pnlops.Controls.Clear();
             passslip_ctrl c = new passslip_ctrl();
             c.Width = pnlops.Width;
@@ -183,8 +505,8 @@ namespace MMG_PIAPS.forms
             pnlops.Controls.Add(c);
         }
 
-        private void btnleave_Click(object sender, EventArgs e)
-        {
+
+        private void LOAD_LEAVE_CONTROL() {
             pnlops.Controls.Clear();
             leave_ctrl c = new leave_ctrl();
             c.Width = pnlops.Width;
@@ -192,8 +514,8 @@ namespace MMG_PIAPS.forms
             pnlops.Controls.Add(c);
         }
 
-        private void btnLoan_Click(object sender, EventArgs e)
-        {
+  
+        private void LOAD_LOAN_CONTROL() {
             pnlops.Controls.Clear();
             loan_ctrl c = new loan_ctrl();
             c.Width = pnlops.Width;
@@ -201,8 +523,8 @@ namespace MMG_PIAPS.forms
             pnlops.Controls.Add(c);
         }
 
-        private void btnRestrictions_Click(object sender, EventArgs e)
-        {
+
+        private void LOAD_RESTRICTION_CONTROL() {
             pnlops.Controls.Clear();
             emp_restriction_ctrl c = new emp_restriction_ctrl();
             c.Width = pnlops.Width;
@@ -216,8 +538,8 @@ namespace MMG_PIAPS.forms
             frm.ShowDialog();
         }
 
-        private void btnMembers_Click(object sender, EventArgs e)
-        {
+   
+        private void LOAD_MEMBER_CONTROL() {
             pnlops.Controls.Clear();
             mem_ctrl c = new mem_ctrl();
             c.Width = pnlops.Width;

@@ -20,6 +20,7 @@ namespace MMG_PIAPS.classes
         private String _branch;
         public  List<Benefit> benefits = new List<Benefit> { };
         public Emp_Sched schedule = new Emp_Sched();
+        public Emp_Restriction restriction = new Emp_Restriction();
 
         public String position { get { return _position; } set { _position = value; } }
         public String branch { get { return _branch; } set { _branch = value; } }

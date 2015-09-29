@@ -35,5 +35,17 @@ namespace MMG_PIAPS.Properties {
                 this["CONSTR"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("60")]
+        public int MAIN_BUTTON_HEIGHT {
+            get {
+                return ((int)(this["MAIN_BUTTON_HEIGHT"]));
+            }
+            set {
+                this["MAIN_BUTTON_HEIGHT"] = value;
+            }
+        }
     }
 }

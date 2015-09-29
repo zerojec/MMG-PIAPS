@@ -35,6 +35,7 @@ namespace MMG_PIAPS
 
                 if (emp != null) {
 
+                    Global.CURRENT_USER.empid = emp.empid;
                     Global.CURRENT_USER = emp;
                     Global.CURRENT_USER.pic = emp.GET_IMAGE_BY_ID();
                     Global.CURRENT_USER.basic_pay = emp.GET_BASIC_PAY();
@@ -42,7 +43,13 @@ namespace MMG_PIAPS
                     Global.CURRENT_USER.position = emp.GET_CURRENT_POSITION();
                     Global.CURRENT_USER.branch = emp.GET_BRANCH_ASSIGNMENT();
 
+                    //CREATE A RESTRICTION OBJECT              
+                    Emp_Restriction r = new Emp_Restriction();
+                    //SET CURRENT USER RESTRICTION 
+                    r.empid = Global.CURRENT_USER.empid;
+                    Global.CURRENT_USER.restriction=r.SELECT_BY_ID();
 
+                    
                     frmMain f = new frmMain();
                     f.Show();
                  

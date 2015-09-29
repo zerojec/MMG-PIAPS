@@ -43,10 +43,10 @@
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.viewProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnlops = new System.Windows.Forms.Panel();
             this.viewScheduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewBenefitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pnlops = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -189,7 +189,7 @@
             this.updateInfoToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
             this.contextMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.contextMenu.Size = new System.Drawing.Size(154, 122);
+            this.contextMenu.Size = new System.Drawing.Size(154, 100);
             this.contextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenu_Opening);
             // 
             // viewProfileToolStripMenuItem
@@ -199,6 +199,22 @@
             this.viewProfileToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
             this.viewProfileToolStripMenuItem.Text = "Profile";
             this.viewProfileToolStripMenuItem.Click += new System.EventHandler(this.viewProfileToolStripMenuItem_Click);
+            // 
+            // viewScheduleToolStripMenuItem
+            // 
+            this.viewScheduleToolStripMenuItem.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewScheduleToolStripMenuItem.Name = "viewScheduleToolStripMenuItem";
+            this.viewScheduleToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.viewScheduleToolStripMenuItem.Text = "Schedule";
+            this.viewScheduleToolStripMenuItem.Click += new System.EventHandler(this.viewScheduleToolStripMenuItem_Click);
+            // 
+            // viewBenefitsToolStripMenuItem
+            // 
+            this.viewBenefitsToolStripMenuItem.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewBenefitsToolStripMenuItem.Name = "viewBenefitsToolStripMenuItem";
+            this.viewBenefitsToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.viewBenefitsToolStripMenuItem.Text = "Benefits";
+            this.viewBenefitsToolStripMenuItem.Click += new System.EventHandler(this.viewBenefitsToolStripMenuItem_Click);
             // 
             // updateInfoToolStripMenuItem
             // 
@@ -218,22 +234,6 @@
             this.pnlops.Size = new System.Drawing.Size(738, 0);
             this.pnlops.TabIndex = 2;
             this.pnlops.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlops_Paint);
-            // 
-            // viewScheduleToolStripMenuItem
-            // 
-            this.viewScheduleToolStripMenuItem.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewScheduleToolStripMenuItem.Name = "viewScheduleToolStripMenuItem";
-            this.viewScheduleToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
-            this.viewScheduleToolStripMenuItem.Text = "Schedule";
-            this.viewScheduleToolStripMenuItem.Click += new System.EventHandler(this.viewScheduleToolStripMenuItem_Click);
-            // 
-            // viewBenefitsToolStripMenuItem
-            // 
-            this.viewBenefitsToolStripMenuItem.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewBenefitsToolStripMenuItem.Name = "viewBenefitsToolStripMenuItem";
-            this.viewBenefitsToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
-            this.viewBenefitsToolStripMenuItem.Text = "Benefits";
-            this.viewBenefitsToolStripMenuItem.Click += new System.EventHandler(this.viewBenefitsToolStripMenuItem_Click);
             // 
             // emp_ctrl
             // 

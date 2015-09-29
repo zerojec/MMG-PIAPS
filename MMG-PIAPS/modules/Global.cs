@@ -11,9 +11,7 @@ namespace MMG_PIAPS.modules
        public static Employee CURRENT_USER = new Employee();
        public static Employee SELECTED_EMP = new Employee();
        public static Exception error = null;
-
-
-
+       
 
        public static int GetMonths(DateTime startDate, DateTime endDate)
        {

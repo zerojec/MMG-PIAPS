@@ -34,5 +34,11 @@ namespace MMG_PIAPS.userctrl.member
             pnlops.Height = c.Height;
             pnlops.Controls.Add(c);
         }
+
+        private void btnFilter_Click(object sender, EventArgs e)
+        {            
+            Member mem = new Member();
+            m.Load_Searched_MembersInListView(lv, txtname.Text);
+        }
     }
 }

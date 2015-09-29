@@ -39,10 +39,10 @@ namespace MMG_PIAPS.userctrl.emp
 
             Position p = new Position();
             p.LoadPositions(cbopositions);
-            
-            
-            
-            txtid.Text = emp.empid.ToString();
+
+
+
+            txtid.Text = emp.empid;
             txtfname.Text = emp.fname;
             txtlname.Text = emp.lname;
             txtmname.Text = emp.mname;
@@ -56,7 +56,7 @@ namespace MMG_PIAPS.userctrl.emp
             cboemploymentstatus.Text = emp.emp_status;
             cbopositions.Text = emp.position;
 
-            dtBday.Value = emp.birthdate;
+           // dtBday.Value = emp.birthdate;
             //dtemploymentdate.Value= 
 
 

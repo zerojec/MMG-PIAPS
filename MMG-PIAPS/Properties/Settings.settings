@@ -5,5 +5,8 @@
     <Setting Name="CONSTR" Type="System.String" Scope="User">
       <Value Profile="(Default)">server=localhost;user id=root;password=root;persistsecurityinfo=True;database=mmgmapiapsdb;</Value>
     </Setting>
+    <Setting Name="MAIN_BUTTON_HEIGHT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -279,3 +279,9 @@
 --------------------------------------------------------------
 9/15/2015 8:28:03 AM:LOAN MODULE ERROR :Attempted to divide by zero.
 --------------------------------------------------------------
+9/28/2015 6:18:04 AM:ATTENDANCE_BY_EMPID_BW_DATES MODULE:Incorrect integer value: 'TAB' for column '_empid' at row 456
+--------------------------------------------------------------
+9/28/2015 6:18:07 AM:ATTENDANCE_BY_EMPID_BW_DATES MODULE:Incorrect integer value: 'TAB' for column '_empid' at row 1
+--------------------------------------------------------------
+9/28/2015 6:20:19 AM:ATTENDANCE_BY_EMPID_BW_DATES MODULE:Incorrect integer value: 'TAB=001' for column '_empid' at row 456
+--------------------------------------------------------------
