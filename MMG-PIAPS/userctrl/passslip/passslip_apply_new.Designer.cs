@@ -44,10 +44,10 @@
             this.dtdate = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtpurpose = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtpurpose = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -61,6 +61,7 @@
             // 
             // txtallowance
             // 
+            this.txtallowance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtallowance.Location = new System.Drawing.Point(115, 128);
             this.txtallowance.Name = "txtallowance";
             this.txtallowance.Size = new System.Drawing.Size(145, 22);
@@ -135,6 +136,7 @@
             // 
             // txtdestination
             // 
+            this.txtdestination.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tableLayoutPanel3.SetColumnSpan(this.txtdestination, 2);
             this.txtdestination.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtdestination.Location = new System.Drawing.Point(115, 35);
@@ -227,6 +229,26 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(620, 164);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
+            // txtpurpose
+            // 
+            this.txtpurpose.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.tableLayoutPanel3.SetColumnSpan(this.txtpurpose, 2);
+            this.txtpurpose.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtpurpose.Location = new System.Drawing.Point(115, 66);
+            this.txtpurpose.Name = "txtpurpose";
+            this.txtpurpose.Size = new System.Drawing.Size(501, 22);
+            this.txtpurpose.TabIndex = 27;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(52, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 15);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Purpose :";
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
@@ -254,25 +276,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(52, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 15);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Purpose :";
-            // 
-            // txtpurpose
-            // 
-            this.tableLayoutPanel3.SetColumnSpan(this.txtpurpose, 2);
-            this.txtpurpose.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtpurpose.Location = new System.Drawing.Point(115, 66);
-            this.txtpurpose.Name = "txtpurpose";
-            this.txtpurpose.Size = new System.Drawing.Size(501, 22);
-            this.txtpurpose.TabIndex = 27;
             // 
             // passslip_apply_new
             // 

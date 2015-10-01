@@ -6,6 +6,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using MMG_PIAPS.classes;
+using MMG_PIAPS.modules;
 
 namespace MMG_PIAPS.userctrl.passslip
 {
@@ -24,6 +26,16 @@ namespace MMG_PIAPS.userctrl.passslip
             c.Width = pnlops.Width;
             pnlops.Height = c.Height;
             pnlops.Controls.Add(c);
+        }
+
+        private void passslip_current_user_Load(object sender, EventArgs e)
+        {
+            PassSlip ps = new PassSlip();
+            ps.empid = Global.CURRENT_USER.empid;
+
+            //MessageBox.Show(Global.CURRENT_USER.empid);
+            ps.LoadMyPassSlips(lv);
+
         }
     }
 }

@@ -15,5 +15,15 @@ namespace MMG_PIAPS.userctrl.leave
         {
             InitializeComponent();
         }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+
+            leave_apply_new c = new leave_apply_new();
+            c.Width = pnlops.Width;
+            pnlops.Height = c.Height;
+            pnlops.Controls.Add(c);
+        }
     }
 }

@@ -125,6 +125,7 @@
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="modules\db.cs" />
+    <Compile Include="modules\EventClassHolder.cs" />
     <Compile Include="modules\Global.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -162,6 +163,12 @@
     </Compile>
     <Compile Include="userctrl\benefit\benefit_new.Designer.cs">
       <DependentUpon>benefit_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\custom\mit_decimal_textbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\custom\mit_decimal_textbox.Designer.cs">
+      <DependentUpon>mit_decimal_textbox.cs</DependentUpon>
     </Compile>
     <Compile Include="userctrl\custom\mit_sched_template.cs">
       <SubType>UserControl</SubType>
@@ -252,6 +259,12 @@
     </Compile>
     <Compile Include="userctrl\emp_sched\emp_sched_new.Designer.cs">
       <DependentUpon>emp_sched_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\leave\leave_apply_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\leave\leave_apply_new.Designer.cs">
+      <DependentUpon>leave_apply_new.cs</DependentUpon>
     </Compile>
     <Compile Include="userctrl\leave\leave_ctrl.cs">
       <SubType>UserControl</SubType>
@@ -408,6 +421,9 @@
     <EmbeddedResource Include="userctrl\benefit\benefit_new.resx">
       <DependentUpon>benefit_new.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\custom\mit_decimal_textbox.resx">
+      <DependentUpon>mit_decimal_textbox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userctrl\custom\mit_sched_template.resx">
       <DependentUpon>mit_sched_template.cs</DependentUpon>
     </EmbeddedResource>
@@ -452,6 +468,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\emp_sched\emp_sched_new.resx">
       <DependentUpon>emp_sched_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\leave\leave_apply_new.resx">
+      <DependentUpon>leave_apply_new.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\leave\leave_ctrl.resx">
       <DependentUpon>leave_ctrl.cs</DependentUpon>

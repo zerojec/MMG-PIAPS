@@ -251,6 +251,7 @@
             // txtreason
             // 
             this.txtreason.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtreason.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tableLayoutPanel3.SetColumnSpan(this.txtreason, 2);
             this.txtreason.Location = new System.Drawing.Point(115, 66);
             this.txtreason.Name = "txtreason";

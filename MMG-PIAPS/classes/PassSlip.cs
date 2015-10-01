@@ -106,6 +106,31 @@ namespace MMG_PIAPS.classes
 
 
 
+
+        public DataTable SELECT_BY_EMPID()
+        {
+
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "PASSSLIP_SELECT_BY_EMPID");
+            cmd.Parameters.AddWithValue("_empid", empid);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog(e.Message);
+                return null;
+            }
+
+        }
+
+
+
+
         public void LoadOnListView(ListView lv)
         {
             PassSlip s = new PassSlip();
@@ -138,6 +163,42 @@ namespace MMG_PIAPS.classes
 
 
 
+
+
+
+
+        public void LoadMyPassSlips(ListView lv)
+        {
+            PassSlip s = new PassSlip();
+            DataTable dt = new DataTable();
+
+            s.empid = empid;
+
+            dt = s.SELECT_BY_EMPID();
+
+            if (dt != null)
+            {
+                int ctr = 1;
+                foreach (DataRow r in dt.Rows)
+                {
+                    ListViewItem li = new ListViewItem();
+                    li.Text = ctr.ToString();
+//                    li.SubItems.Add(r["fullname"].ToString());
+                    li.SubItems.Add(r["passtype"].ToString());
+                    li.SubItems.Add(r["destination"].ToString());
+                    li.SubItems.Add(r["purpose"].ToString());
+                    li.SubItems.Add(r["datetime_in"].ToString());
+                    li.SubItems.Add(r["datetime_out"].ToString());
+                    li.SubItems.Add(r["allowance"].ToString());
+                    li.SubItems.Add(r["status_"].ToString());
+
+                    lv.Items.Add(li);
+
+                    ctr++;
+                }
+            }
+
+        }//end load ins listview
 
 
 

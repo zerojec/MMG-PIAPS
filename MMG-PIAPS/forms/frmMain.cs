@@ -96,31 +96,15 @@ namespace MMG_PIAPS.forms
 
             //IF CURRENT USER CAN VIEW_PROFILE
             if (Global.CURRENT_USER.restriction.CAN_VIEW_PROFILE)
-            {
-                Button b = new Button();
-                b.Dock = DockStyle.Top;
-                b.Image = Image.FromHbitmap(Properties.Resources.eomployee_profile.GetHbitmap());
-                b.ImageAlign = ContentAlignment.MiddleCenter;   
-                pnlbuttons.Controls.Add(b);
-                b.Width = pnlbuttons.Width;
-                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
-                b.BackColor = Color.White;
-                b.Click += view_profile_Click;
+            {               
+                CreateThisButton(view_profile_Click, Image.FromHbitmap(Properties.Resources.eomployee_profile.GetHbitmap()), "Profile");                             
             }
 
 
             //IF CURRENT USER CAN VIEW ATTENDANCE
             if (Global.CURRENT_USER.restriction.CAN_VIEW_ATTENDANCE)
-            {
-                Button b = new Button();
-                b.Dock = DockStyle.Top;
-                b.Image = Image.FromHbitmap(Properties.Resources.attendance.GetHbitmap());
-                b.ImageAlign = ContentAlignment.MiddleCenter;   
-                pnlbuttons.Controls.Add(b);
-                b.Width = pnlbuttons.Width;
-                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
-                b.BackColor = Color.White;
-                b.Click += view_attendance_Click;
+            {               
+                CreateThisButton(view_attendance_Click, Image.FromHbitmap(Properties.Resources.attendance.GetHbitmap()), "Attendance");                             
             }
 
 
@@ -128,16 +112,8 @@ namespace MMG_PIAPS.forms
 
             //IF CURRENT USER CAN VIEW EMPLOYEE
             if (Global.CURRENT_USER.restriction.CAN_VIEW_EMPLOYEE)
-            {
-                Button b = new Button();
-                b.Dock = DockStyle.Top;
-                b.Image = Image.FromHbitmap(Properties.Resources.employees.GetHbitmap());
-                b.ImageAlign = ContentAlignment.MiddleCenter;   
-                pnlbuttons.Controls.Add(b);
-                b.Width = pnlbuttons.Width;
-                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
-                b.BackColor = Color.White;
-                b.Click += view_employee_Click;
+            {               
+                CreateThisButton(view_employee_Click, Image.FromHbitmap(Properties.Resources.employees.GetHbitmap()), "Employee");                             
             }
 
 
@@ -146,131 +122,79 @@ namespace MMG_PIAPS.forms
             //IF CURRENT USER CAN VIEW RESTRICTION
             if (Global.CURRENT_USER.restriction.CAN_VIEW_RESTRICTION)
             {
-                Button b = new Button();
-                b.Dock = DockStyle.Top;
-                b.Image = Image.FromHbitmap(Properties.Resources.user_restriction.GetHbitmap());
-                b.ImageAlign = ContentAlignment.MiddleCenter;   
-                pnlbuttons.Controls.Add(b);
-                b.Width = pnlbuttons.Width;
-                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
-                b.BackColor = Color.White;
-                b.Click += view_restriction_Click;
+                CreateThisButton(view_restriction_Click, Image.FromHbitmap(Properties.Resources.user_restriction.GetHbitmap()), "Restrictions");                             
             }
 
 
             //IF CURRENT USER CAN VIEW LOAN
             if (Global.CURRENT_USER.restriction.CAN_VIEW_LOAN)
             {
-                Button b = new Button();
-                b.Dock = DockStyle.Top;
-                b.Image = Image.FromHbitmap(Properties.Resources.loan.GetHbitmap());
-                b.ImageAlign = ContentAlignment.MiddleCenter;   
-                pnlbuttons.Controls.Add(b);
-                b.Width = pnlbuttons.Width;
-                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
-                b.BackColor = Color.White;
-                b.Click += view_loan_Click;
+                CreateThisButton(view_loan_Click, Image.FromHbitmap(Properties.Resources.loan.GetHbitmap()), "Loan");                             
             }
 
 
             //IF CURRENT USER CAN VIEW SCHEDULE
             if (Global.CURRENT_USER.restriction.CAN_VIEW_EMP_SCHEDULE)
             {
-                Button b = new Button();
-                b.Dock = DockStyle.Top;
-                b.Image = Image.FromHbitmap(Properties.Resources.schedule.GetHbitmap());
-                b.ImageAlign = ContentAlignment.MiddleCenter;   
-                pnlbuttons.Controls.Add(b);
-                b.Width = pnlbuttons.Width;
-                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
-                b.BackColor = Color.White;
-                b.Click += view_emp_schedule_Click;
+               CreateThisButton(view_emp_schedule_Click, Image.FromHbitmap(Properties.Resources.schedule.GetHbitmap()), "Schedule");                             
             }
 
 
             //IF CURRENT USER CAN VIEW LEAVE
             if (Global.CURRENT_USER.restriction.CAN_VIEW_LEAVE)
             {
-                Button b = new Button();
-                b.Dock = DockStyle.Top;
-                //b.Text = "Leave";
-               b.Image = Image.FromHbitmap(Properties.Resources.leave.GetHbitmap());
-                b.ImageAlign = ContentAlignment.MiddleCenter;             
-                b.Width = pnlbuttons.Width;
-                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
-                b.BackColor = Color.White;
-                pnlbuttons.Controls.Add(b);
-                b.Click += view_leave_Click;
+               CreateThisButton(view_leave_Click, Image.FromHbitmap(Properties.Resources.leave.GetHbitmap()), "Leave");                             
             }
 
             //IF CURRENT USER CAN VIEW PASS SLIP
             if (Global.CURRENT_USER.restriction.CAN_VIEW_PASS_SLIP)
             {
-                Button b = new Button();
-                b.Dock = DockStyle.Top;
-                b.Image = Image.FromHbitmap(Properties.Resources.guard.GetHbitmap());
-                b.ImageAlign = ContentAlignment.MiddleCenter;   
-                pnlbuttons.Controls.Add(b);
-                b.Width = pnlbuttons.Width;
-                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
-                b.BackColor = Color.White;
-                b.Click += view_pass_slip_Click;
+               CreateThisButton(view_pass_slip_Click, Image.FromHbitmap(Properties.Resources.guard.GetHbitmap()), "Pass Slip");                             
             }
 
 
             //IF CURRENT USER CAN VIEW MEMBER
             if (Global.CURRENT_USER.restriction.CAN_VIEW_MEMBERS)
             {
-                Button b = new Button();
-                b.Dock = DockStyle.Top;
-                b.Image = Image.FromHbitmap(Properties.Resources.members.GetHbitmap());
-                b.ImageAlign = ContentAlignment.MiddleCenter;   
-                pnlbuttons.Controls.Add(b);
-                b.Width = pnlbuttons.Width;
-                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
-                b.BackColor = Color.White;
-                b.Click += view_members_Click;
+               CreateThisButton(view_members_Click, Image.FromHbitmap(Properties.Resources.members.GetHbitmap()), "Members");                             
             }
 
 
             //IF CURRENT USER CAN VIEW SERVICE_REQUEST
             if (Global.CURRENT_USER.restriction.CAN_VIEW_SERVICE_REQUEST)
             {
-                Button b = new Button();
-                b.Dock = DockStyle.Top;
-                b.Image = Image.FromHbitmap(Properties.Resources.service_request.GetHbitmap());
-                b.ImageAlign = ContentAlignment.MiddleCenter;              
-              
-                pnlbuttons.Controls.Add(b);
-                b.Width = pnlbuttons.Width;
-                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
-                b.BackColor = Color.White;
-                b.Click += view_service_request_Click;
+               CreateThisButton(view_service_request_Click, Image.FromHbitmap(Properties.Resources.service_request.GetHbitmap()), "Service Request");                             
             }
-
-
 
 
             //IF CURRENT USER CAN VIEW SUPPLY_REQUEST
             if (Global.CURRENT_USER.restriction.CAN_VIEW_SUPPLY_REQUEST)
             {
-                Button b = new Button();
-                b.Dock = DockStyle.Top;
-                b.Image = Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap());                                                                    
-                b.ImageAlign = ContentAlignment.MiddleCenter;              
-                b.Width = pnlbuttons.Width;
-                b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
-                b.BackColor = Color.White;
-                b.Click += view_supply_request_Click;
-
-
-                pnlbuttons.Controls.Add(b);
-
-
-              
+                CreateThisButton(view_supply_request_Click, Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap()), "Supply Request");                             
             }
+        }
 
 
+
+
+        void CreateThisButton(EventHandler evt, Image img, String tooltip) {
+            Button b = new Button();
+            b.Dock = DockStyle.Top;
+            b.Image = img;
+            b.ImageAlign = ContentAlignment.MiddleCenter;
+            b.Width = pnlbuttons.Width;
+            b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
+            b.BackColor = Color.White;
+            b.Click += evt;//view_service_request_Click;
+            pnlbuttons.Controls.Add(b);
+
+
+            ToolTip t = new ToolTip();
+            t.UseAnimation = true;
+            t.IsBalloon = true;
+            t.UseFading = true;
+            t.InitialDelay = 1;
+            t.SetToolTip(b, tooltip);
         }
 
 

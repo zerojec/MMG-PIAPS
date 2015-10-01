@@ -37,12 +37,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lv = new System.Windows.Forms.ListView();
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -80,9 +80,9 @@
             // 
             this.btnNew.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnNew.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.Location = new System.Drawing.Point(314, 3);
+            this.btnNew.Location = new System.Drawing.Point(312, 3);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(135, 34);
+            this.btnNew.Size = new System.Drawing.Size(137, 34);
             this.btnNew.TabIndex = 0;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
@@ -95,7 +95,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
             this.tableLayoutPanel2.Controls.Add(this.btnNew, 3, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(164, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -145,6 +145,11 @@
             this.columnHeader2.Text = "Destination";
             this.columnHeader2.Width = 150;
             // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Purpose";
+            this.columnHeader6.Width = 150;
+            // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Time Leave";
@@ -159,6 +164,11 @@
             // 
             this.columnHeader5.Text = "Allowance";
             this.columnHeader5.Width = 100;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Status";
+            this.columnHeader8.Width = 80;
             // 
             // tableLayoutPanel1
             // 
@@ -177,16 +187,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(616, 388);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Purpose";
-            this.columnHeader6.Width = 150;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Status";
-            this.columnHeader8.Width = 80;
-            // 
             // passslip_current_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -195,6 +195,7 @@
             this.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "passslip_current_user";
             this.Size = new System.Drawing.Size(616, 388);
+            this.Load += new System.EventHandler(this.passslip_current_user_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
