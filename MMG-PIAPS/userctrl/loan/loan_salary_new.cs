@@ -160,7 +160,7 @@ namespace MMG_PIAPS.userctrl.loan
             l.amortization_on_interest = Convert.ToDecimal(txtinterest_amort.Text);
             l.amortization_on_principal = Convert.ToDecimal(txtprincipal_amort.Text);
             l.loantype = LOAN_TYPE;
-            l.amortization_period = nmamortperiod.Value;
+            l.amortization_period =(Int32)nmamortperiod.Value;
             l.filingdate = dtfilingdate.Value;
             
 

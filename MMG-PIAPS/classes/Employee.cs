@@ -27,9 +27,7 @@ namespace MMG_PIAPS.classes
         public String emp_status { get { return _emp_status; } set { _emp_status = value; } }
         public Decimal basic_pay { get { return _basic_pay; } set { _basic_pay = value; } }
         public DateTime date_hired { get { return _date_hired; } set { _date_hired = value; } }
-
-       
-      
+        public String COOP_MEMBERSHIP_ID { get; set; }
 
 
 
@@ -103,6 +101,7 @@ namespace MMG_PIAPS.classes
             cmd.Parameters.AddWithValue("_imagearr", pic);
             cmd.Parameters.AddWithValue("_imagesize", pic.Length);
             cmd.Parameters.AddWithValue("_emp_position", position);
+           // cmd.Parameters.AddWithValue("_COOP_MEMBERSHIP_ID", COOP_MEMBERSHIP_ID);
             //cmd.Parameters.AddWithValue("_branchid", branch);
 
 
@@ -196,9 +195,8 @@ namespace MMG_PIAPS.classes
                         e.birthdate = Convert.ToDateTime(r["birthday"].ToString());
                         e.contactno = r["contactno"].ToString();
                         e.gender = r["gender"].ToString();
-                       // e.date_hired = Convert.ToDateTime(r["mname"].ToString());
-                       // e.position = r["position"].ToString();
-                       // e.branch = r["branch"].ToString();
+                        e.COOP_MEMBERSHIP_ID = r["COOP_MEMBERSHIP_ID"].ToString();
+                       
 
                     }
                     return e;

@@ -42,6 +42,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlops = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -56,7 +57,8 @@
             this.columnHeader7,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4});
+            this.columnHeader4,
+            this.columnHeader5});
             this.lv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lv.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lv.FullRowSelect = true;
@@ -105,7 +107,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.99999F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 143F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 144F));
             this.tableLayoutPanel2.Controls.Add(this.btnSalaryLoan, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnMicroLoan, 2, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(131, 0);
@@ -119,23 +121,25 @@
             // 
             this.btnSalaryLoan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSalaryLoan.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalaryLoan.Location = new System.Drawing.Point(262, 3);
+            this.btnSalaryLoan.Location = new System.Drawing.Point(261, 3);
             this.btnSalaryLoan.Name = "btnSalaryLoan";
-            this.btnSalaryLoan.Size = new System.Drawing.Size(138, 34);
+            this.btnSalaryLoan.Size = new System.Drawing.Size(139, 34);
             this.btnSalaryLoan.TabIndex = 0;
             this.btnSalaryLoan.Text = "Salary";
             this.btnSalaryLoan.UseVisualStyleBackColor = true;
+            this.btnSalaryLoan.Click += new System.EventHandler(this.btnSalaryLoan_Click);
             // 
             // btnMicroLoan
             // 
             this.btnMicroLoan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMicroLoan.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMicroLoan.Location = new System.Drawing.Point(120, 3);
+            this.btnMicroLoan.Location = new System.Drawing.Point(119, 3);
             this.btnMicroLoan.Name = "btnMicroLoan";
             this.btnMicroLoan.Size = new System.Drawing.Size(136, 34);
             this.btnMicroLoan.TabIndex = 1;
             this.btnMicroLoan.Text = "Micro";
             this.btnMicroLoan.UseVisualStyleBackColor = true;
+            this.btnMicroLoan.Click += new System.EventHandler(this.btnMicroLoan_Click);
             // 
             // label1
             // 
@@ -185,6 +189,12 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(534, 389);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Total Payment";
+            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.columnHeader5.Width = 180;
+            // 
             // loan_current_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
@@ -217,5 +227,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlops;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }

@@ -63,7 +63,7 @@ namespace MMG_PIAPS.userctrl.emp_benefit
             if (cboEmp.Text != "")
             {
                 String[] c = cboEmp.Text.ToString().Split('-');
-                String id = c[1];
+                String id = c[1]+ "-" + c[2];
 
                 Emp_Benefit eb = new Emp_Benefit();
                 eb.empid = id;

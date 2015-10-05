@@ -54,7 +54,7 @@ namespace MMG_PIAPS.userctrl.leave
 
         private void leave_apply_new_Load(object sender, EventArgs e)
         {
-            txtreason.KeyPress += new KeyPressEventHandler(evt.onKeyDownToUpper);
+            
         }
 
       

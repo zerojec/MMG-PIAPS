@@ -29,6 +29,8 @@ namespace MMG_PIAPS.forms
     public partial class frmMain : Form
     {
         public int num = 0;
+     
+        
         public frmMain()
         {
             InitializeComponent();
@@ -132,14 +134,7 @@ namespace MMG_PIAPS.forms
                 CreateThisButton(view_loan_Click, Image.FromHbitmap(Properties.Resources.loan.GetHbitmap()), "Loan");                             
             }
 
-
-            //IF CURRENT USER CAN VIEW SCHEDULE
-            if (Global.CURRENT_USER.restriction.CAN_VIEW_EMP_SCHEDULE)
-            {
-               CreateThisButton(view_emp_schedule_Click, Image.FromHbitmap(Properties.Resources.schedule.GetHbitmap()), "Schedule");                             
-            }
-
-
+     
             //IF CURRENT USER CAN VIEW LEAVE
             if (Global.CURRENT_USER.restriction.CAN_VIEW_LEAVE)
             {
@@ -343,7 +338,13 @@ namespace MMG_PIAPS.forms
         {
             lbldbcon.Text = db.con.State.ToString();
             lblCurrentDateAndTime.Text = "Today is : " +  DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToLongTimeString();
-        }
+
+            tbldataPanel.Width = 0;
+            tbldataPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.None;
+            CurrUserPic.Width = 0;
+            tbldataPanel.Controls.Clear();
+         
+         }
 
 
         public Image CurrUserImage
@@ -469,6 +470,11 @@ namespace MMG_PIAPS.forms
             c.Width = pnlops.Width;
             c.Height = pnlops.Height;
             pnlops.Controls.Add(c);
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            
         }
     }
 }

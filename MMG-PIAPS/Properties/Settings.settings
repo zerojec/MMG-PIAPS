@@ -8,5 +8,8 @@
     <Setting Name="MAIN_BUTTON_HEIGHT" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">60</Value>
     </Setting>
+    <Setting Name="HIDE_TIMER" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -54,6 +54,15 @@ namespace MMG_PIAPS.classes
       
         public Boolean CAN_RECOMMEND { get; set; }
 
+        public Boolean CAN_ADMINISTER_EMPLOYEE { get; set; }
+        public Boolean CAN_ADMINISTER_LOAN { get; set; }
+        public Boolean CAN_ADMINISTER_LEAVE { get; set; }
+        public Boolean CAN_ADMINISTER_PASS_SLIP { get; set; }
+        public Boolean CAN_ADMINISTER_RESTRICTION { get; set; }
+        public Boolean CAN_ADMINISTER_SCHEDULE { get; set; }
+        public Boolean CAN_ADMINISTER_MEMBER{ get; set; }
+        public Boolean CAN_ADMINISTER_SUPPLY_REQUEST { get; set; }
+        public Boolean CAN_ADMINISTER_ATTENDANCE { get; set; }
 
         public Boolean save()
         {
@@ -166,9 +175,18 @@ namespace MMG_PIAPS.classes
                     er.CAN_VIEW_MEMBERS = (Boolean)r["CAN_VIEW_MEMBERS"];
                     er.CAN_VIEW_EMP_SCHEDULE = (Boolean)r["CAN_VIEW_EMP_SCHEDULE"];
                     er.CAN_VIEW_PROFILE = (Boolean)r["CAN_VIEW_PROFILE"];
-                   
-                   
 
+                    er.CAN_ADMINISTER_EMPLOYEE = (Boolean)r["CAN_ADMINISTER_EMPLOYEE"];
+
+                    er.CAN_ADMINISTER_LOAN = (Boolean)r["CAN_ADMINISTER_LOAN"];
+                    er.CAN_ADMINISTER_LEAVE = (Boolean)r["CAN_ADMINISTER_LEAVE"];
+                    er.CAN_ADMINISTER_PASS_SLIP = (Boolean)r["CAN_ADMINISTER_PASS_SLIP"];
+                    er.CAN_ADMINISTER_RESTRICTION = (Boolean)r["CAN_ADMINISTER_RESTRICTION"];
+                    er.CAN_ADMINISTER_SCHEDULE = (Boolean)r["CAN_ADMINISTER_SCHEDULE"];
+                    er.CAN_ADMINISTER_MEMBER = (Boolean)r["CAN_ADMINISTER_MEMBER"];
+                    er.CAN_ADMINISTER_SUPPLY_REQUEST = (Boolean)r["CAN_ADMINISTER_SUPPLY_REQUEST"];
+                    er.CAN_ADMINISTER_ATTENDANCE = (Boolean)r["CAN_ADMINISTER_ATTENDANCE"];
+    
                                 
                     return er;
                 }

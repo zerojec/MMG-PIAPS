@@ -48,8 +48,13 @@ namespace MMG_PIAPS
                     //SET CURRENT USER RESTRICTION 
                     r.empid = Global.CURRENT_USER.empid;
                     Global.CURRENT_USER.restriction=r.SELECT_BY_ID();
+                    Global.CURRENT_USER.LIST_BENEFITS();
 
-                    
+                    Emp_Sched es = new Emp_Sched();
+                    es.empid = Global.CURRENT_USER.empid;
+                    Global.CURRENT_USER.schedule = es.SELECT_BY_EMPID();
+
+
                     frmMain f = new frmMain();
                     f.Show();
                  

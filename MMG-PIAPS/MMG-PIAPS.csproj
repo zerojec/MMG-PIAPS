@@ -296,6 +296,18 @@
     <Compile Include="userctrl\loan\loan_current_user.Designer.cs">
       <DependentUpon>loan_current_user.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\loan\loan_current_user_micro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\loan\loan_current_user_micro.Designer.cs">
+      <DependentUpon>loan_current_user_micro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\loan\loan_current_user_salary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\loan\loan_current_user_salary.Designer.cs">
+      <DependentUpon>loan_current_user_salary.cs</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\loan\loan_micro_new.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -486,6 +498,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\loan\loan_current_user.resx">
       <DependentUpon>loan_current_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\loan\loan_current_user_micro.resx">
+      <DependentUpon>loan_current_user_micro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\loan\loan_current_user_salary.resx">
+      <DependentUpon>loan_current_user_salary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\loan\loan_micro_new.resx">
       <DependentUpon>loan_micro_new.cs</DependentUpon>

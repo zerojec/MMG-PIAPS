@@ -57,7 +57,7 @@
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 396F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 397F));
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label4, 0, 2);
@@ -114,7 +114,7 @@
             this.txttemplate_name.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttemplate_name.Location = new System.Drawing.Point(115, 4);
             this.txttemplate_name.Name = "txttemplate_name";
-            this.txttemplate_name.Size = new System.Drawing.Size(235, 25);
+            this.txttemplate_name.Size = new System.Drawing.Size(234, 25);
             this.txttemplate_name.TabIndex = 10;
             // 
             // first_half
@@ -125,7 +125,7 @@
             this.first_half.Location = new System.Drawing.Point(112, 32);
             this.first_half.Margin = new System.Windows.Forms.Padding(0);
             this.first_half.Name = "first_half";
-            this.first_half.Size = new System.Drawing.Size(241, 30);
+            this.first_half.Size = new System.Drawing.Size(240, 30);
             this.first_half.TabIndex = 11;
             // 
             // second_half
@@ -136,7 +136,7 @@
             this.second_half.Location = new System.Drawing.Point(112, 63);
             this.second_half.Margin = new System.Windows.Forms.Padding(0);
             this.second_half.Name = "second_half";
-            this.second_half.Size = new System.Drawing.Size(241, 30);
+            this.second_half.Size = new System.Drawing.Size(240, 30);
             this.second_half.TabIndex = 12;
             // 
             // tableLayoutPanel1

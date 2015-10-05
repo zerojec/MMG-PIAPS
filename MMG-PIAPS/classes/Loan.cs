@@ -18,10 +18,8 @@ namespace MMG_PIAPS.classes
         public DateTime approveddate { get; set; } //DATE OF APPROVAL
         public Decimal amortization_on_principal { get; set; } //
         public Decimal amortization_on_interest { get; set; } //
-
         public String loantype { get; set; }
-
-        public decimal amortization_period { get; set; }
+        public int amortization_period { get; set; }
         //public Decimal total_payment { get; set; }
 
 

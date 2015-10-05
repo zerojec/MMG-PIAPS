@@ -23,7 +23,6 @@ namespace MMG_PIAPS.userctrl.emp
         private void emp_profile_current_user_Load(object sender, EventArgs e)
         {
 
-
             txtid.Text = emp.empid;
             txtfname.Text = emp.fname;
             txtlname.Text = emp.lname;
@@ -55,6 +54,38 @@ namespace MMG_PIAPS.userctrl.emp
                 pbEmpPic.Image = Properties.Resources.noimagefound;
                 pbEmpPic.SizeMode = PictureBoxSizeMode.Zoom;
             }
+
+            //LOAD BENEFITS
+            if (emp.benefits.Count > 0)
+            {
+
+                int ctr = 1;
+                foreach (Benefit b in emp.benefits)
+                {
+                    decimal amount = b.GET_AMOUNT(emp.basic_pay);
+                    ListViewItem li = new ListViewItem();
+                    li.Text = ctr.ToString();
+                    li.SubItems.Add(b.code);
+                    li.SubItems.Add(b.name_);
+                    //li.SubItems.Add();// GET THE BENEFIT IDENTIFICATION SUPPLIED BY INSTITUTIONS
+                    li.SubItems.Add(amount.ToString("#,##0.00"));
+                    lvbenefits.Items.Add(li);
+
+                    ctr++;
+                }
+            }
+
+            //LIST THE SCHEDULE
+            ListViewItem lisched = new ListViewItem();
+            lisched.Text = emp.schedule.mon;
+            lisched.SubItems.Add(emp.schedule.tue);
+            lisched.SubItems.Add(emp.schedule.wed);
+            lisched.SubItems.Add(emp.schedule.thu);
+            lisched.SubItems.Add(emp.schedule.fri);
+            lisched.SubItems.Add(emp.schedule.sat);
+            lisched.SubItems.Add(emp.schedule.sun);
+            lvsched.Items.Add(lisched);
+
         }
 
         private void btnViewSal_MouseDown(object sender, MouseEventArgs e)

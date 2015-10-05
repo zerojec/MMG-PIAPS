@@ -15,5 +15,25 @@ namespace MMG_PIAPS.userctrl.loan
         {
             InitializeComponent();
         }
+
+        private void btnMicroLoan_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+
+            loan_current_user_micro c = new loan_current_user_micro();
+            c.Width = pnlops.Width;
+            pnlops.Height = c.Height;
+            pnlops.Controls.Add(c);
+        }
+
+        private void btnSalaryLoan_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+
+            loan_current_user_salary c = new loan_current_user_salary();
+            c.Width = pnlops.Width;
+            pnlops.Height = c.Height;
+            pnlops.Controls.Add(c);
+        }
     }
 }

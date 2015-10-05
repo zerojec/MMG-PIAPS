@@ -47,5 +47,17 @@ namespace MMG_PIAPS.Properties {
                 this["MAIN_BUTTON_HEIGHT"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10000")]
+        public int HIDE_TIMER {
+            get {
+                return ((int)(this["HIDE_TIMER"]));
+            }
+            set {
+                this["HIDE_TIMER"] = value;
+            }
+        }
     }
 }

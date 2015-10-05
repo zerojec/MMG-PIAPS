@@ -46,9 +46,9 @@
             this.pb = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cboBenefits = new System.Windows.Forms.ComboBox();
-            this.txtemp_benefit_code = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.chkNa = new System.Windows.Forms.CheckBox();
+            this.txtemp_benefit_code = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -266,14 +266,6 @@
             this.cboBenefits.Size = new System.Drawing.Size(170, 23);
             this.cboBenefits.TabIndex = 27;
             // 
-            // txtemp_benefit_code
-            // 
-            this.txtemp_benefit_code.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtemp_benefit_code.Location = new System.Drawing.Point(3, 4);
-            this.txtemp_benefit_code.Name = "txtemp_benefit_code";
-            this.txtemp_benefit_code.Size = new System.Drawing.Size(58, 22);
-            this.txtemp_benefit_code.TabIndex = 29;
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.chkNa);
@@ -297,6 +289,14 @@
             this.chkNa.Text = "Not Applicable";
             this.chkNa.UseVisualStyleBackColor = true;
             this.chkNa.CheckedChanged += new System.EventHandler(this.chkNa_CheckedChanged);
+            // 
+            // txtemp_benefit_code
+            // 
+            this.txtemp_benefit_code.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtemp_benefit_code.Location = new System.Drawing.Point(3, 4);
+            this.txtemp_benefit_code.Name = "txtemp_benefit_code";
+            this.txtemp_benefit_code.Size = new System.Drawing.Size(58, 22);
+            this.txtemp_benefit_code.TabIndex = 29;
             // 
             // emp_benefit_new
             // 
