@@ -110,17 +110,6 @@ namespace MMG_PIAPS.forms
             }
 
 
-
-
-            //IF CURRENT USER CAN VIEW EMPLOYEE
-            if (Global.CURRENT_USER.restriction.CAN_VIEW_EMPLOYEE)
-            {               
-                CreateThisButton(view_employee_Click, Image.FromHbitmap(Properties.Resources.employees.GetHbitmap()), "Employee");                             
-            }
-
-
-
-
             //IF CURRENT USER CAN VIEW RESTRICTION
             if (Global.CURRENT_USER.restriction.CAN_VIEW_RESTRICTION)
             {
@@ -148,13 +137,6 @@ namespace MMG_PIAPS.forms
             }
 
 
-            //IF CURRENT USER CAN VIEW MEMBER
-            if (Global.CURRENT_USER.restriction.CAN_VIEW_MEMBERS)
-            {
-               CreateThisButton(view_members_Click, Image.FromHbitmap(Properties.Resources.members.GetHbitmap()), "Members");                             
-            }
-
-
             //IF CURRENT USER CAN VIEW SERVICE_REQUEST
             if (Global.CURRENT_USER.restriction.CAN_VIEW_SERVICE_REQUEST)
             {
@@ -167,6 +149,59 @@ namespace MMG_PIAPS.forms
             {
                 CreateThisButton(view_supply_request_Click, Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap()), "Supply Request");                             
             }
+
+
+            //==========================================
+            //BUTTIONS FOR ADMIN
+            //==========================================
+            //IF CURRENT USER CAN ADMINISTER EMPLOYEES
+            if (Global.CURRENT_USER.restriction.CAN_ADMINISTER_EMPLOYEE)
+            {
+                CreateThisAdminButton(administer_employee_Click, Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap()), "Employees");
+            }
+
+            if (Global.CURRENT_USER.restriction.CAN_ADMINISTER_MEMBER)
+            {
+                CreateThisAdminButton(administer_member_Click, Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap()), "Members");
+            }
+
+            if (Global.CURRENT_USER.restriction.CAN_ADMINISTER_RESTRICTION)
+            {
+                CreateThisAdminButton(administer_restriction_Click, Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap()), "Restrictions");
+            }
+
+            if (Global.CURRENT_USER.restriction.CAN_ADMINISTER_LEAVE)
+            {
+                CreateThisAdminButton(administer_leave_Click, Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap()), "Leave");
+            }
+
+            if (Global.CURRENT_USER.restriction.CAN_ADMINISTER_PASS_SLIP)
+            {
+                CreateThisAdminButton(administer_pass_slip_Click, Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap()), "Pass Slip");
+            }
+
+            if (Global.CURRENT_USER.restriction.CAN_ADMINISTER_LOAN)
+            {
+                CreateThisAdminButton(administer_loan_Click, Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap()), "Loan");
+            }
+
+            if (Global.CURRENT_USER.restriction.CAN_ADMINISTER_ATTENDANCE)
+            {
+                CreateThisAdminButton(administer_attendance_Click, Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap()), "Attendance");
+            }
+
+
+            if (Global.CURRENT_USER.restriction.CAN_ADMINISTER_SUPPLY_REQUEST)
+            {
+                CreateThisAdminButton(administer_supply_request_Click, Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap()), "Supply");
+            }
+
+
+            if (Global.CURRENT_USER.restriction.CAN_ADMINISTER_SERVICE_REQUEST)
+            {
+                CreateThisAdminButton(administer_service_request_Click, Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap()), "Service");
+            }
+
         }
 
 
@@ -190,6 +225,140 @@ namespace MMG_PIAPS.forms
             t.UseFading = true;
             t.InitialDelay = 1;
             t.SetToolTip(b, tooltip);
+        }
+
+
+
+
+
+
+        void CreateThisAdminButton(EventHandler evt, Image img, String Title)
+        {
+            Button b = new Button();
+            b.Dock = DockStyle.Left;
+            b.Text = Title;
+            //b.Image = img;
+           // b.ImageAlign = ContentAlignment.MiddleCenter;
+            b.Width = 150;
+
+            var margin = b.Margin;
+
+            margin.Left = 0;
+            margin.Right = 0;
+            margin.Top = 0;
+            margin.Bottom = 0;
+           
+            b.Margin = margin;
+            
+            b.Height = Properties.Settings.Default.MAIN_BUTTON_HEIGHT;
+            b.BackColor = Color.White;
+            b.Click += evt;//view_service_request_Click;
+            pnlAdminButtons.Controls.Add(b);
+         
+        }
+
+
+
+        void administer_employee_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            emp_ctrl eu = new emp_ctrl();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+        void administer_member_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            mem_ctrl eu = new mem_ctrl();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+
+        void administer_restriction_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            emp_restriction_ctrl eu = new emp_restriction_ctrl();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+        void administer_leave_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            leave_ctrl eu = new leave_ctrl();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+
+        void administer_pass_slip_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            passslip_ctrl eu = new passslip_ctrl();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+        void administer_loan_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            loan_ctrl eu = new loan_ctrl();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+
+        void administer_supply_request_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            supply_request_ctrl eu = new supply_request_ctrl();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+
+
+        void administer_service_request_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            service_request_ctrl eu = new service_request_ctrl();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
+        void administer_attendance_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            attendance_ctrl eu = new attendance_ctrl();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
         }
 
 
@@ -237,6 +406,7 @@ namespace MMG_PIAPS.forms
             eu.Width = pnlops.Width;
             eu.Height = pnlops.Height;
             eu.emp = Global.CURRENT_USER;
+
             pnlops.Controls.Add(eu);
 
             //throw new NotImplementedException();

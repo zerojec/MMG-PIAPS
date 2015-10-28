@@ -37,6 +37,7 @@ namespace MMG_PIAPS.userctrl.emp
             cboemploymentstatus.Text = emp.emp_status;
             cbopositions.Text = emp.position;
 
+            txttinno.Text = emp.tinno;
             // dtBday.Value = emp.birthdate;
             //dtemploymentdate.Value= 
 
@@ -77,14 +78,19 @@ namespace MMG_PIAPS.userctrl.emp
 
             //LIST THE SCHEDULE
             ListViewItem lisched = new ListViewItem();
-            lisched.Text = emp.schedule.mon;
-            lisched.SubItems.Add(emp.schedule.tue);
-            lisched.SubItems.Add(emp.schedule.wed);
-            lisched.SubItems.Add(emp.schedule.thu);
-            lisched.SubItems.Add(emp.schedule.fri);
-            lisched.SubItems.Add(emp.schedule.sat);
-            lisched.SubItems.Add(emp.schedule.sun);
-            lvsched.Items.Add(lisched);
+            
+            if(emp.schedule!=null){
+                lisched.Text = emp.schedule.mon;
+                lisched.SubItems.Add(emp.schedule.tue);
+                lisched.SubItems.Add(emp.schedule.wed);
+                lisched.SubItems.Add(emp.schedule.thu);
+                lisched.SubItems.Add(emp.schedule.fri);
+                lisched.SubItems.Add(emp.schedule.sat);
+                lisched.SubItems.Add(emp.schedule.sun);
+                lvsched.Items.Add(lisched);
+            }
+
+          
 
         }
 

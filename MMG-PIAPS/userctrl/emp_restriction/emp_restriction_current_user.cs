@@ -51,6 +51,7 @@ namespace MMG_PIAPS.userctrl.emp_restriction
                 chk[ctr] = new CheckBox();
                 chk[ctr].Name = name;
                 chk[ctr].Text = name;
+             
 
                 //MessageBox.Show(value.ToString());
                 if (value.ToString() == "True")
@@ -63,7 +64,7 @@ namespace MMG_PIAPS.userctrl.emp_restriction
                 }
 
                 chk[ctr].Dock = DockStyle.Top;
-
+              
 
                 //ADD EVENT
                 if (Global.CURRENT_USER.restriction.CAN_UPDATE_RESTRICTION)
@@ -74,7 +75,7 @@ namespace MMG_PIAPS.userctrl.emp_restriction
                 else {
                     chk[ctr].Enabled = false;
                 }
-               
+                chk[ctr].Enabled = false;
                 pnlrestrictions.Controls.Add(chk[ctr]);
 
             }

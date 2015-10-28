@@ -31,8 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.pnlbuttons = new System.Windows.Forms.Panel();
+            this.pnlops = new System.Windows.Forms.Panel();
             this.tbldataPanel = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
+            this.CurrUserPic = new System.Windows.Forms.PictureBox();
             this.lblbranch = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lblposition = new System.Windows.Forms.Label();
@@ -50,7 +54,6 @@
             this.lblfname = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbllname = new System.Windows.Forms.Label();
-            this.CurrUserPic = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -74,31 +77,73 @@
             this.memberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataImportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlbuttons = new System.Windows.Forms.Panel();
-            this.pnlops = new System.Windows.Forms.Panel();
+            this.pnlAdminButtons = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.tbldataPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.tbldataPanel, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1008, 688);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1008, 661);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.pnlbuttons, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pnlops, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 1, 1);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(294, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(714, 661);
+            this.tableLayoutPanel2.TabIndex = 5;
+            // 
+            // pnlbuttons
+            // 
+            this.pnlbuttons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.pnlbuttons.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlbuttons.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlbuttons.Location = new System.Drawing.Point(0, 0);
+            this.pnlbuttons.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlbuttons.Name = "pnlbuttons";
+            this.tableLayoutPanel2.SetRowSpan(this.pnlbuttons, 2);
+            this.pnlbuttons.Size = new System.Drawing.Size(60, 661);
+            this.pnlbuttons.TabIndex = 2;
+            // 
+            // pnlops
+            // 
+            this.pnlops.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlops.Location = new System.Drawing.Point(60, 0);
+            this.pnlops.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlops.Name = "pnlops";
+            this.pnlops.Size = new System.Drawing.Size(654, 621);
+            this.pnlops.TabIndex = 1;
             // 
             // tbldataPanel
             // 
@@ -126,7 +171,7 @@
             this.tbldataPanel.Controls.Add(this.label1, 0, 1);
             this.tbldataPanel.Controls.Add(this.lbllname, 1, 1);
             this.tbldataPanel.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbldataPanel.Location = new System.Drawing.Point(1, 1);
+            this.tbldataPanel.Location = new System.Drawing.Point(0, 0);
             this.tbldataPanel.Margin = new System.Windows.Forms.Padding(0);
             this.tbldataPanel.Name = "tbldataPanel";
             this.tbldataPanel.RowCount = 11;
@@ -153,6 +198,20 @@
             this.label9.Size = new System.Drawing.Size(59, 19);
             this.label9.TabIndex = 8;
             this.label9.Text = "Branch :";
+            // 
+            // CurrUserPic
+            // 
+            this.tbldataPanel.SetColumnSpan(this.CurrUserPic, 2);
+            this.CurrUserPic.ErrorImage = global::MMG_PIAPS.Properties.Resources.noimagefound;
+            this.CurrUserPic.Image = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
+            this.CurrUserPic.InitialImage = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
+            this.CurrUserPic.Location = new System.Drawing.Point(1, 1);
+            this.CurrUserPic.Margin = new System.Windows.Forms.Padding(0);
+            this.CurrUserPic.Name = "CurrUserPic";
+            this.CurrUserPic.Size = new System.Drawing.Size(280, 226);
+            this.CurrUserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CurrUserPic.TabIndex = 17;
+            this.CurrUserPic.TabStop = false;
             // 
             // lblbranch
             // 
@@ -323,20 +382,6 @@
             this.lbllname.Size = new System.Drawing.Size(21, 19);
             this.lbllname.TabIndex = 1;
             this.lbllname.Text = "...";
-            // 
-            // CurrUserPic
-            // 
-            this.tbldataPanel.SetColumnSpan(this.CurrUserPic, 2);
-            this.CurrUserPic.ErrorImage = global::MMG_PIAPS.Properties.Resources.noimagefound;
-            this.CurrUserPic.Image = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
-            this.CurrUserPic.InitialImage = global::MMG_PIAPS.Properties.Resources.MMG_Logo;
-            this.CurrUserPic.Location = new System.Drawing.Point(1, 1);
-            this.CurrUserPic.Margin = new System.Windows.Forms.Padding(0);
-            this.CurrUserPic.Name = "CurrUserPic";
-            this.CurrUserPic.Size = new System.Drawing.Size(280, 226);
-            this.CurrUserPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CurrUserPic.TabIndex = 17;
-            this.CurrUserPic.TabStop = false;
             // 
             // timer1
             // 
@@ -529,42 +574,44 @@
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // tableLayoutPanel2
+            // pnlAdminButtons
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.pnlbuttons, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pnlops, 1, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(296, 1);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(711, 686);
-            this.tableLayoutPanel2.TabIndex = 5;
+            this.pnlAdminButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.pnlAdminButtons.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlAdminButtons.Font = new System.Drawing.Font("Tw Cen MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlAdminButtons.Location = new System.Drawing.Point(160, 0);
+            this.pnlAdminButtons.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAdminButtons.Name = "pnlAdminButtons";
+            this.pnlAdminButtons.Size = new System.Drawing.Size(494, 40);
+            this.pnlAdminButtons.TabIndex = 6;
             // 
-            // pnlbuttons
+            // label10
             // 
-            this.pnlbuttons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.pnlbuttons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlbuttons.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlbuttons.Location = new System.Drawing.Point(0, 0);
-            this.pnlbuttons.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlbuttons.Name = "pnlbuttons";
-            this.pnlbuttons.Size = new System.Drawing.Size(60, 686);
-            this.pnlbuttons.TabIndex = 2;
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(3, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(154, 22);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Admin Functions  :";
             // 
-            // pnlops
+            // tableLayoutPanel3
             // 
-            this.pnlops.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlops.Location = new System.Drawing.Point(60, 0);
-            this.pnlops.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlops.Name = "pnlops";
-            this.pnlops.Size = new System.Drawing.Size(651, 686);
-            this.pnlops.TabIndex = 1;
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.pnlAdminButtons, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label10, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(60, 621);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(654, 40);
+            this.tableLayoutPanel3.TabIndex = 3;
             // 
             // frmMain
             // 
@@ -580,12 +627,14 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.tbldataPanel.ResumeLayout(false);
             this.tbldataPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -640,5 +689,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Panel pnlbuttons;
         private System.Windows.Forms.Panel pnlops;
+        private System.Windows.Forms.Panel pnlAdminButtons;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
     }
 }

@@ -55,7 +55,8 @@ namespace MMG_PIAPS.userctrl.emp
             cbobranch.Text = emp.branch;
             cboemploymentstatus.Text = emp.emp_status;
             cbopositions.Text = emp.position;
-
+            txtmembershipid.Text = emp.COOP_MEMBERSHIP_ID;
+            txttinno.Text = emp.tinno;
            // dtBday.Value = emp.birthdate;
             //dtemploymentdate.Value= 
 
@@ -96,7 +97,8 @@ namespace MMG_PIAPS.userctrl.emp
             emp.position = cbopositions.Text;
             emp.basic_pay = Convert.ToDecimal(txtbasicpay.Text);
             emp.date_hired = dtemploymentdate.Value;
-           
+            emp.tinno = txttinno.Text;
+
             long filesize;
             MemoryStream mstream = new MemoryStream();
             pbEmpPic.Image.Save(mstream, System.Drawing.Imaging.ImageFormat.Jpeg);
@@ -187,6 +189,14 @@ namespace MMG_PIAPS.userctrl.emp
         {
             pbEmpPic.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
             pbEmpPic.Refresh();
+        }
+
+        private void btnUpdateMembership_Click(object sender, EventArgs e)
+        {
+            frmEmpMembership frm = new frmEmpMembership();
+            frm.emp = emp;
+            frm.SetDesktopLocation(MousePosition.X - frm.Width, MousePosition.Y);
+            frm.ShowDialog();
         }
     }
 }

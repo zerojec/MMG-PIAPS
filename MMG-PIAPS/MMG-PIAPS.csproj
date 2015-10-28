@@ -94,6 +94,12 @@
     <Compile Include="forms\emp\frmEmpBranchAssignment.Designer.cs">
       <DependentUpon>frmEmpBranchAssignment.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\emp\frmEmpMembership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\emp\frmEmpMembership.Designer.cs">
+      <DependentUpon>frmEmpMembership.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\emp\frmEmpPosition.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,12 @@
     </Compile>
     <Compile Include="forms\emp\frmEmpStatus.Designer.cs">
       <DependentUpon>frmEmpStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\emp\frmEmpTinNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\emp\frmEmpTinNo.Designer.cs">
+      <DependentUpon>frmEmpTinNo.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\frmConnectXLS.cs">
       <SubType>Form</SubType>
@@ -320,6 +332,12 @@
     <Compile Include="userctrl\loan\loan_salary_new.Designer.cs">
       <DependentUpon>loan_salary_new.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\member\mem_update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\member\mem_update.Designer.cs">
+      <DependentUpon>mem_update.cs</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\member\mem_ctrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -331,6 +349,12 @@
     </Compile>
     <Compile Include="userctrl\member\mem_new.Designer.cs">
       <DependentUpon>mem_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\member\mem_capital_update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\member\mem_capital_update.Designer.cs">
+      <DependentUpon>mem_capital_update.cs</DependentUpon>
     </Compile>
     <Compile Include="userctrl\passslip\passslip_apply_new.cs">
       <SubType>UserControl</SubType>
@@ -374,6 +398,12 @@
     <Compile Include="userctrl\service_request\service_request_apply_new.Designer.cs">
       <DependentUpon>service_request_apply_new.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\service_request\service_request_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\service_request\service_request_ctrl.Designer.cs">
+      <DependentUpon>service_request_ctrl.cs</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\service_request\service_request_current_user.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -392,17 +422,29 @@
     <Compile Include="userctrl\supply_request\supply_request_current_user.Designer.cs">
       <DependentUpon>supply_request_current_user.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\supply_request\supply_request_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\supply_request\supply_request_ctrl.Designer.cs">
+      <DependentUpon>supply_request_ctrl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="forms\emp\frmEmpBasicPay.resx">
       <DependentUpon>frmEmpBasicPay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\emp\frmEmpBranchAssignment.resx">
       <DependentUpon>frmEmpBranchAssignment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\emp\frmEmpMembership.resx">
+      <DependentUpon>frmEmpMembership.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\emp\frmEmpPosition.resx">
       <DependentUpon>frmEmpPosition.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\emp\frmEmpStatus.resx">
       <DependentUpon>frmEmpStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\emp\frmEmpTinNo.resx">
+      <DependentUpon>frmEmpTinNo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\frmConnectXLS.resx">
       <DependentUpon>frmConnectXLS.cs</DependentUpon>
@@ -517,6 +559,12 @@
     <EmbeddedResource Include="userctrl\member\mem_new.resx">
       <DependentUpon>mem_new.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\member\mem_update.resx">
+      <DependentUpon>mem_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\member\mem_capital_update.resx">
+      <DependentUpon>mem_capital_update.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userctrl\passslip\passslip_apply_new.resx">
       <DependentUpon>passslip_apply_new.cs</DependentUpon>
     </EmbeddedResource>
@@ -538,16 +586,23 @@
     <EmbeddedResource Include="userctrl\service_request\service_request_apply_new.resx">
       <DependentUpon>service_request_apply_new.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\service_request\service_request_ctrl.resx">
+      <DependentUpon>service_request_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userctrl\service_request\service_request_current_user.resx">
       <DependentUpon>service_request_current_user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\supply_request\supply_request_apply_new.resx">
       <DependentUpon>supply_request_apply_new.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\supply_request\supply_request_ctrl.resx">
+      <DependentUpon>supply_request_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userctrl\supply_request\supply_request_current_user.resx">
       <DependentUpon>supply_request_current_user.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="Properties\DataSources\MMG_PIAPS.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -855,6 +910,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\attendance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

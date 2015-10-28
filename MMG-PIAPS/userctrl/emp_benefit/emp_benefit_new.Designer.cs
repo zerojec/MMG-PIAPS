@@ -70,9 +70,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(33, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(283, 28);
+            this.label1.Size = new System.Drawing.Size(397, 28);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Assigning Employee Benefits";
+            this.label1.Text = "Assigning Employee Benefits / Premiums";
             // 
             // btnsave
             // 
@@ -154,7 +154,7 @@
             // 
             this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 175F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel3.Controls.Add(this.label4, 0, 2);
@@ -178,7 +178,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 70);
+            this.label4.Location = new System.Drawing.Point(69, 70);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 15);
             this.label4.TabIndex = 28;
@@ -188,7 +188,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 8);
+            this.label2.Location = new System.Drawing.Point(70, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 15);
             this.label2.TabIndex = 0;
@@ -200,9 +200,9 @@
             this.cboEmp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboEmp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cboEmp.FormattingEnabled = true;
-            this.cboEmp.Location = new System.Drawing.Point(115, 4);
+            this.cboEmp.Location = new System.Drawing.Point(180, 4);
             this.cboEmp.Name = "cboEmp";
-            this.cboEmp.Size = new System.Drawing.Size(170, 23);
+            this.cboEmp.Size = new System.Drawing.Size(150, 23);
             this.cboEmp.TabIndex = 17;
             this.cboEmp.SelectedIndexChanged += new System.EventHandler(this.cboEmp_SelectedIndexChanged);
             // 
@@ -214,12 +214,12 @@
             this.tableLayoutPanel2.Controls.Add(this.lblemp, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.pb, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(289, 1);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(334, 1);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(412, 30);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(367, 30);
             this.tableLayoutPanel2.TabIndex = 25;
             // 
             // lblemp
@@ -231,7 +231,7 @@
             this.lblemp.ForeColor = System.Drawing.Color.White;
             this.lblemp.Location = new System.Drawing.Point(53, 0);
             this.lblemp.Name = "lblemp";
-            this.lblemp.Size = new System.Drawing.Size(356, 30);
+            this.lblemp.Size = new System.Drawing.Size(311, 30);
             this.lblemp.TabIndex = 0;
             this.lblemp.Text = "...";
             this.lblemp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -249,11 +249,11 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 39);
+            this.label3.Location = new System.Drawing.Point(30, 39);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 15);
+            this.label3.Size = new System.Drawing.Size(143, 15);
             this.label3.TabIndex = 26;
-            this.label3.Text = "Select Benefit :";
+            this.label3.Text = "Select Benefit / Premium:";
             // 
             // cboBenefits
             // 
@@ -261,9 +261,9 @@
             this.cboBenefits.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboBenefits.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cboBenefits.FormattingEnabled = true;
-            this.cboBenefits.Location = new System.Drawing.Point(115, 35);
+            this.cboBenefits.Location = new System.Drawing.Point(180, 35);
             this.cboBenefits.Name = "cboBenefits";
-            this.cboBenefits.Size = new System.Drawing.Size(170, 23);
+            this.cboBenefits.Size = new System.Drawing.Size(150, 23);
             this.cboBenefits.TabIndex = 27;
             // 
             // panel3
@@ -271,18 +271,18 @@
             this.panel3.Controls.Add(this.chkNa);
             this.panel3.Controls.Add(this.txtemp_benefit_code);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(112, 63);
+            this.panel3.Location = new System.Drawing.Point(177, 63);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(3);
-            this.panel3.Size = new System.Drawing.Size(176, 30);
+            this.panel3.Size = new System.Drawing.Size(156, 30);
             this.panel3.TabIndex = 30;
             // 
             // chkNa
             // 
             this.chkNa.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.chkNa.AutoSize = true;
-            this.chkNa.Location = new System.Drawing.Point(64, 7);
+            this.chkNa.Location = new System.Drawing.Point(44, 7);
             this.chkNa.Name = "chkNa";
             this.chkNa.Size = new System.Drawing.Size(106, 19);
             this.chkNa.TabIndex = 30;
@@ -295,7 +295,7 @@
             this.txtemp_benefit_code.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtemp_benefit_code.Location = new System.Drawing.Point(3, 4);
             this.txtemp_benefit_code.Name = "txtemp_benefit_code";
-            this.txtemp_benefit_code.Size = new System.Drawing.Size(58, 22);
+            this.txtemp_benefit_code.Size = new System.Drawing.Size(38, 22);
             this.txtemp_benefit_code.TabIndex = 29;
             // 
             // emp_benefit_new

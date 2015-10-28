@@ -15,6 +15,7 @@ namespace MMG_PIAPS.classes
         public String name_ { get; set; }
         public String amount_lookup { get; set; }
         public decimal amount { get; set; }
+        public string type_ { get; set; }
 
         public Boolean save()
         {
@@ -25,6 +26,7 @@ namespace MMG_PIAPS.classes
             cmd.Parameters.AddWithValue("_name", name_);
             cmd.Parameters.AddWithValue("_amount_lookup", amount_lookup);
             cmd.Parameters.AddWithValue("_amount", amount);
+            cmd.Parameters.AddWithValue("_type", type_);
             
             try
             {
@@ -63,6 +65,8 @@ namespace MMG_PIAPS.classes
 
 
 
+
+
         public void LoadOnListView(ListView lv)
         {
             Benefit s = new Benefit();
@@ -78,8 +82,9 @@ namespace MMG_PIAPS.classes
                     li.Text = ctr.ToString();
                     li.SubItems.Add(r["code"].ToString());
                     li.SubItems.Add(r["name_"].ToString());
-                    li.SubItems.Add(r["amount_lookup"].ToString());
-                    li.SubItems.Add(r["amount"].ToString());           
+                    li.SubItems.Add(r["type_"].ToString());
+                    //li.SubItems.Add(r["amount_lookup"].ToString());
+                    //li.SubItems.Add(r["amount"].ToString());           
                     lv.Items.Add(li);
                     ctr++;
                 }

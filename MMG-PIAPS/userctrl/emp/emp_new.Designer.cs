@@ -68,6 +68,8 @@
             this.label15 = new System.Windows.Forms.Label();
             this.cbobranch = new System.Windows.Forms.ComboBox();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txttinno = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -242,6 +244,8 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.txttinno, 3, 5);
+            this.tableLayoutPanel3.Controls.Add(this.label14, 2, 5);
             this.tableLayoutPanel3.Controls.Add(this.dtemploymentdate, 3, 3);
             this.tableLayoutPanel3.Controls.Add(this.label13, 2, 3);
             this.tableLayoutPanel3.Controls.Add(this.cboemploymentstatus, 3, 2);
@@ -558,6 +562,25 @@
             // 
             this.ofd.FileName = "openFileDialog1";
             // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(303, 163);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 15);
+            this.label14.TabIndex = 27;
+            this.label14.Text = "TIN No. :";
+            // 
+            // txttinno
+            // 
+            this.txttinno.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txttinno.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttinno.Location = new System.Drawing.Point(365, 159);
+            this.txttinno.Name = "txttinno";
+            this.txttinno.Size = new System.Drawing.Size(103, 25);
+            this.txttinno.TabIndex = 11;
+            // 
             // emp_new
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -623,5 +646,7 @@
         private System.Windows.Forms.ComboBox cbobranch;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Button btnrotate;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txttinno;
     }
 }

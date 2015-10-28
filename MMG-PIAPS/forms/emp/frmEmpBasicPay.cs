@@ -33,7 +33,6 @@ namespace MMG_PIAPS.forms.emp
                 BasicPay bp = new BasicPay();
                 bp.empid = emp.empid;
                 bp.basic_pay = newbasicpay;
-
                 if (bp.save())
                 {
                     this.Dispose();

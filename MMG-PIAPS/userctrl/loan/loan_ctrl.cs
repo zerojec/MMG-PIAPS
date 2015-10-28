@@ -6,11 +6,15 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using MMG_PIAPS.classes;
 
 namespace MMG_PIAPS.userctrl.loan
 {
     public partial class loan_ctrl : UserControl
     {
+
+        Loan l = new Loan();
+
         public loan_ctrl()
         {
             InitializeComponent();
@@ -34,6 +38,11 @@ namespace MMG_PIAPS.userctrl.loan
             c.Width = pnlops.Width;
             pnlops.Height = c.Height;
             pnlops.Controls.Add(c);
+        }
+
+        private void loan_ctrl_Load(object sender, EventArgs e)
+        {
+            l.LoadLoansInListView(lv);
         }
     }
 }

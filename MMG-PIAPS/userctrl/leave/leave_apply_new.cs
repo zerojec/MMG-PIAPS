@@ -57,6 +57,13 @@ namespace MMG_PIAPS.userctrl.leave
             
         }
 
+        private void btncancel_Click(object sender, EventArgs e)
+        {
+            this.Parent.Height = 0;
+            this.Parent.Controls.Clear();
+            this.Dispose();
+        }
+
       
       
     }

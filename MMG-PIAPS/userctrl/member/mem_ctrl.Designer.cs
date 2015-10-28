@@ -30,9 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlops = new System.Windows.Forms.Panel();
-            this.viewBenefitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewScheduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewPaidUpCapitalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -45,17 +43,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnNew = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnFilter = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtname = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.updateStandingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenu.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlops
@@ -68,44 +68,31 @@
             this.pnlops.Size = new System.Drawing.Size(621, 0);
             this.pnlops.TabIndex = 2;
             // 
-            // viewBenefitsToolStripMenuItem
+            // viewPaidUpCapitalToolStripMenuItem
             // 
-            this.viewBenefitsToolStripMenuItem.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewBenefitsToolStripMenuItem.Name = "viewBenefitsToolStripMenuItem";
-            this.viewBenefitsToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
-            this.viewBenefitsToolStripMenuItem.Text = "Benefits";
-            // 
-            // viewScheduleToolStripMenuItem
-            // 
-            this.viewScheduleToolStripMenuItem.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewScheduleToolStripMenuItem.Name = "viewScheduleToolStripMenuItem";
-            this.viewScheduleToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
-            this.viewScheduleToolStripMenuItem.Text = "Schedule";
-            // 
-            // viewProfileToolStripMenuItem
-            // 
-            this.viewProfileToolStripMenuItem.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewProfileToolStripMenuItem.Name = "viewProfileToolStripMenuItem";
-            this.viewProfileToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
-            this.viewProfileToolStripMenuItem.Text = "Profile";
+            this.viewPaidUpCapitalToolStripMenuItem.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewPaidUpCapitalToolStripMenuItem.Name = "viewPaidUpCapitalToolStripMenuItem";
+            this.viewPaidUpCapitalToolStripMenuItem.Size = new System.Drawing.Size(181, 24);
+            this.viewPaidUpCapitalToolStripMenuItem.Text = "Capital Buidl-Up";
+            this.viewPaidUpCapitalToolStripMenuItem.Click += new System.EventHandler(this.viewPaidUpCapitalToolStripMenuItem_Click);
             // 
             // contextMenu
             // 
             this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewProfileToolStripMenuItem,
-            this.viewScheduleToolStripMenuItem,
-            this.viewBenefitsToolStripMenuItem,
-            this.updateInfoToolStripMenuItem});
+            this.viewPaidUpCapitalToolStripMenuItem,
+            this.updateInfoToolStripMenuItem,
+            this.updateStandingToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
             this.contextMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.contextMenu.Size = new System.Drawing.Size(154, 100);
+            this.contextMenu.Size = new System.Drawing.Size(182, 76);
             // 
             // updateInfoToolStripMenuItem
             // 
             this.updateInfoToolStripMenuItem.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateInfoToolStripMenuItem.Name = "updateInfoToolStripMenuItem";
-            this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(181, 24);
             this.updateInfoToolStripMenuItem.Text = "Update Info";
+            this.updateInfoToolStripMenuItem.Click += new System.EventHandler(this.updateInfoToolStripMenuItem_Click);
             // 
             // columnHeader6
             // 
@@ -146,7 +133,8 @@
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5,
-            this.columnHeader6});
+            this.columnHeader6,
+            this.columnHeader7});
             this.lv.ContextMenuStrip = this.contextMenu;
             this.lv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lv.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -159,6 +147,8 @@
             this.lv.TabIndex = 1;
             this.lv.UseCompatibleStateImageBehavior = false;
             this.lv.View = System.Windows.Forms.View.Details;
+            this.lv.SelectedIndexChanged += new System.EventHandler(this.lv_SelectedIndexChanged);
+            this.lv.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lv_MouseClick);
             // 
             // label1
             // 
@@ -199,35 +189,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(500, 40);
             this.tableLayoutPanel2.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DimGray;
-            this.panel1.Controls.Add(this.tableLayoutPanel2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(621, 40);
-            this.panel1.TabIndex = 0;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lv, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pnlops, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(621, 320);
-            this.tableLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel3
             // 
@@ -280,6 +241,48 @@
             this.txtname.Size = new System.Drawing.Size(175, 25);
             this.txtname.TabIndex = 7;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Controls.Add(this.tableLayoutPanel2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(621, 40);
+            this.panel1.TabIndex = 0;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lv, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pnlops, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(621, 320);
+            this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // updateStandingToolStripMenuItem
+            // 
+            this.updateStandingToolStripMenuItem.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateStandingToolStripMenuItem.Name = "updateStandingToolStripMenuItem";
+            this.updateStandingToolStripMenuItem.Size = new System.Drawing.Size(181, 24);
+            this.updateStandingToolStripMenuItem.Text = "Toggle Standing";
+            this.updateStandingToolStripMenuItem.Click += new System.EventHandler(this.updateStandingToolStripMenuItem_Click);
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "TIN No.";
+            this.columnHeader7.Width = 160;
+            // 
             // mem_ctrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -291,11 +294,11 @@
             this.Load += new System.EventHandler(this.mem_ctrl_Load);
             this.contextMenu.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -303,9 +306,7 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlops;
-        private System.Windows.Forms.ToolStripMenuItem viewBenefitsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewScheduleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewProfileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewPaidUpCapitalToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenu;
         private System.Windows.Forms.ToolStripMenuItem updateInfoToolStripMenuItem;
         private System.Windows.Forms.ColumnHeader columnHeader6;
@@ -324,5 +325,7 @@
         private System.Windows.Forms.Button btnFilter;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.ToolStripMenuItem updateStandingToolStripMenuItem;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
     }
 }

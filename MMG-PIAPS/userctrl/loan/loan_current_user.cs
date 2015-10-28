@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using MMG_PIAPS.modules;
 
 namespace MMG_PIAPS.userctrl.loan
 {
@@ -34,6 +35,13 @@ namespace MMG_PIAPS.userctrl.loan
             c.Width = pnlops.Width;
             pnlops.Height = c.Height;
             pnlops.Controls.Add(c);
+        }
+
+        private void loan_current_user_Load(object sender, EventArgs e)
+        {
+            if (Global.CURRENT_USER.COOP_MEMBERSHIP_ID.Equals(" ")) {
+                btnMicroLoan.Enabled = false;
+            }
         }
     }
 }

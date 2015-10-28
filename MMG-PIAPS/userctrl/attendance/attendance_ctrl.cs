@@ -49,6 +49,7 @@ namespace MMG_PIAPS.userctrl.attendance
             else
             {
                 cboEmp.Enabled = false;
+                cboEmp.Text = "";
             }
         }
 

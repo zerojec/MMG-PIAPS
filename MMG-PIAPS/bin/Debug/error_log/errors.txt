@@ -289,3 +289,80 @@
 --------------------------------------------------------------
 10/5/2015 7:57:42 AM:LOAN MODULE ERROR :Attempted to divide by zero.
 --------------------------------------------------------------
+10/6/2015 3:23:05 AM:ATTENDANCE_BY_EMPID_BW_DATES MODULE:Incorrect integer value: 'TAB=002' for column '_empid' at row 460
+--------------------------------------------------------------
+10/6/2015 7:28:23 AM:System.ArgumentException: Parameter '_standing' not found in the collection.
+   at MySql.Data.MySqlClient.MySqlParameterCollection.GetParameterFlexible(String parameterName, Boolean throwOnNotFound)
+   at MySql.Data.MySqlClient.StoredProcedure.GetAndFixParameter(String spName, MySqlSchemaRow param, Boolean realAsFloat, MySqlParameter returnParameter)
+   at MySql.Data.MySqlClient.StoredProcedure.CheckParameters(String spName)
+   at MySql.Data.MySqlClient.StoredProcedure.Resolve(Boolean preparing)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Member.update() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Member.cs:line 86
+--------------------------------------------------------------
+10/12/2015 2:58:33 AM:MEMBER_CAPITAL_SAVE_MODULE :Parameter '_date_updated' not found in the collection.
+--------------------------------------------------------------
+10/12/2015 3:01:33 AM:MEMBER_CAPITAL_SAVE_MODULE :Parameter '_paid_up_capital_explanation' not found in the collection.
+--------------------------------------------------------------
+10/12/2015 3:03:16 AM:MEMBER_CAPITAL_SAVE_MODULE :Parameter '_paid_up_capital_explanation' not found in the collection.
+--------------------------------------------------------------
+10/12/2015 3:04:43 AM:MEMBER_CAPITAL_SAVE_MODULE :Parameter '_paid_up_capital_explanation' not found in the collection.
+--------------------------------------------------------------
+10/12/2015 3:06:31 AM:MEMBER_CAPITAL_SAVE_MODULE :Parameter '_paid_up_capital_explanation' not found in the collection.
+--------------------------------------------------------------
+10/12/2015 3:08:19 AM:MEMBER_CAPITAL_SAVE_MODULE :Parameter '_transaction_type_' not found in the collection.
+--------------------------------------------------------------
+10/12/2015 3:09:07 AM:MEMBER_CAPITAL_SAVE_MODULE :Unknown column 'paid_up_capital_ref' in 'field list'
+--------------------------------------------------------------
+10/12/2015 3:12:49 AM:MEMBER_CAPITAL_SAVE_MODULE :Parameter '_paid_up_reference' not found in the collection.
+--------------------------------------------------------------
+10/12/2015 3:13:32 AM:MEMBER_CAPITAL_SAVE_MODULE :Column 'paid_up_capital' specified twice
+--------------------------------------------------------------
+10/12/2015 3:14:20 AM:MEMBER_CAPITAL_SAVE_MODULE :Unknown column 'paid_up_ref' in 'field list'
+--------------------------------------------------------------
+10/12/2015 5:07:13 AM:Procedure or function '`MEMBER_CAPITAL_BY_MEMID`' cannot be found in database '`mmgmapiapsdb`'.
+--------------------------------------------------------------
+10/12/2015 5:07:16 AM:Procedure or function '`MEMBER_CAPITAL_BY_MEMID`' cannot be found in database '`mmgmapiapsdb`'.
+--------------------------------------------------------------
+10/12/2015 5:07:20 AM:Procedure or function '`MEMBER_CAPITAL_BY_MEMID`' cannot be found in database '`mmgmapiapsdb`'.
+--------------------------------------------------------------
+10/12/2015 6:24:37 AM:ERROR ON LOAN_MODULE MICRO LOAN_MICRO_PERCENTAGE_TOGET_LOANABLE_AMOUNT :Table 'mmgmapiapsdb.tblsettings' doesn't exist
+--------------------------------------------------------------
+10/12/2015 6:24:37 AM:ERROR ON LOAN_MODULE MICRO LOAN_MICRO_PERCENTAGE_TOGET_LOANABLE_AMOUNT :Table 'mmgmapiapsdb.tblsettings' doesn't exist
+--------------------------------------------------------------
+10/12/2015 6:26:21 AM:ERROR ON LOAN_MODULE MICRO LOAN_MICRO_PERCENTAGE_TOGET_LOANABLE_AMOUNT :Table 'mmgmapiapsdb.tblsettings' doesn't exist
+--------------------------------------------------------------
+10/12/2015 6:26:21 AM:ERROR ON LOAN_MODULE MICRO LOAN_MICRO_PERCENTAGE_TOGET_LOANABLE_AMOUNT :Table 'mmgmapiapsdb.tblsettings' doesn't exist
+--------------------------------------------------------------
+10/12/2015 6:30:36 AM:ERROR ON LOAN_MODULE MICRO LOAN_MICRO_PERCENTAGE_TOGET_LOANABLE_AMOUNT :Table 'mmgmapiapsdb.tblsettings' doesn't exist
+--------------------------------------------------------------
+10/12/2015 6:30:36 AM:ERROR ON LOAN_MODULE MICRO LOAN_MICRO_PERCENTAGE_TOGET_LOANABLE_AMOUNT :Table 'mmgmapiapsdb.tblsettings' doesn't exist
+--------------------------------------------------------------
+10/12/2015 6:35:25 AM:ERROR ON LOAN_MODULE MICRO LOAN_MICRO_PERCENTAGE_TOGET_LOANABLE_AMOUNT :Column 'PERCENTAGE_TOGET_LOANABLE_AMOUNT' does not belong to table .
+--------------------------------------------------------------
+10/12/2015 7:27:48 AM:ERROR ON LOAN_MODULE MICRO MICRO_LOAN_MAX_TERM :Unknown column 'LOAN_MICRO_MAX_TERM' in 'field list'
+--------------------------------------------------------------
+10/12/2015 7:28:49 AM:ERROR ON LOAN_MODULE MICRO MICRO_LOAN_MAX_TERM :Unknown column 'LOAN_MICRO_MAX_TERM' in 'field list'
+--------------------------------------------------------------
+10/24/2015 2:53:06 AM:Error MEMBER_CLASS_SAVE: Column 'tinno' cannot be null
+--------------------------------------------------------------
+10/24/2015 2:53:07 AM:MySql.Data.MySqlClient.MySqlException (0x80004005): Column 'tinno' cannot be null
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at MMG_PIAPS.classes.Member.save() in c:\projects\MMG-PIAPS\MMG-PIAPS\classes\Member.cs:line 54
+--------------------------------------------------------------
+10/28/2015 3:57:27 AM:LOAN MODULE ERROR :Attempted to divide by zero.
+--------------------------------------------------------------
+10/28/2015 3:57:36 AM:LOAN MODULE ERROR :Attempted to divide by zero.
+--------------------------------------------------------------
+10/28/2015 8:12:35 AM:SAVE LOAN MODULE :Field 'crecom_chairman' doesn't have a default value
+--------------------------------------------------------------
+10/28/2015 8:15:01 AM:SAVE LOAN MODULE :Duplicate entry 'ML-10-007-15' for key 'PRIMARY'
+--------------------------------------------------------------
+10/28/2015 8:32:44 AM:ATTENDANCE_BY_EMPID_BW_DATES MODULE:Incorrect integer value: 'TAB=002' for column '_empid' at row 477
+--------------------------------------------------------------

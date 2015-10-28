@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using MMG_PIAPS.classes;
+using MMG_PIAPS.modules;
 
 namespace MMG_PIAPS.userctrl.loan
 {
@@ -47,7 +48,10 @@ namespace MMG_PIAPS.userctrl.loan
             txttotal_amort.Text = "";
             MAXIMUM_ALLOWED_AMORT_PERIOD = 0;
             MAXIMUM_ALLOWED_LOAN = 0;
-                 
+
+
+         
+           
         }
     }
 }

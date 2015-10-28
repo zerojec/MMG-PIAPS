@@ -62,6 +62,7 @@ namespace MMG_PIAPS.classes
         public Boolean CAN_ADMINISTER_SCHEDULE { get; set; }
         public Boolean CAN_ADMINISTER_MEMBER{ get; set; }
         public Boolean CAN_ADMINISTER_SUPPLY_REQUEST { get; set; }
+        public Boolean CAN_ADMINISTER_SERVICE_REQUEST { get; set; }
         public Boolean CAN_ADMINISTER_ATTENDANCE { get; set; }
 
         public Boolean save()
@@ -185,6 +186,7 @@ namespace MMG_PIAPS.classes
                     er.CAN_ADMINISTER_SCHEDULE = (Boolean)r["CAN_ADMINISTER_SCHEDULE"];
                     er.CAN_ADMINISTER_MEMBER = (Boolean)r["CAN_ADMINISTER_MEMBER"];
                     er.CAN_ADMINISTER_SUPPLY_REQUEST = (Boolean)r["CAN_ADMINISTER_SUPPLY_REQUEST"];
+                    er.CAN_ADMINISTER_SERVICE_REQUEST = (Boolean)r["CAN_ADMINISTER_SERVICE_REQUEST"];
                     er.CAN_ADMINISTER_ATTENDANCE = (Boolean)r["CAN_ADMINISTER_ATTENDANCE"];
     
                                 

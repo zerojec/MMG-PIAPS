@@ -11,5 +11,24 @@
     <Setting Name="HIDE_TIMER" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">10000</Value>
     </Setting>
+    <Setting Name="PAID_UP_REFERENCE" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;CASH RECEIPT&lt;/string&gt;
+  &lt;string&gt;BDO CURRENT ACCOUNT&lt;/string&gt;
+  &lt;string&gt;BPI CURRENT ACCOUNT&lt;/string&gt;
+  &lt;string&gt;LBP CURRENT ACCOUNT&lt;/string&gt;
+  &lt;string&gt;LBP MICRO ACCOUNT&lt;/string&gt;
+  &lt;string&gt;PNB CURRENT ACCOUNT&lt;/string&gt;
+  &lt;string&gt;PNB MICRO LENDING&lt;/string&gt;
+  &lt;string&gt;JOURNAL VOUCHER&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MEMBER_CBU_LIMIT_TO_AVAIL_LOAN" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">50000</Value>
+    </Setting>
+    <Setting Name="MEMBER_CBU_NOT_LOANABLE" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

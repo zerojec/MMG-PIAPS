@@ -156,7 +156,7 @@
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Benefits ";
+            this.columnHeader5.Text = "Benefits / Premiums";
             this.columnHeader5.Width = 280;
             // 
             // pnlops

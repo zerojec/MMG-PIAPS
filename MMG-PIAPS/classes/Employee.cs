@@ -18,6 +18,7 @@ namespace MMG_PIAPS.classes
         private String _emp_status;
         private Decimal _basic_pay;
         private String _branch;
+        
         public  List<Benefit> benefits = new List<Benefit> { };
         public Emp_Sched schedule = new Emp_Sched();
         public Emp_Restriction restriction = new Emp_Restriction();
@@ -28,6 +29,7 @@ namespace MMG_PIAPS.classes
         public Decimal basic_pay { get { return _basic_pay; } set { _basic_pay = value; } }
         public DateTime date_hired { get { return _date_hired; } set { _date_hired = value; } }
         public String COOP_MEMBERSHIP_ID { get; set; }
+        public String tinno { get; set; }
 
 
 
@@ -54,7 +56,7 @@ namespace MMG_PIAPS.classes
             cmd.Parameters.AddWithValue("_imagesize", pic.Length);
             cmd.Parameters.AddWithValue("_emp_position", position); 
             cmd.Parameters.AddWithValue("_branchid", branch);
-            
+            cmd.Parameters.AddWithValue("_tinno", tinno);
 
             try
             {
@@ -101,6 +103,7 @@ namespace MMG_PIAPS.classes
             cmd.Parameters.AddWithValue("_imagearr", pic);
             cmd.Parameters.AddWithValue("_imagesize", pic.Length);
             cmd.Parameters.AddWithValue("_emp_position", position);
+            cmd.Parameters.AddWithValue("_tinno", tinno);
            // cmd.Parameters.AddWithValue("_COOP_MEMBERSHIP_ID", COOP_MEMBERSHIP_ID);
             //cmd.Parameters.AddWithValue("_branchid", branch);
 
@@ -118,6 +121,39 @@ namespace MMG_PIAPS.classes
                 return false;
             }
         }
+
+
+
+
+
+        public Boolean UPDATE_MEMBERSHIP()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = db.con;
+            cmd.CommandText = "EMP_UPDATE_MEMBERSHIP";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("_empid", empid);
+            cmd.Parameters.AddWithValue("_COOP_MEMBERSHIP_ID", COOP_MEMBERSHIP_ID);
+     
+            try
+            {
+                //db.con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                db.err = null;
+                db.err = e;
+                Logger.WriteErrorLog("COOP_MEMBERSHIP_UPDATE MODULE " + e.Message);
+                return false;
+            }
+        }//END LINK ACCOUNT An EMPLOYEE BECOMES A MEMBER
+
+
+
+
 
 
         public DataTable SELECT_ALL() {
@@ -196,7 +232,7 @@ namespace MMG_PIAPS.classes
                         e.contactno = r["contactno"].ToString();
                         e.gender = r["gender"].ToString();
                         e.COOP_MEMBERSHIP_ID = r["COOP_MEMBERSHIP_ID"].ToString();
-                       
+                        e.tinno = r["tinno"].ToString();
 
                     }
                     return e;

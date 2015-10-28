@@ -65,7 +65,7 @@ namespace MMG_PIAPS.userctrl.emp
                 emp.emp_status = cboemploymentstatus.Text;
                 string[] branchid = cbobranch.Text.Split('-');
                 emp.branch = branchid[0];
-
+                emp.tinno = txttinno.Text;
                 emp.position = cbopositions.Text;
 
 

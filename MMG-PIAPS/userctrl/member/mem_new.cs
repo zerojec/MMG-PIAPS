@@ -42,6 +42,7 @@ namespace MMG_PIAPS.userctrl.member
             m.standing = "IN_GOOD_STANDING"; // STANDING = IN_GOO_STANDING, NOT_IN_GOOD_STANDING
             m.typeofmembership = cbomembershiptype.Text; // REGULAR, ASSOCIATE
             m.email = txtemail.Text;
+            m.tinno = txttinno.Text;
 
             if (pbEmpPic.Image != null)
             {

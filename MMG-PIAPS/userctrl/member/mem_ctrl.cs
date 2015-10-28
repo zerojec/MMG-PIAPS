@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using MMG_PIAPS.classes;
+using MMG_PIAPS.userctrl.member_capital;
 
 namespace MMG_PIAPS.userctrl.member
 {
@@ -39,6 +40,92 @@ namespace MMG_PIAPS.userctrl.member
         {            
             Member mem = new Member();
             m.Load_Searched_MembersInListView(lv, txtname.Text);
+        }
+
+        private void updateInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (lv.SelectedItems.Count > 0) {
+
+                Member mem, sel = new Member();
+                //MessageBox.Show(lv.SelectedItems[0].SubItems[1].Text);
+                sel.memid = lv.SelectedItems[0].SubItems[1].Text;
+
+                mem= sel.SELECT_BY_ID();
+                mem.GET_IMAGE_BY_ID();
+
+                if (mem != null) {
+                    pnlops.Controls.Clear();
+
+                    mem_update c = new mem_update();
+                    c.mem = mem;
+                    c.Width = pnlops.Width;
+                    pnlops.Height = c.Height;
+                    pnlops.Controls.Add(c);
+                }
+               
+            }
+        }
+
+        private void viewPaidUpCapitalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (lv.SelectedItems.Count > 0)
+            {
+
+                Member mem, sel = new Member();
+                //MessageBox.Show(lv.SelectedItems[0].SubItems[1].Text);
+                sel.memid = lv.SelectedItems[0].SubItems[1].Text;
+
+                mem = sel.SELECT_BY_ID();
+                mem.GET_IMAGE_BY_ID();
+
+                if (mem != null)
+                {
+                    pnlops.Controls.Clear();
+
+                    mem_capital_update c = new mem_capital_update();
+                    c.mem = mem;
+                    c.Width = pnlops.Width;
+                    pnlops.Height = c.Height;
+                    pnlops.Controls.Add(c);
+                }
+
+            }
+        }
+
+        private void updateStandingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (lv.SelectedItems.Count > 0)
+            {
+
+                Member mem, sel = new Member();
+                //MessageBox.Show(lv.SelectedItems[0].SubItems[1].Text);
+                sel.memid = lv.SelectedItems[0].SubItems[1].Text;
+
+
+                mem = sel.SELECT_BY_ID();
+               
+              
+                if (mem.UPDATE_STANDING())
+                {
+                    MessageBox.Show("Standing Updated");
+                }
+                else {
+
+                    MessageBox.Show("There was a problem updating member-standing");
+                }
+
+
+            }
+        }
+
+        private void lv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lv_MouseClick(object sender, MouseEventArgs e)
+        {
+           
         }
     }
 }

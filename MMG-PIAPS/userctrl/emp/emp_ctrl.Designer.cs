@@ -189,7 +189,7 @@
             this.updateInfoToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
             this.contextMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.contextMenu.Size = new System.Drawing.Size(154, 100);
+            this.contextMenu.Size = new System.Drawing.Size(154, 122);
             this.contextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenu_Opening);
             // 
             // viewProfileToolStripMenuItem

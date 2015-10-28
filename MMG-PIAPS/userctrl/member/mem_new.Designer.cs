@@ -34,6 +34,8 @@
             this.cbomembershiptype = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.txttinno = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.txtoccupation = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtemail = new System.Windows.Forms.TextBox();
@@ -133,6 +135,8 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.txttinno, 3, 5);
+            this.tableLayoutPanel3.Controls.Add(this.label14, 2, 5);
             this.tableLayoutPanel3.Controls.Add(this.txtoccupation, 3, 0);
             this.tableLayoutPanel3.Controls.Add(this.label11, 2, 3);
             this.tableLayoutPanel3.Controls.Add(this.txtemail, 3, 3);
@@ -172,6 +176,25 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(484, 249);
             this.tableLayoutPanel3.TabIndex = 3;
+            // 
+            // txttinno
+            // 
+            this.txttinno.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txttinno.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttinno.Location = new System.Drawing.Point(371, 159);
+            this.txttinno.Name = "txttinno";
+            this.txttinno.Size = new System.Drawing.Size(109, 25);
+            this.txttinno.TabIndex = 16;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(309, 163);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 15);
+            this.label14.TabIndex = 6;
+            this.label14.Text = "TIN No. :";
             // 
             // txtoccupation
             // 
@@ -590,5 +613,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.TextBox txtoccupation;
+        private System.Windows.Forms.TextBox txttinno;
+        private System.Windows.Forms.Label label14;
     }
 }

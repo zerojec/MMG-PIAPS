@@ -59,5 +59,51 @@ namespace MMG_PIAPS.Properties {
                 this["HIDE_TIMER"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
+<ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
+  <string>CASH RECEIPT</string>
+  <string>BDO CURRENT ACCOUNT</string>
+  <string>BPI CURRENT ACCOUNT</string>
+  <string>LBP CURRENT ACCOUNT</string>
+  <string>LBP MICRO ACCOUNT</string>
+  <string>PNB CURRENT ACCOUNT</string>
+  <string>PNB MICRO LENDING</string>
+  <string>JOURNAL VOUCHER</string>
+</ArrayOfString>")]
+        public global::System.Collections.Specialized.StringCollection PAID_UP_REFERENCE {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["PAID_UP_REFERENCE"]));
+            }
+            set {
+                this["PAID_UP_REFERENCE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("50000")]
+        public decimal MEMBER_CBU_LIMIT_TO_AVAIL_LOAN {
+            get {
+                return ((decimal)(this["MEMBER_CBU_LIMIT_TO_AVAIL_LOAN"]));
+            }
+            set {
+                this["MEMBER_CBU_LIMIT_TO_AVAIL_LOAN"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10000")]
+        public decimal MEMBER_CBU_NOT_LOANABLE {
+            get {
+                return ((decimal)(this["MEMBER_CBU_NOT_LOANABLE"]));
+            }
+            set {
+                this["MEMBER_CBU_NOT_LOANABLE"] = value;
+            }
+        }
     }
 }

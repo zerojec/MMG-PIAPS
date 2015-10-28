@@ -23,6 +23,7 @@ namespace MMG_PIAPS.classes
         public String status { get; set; } //withdrawns or deceased etc..
         public String occupation { get; set; }
         public String email { get; set; }
+        public String tinno { get; set; }
 
         public Boolean save()
         {
@@ -44,6 +45,7 @@ namespace MMG_PIAPS.classes
             cmd.Parameters.AddWithValue("_standing", standing);
             cmd.Parameters.AddWithValue("_imagearr", pic);
             cmd.Parameters.AddWithValue("_imagesize", pic.Length);
+            cmd.Parameters.AddWithValue("_tinno", tinno);
              
 
             try
@@ -71,7 +73,6 @@ namespace MMG_PIAPS.classes
 
             cmd.Parameters.AddWithValue("_memid", memid);
             cmd.Parameters.AddWithValue("_fullname", fullname);
-            cmd.Parameters.AddWithValue("_status", status);
             cmd.Parameters.AddWithValue("_contactno", contactno);
             cmd.Parameters.AddWithValue("_email", email);
             cmd.Parameters.AddWithValue("_address", address);
@@ -80,6 +81,9 @@ namespace MMG_PIAPS.classes
             cmd.Parameters.AddWithValue("_typeofmembership", typeofmembership);
             cmd.Parameters.AddWithValue("_imagearr", pic);
             cmd.Parameters.AddWithValue("_imagesize", pic.Length);
+            cmd.Parameters.AddWithValue("_tinno", tinno);
+
+
             try
             {
                 //db.con.Open();
@@ -131,6 +135,34 @@ namespace MMG_PIAPS.classes
 
 
 
+
+
+
+
+
+        public Boolean UPDATE_STANDING()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = db.con;
+            cmd.CommandText = "MEMBER_STANDING_TOGGLE";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("_memid", memid);
+         
+            try
+            {
+                //db.con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                db.err = null;
+                db.err = e;
+                Logger.WriteErrorLog("MEMBER-STANDING-MODULE :" + e.Message);
+                return false;
+            }
+        }
 
 
 
@@ -250,6 +282,8 @@ namespace MMG_PIAPS.classes
                             e.email = r["email"].ToString();
                             e.acceptance_date = Convert.ToDateTime(r["acceptance_date"].ToString());
                             e.address = r["address"].ToString();
+                            e.tinno = r["tinno"].ToString();
+
                         }
                         return e;
 
@@ -314,7 +348,7 @@ namespace MMG_PIAPS.classes
 
                 if (dt != null){
                     if (dt.Rows.Count > 0){
-                       String stand = dt.Rows[0].Field<String>("mem_standing");
+                       String stand = dt.Rows[0].Field<String>("standing");
                        standing = stand;
                        return stand;
                     }
@@ -423,6 +457,7 @@ namespace MMG_PIAPS.classes
                         li.SubItems.Add(r["address"].ToString());
                         li.SubItems.Add(r["contactno"].ToString());
                         li.SubItems.Add(r["standing"].ToString());
+                        li.SubItems.Add(r["tinno"].ToString());
 
                         lv.Items.Add(li);
                         ctr++;

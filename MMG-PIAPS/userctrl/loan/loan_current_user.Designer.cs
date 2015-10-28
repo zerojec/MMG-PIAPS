@@ -35,6 +35,7 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnSalaryLoan = new System.Windows.Forms.Button();
             this.btnMicroLoan = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlops = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -100,6 +100,12 @@
             this.columnHeader4.Text = "Period";
             this.columnHeader4.Width = 150;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Total Payment";
+            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.columnHeader5.Width = 180;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -107,7 +113,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.99999F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 144F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145F));
             this.tableLayoutPanel2.Controls.Add(this.btnSalaryLoan, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnMicroLoan, 2, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(131, 0);
@@ -121,9 +127,9 @@
             // 
             this.btnSalaryLoan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSalaryLoan.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalaryLoan.Location = new System.Drawing.Point(261, 3);
+            this.btnSalaryLoan.Location = new System.Drawing.Point(260, 3);
             this.btnSalaryLoan.Name = "btnSalaryLoan";
-            this.btnSalaryLoan.Size = new System.Drawing.Size(139, 34);
+            this.btnSalaryLoan.Size = new System.Drawing.Size(140, 34);
             this.btnSalaryLoan.TabIndex = 0;
             this.btnSalaryLoan.Text = "Salary";
             this.btnSalaryLoan.UseVisualStyleBackColor = true;
@@ -133,7 +139,7 @@
             // 
             this.btnMicroLoan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMicroLoan.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMicroLoan.Location = new System.Drawing.Point(119, 3);
+            this.btnMicroLoan.Location = new System.Drawing.Point(118, 3);
             this.btnMicroLoan.Name = "btnMicroLoan";
             this.btnMicroLoan.Size = new System.Drawing.Size(136, 34);
             this.btnMicroLoan.TabIndex = 1;
@@ -189,12 +195,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(534, 389);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Total Payment";
-            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.columnHeader5.Width = 180;
-            // 
             // loan_current_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
@@ -203,6 +203,7 @@
             this.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "loan_current_user";
             this.Size = new System.Drawing.Size(534, 389);
+            this.Load += new System.EventHandler(this.loan_current_user_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

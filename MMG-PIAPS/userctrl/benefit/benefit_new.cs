@@ -23,15 +23,26 @@ namespace MMG_PIAPS.userctrl.benefit
             Benefit b = new Benefit();
             b.code = txtcode.Text;
             b.name_ = txtname.Text;
+            
+            b.type_ = (rdbCompanyBenefit.Checked) ? "COMPANY_BENEFIT" :"PREMIUM";
+
             if (chkBracket.Checked)
             {
                 b.amount_lookup = cboBracket.Text;
                 b.amount = 0;
             }
-            else {
+            else
+            {
                 b.amount_lookup = "here";
-                b.amount = Convert.ToDecimal(txtamount.Text);
-            }
+                if (txtamount.Text != "")
+                {
+                    b.amount = Convert.ToDecimal(txtamount.Text);
+                }
+                else
+                {
+                    b.amount = 0;
+                }
+            }  
             //b.amount_lookup = txtamount_lookup.Text;
             
 
@@ -71,6 +82,37 @@ namespace MMG_PIAPS.userctrl.benefit
                 cboBracket.Enabled =false;
                 txtamount.Enabled = true;
                 
+            }
+        }
+
+        private void rdbCompanyBenefit_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdbCompanyBenefit.Checked) {
+                chkBracket.Checked = false;
+                pnlbracket.Enabled = false;               
+            }
+        }
+
+        private void rdbPremium_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdbPremium.Checked)
+            {
+                pnlbracket.Enabled = true;
+            }
+            else {
+                pnlbracket.Enabled = false;
+            }
+        }
+
+        private void benefit_new_Load(object sender, EventArgs e)
+        {
+            if (rdbPremium.Checked)
+            {
+                pnlbracket.Enabled = true;
+            }
+            else
+            {
+                pnlbracket.Enabled = false;
             }
         }
     }

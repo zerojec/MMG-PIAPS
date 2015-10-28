@@ -87,7 +87,7 @@ namespace MMG_PIAPS.userctrl.emp_restriction
 
             int ctr = 0;
 
-            for (ctr = 0; ctr < properties.Length - 2; ctr++ )
+            for (ctr = 0; ctr < properties.Length-1; ctr++ )
             {
 
 

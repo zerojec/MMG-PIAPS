@@ -126,9 +126,7 @@ namespace MMG_PIAPS.forms
             bs = new BindingSource();
 
             bs.DataSource = dtmigrated;
-            //dgvimport.DataSource = bs;
-
-            //dgvimport.Refresh();
+          
 
         }
 

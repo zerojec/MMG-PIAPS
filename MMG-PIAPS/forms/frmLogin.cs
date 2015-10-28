@@ -50,6 +50,8 @@ namespace MMG_PIAPS
                     Global.CURRENT_USER.restriction=r.SELECT_BY_ID();
                     Global.CURRENT_USER.LIST_BENEFITS();
 
+                    
+                    //GET CURRENT USER LATEST SCHEDULE
                     Emp_Sched es = new Emp_Sched();
                     es.empid = Global.CURRENT_USER.empid;
                     Global.CURRENT_USER.schedule = es.SELECT_BY_EMPID();

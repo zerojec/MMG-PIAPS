@@ -38,6 +38,7 @@ namespace MMG_PIAPS.classes
             cmd.Parameters.AddWithValue("_datetime_out", datetime_out);
             cmd.Parameters.AddWithValue("_destination", destination);
             cmd.Parameters.AddWithValue("_allowance", allowance);
+            cmd.Parameters.AddWithValue("_puspose", purpose);
         
             try
             {
