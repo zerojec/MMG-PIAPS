@@ -40,6 +40,7 @@ namespace MMG_PIAPS.userctrl.loan
         private string SELECTED_COLLECTION_DAY="";
         private decimal APPLIED_LOAN_AMOUNT = 0;
         private decimal AUTO_CREDIT_TO_CBU = 0;
+        private decimal NET_PROCEEDS = 0;
         private decimal INTEREST_ON_PRINCIPAL = 0;
         private decimal AMORTIZATION_ON_PRINCIPAL = 0;
         private decimal AMORTIZATION_ON_INTEREST = 0;
@@ -85,6 +86,8 @@ namespace MMG_PIAPS.userctrl.loan
 
             applicant.LoadMembers(cboMem);
             applicant.LoadMembers(cboComaker);
+            cboMem.Text = "Select Applicant...";
+            cboComaker.Text = "Select Comaker...";
 
         }
 
@@ -116,6 +119,7 @@ namespace MMG_PIAPS.userctrl.loan
             {
                 String[] c = cboMem.Text.ToString().Split('-');
                 String id = c[c.Length-2] + "-" + c[c.Length-1];
+                
                 Member m2 = new Member();
                 //MessageBox.Show(id);
                 m2.memid = id;
@@ -123,7 +127,7 @@ namespace MMG_PIAPS.userctrl.loan
                 m2.GET_IMAGE_BY_ID();
                
                 lblmem.Text = applicant.fullname.ToString().ToUpper() + " - " + applicant.occupation.ToString();
-                //lblmemdata.Text = "MEMBER SINCE :" + m.acceptance_date.ToShortDateString();
+               
 
 
                 Member_Capital mc = new Member_Capital();
@@ -132,50 +136,50 @@ namespace MMG_PIAPS.userctrl.loan
                 decimal cbu = mc.GET_CURRENT_PAID_UP_CAPITAL();
                 
                 lbmembersdata.Items.Add("MEMBER'S VERIFICATION DATA");              
+                lbmembersdata.Items.Add("MEMBER SINCE : " + applicant.acceptance_date.ToShortDateString());
+                lbmembersdata.Items.Add("MEMBER STANDING : " + applicant.standing);
                 lbmembersdata.Items.Add("CBU AS OF " + DateTime.Now.ToShortDateString() + " : PhP " + cbu.ToString("#,##0.00"));
 
 
+                l.empid = applicant.memid;
+
+                Loan applicant_latest_loan = l.GET_LATEST_LOAN("MICRO");
 
                 // GET THE LATEST MICRO LOAN OF A MEMBER
                 lblatestloan.Items.Add("LATEST MICRO LOAN");
-                LATEST_MICRO_LOAN = (l.GET_LATEST_LOAN("SALARY")!=null)? l.GET_LATEST_LOAN("SALARY").principal : 0;
-                lblatestloan.Items.Add("AMOUNT GRANTED : PhP " + LATEST_MICRO_LOAN.ToString("#,##0.00"));
+                LATEST_MICRO_LOAN = (applicant_latest_loan != null) ? applicant_latest_loan.principal : 0;
+                
+                if (LATEST_MICRO_LOAN != 0) {
+
+                    lblatestloan.Items.Add("APPLICATION NO : " + applicant_latest_loan.application_no);
+                    lblatestloan.Items.Add("PRINCIPAL : PhP " + applicant_latest_loan.principal.ToString("#,##0.00"));
+                    lblatestloan.Items.Add("INTEREST : PhP " + applicant_latest_loan.interest.ToString("#,##0.00"));
+                    lblatestloan.Items.Add("MONTHLY AMORTIZATION: PhP " + (applicant_latest_loan.amortization_on_interest + applicant_latest_loan.amortization_on_principal).ToString("#,##0.00"));
+                    lblatestloan.Items.Add("BALANCE: ---(under development)---");             
+                }
+                 
 
                 //lblmemdata2.Text = "CAPITAL BUILD-UP :" +cbu.ToString("#,##0.00");
 
                 if (cbu >= MINIMUM_SHARED_CAPITAL_TO_AVAIL_LOAN)
                 {
-                    //lblStatus.Text = "ALLOWED_TO_LOAN";
-                    //lblStatus.BackColor = Color.Green;
-                    lblmem.BackColor = Color.Green;
-                    //lblStatus.Dock = DockStyle.Fill;
-                    
-
+                    lbmembersdata.Items.Add("PASSED THE MINIMUM : " + MINIMUM_SHARED_CAPITAL_TO_AVAIL_LOAN.ToString("#,##0.00") + " SHARE TO AVAIL LOAN"); 
+                    lblmem.BackColor = Color.Green;     
+           
                     //subtract minimum shared capital from the CBU
                     //then get the 60% -- because 60% of (CBU-MINIMUM_SHARED_CAPITAL) is the 
                     //LOANABLE_AMOUNT
-                    MAXIMUM_ALLOWED_LOAN = (cbu - MINIMUM_SHARED_CAPITAL) * PERCENTAGE_TOGET_LOANABLE_AMOUNT;
-                    lbmembersdata.Items.Add("MAX LOANABLE AMOUNT : PhP " + MAXIMUM_ALLOWED_LOAN.ToString("#,##0.00")); 
-                    //lblMAX_LOANABLE_AMOUNT.Text = "MAX_LOANABLE_AMOUNT : " + MAXIMUM_ALLOWED_LOAN.ToString("#,##0.00");
-                    //lblMAX_AMORT_PERIOD.Text = "MAX_AMORTIZATION_PERIOD : " + MAXIMUM_ALLOWED_AMORT_PERIOD.ToString("0");
-
+                    MAXIMUM_ALLOWED_LOAN = (cbu - MINIMUM_SHARED_CAPITAL) * PERCENTAGE_TOGET_LOANABLE_AMOUNT;                 
+                    lbmembersdata.Items.Add("MAX LOANABLE AMOUNT : PhP " + MAXIMUM_ALLOWED_LOAN.ToString("#,##0.00"));
+                                   
                 }
                 else {
-                    //lblStatus.Text = "NOT_ALLOWED_TO_LOAN";
-                    //lblStatus.BackColor = Color.Red;
-                    lblmem.BackColor = Color.Red;
-                    //lblStatus.Dock = DockStyle.Fill;
-                    //lblMAX_LOANABLE_AMOUNT.Text = "MAX_LOANABLE_AMOUNT : 0.00";
-                    //lblMAX_AMORT_PERIOD.Text = "MAX_AMORTIZATION_PERIOD : 0";
-                    
 
+                    lbmembersdata.Items.Add("DID NOT PASSED THE MINIMUM : " + MINIMUM_SHARED_CAPITAL_TO_AVAIL_LOAN.ToString("#,##0.00") + " SHARE TO AVAIL LOAN");
+                    lblmem.BackColor = Color.Red;
                 }
                 
-                
-              //  lblmemdata2.Text = "PAID-UP CAPITAL :" + m.GET_TOTAL_PAIDUP_CAPITAL();
-
-
-
+        
                 if (m2.pic != null)
                 {
                     MemoryStream ms = new MemoryStream(m2.pic);
@@ -227,32 +231,70 @@ namespace MMG_PIAPS.userctrl.loan
                 String[] c = cboComaker.Text.ToString().Split('-');
                 String id = c[c.Length - 2] + "-" + c[c.Length - 1];
                 Member m2 = new Member();
-                
+                //MessageBox.Show(id);
                 m2.memid = id;
-                comaker= m2.SELECT_BY_ID();
+                comaker = m2.SELECT_BY_ID();
                 m2.GET_IMAGE_BY_ID();
 
                 lblcomaker.Text = comaker.fullname.ToString().ToUpper() + " - " + comaker.occupation.ToString();
-                lblcomaker.BackColor = (comaker.standing == "MIGS") ? Color.Green : Color.Red;
 
-
-
-                
                 Member_Capital mc = new Member_Capital();
                 mc.memid = comaker.memid;
 
                 decimal cbu = mc.GET_CURRENT_PAID_UP_CAPITAL();
 
                 lbcomakersdata.Items.Add("COMAKER'S VERIFICATION DATA");
+                lbcomakersdata.Items.Add("MEMBER SINCE : " + comaker.acceptance_date.ToShortDateString());
+                lbcomakersdata.Items.Add("MEMBER STANDING : " + comaker.standing);
                 lbcomakersdata.Items.Add("CBU AS OF " + DateTime.Now.ToShortDateString() + " : PhP " + cbu.ToString("#,##0.00"));
 
-                Loan cl = new Loan();
-                cl.empid = mc.memid;
 
-                // GET THE LATEST MICRO LOAN OF A COMAKER
+                l.empid = comaker.memid;
+
+                Loan comaker_latest_loan = l.GET_LATEST_LOAN("MICRO");
+
+                // GET THE LATEST MICRO LOAN OF A MEMBER
                 lbcomakerslatestloan.Items.Add("LATEST MICRO LOAN");
-                LATEST_MICRO_LOAN = (cl.GET_LATEST_LOAN("SALARY") != null) ? cl.GET_LATEST_LOAN("SALARY").principal : 0;
-                lbcomakerslatestloan.Items.Add("AMOUNT GRANTED : PhP " + LATEST_MICRO_LOAN.ToString("#,##0.00"));
+                LATEST_MICRO_LOAN = (comaker_latest_loan != null) ? comaker_latest_loan.principal : 0;
+
+                if (LATEST_MICRO_LOAN != 0)
+                {
+                    lbcomakerslatestloan.Items.Add("APPLICATION NO : " + comaker_latest_loan.application_no.ToString());
+                    lbcomakerslatestloan.Items.Add("PRINCIPAL : PhP " + comaker_latest_loan.principal.ToString("#,##0.00"));
+                    lbcomakerslatestloan.Items.Add("INTEREST : PhP " + comaker_latest_loan.interest.ToString("#,##0.00"));
+                    lbcomakerslatestloan.Items.Add("MONTHLY AMORTIZATION: PhP " + (comaker_latest_loan.amortization_on_interest + comaker_latest_loan.amortization_on_principal).ToString("#,##0.00"));
+                    lbcomakerslatestloan.Items.Add("BALANCE: ---(under development)---");  
+                }
+
+
+
+
+
+
+
+
+
+
+                if (cbu >= MINIMUM_SHARED_CAPITAL_TO_AVAIL_LOAN)
+                {
+                    lbcomakersdata.Items.Add("PASSED THE MINIMUM : " + MINIMUM_SHARED_CAPITAL_TO_AVAIL_LOAN.ToString("#,##0.00") + " SHARE TO AVAIL LOAN");
+                    lblcomaker.BackColor = Color.Green;
+
+                    //subtract minimum shared capital from the CBU
+                    //then get the 60% -- because 60% of (CBU-MINIMUM_SHARED_CAPITAL) is the 
+                    //LOANABLE_AMOUNT
+                    MAXIMUM_ALLOWED_LOAN = (cbu - MINIMUM_SHARED_CAPITAL) * PERCENTAGE_TOGET_LOANABLE_AMOUNT;
+                    lbcomakersdata.Items.Add("MAX LOANABLE AMOUNT : PhP " + MAXIMUM_ALLOWED_LOAN.ToString("#,##0.00"));
+
+                }
+                else
+                {
+
+                    lbcomakersdata.Items.Add("DID NOT PASSED THE MINIMUM : " + MINIMUM_SHARED_CAPITAL_TO_AVAIL_LOAN.ToString("#,##0.00") + " SHARE TO AVAIL LOAN");
+                    lblcomaker.BackColor = Color.Red;
+                }
+                
+
 
 
 
@@ -276,6 +318,9 @@ namespace MMG_PIAPS.userctrl.loan
                     lblcomaker.BackColor = Color.Transparent;               
             }   
         }
+
+
+
 
         private void cboComaker_MouseClick(object sender, MouseEventArgs e)
         {
@@ -303,6 +348,13 @@ namespace MMG_PIAPS.userctrl.loan
 
                 TOTAL_AMORTIZATION = AMORTIZATION_ON_INTEREST + AMORTIZATION_ON_PRINCIPAL;
                 txttotal_amort.Text = TOTAL_AMORTIZATION.ToString("###0.00");
+
+                AUTO_CREDIT_TO_CBU = APPLIED_LOAN_AMOUNT * PERCENTAGE_OFLOAN_TO_CBU;
+                txtautocredtitocbu.Text = AUTO_CREDIT_TO_CBU.ToString("###0.00");
+
+                NET_PROCEEDS = APPLIED_LOAN_AMOUNT - AUTO_CREDIT_TO_CBU;
+                txtnetproceeds.Text = NET_PROCEEDS.ToString("###0.00");
+
             }
            
             
@@ -340,6 +392,9 @@ namespace MMG_PIAPS.userctrl.loan
             nl.loantype = "MICRO";
             nl.payment_period = cbopayment_mode.Text;
             nl.collection_day = cbocollection_day.Text;
+            nl.auto_credit_to_cbu = Convert.ToDecimal(txtautocredtitocbu.Text);
+            nl.net_proceeds = Convert.ToDecimal(txtnetproceeds.Text);
+
 
             if (nl.save())
             {

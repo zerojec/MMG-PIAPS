@@ -28,7 +28,9 @@ namespace MMG_PIAPS.classes
 
         public string collection_day { get; set; }//15th or 30th or both 
         //public Decimal total_payment { get; set; }
+        public decimal auto_credit_to_cbu { get; set; }
 
+        public decimal net_proceeds { get; set; }
 
         public Boolean save()
         {
@@ -47,6 +49,8 @@ namespace MMG_PIAPS.classes
             cmd.Parameters.AddWithValue("_comakerid", comakerid);
             cmd.Parameters.AddWithValue("_payment_period", payment_period);
             cmd.Parameters.AddWithValue("_collection_day", collection_day);
+            cmd.Parameters.AddWithValue("_auto_credit_to_cbu", auto_credit_to_cbu);
+            cmd.Parameters.AddWithValue("_net_proceeds", net_proceeds);
 
             try
             {
@@ -108,7 +112,6 @@ namespace MMG_PIAPS.classes
                     li.SubItems.Add(r["interest"].ToString());
                     //amortization on interest
                     decimal amointe = Convert.ToDecimal(r["amortization_on_interest"].ToString());
-
                     //amortization on principal
                     decimal amoprin = Convert.ToDecimal(r["amortization_on_principal"].ToString());
 
@@ -661,7 +664,13 @@ namespace MMG_PIAPS.classes
                     DataRow r = dt.Rows[0];
                     Loan l = new Loan();
                     l.empid = r["empid"].ToString();
+                    l.application_no =r["application_no"].ToString();
                     l.principal = Convert.ToDecimal(r["principal"].ToString());
+                    l.interest = Convert.ToDecimal(r["interest"].ToString());
+                    l.amortization_on_principal = Convert.ToDecimal(r["amortization_on_principal"].ToString());
+                    l.amortization_on_interest = Convert.ToDecimal(r["amortization_on_interest"].ToString());
+                    l.auto_credit_to_cbu = Convert.ToDecimal(r["auto_credit_to_cbu"].ToString());
+                    l.net_proceeds = Convert.ToDecimal(r["net_proceeds"].ToString());
 
                     return l;
 

@@ -61,4 +61,3 @@ C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.supply_request.supp
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.csproj.GenerateResource.Cache
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.exe
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.pdb
-C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.csprojResolveAssemblyReference.cache

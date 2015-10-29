@@ -78,6 +78,7 @@
     <Compile Include="classes\Loan.cs" />
     <Compile Include="classes\Logger.cs" />
     <Compile Include="classes\Member_Capital.cs" />
+    <Compile Include="classes\Member_Standing.cs" />
     <Compile Include="classes\PassSlip.cs" />
     <Compile Include="classes\Person.cs" />
     <Compile Include="classes\Position.cs" />
