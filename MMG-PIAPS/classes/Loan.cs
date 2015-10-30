@@ -32,6 +32,9 @@ namespace MMG_PIAPS.classes
 
         public decimal net_proceeds { get; set; }
 
+        public decimal balance_prev_loan { get; set; }
+        public String prev_loan_application_no { get; set; }
+
         public Boolean save()
         {
             MySqlCommand cmd = new MySqlCommand();
@@ -51,6 +54,8 @@ namespace MMG_PIAPS.classes
             cmd.Parameters.AddWithValue("_collection_day", collection_day);
             cmd.Parameters.AddWithValue("_auto_credit_to_cbu", auto_credit_to_cbu);
             cmd.Parameters.AddWithValue("_net_proceeds", net_proceeds);
+            cmd.Parameters.AddWithValue("_balance_prev_loan", balance_prev_loan);
+            cmd.Parameters.AddWithValue("_prev_loan_application_no", prev_loan_application_no);
 
             try
             {
@@ -224,13 +229,55 @@ namespace MMG_PIAPS.classes
 
 
 
+        public Boolean INCREASE_SALARY_LOAN_COUNTER()
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "LOAN_SL_COUNTER_INCREASE");
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                db.err = null;
+                db.err = e;
+                return false;
+            }
+        }
+        public Boolean RESET_SALARY_LOAN_COUNTER()
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "LOAN_SL_COUNTER_RESET");
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                db.err = null;
+                db.err = e;
+                return false;
+            }
+
+        }
+
+
+
 
 
         public decimal GET_SALARY_LOAN_COUNTER()
         {
             DataTable dt = new DataTable();
             MySqlCommand cmd = new MySqlCommand();
-            db.SET_COMMAND_PARAMS(cmd, "LOAN_SL_COUNTER");
+            db.SET_COMMAND_PARAMS(cmd, "LOAN_SELECT_SL_COUNTER");
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
 
             try
@@ -693,3 +740,4 @@ namespace MMG_PIAPS.classes
 
     }
 }
+

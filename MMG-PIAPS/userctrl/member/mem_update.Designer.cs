@@ -63,6 +63,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtaddress = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.chktenk = new System.Windows.Forms.CheckBox();
+            this.chkfiftyk = new System.Windows.Forms.CheckBox();
+            this.chkpatronage = new System.Windows.Forms.CheckBox();
+            this.chkattendance = new System.Windows.Forms.CheckBox();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -72,6 +78,7 @@
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMemPic)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -88,10 +95,10 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 255F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(660, 333);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(660, 377);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // panel2
@@ -101,7 +108,7 @@
             this.panel2.Controls.Add(this.btnUpdate);
             this.panel2.Controls.Add(this.btncancel);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 290);
+            this.panel2.Location = new System.Drawing.Point(0, 335);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(660, 40);
@@ -178,7 +185,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.22222F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.77778F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(237, 249);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(237, 294);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // tableLayoutPanel4
@@ -189,12 +196,12 @@
             this.tableLayoutPanel4.Controls.Add(this.btnrotate, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnBrowse, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(1, 214);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(1, 252);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(235, 34);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(235, 41);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
             // btnrotate
@@ -202,7 +209,7 @@
             this.btnrotate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnrotate.Location = new System.Drawing.Point(160, 3);
             this.btnrotate.Name = "btnrotate";
-            this.btnrotate.Size = new System.Drawing.Size(72, 28);
+            this.btnrotate.Size = new System.Drawing.Size(72, 35);
             this.btnrotate.TabIndex = 3;
             this.btnrotate.Text = "Rotate";
             this.btnrotate.UseVisualStyleBackColor = true;
@@ -212,7 +219,7 @@
             this.btnBrowse.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnBrowse.Location = new System.Drawing.Point(3, 3);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(151, 28);
+            this.btnBrowse.Size = new System.Drawing.Size(151, 35);
             this.btnBrowse.TabIndex = 1;
             this.btnBrowse.Text = "Browse Picture";
             this.btnBrowse.UseVisualStyleBackColor = true;
@@ -224,7 +231,7 @@
             this.pbMemPic.Image = global::MMG_PIAPS.Properties.Resources.noimagefound;
             this.pbMemPic.Location = new System.Drawing.Point(4, 4);
             this.pbMemPic.Name = "pbMemPic";
-            this.pbMemPic.Size = new System.Drawing.Size(229, 206);
+            this.pbMemPic.Size = new System.Drawing.Size(229, 244);
             this.pbMemPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMemPic.TabIndex = 0;
             this.pbMemPic.TabStop = false;
@@ -259,6 +266,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label6, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.label8, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.txtaddress, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 0, 6);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(246, 38);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -272,7 +280,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(411, 249);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(411, 294);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
             // txttinno
@@ -502,6 +510,88 @@
             this.txtaddress.Size = new System.Drawing.Size(72, 55);
             this.txtaddress.TabIndex = 14;
             // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel3.SetColumnSpan(this.tableLayoutPanel5, 4);
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.96088F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.03912F));
+            this.tableLayoutPanel5.Controls.Add(this.label5, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.chktenk, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.chkfiftyk, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.chkpatronage, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.chkattendance, 1, 3);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(1, 187);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 4;
+            this.tableLayoutPanel3.SetRowSpan(this.tableLayoutPanel5, 3);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(409, 106);
+            this.tableLayoutPanel5.TabIndex = 25;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(35, 5);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 15);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Standing :";
+            // 
+            // chktenk
+            // 
+            this.chktenk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chktenk.AutoSize = true;
+            this.chktenk.Location = new System.Drawing.Point(101, 3);
+            this.chktenk.Name = "chktenk";
+            this.chktenk.Size = new System.Drawing.Size(305, 19);
+            this.chktenk.TabIndex = 4;
+            this.chktenk.Text = "Payment of 10k paid up within 6 Months";
+            this.chktenk.UseVisualStyleBackColor = true;
+            this.chktenk.CheckedChanged += new System.EventHandler(this.chktenk_CheckedChanged);
+            // 
+            // chkfiftyk
+            // 
+            this.chkfiftyk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chkfiftyk.AutoSize = true;
+            this.chkfiftyk.Location = new System.Drawing.Point(101, 28);
+            this.chkfiftyk.Name = "chkfiftyk";
+            this.chkfiftyk.Size = new System.Drawing.Size(305, 19);
+            this.chkfiftyk.TabIndex = 5;
+            this.chkfiftyk.Text = "Payment of 50k Share Capital or Minimum Subscription within 5 years";
+            this.chkfiftyk.UseVisualStyleBackColor = true;
+            this.chkfiftyk.CheckedChanged += new System.EventHandler(this.chkfiftyk_CheckedChanged);
+            // 
+            // chkpatronage
+            // 
+            this.chkpatronage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chkpatronage.AutoSize = true;
+            this.chkpatronage.Location = new System.Drawing.Point(101, 53);
+            this.chkpatronage.Name = "chkpatronage";
+            this.chkpatronage.Size = new System.Drawing.Size(305, 19);
+            this.chkpatronage.TabIndex = 6;
+            this.chkpatronage.Text = "Patronage of MMG Services (like pharma, microlending, laboratory services)";
+            this.chkpatronage.UseVisualStyleBackColor = true;
+            this.chkpatronage.CheckedChanged += new System.EventHandler(this.chkpatronage_CheckedChanged);
+            // 
+            // chkattendance
+            // 
+            this.chkattendance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.chkattendance.AutoSize = true;
+            this.chkattendance.Location = new System.Drawing.Point(101, 81);
+            this.chkattendance.Name = "chkattendance";
+            this.chkattendance.Size = new System.Drawing.Size(305, 19);
+            this.chkattendance.TabIndex = 7;
+            this.chkattendance.Text = "Attendance to Meetings/Assemblies and Other Gatherings";
+            this.chkattendance.UseVisualStyleBackColor = true;
+            this.chkattendance.CheckedChanged += new System.EventHandler(this.chkattendance_CheckedChanged);
+            // 
             // ofd
             // 
             this.ofd.FileName = "openFileDialog1";
@@ -513,7 +603,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "mem_update";
-            this.Size = new System.Drawing.Size(660, 333);
+            this.Size = new System.Drawing.Size(660, 377);
             this.Load += new System.EventHandler(this.mem_update_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -525,6 +615,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbMemPic)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -567,5 +659,11 @@
         private System.Windows.Forms.OpenFileDialog ofd;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txttinno;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox chkattendance;
+        private System.Windows.Forms.CheckBox chkpatronage;
+        private System.Windows.Forms.CheckBox chkfiftyk;
+        private System.Windows.Forms.CheckBox chktenk;
     }
 }

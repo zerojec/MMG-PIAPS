@@ -26,6 +26,51 @@ namespace MMG_PIAPS.classes
 
 
 
+
+
+        public Member_Standing SELECT_BY_ID()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+
+            db.SET_COMMAND_PARAMS(cmd, "MEMBER_STANDING_SELECT_BYID");
+            cmd.Parameters.AddWithValue("_memid", memid);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            try
+            {
+                da.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    DataRow r = dt.Rows[0];
+
+                    Member_Standing ms = new Member_Standing();
+                    //declare 4 criteria (to become MIGS)
+
+                    ms.PAYMENT_TENK_WITHIN_SIX_MONTHS = Convert.ToBoolean(r["PAYMENT_TENK_WITHIN_SIX_MONTHS"].ToString());
+                    ms.PAYMENT_FIFTYK_WITHIN_FIVE_YEARS =Convert.ToBoolean(r["PAYMENT_FIFTYK_WITHIN_FIVE_YEARS"].ToString());
+                    ms.PATRONAGE_OF_MMG_SERVICES = Convert.ToBoolean(r["PATRONAGE_OF_MMG_SERVICES"].ToString());
+                    ms.ATTENDANCE = Convert.ToBoolean(r["ATTENDANCE"].ToString());
+                   
+                    return ms;
+
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog(e.Message);
+                return null;
+            }
+
+        }
+
+
+
+
+
         public Boolean GET_STANDING()
         {
             MySqlCommand cmd = new MySqlCommand();
@@ -72,9 +117,9 @@ namespace MMG_PIAPS.classes
             MySqlCommand cmd = new MySqlCommand();
 
             db.SET_COMMAND_PARAMS(cmd, "MEMBER_STANDING_INSERT");
-            cmd.Parameters.AddWithValue("_PAYMENT_TENK_WITHIN_SIX_MONTHS", PAYMENT_TENK_WITHIN_SIX_MONTHS);
-            cmd.Parameters.AddWithValue("_PAYMENT_FIFTYK_WITHIN_FIVE_YEARS", PAYMENT_FIFTYK_WITHIN_FIVE_YEARS);
-            cmd.Parameters.AddWithValue("_PATRONAGE_OF_MMG_SERVICES", PATRONAGE_OF_MMG_SERVICES);
+            cmd.Parameters.AddWithValue("_PAYMENT_TENK", PAYMENT_TENK_WITHIN_SIX_MONTHS);
+            cmd.Parameters.AddWithValue("_PAYMENT_FIFTYK", PAYMENT_FIFTYK_WITHIN_FIVE_YEARS);
+            cmd.Parameters.AddWithValue("_PATRONAGE", PATRONAGE_OF_MMG_SERVICES);
             cmd.Parameters.AddWithValue("_ATTENDANCE", ATTENDANCE);
    
             try
@@ -86,12 +131,39 @@ namespace MMG_PIAPS.classes
             {
                 db.err = null;
                 db.err = e;
-                Logger.WriteErrorLog("SAVE LOAN MODULE :" + e.Message);
+                Logger.WriteErrorLog("SAVE MEMBER_STANDING MODULE :" + e.Message);
                 return false;
             }
         }//END SAVE
-        
 
+
+
+
+
+        public Boolean Update() {
+            MySqlCommand cmd = new MySqlCommand();
+
+            db.SET_COMMAND_PARAMS(cmd, "MEMBER_STANDING_UPDATE");            
+            cmd.Parameters.AddWithValue("_PAYMENT_TENK", PAYMENT_TENK_WITHIN_SIX_MONTHS);
+            cmd.Parameters.AddWithValue("_PAYMENT_FIFTYK", PAYMENT_FIFTYK_WITHIN_FIVE_YEARS);
+            cmd.Parameters.AddWithValue("_PATRONAGE", PATRONAGE_OF_MMG_SERVICES);
+            cmd.Parameters.AddWithValue("_ATTENDANCE", ATTENDANCE);
+            cmd.Parameters.AddWithValue("_memid", memid);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                db.err = null;
+                db.err = e;
+                Logger.WriteErrorLog("UPDATE MEMBER_STANDING MODULE :" + e.Message);
+                return false;
+            }
+
+        }
 
 
     }

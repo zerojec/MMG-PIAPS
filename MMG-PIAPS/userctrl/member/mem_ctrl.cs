@@ -55,7 +55,6 @@ namespace MMG_PIAPS.userctrl.member
 
                 if (mem != null) {
                     pnlops.Controls.Clear();
-
                     mem_update c = new mem_update();
                     c.mem = mem;
                     c.Width = pnlops.Width;
@@ -92,31 +91,7 @@ namespace MMG_PIAPS.userctrl.member
             }
         }
 
-        private void updateStandingToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (lv.SelectedItems.Count > 0)
-            {
-
-                Member mem, sel = new Member();
-                //MessageBox.Show(lv.SelectedItems[0].SubItems[1].Text);
-                sel.memid = lv.SelectedItems[0].SubItems[1].Text;
-
-
-                mem = sel.SELECT_BY_ID();
-               
-              
-                if (mem.UPDATE_STANDING())
-                {
-                    MessageBox.Show("Standing Updated");
-                }
-                else {
-
-                    MessageBox.Show("There was a problem updating member-standing");
-                }
-
-
-            }
-        }
+  
 
         private void lv_SelectedIndexChanged(object sender, EventArgs e)
         {

@@ -39,7 +39,7 @@ namespace MMG_PIAPS.userctrl.member
             m.address = txtaddress.Text;
             m.occupation = txtoccupation.Text;
             m.status = "ACTIVE"; //STATUS = ACTIVE, STAFF, WITHDRAWN
-            m.standing = "IN_GOOD_STANDING"; // STANDING = IN_GOO_STANDING, NOT_IN_GOOD_STANDING
+          
             m.typeofmembership = cbomembershiptype.Text; // REGULAR, ASSOCIATE
             m.email = txtemail.Text;
             m.tinno = txttinno.Text;

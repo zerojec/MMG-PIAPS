@@ -384,3 +384,15 @@
 --------------------------------------------------------------
 10/29/2015 6:23:40 AM:Column 'auto_credit_cbu' does not belong to table .
 --------------------------------------------------------------
+10/30/2015 1:49:35 AM:Unknown column '_memid' in 'where clause'
+--------------------------------------------------------------
+10/30/2015 1:52:30 AM:Unknown column '_memid' in 'where clause'
+--------------------------------------------------------------
+10/30/2015 2:06:49 AM:UPDATE MEMBER_STANDING MODULE :Parameter '_memid' not found in the collection.
+--------------------------------------------------------------
+10/30/2015 2:06:55 AM:UPDATE MEMBER_STANDING MODULE :Parameter '_memid' not found in the collection.
+--------------------------------------------------------------
+10/30/2015 3:31:45 AM:LOAN MODULE ERROR :Attempted to divide by zero.
+--------------------------------------------------------------
+10/30/2015 3:59:51 AM:ERROR ON LOAN_MODULE SL_COUNTER :Procedure or function '`LOAN_SL_COUNTER`' cannot be found in database '`mmgmapiapsdb`'.
+--------------------------------------------------------------

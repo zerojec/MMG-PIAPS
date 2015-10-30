@@ -40,6 +40,7 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lv = new System.Windows.Forms.ListView();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.btnNew = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -49,8 +50,6 @@
             this.txtname = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.updateStandingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenu.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -80,11 +79,10 @@
             // 
             this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewPaidUpCapitalToolStripMenuItem,
-            this.updateInfoToolStripMenuItem,
-            this.updateStandingToolStripMenuItem});
+            this.updateInfoToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
             this.contextMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.contextMenu.Size = new System.Drawing.Size(182, 76);
+            this.contextMenu.Size = new System.Drawing.Size(182, 74);
             // 
             // updateInfoToolStripMenuItem
             // 
@@ -149,6 +147,11 @@
             this.lv.View = System.Windows.Forms.View.Details;
             this.lv.SelectedIndexChanged += new System.EventHandler(this.lv_SelectedIndexChanged);
             this.lv.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lv_MouseClick);
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "TIN No.";
+            this.columnHeader7.Width = 160;
             // 
             // label1
             // 
@@ -270,19 +273,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(621, 320);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // updateStandingToolStripMenuItem
-            // 
-            this.updateStandingToolStripMenuItem.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateStandingToolStripMenuItem.Name = "updateStandingToolStripMenuItem";
-            this.updateStandingToolStripMenuItem.Size = new System.Drawing.Size(181, 24);
-            this.updateStandingToolStripMenuItem.Text = "Toggle Standing";
-            this.updateStandingToolStripMenuItem.Click += new System.EventHandler(this.updateStandingToolStripMenuItem_Click);
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "TIN No.";
-            this.columnHeader7.Width = 160;
-            // 
             // mem_ctrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -325,7 +315,6 @@
         private System.Windows.Forms.Button btnFilter;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtname;
-        private System.Windows.Forms.ToolStripMenuItem updateStandingToolStripMenuItem;
         private System.Windows.Forms.ColumnHeader columnHeader7;
     }
 }

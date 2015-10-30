@@ -15,6 +15,7 @@ namespace MMG_PIAPS.userctrl.member
     public partial class mem_update : UserControl
     {
         public Member mem = new Member();
+        Member_Standing mem_s = new Member_Standing();
         
         public mem_update()
         {
@@ -98,6 +99,18 @@ namespace MMG_PIAPS.userctrl.member
 
 
 
+            //GET MEMBER_STANDING
+            Member_Standing m = new Member_Standing();
+            m.memid = mem.memid;
+            mem_s = m.SELECT_BY_ID();
+
+            chkattendance.Checked = (mem_s.ATTENDANCE == true) ? true : false;
+            chkfiftyk.Checked = (mem_s.PAYMENT_FIFTYK_WITHIN_FIVE_YEARS == true) ? true : false;
+            chkpatronage.Checked = (mem_s.PATRONAGE_OF_MMG_SERVICES == true) ? true : false;
+            chktenk.Checked = (mem_s.PAYMENT_TENK_WITHIN_SIX_MONTHS == true) ? true : false;
+
+
+
             //LOAD PICTURE
             if (mem.pic != null)
             {
@@ -150,6 +163,73 @@ namespace MMG_PIAPS.userctrl.member
                 filesize = mstream.Length;
                 // emp.pic = arrImage;
                
+            }
+        }
+
+        private void chktenk_CheckedChanged(object sender, EventArgs e)
+        {
+            if (update_standing())
+            {
+              
+            }
+            else {
+                MessageBox.Show("There was a problem updating MEMBER_STANDING");
+            }
+        }
+
+
+
+        private Boolean update_standing() {
+
+            Member_Standing mem_s = new Member_Standing();
+            mem_s.memid = mem.memid;
+            mem_s.PATRONAGE_OF_MMG_SERVICES = (chkpatronage.Checked == true) ? true : false;
+            mem_s.PAYMENT_FIFTYK_WITHIN_FIVE_YEARS = (chkfiftyk.Checked==true) ? true : false;
+            mem_s.PAYMENT_TENK_WITHIN_SIX_MONTHS = (chktenk.Checked==true) ? true : false;
+            mem_s.ATTENDANCE = (chkattendance.Checked == true) ? true : false;
+
+            if (mem_s.Update())
+            {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        private void chkfiftyk_CheckedChanged(object sender, EventArgs e)
+        {
+            if (update_standing())
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("There was a problem updating MEMBER_STANDING");
+            }
+        }
+
+        private void chkpatronage_CheckedChanged(object sender, EventArgs e)
+        {
+            if (update_standing())
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("There was a problem updating MEMBER_STANDING");
+            }
+        }
+
+        private void chkattendance_CheckedChanged(object sender, EventArgs e)
+        {
+            if (update_standing())
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("There was a problem updating MEMBER_STANDING");
             }
         }
     }

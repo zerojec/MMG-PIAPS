@@ -112,7 +112,7 @@ namespace MMG_PIAPS.forms
                 m.contactno = row["Contact_No"].ToString();
                 m.occupation = row["Occupation"].ToString();
                 m.status = "ACTIVE"; //STATUS = ACTIVE, STAFF, WITHDRAWN
-                m.standing = "IN_GOOD_STANDING"; // STANDING = IN_GOO_STANDING, NOT_IN_GOOD_STANDING
+             
                 m.typeofmembership = "REGULAR"; // REGULAR, ASSOCIATE
 
                 if (m.save())

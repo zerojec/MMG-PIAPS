@@ -45,7 +45,8 @@ namespace MMG_PIAPS.userctrl.loan
         private decimal AMORTIZATION_ON_PRINCIPAL = 0;
         private decimal AMORTIZATION_ON_INTEREST = 0;
         private decimal TOTAL_AMORTIZATION = 0;
-
+        private decimal PREV_LOAN_BALANCE = 0;
+        private string PREV_LAON_APPLICATION_NO = "";
 
         Member applicant = new Member();
         Member comaker = new Member();
@@ -424,6 +425,48 @@ namespace MMG_PIAPS.userctrl.loan
         private void cbocollection_day_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnComputeNetProceeds_Click(object sender, EventArgs e)
+        {
+            APPLIED_LOAN_AMOUNT = Convert.ToDecimal(txtprincipal.Text);
+            //txtprincipal.Text = String.Format("{0:C2}", APPLIED_LOAN_AMOUNT );
+            String[] c = cboamortization_period.Text.Split('-');
+            SELECTED_AMORTIZATION = Convert.ToDecimal(c[0]);
+
+            INTEREST_ON_PRINCIPAL = (SELECTED_AMORTIZATION / 100) * APPLIED_LOAN_AMOUNT;
+            txtinterest.Text = INTEREST_ON_PRINCIPAL.ToString("###0.00");
+
+            AMORTIZATION_ON_PRINCIPAL = APPLIED_LOAN_AMOUNT / SELECTED_AMORTIZATION;
+            txtprincipal_amort.Text = AMORTIZATION_ON_PRINCIPAL.ToString("###0.00");
+
+
+            AMORTIZATION_ON_INTEREST = INTEREST_ON_PRINCIPAL / SELECTED_AMORTIZATION;
+            txtinterest_amort.Text = AMORTIZATION_ON_INTEREST.ToString("###0.00");
+
+            TOTAL_AMORTIZATION = AMORTIZATION_ON_INTEREST + AMORTIZATION_ON_PRINCIPAL;
+            txttotal_amort.Text = TOTAL_AMORTIZATION.ToString("###0.00");
+
+            AUTO_CREDIT_TO_CBU = APPLIED_LOAN_AMOUNT * PERCENTAGE_OFLOAN_TO_CBU;
+            txtautocredtitocbu.Text = AUTO_CREDIT_TO_CBU.ToString("###0.00");
+
+            
+            decimal bal;
+            if ((txtbalance.Text != "") && (Decimal.TryParse(txtbalance.Text.ToString(), out bal)))
+            {
+                NET_PROCEEDS = (bal != 0) ? APPLIED_LOAN_AMOUNT - (AUTO_CREDIT_TO_CBU + bal) : APPLIED_LOAN_AMOUNT - AUTO_CREDIT_TO_CBU;
+                  
+            }else{
+                MessageBox.Show("Please check your input in BALANCE textbox");
+            }
+
+            txtnetproceeds.Text = NET_PROCEEDS.ToString("###0.00");
+          
         }
 
        

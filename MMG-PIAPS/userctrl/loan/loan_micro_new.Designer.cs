@@ -51,18 +51,25 @@
             this.lblapplicationno = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.cboamortization_period = new System.Windows.Forms.ComboBox();
-            this.txtprincipal_amort = new System.Windows.Forms.TextBox();
-            this.txtinterest_amort = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtinterest_amort = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtprincipal_amort = new System.Windows.Forms.TextBox();
+            this.cbopayment_mode = new System.Windows.Forms.ComboBox();
             this.cbocollection_day = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.cbopayment_mode = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.dtfilingdate = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtnetproceeds = new System.Windows.Forms.TextBox();
+            this.txtbalance = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtautocredtitocbu = new System.Windows.Forms.TextBox();
+            this.btnComputeNetProceeds = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.cboComaker = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -75,10 +82,6 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.lbcomakerslatestloan = new System.Windows.Forms.ListBox();
             this.lbcomakersdata = new System.Windows.Forms.ListBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtautocredtitocbu = new System.Windows.Forms.TextBox();
-            this.txtnetproceeds = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
             this.panel2.SuspendLayout();
@@ -175,7 +178,7 @@
             this.panel2.Controls.Add(this.btnsave);
             this.panel2.Controls.Add(this.btncancel);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 415);
+            this.panel2.Location = new System.Drawing.Point(0, 445);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1195, 40);
@@ -290,11 +293,12 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 380F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 410F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1195, 479);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1195, 488);
             this.tableLayoutPanel1.TabIndex = 34;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // tableLayoutPanel3
             // 
@@ -333,7 +337,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1189, 374);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1189, 404);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
             // lblapplicationno
@@ -356,37 +360,40 @@
             // 
             this.tableLayoutPanel6.ColumnCount = 4;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.533916F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.35668F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.35667F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.06565F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.04376F));
-            this.tableLayoutPanel6.Controls.Add(this.txtnetproceeds, 2, 10);
-            this.tableLayoutPanel6.Controls.Add(this.txtautocredtitocbu, 2, 9);
-            this.tableLayoutPanel6.Controls.Add(this.label15, 1, 10);
-            this.tableLayoutPanel6.Controls.Add(this.label14, 1, 9);
             this.tableLayoutPanel6.Controls.Add(this.txtprincipal, 2, 0);
             this.tableLayoutPanel6.Controls.Add(this.cboamortization_period, 2, 1);
             this.tableLayoutPanel6.Controls.Add(this.label5, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.label3, 1, 0);
-            this.tableLayoutPanel6.Controls.Add(this.label12, 1, 2);
-            this.tableLayoutPanel6.Controls.Add(this.cbocollection_day, 2, 2);
             this.tableLayoutPanel6.Controls.Add(this.label6, 1, 6);
             this.tableLayoutPanel6.Controls.Add(this.txtinterest, 2, 6);
             this.tableLayoutPanel6.Controls.Add(this.label10, 1, 5);
             this.tableLayoutPanel6.Controls.Add(this.txtinterest_amort, 2, 5);
             this.tableLayoutPanel6.Controls.Add(this.label9, 1, 4);
             this.tableLayoutPanel6.Controls.Add(this.txtprincipal_amort, 2, 4);
-            this.tableLayoutPanel6.Controls.Add(this.label11, 1, 3);
-            this.tableLayoutPanel6.Controls.Add(this.cbopayment_mode, 2, 3);
             this.tableLayoutPanel6.Controls.Add(this.label8, 1, 7);
             this.tableLayoutPanel6.Controls.Add(this.txttotal_amort, 2, 7);
-            this.tableLayoutPanel6.Controls.Add(this.dtfilingdate, 2, 11);
-            this.tableLayoutPanel6.Controls.Add(this.label7, 1, 11);
+            this.tableLayoutPanel6.Controls.Add(this.cbopayment_mode, 2, 2);
+            this.tableLayoutPanel6.Controls.Add(this.cbocollection_day, 2, 3);
+            this.tableLayoutPanel6.Controls.Add(this.label11, 1, 2);
+            this.tableLayoutPanel6.Controls.Add(this.label12, 1, 3);
+            this.tableLayoutPanel6.Controls.Add(this.dtfilingdate, 2, 12);
+            this.tableLayoutPanel6.Controls.Add(this.label7, 1, 12);
+            this.tableLayoutPanel6.Controls.Add(this.label15, 1, 11);
+            this.tableLayoutPanel6.Controls.Add(this.txtnetproceeds, 2, 11);
+            this.tableLayoutPanel6.Controls.Add(this.txtbalance, 2, 9);
+            this.tableLayoutPanel6.Controls.Add(this.label16, 1, 9);
+            this.tableLayoutPanel6.Controls.Add(this.label14, 1, 8);
+            this.tableLayoutPanel6.Controls.Add(this.txtautocredtitocbu, 2, 8);
+            this.tableLayoutPanel6.Controls.Add(this.btnComputeNetProceeds, 2, 10);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel6.Location = new System.Drawing.Point(765, 1);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 12;
+            this.tableLayoutPanel6.RowCount = 14;
             this.tableLayoutPanel3.SetRowSpan(this.tableLayoutPanel6, 12);
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
@@ -399,8 +406,10 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(423, 372);
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(423, 402);
             this.tableLayoutPanel6.TabIndex = 47;
             // 
             // cboamortization_period
@@ -419,46 +428,6 @@
             this.cboamortization_period.TabIndex = 45;
             this.cboamortization_period.SelectedIndexChanged += new System.EventHandler(this.cboamortization_period_SelectedIndexChanged);
             this.cboamortization_period.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cboamortization_period_KeyPress);
-            // 
-            // txtprincipal_amort
-            // 
-            this.txtprincipal_amort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtprincipal_amort.Enabled = false;
-            this.txtprincipal_amort.Location = new System.Drawing.Point(213, 123);
-            this.txtprincipal_amort.Name = "txtprincipal_amort";
-            this.txtprincipal_amort.Size = new System.Drawing.Size(121, 24);
-            this.txtprincipal_amort.TabIndex = 38;
-            this.txtprincipal_amort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtinterest_amort
-            // 
-            this.txtinterest_amort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtinterest_amort.Enabled = false;
-            this.txtinterest_amort.Location = new System.Drawing.Point(213, 153);
-            this.txtinterest_amort.Name = "txtinterest_amort";
-            this.txtinterest_amort.Size = new System.Drawing.Size(121, 24);
-            this.txtinterest_amort.TabIndex = 38;
-            this.txtinterest_amort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(49, 156);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(158, 17);
-            this.label10.TabIndex = 31;
-            this.label10.Text = "Amortization on Interest :";
-            // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(42, 126);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(165, 17);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "Amortization on Principal :";
             // 
             // label5
             // 
@@ -480,15 +449,59 @@
             this.label3.TabIndex = 30;
             this.label3.Text = "Applied Loan Amount :";
             // 
-            // label12
+            // label10
             // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(104, 66);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(103, 17);
-            this.label12.TabIndex = 48;
-            this.label12.Text = "Collection Day :";
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(49, 156);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(158, 17);
+            this.label10.TabIndex = 31;
+            this.label10.Text = "Amortization on Interest :";
+            // 
+            // txtinterest_amort
+            // 
+            this.txtinterest_amort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtinterest_amort.Enabled = false;
+            this.txtinterest_amort.Location = new System.Drawing.Point(213, 153);
+            this.txtinterest_amort.Name = "txtinterest_amort";
+            this.txtinterest_amort.Size = new System.Drawing.Size(121, 24);
+            this.txtinterest_amort.TabIndex = 38;
+            this.txtinterest_amort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(42, 126);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(165, 17);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "Amortization on Principal :";
+            // 
+            // txtprincipal_amort
+            // 
+            this.txtprincipal_amort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtprincipal_amort.Enabled = false;
+            this.txtprincipal_amort.Location = new System.Drawing.Point(213, 123);
+            this.txtprincipal_amort.Name = "txtprincipal_amort";
+            this.txtprincipal_amort.Size = new System.Drawing.Size(121, 24);
+            this.txtprincipal_amort.TabIndex = 38;
+            this.txtprincipal_amort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // cbopayment_mode
+            // 
+            this.cbopayment_mode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbopayment_mode.FormattingEnabled = true;
+            this.cbopayment_mode.Items.AddRange(new object[] {
+            "MONTHLY",
+            "BI-MONTHLY"});
+            this.cbopayment_mode.Location = new System.Drawing.Point(213, 63);
+            this.cbopayment_mode.Name = "cbopayment_mode";
+            this.cbopayment_mode.Size = new System.Drawing.Size(121, 25);
+            this.cbopayment_mode.TabIndex = 47;
+            this.cbopayment_mode.SelectedIndexChanged += new System.EventHandler(this.cbopayment_mode_SelectedIndexChanged);
+            this.cbopayment_mode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbopayment_mode_KeyPress);
             // 
             // cbocollection_day
             // 
@@ -498,7 +511,7 @@
             "15th",
             "30th",
             "15th and 30th"});
-            this.cbocollection_day.Location = new System.Drawing.Point(213, 63);
+            this.cbocollection_day.Location = new System.Drawing.Point(213, 93);
             this.cbocollection_day.Name = "cbocollection_day";
             this.cbocollection_day.Size = new System.Drawing.Size(121, 25);
             this.cbocollection_day.TabIndex = 49;
@@ -508,44 +521,110 @@
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(99, 96);
+            this.label11.Location = new System.Drawing.Point(99, 66);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(108, 17);
             this.label11.TabIndex = 46;
             this.label11.Text = "Payment Mode :";
             // 
-            // cbopayment_mode
+            // label12
             // 
-            this.cbopayment_mode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbopayment_mode.FormattingEnabled = true;
-            this.cbopayment_mode.Items.AddRange(new object[] {
-            "MONTHLY",
-            "BI-MONTHLY"});
-            this.cbopayment_mode.Location = new System.Drawing.Point(213, 93);
-            this.cbopayment_mode.Name = "cbopayment_mode";
-            this.cbopayment_mode.Size = new System.Drawing.Size(121, 25);
-            this.cbopayment_mode.TabIndex = 47;
-            this.cbopayment_mode.SelectedIndexChanged += new System.EventHandler(this.cbopayment_mode_SelectedIndexChanged);
-            this.cbopayment_mode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbopayment_mode_KeyPress);
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(130, 342);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 17);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "Date Filed :";
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(104, 96);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(103, 17);
+            this.label12.TabIndex = 48;
+            this.label12.Text = "Collection Day :";
             // 
             // dtfilingdate
             // 
             this.dtfilingdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dtfilingdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtfilingdate.Location = new System.Drawing.Point(213, 339);
+            this.dtfilingdate.Location = new System.Drawing.Point(213, 363);
             this.dtfilingdate.Name = "dtfilingdate";
             this.dtfilingdate.Size = new System.Drawing.Size(121, 24);
             this.dtfilingdate.TabIndex = 31;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(130, 366);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 17);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "Date Filed :";
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(110, 336);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(97, 17);
+            this.label15.TabIndex = 41;
+            this.label15.Text = "Net Proceeds :";
+            // 
+            // txtnetproceeds
+            // 
+            this.txtnetproceeds.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtnetproceeds.Enabled = false;
+            this.txtnetproceeds.Location = new System.Drawing.Point(213, 333);
+            this.txtnetproceeds.Name = "txtnetproceeds";
+            this.txtnetproceeds.Size = new System.Drawing.Size(121, 24);
+            this.txtnetproceeds.TabIndex = 39;
+            this.txtnetproceeds.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtbalance
+            // 
+            this.txtbalance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtbalance.Location = new System.Drawing.Point(213, 273);
+            this.txtbalance.Name = "txtbalance";
+            this.txtbalance.Size = new System.Drawing.Size(121, 24);
+            this.txtbalance.TabIndex = 39;
+            this.txtbalance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(116, 276);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(91, 17);
+            this.label16.TabIndex = 40;
+            this.label16.Text = "Less : Balance";
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(77, 246);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(130, 17);
+            this.label14.TabIndex = 40;
+            this.label14.Text = "Auto Credit to CBU :";
+            // 
+            // txtautocredtitocbu
+            // 
+            this.txtautocredtitocbu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtautocredtitocbu.Enabled = false;
+            this.txtautocredtitocbu.Location = new System.Drawing.Point(213, 243);
+            this.txtautocredtitocbu.Name = "txtautocredtitocbu";
+            this.txtautocredtitocbu.Size = new System.Drawing.Size(121, 24);
+            this.txtautocredtitocbu.TabIndex = 39;
+            this.txtautocredtitocbu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // btnComputeNetProceeds
+            // 
+            this.btnComputeNetProceeds.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnComputeNetProceeds.Location = new System.Drawing.Point(213, 303);
+            this.btnComputeNetProceeds.Name = "btnComputeNetProceeds";
+            this.btnComputeNetProceeds.Size = new System.Drawing.Size(121, 24);
+            this.btnComputeNetProceeds.TabIndex = 50;
+            this.btnComputeNetProceeds.Text = "Net Proceeds";
+            this.btnComputeNetProceeds.UseVisualStyleBackColor = true;
+            this.btnComputeNetProceeds.Click += new System.EventHandler(this.btnComputeNetProceeds_Click);
             // 
             // label4
             // 
@@ -681,7 +760,7 @@
             this.tableLayoutPanel3.SetRowSpan(this.tableLayoutPanel7, 4);
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 123F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(763, 124);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(763, 154);
             this.tableLayoutPanel7.TabIndex = 47;
             // 
             // lbcomakerslatestloan
@@ -692,7 +771,7 @@
             this.lbcomakerslatestloan.ItemHeight = 15;
             this.lbcomakerslatestloan.Location = new System.Drawing.Point(384, 3);
             this.lbcomakerslatestloan.Name = "lbcomakerslatestloan";
-            this.lbcomakerslatestloan.Size = new System.Drawing.Size(376, 118);
+            this.lbcomakerslatestloan.Size = new System.Drawing.Size(376, 148);
             this.lbcomakerslatestloan.TabIndex = 1;
             // 
             // lbcomakersdata
@@ -703,48 +782,8 @@
             this.lbcomakersdata.ItemHeight = 15;
             this.lbcomakersdata.Location = new System.Drawing.Point(3, 3);
             this.lbcomakersdata.Name = "lbcomakersdata";
-            this.lbcomakersdata.Size = new System.Drawing.Size(375, 118);
+            this.lbcomakersdata.Size = new System.Drawing.Size(375, 148);
             this.lbcomakersdata.TabIndex = 0;
-            // 
-            // label14
-            // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(77, 276);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(130, 17);
-            this.label14.TabIndex = 40;
-            this.label14.Text = "Auto Credit to CBU :";
-            // 
-            // label15
-            // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(110, 306);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(97, 17);
-            this.label15.TabIndex = 41;
-            this.label15.Text = "Net Proceeds :";
-            // 
-            // txtautocredtitocbu
-            // 
-            this.txtautocredtitocbu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtautocredtitocbu.Enabled = false;
-            this.txtautocredtitocbu.Location = new System.Drawing.Point(213, 273);
-            this.txtautocredtitocbu.Name = "txtautocredtitocbu";
-            this.txtautocredtitocbu.Size = new System.Drawing.Size(121, 24);
-            this.txtautocredtitocbu.TabIndex = 39;
-            this.txtautocredtitocbu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtnetproceeds
-            // 
-            this.txtnetproceeds.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtnetproceeds.Enabled = false;
-            this.txtnetproceeds.Location = new System.Drawing.Point(213, 303);
-            this.txtnetproceeds.Name = "txtnetproceeds";
-            this.txtnetproceeds.Size = new System.Drawing.Size(121, 24);
-            this.txtnetproceeds.TabIndex = 39;
-            this.txtnetproceeds.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // loan_micro_new
             // 
@@ -753,7 +792,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "loan_micro_new";
-            this.Size = new System.Drawing.Size(1195, 479);
+            this.Size = new System.Drawing.Size(1195, 488);
             this.Load += new System.EventHandler(this.loan_micro_new_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -828,5 +867,8 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtautocredtitocbu;
         private System.Windows.Forms.TextBox txtnetproceeds;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtbalance;
+        private System.Windows.Forms.Button btnComputeNetProceeds;
     }
 }

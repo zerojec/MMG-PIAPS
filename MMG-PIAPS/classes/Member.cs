@@ -18,12 +18,23 @@ namespace MMG_PIAPS.classes
         public String memid { get;set ;  }
         public String fullname { get; set; }
         public String typeofmembership { get; set; }
-        public String standing { get; set; }
+       
         public DateTime acceptance_date { get; set; }
         public String status { get; set; } //withdrawns or deceased etc..
         public String occupation { get; set; }
         public String email { get; set; }
         public String tinno { get; set; }
+
+
+        public String standing
+        {
+            get
+            {
+                Member_Standing ms = new Member_Standing();
+                ms.memid = memid;
+                return ms.STANDING;
+            }
+        }
 
         public Boolean save()
         {
@@ -275,8 +286,7 @@ namespace MMG_PIAPS.classes
                             e.fullname = r["fullname"].ToString();
                             e.address = r["address"].ToString();
                             e.contactno = r["contactno"].ToString();
-                            e.status = r["status_"].ToString();
-                            e.standing = r["standing"].ToString();
+                            e.status = r["status_"].ToString();                           
                             e.typeofmembership = r["typeofmembership"].ToString();
                             e.occupation = r["occupation"].ToString();
                             e.email = r["email"].ToString();
@@ -337,30 +347,7 @@ namespace MMG_PIAPS.classes
 
 
 
-            public String GET_MEMBERSHIP_STANDING() {
-                DataTable dt = new DataTable();
-                MySqlCommand cmd = new MySqlCommand();
-                db.SET_COMMAND_PARAMS(cmd, "MEMMBER_STANDING_SELECT_LATEST_BY_ID");
-                cmd.Parameters.AddWithValue("_memid", memid);
-
-                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                da.Fill(dt);
-
-                if (dt != null){
-                    if (dt.Rows.Count > 0){
-                       String stand = dt.Rows[0].Field<String>("standing");
-                       standing = stand;
-                       return stand;
-                    }
-                    else{
-                        return null;
-                    }
-                }
-                else{
-                    return null;
-                }                
-
-            }//end GET_MEMBERSHIP_STANDING
+          
 
 
 
@@ -456,8 +443,13 @@ namespace MMG_PIAPS.classes
                         li.SubItems.Add(r["fullname"].ToString());
                         li.SubItems.Add(r["address"].ToString());
                         li.SubItems.Add(r["contactno"].ToString());
-                        li.SubItems.Add(r["standing"].ToString());
+
+                        Member_Standing ms = new Member_Standing();
+                        ms.memid = r["memid"].ToString();
+                        li.SubItems.Add(ms.STANDING);
                         li.SubItems.Add(r["tinno"].ToString());
+
+                        li.BackColor = (ms.STANDING == "MIGS") ? Color.GreenYellow : Color.Red;
 
                         lv.Items.Add(li);
                         ctr++;
@@ -492,7 +484,11 @@ namespace MMG_PIAPS.classes
                         li.SubItems.Add(r["fullname"].ToString());
                         li.SubItems.Add(r["address"].ToString());
                         li.SubItems.Add(r["contactno"].ToString());
-                        li.SubItems.Add(r["standing"].ToString());
+                        Member_Standing ms = new Member_Standing();
+                        ms.memid = r["memid"].ToString();
+                        li.SubItems.Add(ms.STANDING);
+
+                        li.BackColor = (ms.STANDING == "MIGS") ? Color.GreenYellow : Color.Red;
 
                         lv.Items.Add(li);
                         ctr++;
