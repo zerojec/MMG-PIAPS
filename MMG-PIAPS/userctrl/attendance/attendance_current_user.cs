@@ -38,7 +38,7 @@ namespace MMG_PIAPS.userctrl.attendance
             //get empid from combobox
 
             a.empid = Global.CURRENT_USER.empid;
-
+            
             dt = a.SELECT_BY_EMPID();
 
             if (dt != null)
@@ -48,8 +48,9 @@ namespace MMG_PIAPS.userctrl.attendance
                 foreach (DataRow r in dt.Rows)
                 {
                     ListViewItem li = new ListViewItem();
-                    li.Text = ctr.ToString();           
-                    li.SubItems.Add(r["date_time"].ToString());
+                    li.Text = ctr.ToString();
+                    li.SubItems.Add(Convert.ToDateTime(r["date_"].ToString()).ToShortDateString());
+                    li.SubItems.Add(r["attendance"].ToString());
       
                     // li.SubItems.Add(Convert.ToDateTime(r["date_updated"].ToString()).ToLongDateString());
                     lv.Items.Add(li);

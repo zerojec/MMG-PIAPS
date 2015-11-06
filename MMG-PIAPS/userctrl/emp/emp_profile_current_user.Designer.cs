@@ -89,6 +89,9 @@
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label16 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnChangePassword = new System.Windows.Forms.Button();
+            this.btllogout = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).BeginInit();
             this.panel1.SuspendLayout();
@@ -98,6 +101,7 @@
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // cboemploymentstatus
@@ -467,6 +471,7 @@
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel8, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -795,6 +800,46 @@
             this.label16.Text = "Schedule";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 1;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.btnChangePassword, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.btllogout, 0, 1);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 298);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 4;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(237, 287);
+            this.tableLayoutPanel8.TabIndex = 4;
+            // 
+            // btnChangePassword
+            // 
+            this.btnChangePassword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChangePassword.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePassword.Location = new System.Drawing.Point(3, 3);
+            this.btnChangePassword.Name = "btnChangePassword";
+            this.btnChangePassword.Size = new System.Drawing.Size(231, 29);
+            this.btnChangePassword.TabIndex = 0;
+            this.btnChangePassword.Text = "Change Password";
+            this.btnChangePassword.UseVisualStyleBackColor = true;
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
+            // 
+            // btllogout
+            // 
+            this.btllogout.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btllogout.Location = new System.Drawing.Point(3, 38);
+            this.btllogout.Name = "btllogout";
+            this.btllogout.Size = new System.Drawing.Size(231, 29);
+            this.btllogout.TabIndex = 1;
+            this.btllogout.Text = "Logout";
+            this.btllogout.UseVisualStyleBackColor = true;
+            this.btllogout.Click += new System.EventHandler(this.btllogout_Click);
+            // 
             // emp_profile_current_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -818,6 +863,7 @@
             this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -885,5 +931,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader15;
         private System.Windows.Forms.ColumnHeader columnHeader16;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.Button btnChangePassword;
+        private System.Windows.Forms.Button btllogout;
     }
 }

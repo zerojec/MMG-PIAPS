@@ -92,7 +92,7 @@ namespace MMG_PIAPS.userctrl.attendance
             DataTable dt = new DataTable();
             //get empid from combobox
             String[] eid = cboEmp.Text.Split('-');
-            a.empid = eid[1] + "=" + eid[2];
+            a.empid = eid[1];
 
             dt = a.SELECT_BY_EMPID();
 
@@ -160,7 +160,7 @@ namespace MMG_PIAPS.userctrl.attendance
             if (cboEmp.Text != "") { 
 
                 String[] eid = cboEmp.Text.Split('-');
-                a.empid = eid[1] + "=" + eid[2];
+                a.empid = eid[1];
 
                 dt = a.SELECT_BY_EMPID_BW_DATES(dtpFrom.Value, dtpTo.Value);
 

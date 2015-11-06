@@ -67,7 +67,7 @@ namespace MMG_PIAPS.userctrl.emp
                 emp.branch = branchid[0];
                 emp.tinno = txttinno.Text;
                 emp.position = cbopositions.Text;
-
+                emp.password = "PilipinasAyMaharlika";
 
                 if (pbEmpPic.Image != null){
                     long filesize;

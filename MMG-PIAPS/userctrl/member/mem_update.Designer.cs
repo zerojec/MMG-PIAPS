@@ -47,9 +47,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtid = new System.Windows.Forms.TextBox();
             this.txtlname = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.cbomembershiptype = new System.Windows.Forms.ComboBox();
@@ -70,6 +68,7 @@
             this.chkpatronage = new System.Windows.Forms.CheckBox();
             this.chkattendance = new System.Windows.Forms.CheckBox();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
+            this.txtid = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -240,7 +239,7 @@
             // 
             this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel3.ColumnCount = 4;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -250,9 +249,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label11, 2, 3);
             this.tableLayoutPanel3.Controls.Add(this.txtemail, 3, 3);
             this.tableLayoutPanel3.Controls.Add(this.label10, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.txtid, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.txtlname, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.label12, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.cbomembershiptype, 3, 1);
@@ -267,6 +264,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label8, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.txtaddress, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 0, 6);
+            this.tableLayoutPanel3.Controls.Add(this.txtid, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(246, 38);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -287,16 +285,16 @@
             // 
             this.txttinno.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txttinno.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttinno.Location = new System.Drawing.Point(334, 159);
+            this.txttinno.Location = new System.Drawing.Point(349, 159);
             this.txttinno.Name = "txttinno";
-            this.txttinno.Size = new System.Drawing.Size(73, 25);
+            this.txttinno.Size = new System.Drawing.Size(58, 25);
             this.txttinno.TabIndex = 16;
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(272, 163);
+            this.label4.Location = new System.Drawing.Point(287, 163);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 15);
             this.label4.TabIndex = 6;
@@ -306,16 +304,16 @@
             // 
             this.txtoccupation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtoccupation.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtoccupation.Location = new System.Drawing.Point(334, 4);
+            this.txtoccupation.Location = new System.Drawing.Point(349, 4);
             this.txtoccupation.Name = "txtoccupation";
-            this.txtoccupation.Size = new System.Drawing.Size(73, 25);
+            this.txtoccupation.Size = new System.Drawing.Size(58, 25);
             this.txtoccupation.TabIndex = 16;
             // 
             // label11
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(285, 101);
+            this.label11.Location = new System.Drawing.Point(300, 101);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(42, 15);
             this.label11.TabIndex = 6;
@@ -325,65 +323,45 @@
             // 
             this.txtemail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtemail.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.Location = new System.Drawing.Point(334, 97);
+            this.txtemail.Location = new System.Drawing.Point(349, 97);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(73, 25);
+            this.txtemail.Size = new System.Drawing.Size(58, 25);
             this.txtemail.TabIndex = 16;
             // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(254, 8);
+            this.label10.Location = new System.Drawing.Point(269, 8);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(73, 15);
             this.label10.TabIndex = 16;
             this.label10.Text = "Occupation :";
             // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 1);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 30);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Member-Registry No.";
-            // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(39, 39);
+            this.label3.Location = new System.Drawing.Point(69, 39);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 15);
             this.label3.TabIndex = 1;
             this.label3.Text = "Last Name :";
             // 
-            // txtid
-            // 
-            this.txtid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtid.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtid.Location = new System.Drawing.Point(115, 4);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(72, 25);
-            this.txtid.TabIndex = 10;
-            this.txtid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtid_KeyPress);
-            // 
             // txtlname
             // 
             this.txtlname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtlname.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlname.Location = new System.Drawing.Point(115, 35);
+            this.txtlname.Location = new System.Drawing.Point(145, 35);
             this.txtlname.Name = "txtlname";
-            this.txtlname.Size = new System.Drawing.Size(72, 25);
+            this.txtlname.Size = new System.Drawing.Size(57, 25);
             this.txtlname.TabIndex = 11;
             // 
             // label12
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(218, 39);
+            this.label12.Location = new System.Drawing.Point(233, 39);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(109, 15);
             this.label12.TabIndex = 20;
@@ -399,9 +377,9 @@
             this.cbomembershiptype.Items.AddRange(new object[] {
             "REGULAR",
             "ASSOCIATE"});
-            this.cbomembershiptype.Location = new System.Drawing.Point(334, 35);
+            this.cbomembershiptype.Location = new System.Drawing.Point(349, 35);
             this.cbomembershiptype.Name = "cbomembershiptype";
-            this.cbomembershiptype.Size = new System.Drawing.Size(73, 27);
+            this.cbomembershiptype.Size = new System.Drawing.Size(58, 27);
             this.cbomembershiptype.TabIndex = 21;
             this.cbomembershiptype.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbomembershiptype_KeyPress);
             // 
@@ -409,7 +387,7 @@
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(224, 70);
+            this.label13.Location = new System.Drawing.Point(239, 70);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(103, 15);
             this.label13.TabIndex = 22;
@@ -420,25 +398,25 @@
             this.dtpacceptancedate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtpacceptancedate.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpacceptancedate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpacceptancedate.Location = new System.Drawing.Point(334, 66);
+            this.dtpacceptancedate.Location = new System.Drawing.Point(349, 66);
             this.dtpacceptancedate.Name = "dtpacceptancedate";
-            this.dtpacceptancedate.Size = new System.Drawing.Size(73, 25);
+            this.dtpacceptancedate.Size = new System.Drawing.Size(58, 25);
             this.dtpacceptancedate.TabIndex = 24;
             // 
             // txtcontactno
             // 
             this.txtcontactno.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtcontactno.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcontactno.Location = new System.Drawing.Point(334, 128);
+            this.txtcontactno.Location = new System.Drawing.Point(349, 128);
             this.txtcontactno.Name = "txtcontactno";
-            this.txtcontactno.Size = new System.Drawing.Size(73, 25);
+            this.txtcontactno.Size = new System.Drawing.Size(58, 25);
             this.txtcontactno.TabIndex = 15;
             // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(251, 132);
+            this.label7.Location = new System.Drawing.Point(266, 132);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 15);
             this.label7.TabIndex = 5;
@@ -448,7 +426,7 @@
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(53, 70);
+            this.label9.Location = new System.Drawing.Point(83, 70);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(55, 15);
             this.label9.TabIndex = 7;
@@ -464,9 +442,9 @@
             this.cbogender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.cbogender.Location = new System.Drawing.Point(115, 66);
+            this.cbogender.Location = new System.Drawing.Point(145, 66);
             this.cbogender.Name = "cbogender";
-            this.cbogender.Size = new System.Drawing.Size(72, 27);
+            this.cbogender.Size = new System.Drawing.Size(57, 27);
             this.cbogender.TabIndex = 8;
             // 
             // dtBday
@@ -474,16 +452,16 @@
             this.dtBday.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtBday.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtBday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtBday.Location = new System.Drawing.Point(115, 97);
+            this.dtBday.Location = new System.Drawing.Point(145, 97);
             this.dtBday.Name = "dtBday";
-            this.dtBday.Size = new System.Drawing.Size(72, 25);
+            this.dtBday.Size = new System.Drawing.Size(57, 25);
             this.dtBday.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(50, 101);
+            this.label6.Location = new System.Drawing.Point(80, 101);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 15);
             this.label6.TabIndex = 4;
@@ -493,7 +471,7 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(53, 132);
+            this.label8.Location = new System.Drawing.Point(83, 132);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(55, 15);
             this.label8.TabIndex = 6;
@@ -503,11 +481,11 @@
             // 
             this.txtaddress.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtaddress.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtaddress.Location = new System.Drawing.Point(115, 128);
+            this.txtaddress.Location = new System.Drawing.Point(145, 128);
             this.txtaddress.Multiline = true;
             this.txtaddress.Name = "txtaddress";
             this.tableLayoutPanel3.SetRowSpan(this.txtaddress, 2);
-            this.txtaddress.Size = new System.Drawing.Size(72, 55);
+            this.txtaddress.Size = new System.Drawing.Size(57, 55);
             this.txtaddress.TabIndex = 14;
             // 
             // tableLayoutPanel5
@@ -596,6 +574,22 @@
             // 
             this.ofd.FileName = "openFileDialog1";
             // 
+            // txtid
+            // 
+            this.txtid.AutoSize = true;
+            this.txtid.BackColor = System.Drawing.Color.Black;
+            this.tableLayoutPanel3.SetColumnSpan(this.txtid, 2);
+            this.txtid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtid.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtid.ForeColor = System.Drawing.Color.White;
+            this.txtid.Location = new System.Drawing.Point(1, 1);
+            this.txtid.Margin = new System.Windows.Forms.Padding(0);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(204, 30);
+            this.txtid.TabIndex = 4;
+            this.txtid.Text = "Standing :";
+            this.txtid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // mem_update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -640,14 +634,12 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbogender;
         private System.Windows.Forms.DateTimePicker dtBday;
-        private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.TextBox txtlname;
         private System.Windows.Forms.TextBox txtaddress;
         private System.Windows.Forms.Label label12;
@@ -665,5 +657,6 @@
         private System.Windows.Forms.CheckBox chkpatronage;
         private System.Windows.Forms.CheckBox chkfiftyk;
         private System.Windows.Forms.CheckBox chktenk;
+        private System.Windows.Forms.Label txtid;
     }
 }

@@ -1,6 +1,7 @@
 C:\projects\MMG-PIAPS\MMG-PIAPS\bin\Debug\MMG-PIAPS.exe.config
 C:\projects\MMG-PIAPS\MMG-PIAPS\bin\Debug\MMG-PIAPS.exe
 C:\projects\MMG-PIAPS\MMG-PIAPS\bin\Debug\MMG-PIAPS.pdb
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.emp.frmChangePassword.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.emp.frmEmpBasicPay.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.emp.frmEmpBranchAssignment.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.emp.frmEmpMembership.resources
@@ -61,4 +62,6 @@ C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.supply_request.supp
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.csproj.GenerateResource.Cache
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.exe
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.pdb
-C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.csprojResolveAssemblyReference.cache
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.day_marker.day_marker_ctrl.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.day_marker.day_marker_new.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.day_marker.day_marker_update.resources

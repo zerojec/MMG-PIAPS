@@ -34,6 +34,9 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pnlbuttons = new System.Windows.Forms.Panel();
             this.pnlops = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.pnlAdminButtons = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.tbldataPanel = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.CurrUserPic = new System.Windows.Forms.PictureBox();
@@ -77,15 +80,13 @@
             this.memberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataImportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.pnlAdminButtons = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.holidaysSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.tbldataPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -144,6 +145,45 @@
             this.pnlops.Name = "pnlops";
             this.pnlops.Size = new System.Drawing.Size(654, 621);
             this.pnlops.TabIndex = 1;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.pnlAdminButtons, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label10, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(60, 621);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(654, 40);
+            this.tableLayoutPanel3.TabIndex = 3;
+            // 
+            // pnlAdminButtons
+            // 
+            this.pnlAdminButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.pnlAdminButtons.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlAdminButtons.Font = new System.Drawing.Font("Tw Cen MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlAdminButtons.Location = new System.Drawing.Point(160, 0);
+            this.pnlAdminButtons.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlAdminButtons.Name = "pnlAdminButtons";
+            this.pnlAdminButtons.Size = new System.Drawing.Size(494, 40);
+            this.pnlAdminButtons.TabIndex = 6;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(3, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(154, 22);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Admin Functions  :";
             // 
             // tbldataPanel
             // 
@@ -497,7 +537,8 @@
             this.toolStripDropDownSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.scheduleTemplateToolStripMenuItem,
             this.benefitsToolStripMenuItem,
-            this.memberToolStripMenuItem});
+            this.memberToolStripMenuItem,
+            this.holidaysSettingsToolStripMenuItem});
             this.toolStripDropDownSettings.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownSettings.Image")));
             this.toolStripDropDownSettings.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownSettings.Name = "toolStripDropDownSettings";
@@ -511,7 +552,7 @@
             this.employeeToolStripMenuItem});
             this.scheduleTemplateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("scheduleTemplateToolStripMenuItem.Image")));
             this.scheduleTemplateToolStripMenuItem.Name = "scheduleTemplateToolStripMenuItem";
-            this.scheduleTemplateToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
+            this.scheduleTemplateToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
             this.scheduleTemplateToolStripMenuItem.Text = "Schedule";
             // 
             // templateToolStripMenuItem
@@ -537,7 +578,7 @@
             this.viewBenefitsToolStripMenuItem});
             this.benefitsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("benefitsToolStripMenuItem.Image")));
             this.benefitsToolStripMenuItem.Name = "benefitsToolStripMenuItem";
-            this.benefitsToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
+            this.benefitsToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
             this.benefitsToolStripMenuItem.Text = "Benefit";
             this.benefitsToolStripMenuItem.Click += new System.EventHandler(this.benefitsToolStripMenuItem_Click);
             // 
@@ -560,7 +601,7 @@
             this.memberToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dataImportToolStripMenuItem});
             this.memberToolStripMenuItem.Name = "memberToolStripMenuItem";
-            this.memberToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
+            this.memberToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
             this.memberToolStripMenuItem.Text = "Member";
             // 
             // dataImportToolStripMenuItem
@@ -574,44 +615,12 @@
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // pnlAdminButtons
+            // holidaysSettingsToolStripMenuItem
             // 
-            this.pnlAdminButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.pnlAdminButtons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlAdminButtons.Font = new System.Drawing.Font("Tw Cen MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlAdminButtons.Location = new System.Drawing.Point(160, 0);
-            this.pnlAdminButtons.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlAdminButtons.Name = "pnlAdminButtons";
-            this.pnlAdminButtons.Size = new System.Drawing.Size(494, 40);
-            this.pnlAdminButtons.TabIndex = 6;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(3, 9);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(154, 22);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Admin Functions  :";
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.pnlAdminButtons, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label10, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(60, 621);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(654, 40);
-            this.tableLayoutPanel3.TabIndex = 3;
+            this.holidaysSettingsToolStripMenuItem.Name = "holidaysSettingsToolStripMenuItem";
+            this.holidaysSettingsToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
+            this.holidaysSettingsToolStripMenuItem.Text = "Holidays Settings";
+            this.holidaysSettingsToolStripMenuItem.Click += new System.EventHandler(this.holidaysSettingsToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -628,13 +637,13 @@
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.tbldataPanel.ResumeLayout(false);
             this.tbldataPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CurrUserPic)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -692,5 +701,6 @@
         private System.Windows.Forms.Panel pnlAdminButtons;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.ToolStripMenuItem holidaysSettingsToolStripMenuItem;
     }
 }

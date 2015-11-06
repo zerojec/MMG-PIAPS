@@ -51,7 +51,7 @@ namespace MMG_PIAPS.userctrl.loan
         Member applicant = new Member();
         Member comaker = new Member();
         Loan l = new Loan();
-
+        Loan PREV_LOAN = new Loan();
 
 
 
@@ -145,7 +145,7 @@ namespace MMG_PIAPS.userctrl.loan
                 l.empid = applicant.memid;
 
                 Loan applicant_latest_loan = l.GET_LATEST_LOAN("MICRO");
-
+                PREV_LOAN = applicant_latest_loan;
                 // GET THE LATEST MICRO LOAN OF A MEMBER
                 lblatestloan.Items.Add("LATEST MICRO LOAN");
                 LATEST_MICRO_LOAN = (applicant_latest_loan != null) ? applicant_latest_loan.principal : 0;
@@ -156,7 +156,13 @@ namespace MMG_PIAPS.userctrl.loan
                     lblatestloan.Items.Add("PRINCIPAL : PhP " + applicant_latest_loan.principal.ToString("#,##0.00"));
                     lblatestloan.Items.Add("INTEREST : PhP " + applicant_latest_loan.interest.ToString("#,##0.00"));
                     lblatestloan.Items.Add("MONTHLY AMORTIZATION: PhP " + (applicant_latest_loan.amortization_on_interest + applicant_latest_loan.amortization_on_principal).ToString("#,##0.00"));
-                    lblatestloan.Items.Add("BALANCE: ---(under development)---");             
+                    lblatestloan.Items.Add("BALANCE: ---(under development)---");
+                }
+                else
+                {
+
+                    lblatestloan.Items.Add("Nothing found...");
+
                 }
                  
 
@@ -395,7 +401,7 @@ namespace MMG_PIAPS.userctrl.loan
             nl.collection_day = cbocollection_day.Text;
             nl.auto_credit_to_cbu = Convert.ToDecimal(txtautocredtitocbu.Text);
             nl.net_proceeds = Convert.ToDecimal(txtnetproceeds.Text);
-
+            nl.prev_loan_application_no = (PREV_LOAN != null) ? PREV_LOAN.application_no : "";
 
             if (nl.save())
             {
@@ -404,7 +410,7 @@ namespace MMG_PIAPS.userctrl.loan
                 btncancel.PerformClick();
             }
             else {
-                MessageBox.Show("There was a problem saving your LOAN_APPLICATION :");
+                MessageBox.Show("There was a problem saving your MICRO_LOAN_APPLICATION :");
             }
             
 

@@ -33,7 +33,7 @@ namespace MMG_PIAPS.userctrl.emp_restriction
             if (cboEmp.Text != "")
             {
                 String[] c = cboEmp.Text.ToString().Split('-');
-                String id = c[1] + "-" + c[2];
+                String id = c[1];
                 Employee emp1, emp2 = new Employee();
                 emp2.empid = id;
 
@@ -58,7 +58,6 @@ namespace MMG_PIAPS.userctrl.emp_restriction
                     pb.Image = Properties.Resources.noimagefound;
                     pb.SizeMode = PictureBoxSizeMode.Zoom;
                 }
-
 
                 //GET THE RESTRICTIONS
                 Emp_Restriction er, er2 = new Emp_Restriction();
@@ -131,6 +130,9 @@ namespace MMG_PIAPS.userctrl.emp_restriction
 
        
 
+
+
+
         protected void chk_checkchanged (object sender, EventArgs e)
         {
             Emp_Restriction er = new Emp_Restriction();
@@ -151,12 +153,18 @@ namespace MMG_PIAPS.userctrl.emp_restriction
 
 
 
+
+
+
         //FUNCTION TO GET THE PROPERTIES OF AN OBJECT
         //DON'T FORGET TO USE System.Reflection;
         private static PropertyInfo[] GetProperties(object obj)
         {
             return obj.GetType().GetProperties();
         }
+
+
+
 
 
 

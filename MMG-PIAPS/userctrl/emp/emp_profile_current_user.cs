@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using MMG_PIAPS.classes;
 using System.IO;
+using MMG_PIAPS.forms.emp;
+using MMG_PIAPS.modules;
 
 namespace MMG_PIAPS.userctrl.emp
 {
@@ -104,6 +106,21 @@ namespace MMG_PIAPS.userctrl.emp
         private void btnViewSal_MouseUp(object sender, MouseEventArgs e)
         {
             txtbasicpay.Text = "";
+        }
+
+        private void btnChangePassword_Click(object sender, EventArgs e)
+        {
+            frmChangePassword frm = new frmChangePassword();
+            frm.emp = Global.CURRENT_USER;
+            frm.ShowDialog();
+
+        }
+
+        private void btllogout_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Please confirm logout.","Logout?",MessageBoxButtons.YesNo)== DialogResult.Yes){
+                Global.CURRENT_USER.Logout();
+            }
         }
 
        

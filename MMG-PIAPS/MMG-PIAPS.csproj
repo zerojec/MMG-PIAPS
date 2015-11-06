@@ -68,6 +68,7 @@
     <Compile Include="classes\BasicPay.cs" />
     <Compile Include="classes\Benefit.cs" />
     <Compile Include="classes\Branch.cs" />
+    <Compile Include="classes\Day_Marker.cs" />
     <Compile Include="classes\Member.cs" />
     <Compile Include="classes\Employee.cs" />
     <Compile Include="classes\Emp_Benefit.cs" />
@@ -80,9 +81,16 @@
     <Compile Include="classes\Member_Capital.cs" />
     <Compile Include="classes\Member_Standing.cs" />
     <Compile Include="classes\PassSlip.cs" />
+    <Compile Include="classes\Payment.cs" />
     <Compile Include="classes\Person.cs" />
     <Compile Include="classes\Position.cs" />
     <Compile Include="classes\Schedule.cs" />
+    <Compile Include="forms\emp\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\emp\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\emp\frmEmpBasicPay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +202,24 @@
     </Compile>
     <Compile Include="userctrl\custom\mit_time_ctrl.Designer.cs">
       <DependentUpon>mit_time_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\day_marker\day_marker_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\day_marker\day_marker_ctrl.Designer.cs">
+      <DependentUpon>day_marker_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\day_marker\day_marker_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\day_marker\day_marker_new.Designer.cs">
+      <DependentUpon>day_marker_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\day_marker\day_marker_update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\day_marker\day_marker_update.Designer.cs">
+      <DependentUpon>day_marker_update.cs</DependentUpon>
     </Compile>
     <Compile Include="userctrl\emp\emp_ctrl.cs">
       <SubType>UserControl</SubType>
@@ -429,6 +455,9 @@
     <Compile Include="userctrl\supply_request\supply_request_ctrl.Designer.cs">
       <DependentUpon>supply_request_ctrl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="forms\emp\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\emp\frmEmpBasicPay.resx">
       <DependentUpon>frmEmpBasicPay.cs</DependentUpon>
     </EmbeddedResource>
@@ -484,6 +513,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\custom\mit_time_ctrl.resx">
       <DependentUpon>mit_time_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\day_marker\day_marker_ctrl.resx">
+      <DependentUpon>day_marker_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\day_marker\day_marker_new.resx">
+      <DependentUpon>day_marker_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\day_marker\day_marker_update.resx">
+      <DependentUpon>day_marker_update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\emp\emp_ctrl.resx">
       <DependentUpon>emp_ctrl.cs</DependentUpon>

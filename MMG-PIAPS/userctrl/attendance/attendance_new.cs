@@ -37,7 +37,7 @@ namespace MMG_PIAPS.userctrl.attendance
                     {
                         bgAnalyzer.CancelAsync();
                         btnOpenFile.Text = "Open Attendance Log";
-                        ENABLE_MAIN_BUTTONS();
+                        //ENABLE_MAIN_BUTTONS();
                       
                     }
                 }
@@ -162,7 +162,7 @@ namespace MMG_PIAPS.userctrl.attendance
 
                         String[] str = line.Split('\t');
                         String empid, date_time, state, work_code;
-                        empid = "TAB-" + str[0];
+                        empid = Convert.ToInt32(str[0]).ToString("0000");
                         date_time = str[1];
                         state = str[2];
                         work_code = str[3];
@@ -180,11 +180,7 @@ namespace MMG_PIAPS.userctrl.attendance
                             bgAnalyzer.ReportProgress(ctr);
                             System.Threading.Thread.Sleep(10);
                         }
-
-                    }
-                   
-                   
-                   
+                    }                                                       
                 }             
         }
 
@@ -196,7 +192,7 @@ namespace MMG_PIAPS.userctrl.attendance
 
         private void bgAnalyzer_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            MessageBox.Show("Finished","Reading Attendance Log");
+            MessageBox.Show("Finished", "Reading Attendance Log");
             pb.Value = 0;
             lblstatus.Text = "0/0";
 
@@ -207,9 +203,24 @@ namespace MMG_PIAPS.userctrl.attendance
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Parent.Height = 0;
-            this.Parent.Controls.Clear();      
-            this.Dispose();
+            if (bgAnalyzer.IsBusy)
+            {
+                if (bgAnalyzer.WorkerSupportsCancellation)
+                {
+                    bgAnalyzer.CancelAsync();
+                    this.BackColor = Color.Red;
+                    this.Parent.Height = 0;
+                    this.Parent.Controls.Clear();
+                    this.Dispose();
+                }
+            }
+            else {
+                this.Parent.Height = 0;
+                this.Parent.Controls.Clear();
+                this.Dispose();
+            }
+            
+            
         }
 
 

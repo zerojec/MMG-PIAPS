@@ -35,9 +35,13 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
+            this.txtpassword = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pbEmpPic = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -85,7 +89,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(504, 30);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Personnel Information and Payroll System";
+            this.label2.Text = "Personnel Information w/ Payroll System";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
@@ -96,11 +100,15 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtid, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtpassword, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pbEmpPic, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 119);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(504, 224);
@@ -111,7 +119,7 @@
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Right;
             this.label3.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(83, 94);
+            this.label3.Location = new System.Drawing.Point(83, 77);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label3.Size = new System.Drawing.Size(66, 35);
@@ -122,13 +130,45 @@
             // 
             this.txtid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtid.Location = new System.Drawing.Point(155, 97);
+            this.txtid.Location = new System.Drawing.Point(155, 80);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(194, 29);
             this.txtid.TabIndex = 1;
-            this.txtid.Text = "TAB-001";
+            this.txtid.Text = "0039";
             this.txtid.TextChanged += new System.EventHandler(this.txtid_TextChanged);
             this.txtid.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtid_KeyDown);
+            // 
+            // txtpassword
+            // 
+            this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpassword.Location = new System.Drawing.Point(155, 115);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.PasswordChar = '*';
+            this.txtpassword.Size = new System.Drawing.Size(194, 29);
+            this.txtpassword.TabIndex = 2;
+            this.txtpassword.Text = "asdf";
+            this.txtpassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tztpassword_KeyDown);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label4.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(72, 112);
+            this.label4.Name = "label4";
+            this.label4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label4.Size = new System.Drawing.Size(77, 35);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Password :";
+            // 
+            // pbEmpPic
+            // 
+            this.pbEmpPic.Image = global::MMG_PIAPS.Properties.Resources.employees;
+            this.pbEmpPic.Location = new System.Drawing.Point(155, 3);
+            this.pbEmpPic.Name = "pbEmpPic";
+            this.pbEmpPic.Size = new System.Drawing.Size(100, 50);
+            this.pbEmpPic.TabIndex = 4;
+            this.pbEmpPic.TabStop = false;
             // 
             // frmLogin
             // 
@@ -149,6 +189,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEmpPic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -162,6 +203,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.TextBox txtpassword;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pbEmpPic;
     }
 }
 

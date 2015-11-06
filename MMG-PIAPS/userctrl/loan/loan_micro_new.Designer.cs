@@ -422,7 +422,7 @@
             "6- Months",
             "9- Months",
             "12- Months"});
-            this.cboamortization_period.Location = new System.Drawing.Point(213, 33);
+            this.cboamortization_period.Location = new System.Drawing.Point(213, 34);
             this.cboamortization_period.Name = "cboamortization_period";
             this.cboamortization_period.Size = new System.Drawing.Size(121, 25);
             this.cboamortization_period.TabIndex = 45;
@@ -496,7 +496,7 @@
             this.cbopayment_mode.Items.AddRange(new object[] {
             "MONTHLY",
             "BI-MONTHLY"});
-            this.cbopayment_mode.Location = new System.Drawing.Point(213, 63);
+            this.cbopayment_mode.Location = new System.Drawing.Point(213, 64);
             this.cbopayment_mode.Name = "cbopayment_mode";
             this.cbopayment_mode.Size = new System.Drawing.Size(121, 25);
             this.cbopayment_mode.TabIndex = 47;
@@ -511,7 +511,7 @@
             "15th",
             "30th",
             "15th and 30th"});
-            this.cbocollection_day.Location = new System.Drawing.Point(213, 93);
+            this.cbocollection_day.Location = new System.Drawing.Point(213, 94);
             this.cbocollection_day.Name = "cbocollection_day";
             this.cbocollection_day.Size = new System.Drawing.Size(121, 25);
             this.cbocollection_day.TabIndex = 49;

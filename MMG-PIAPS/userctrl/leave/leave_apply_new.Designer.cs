@@ -45,9 +45,9 @@
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -255,6 +255,16 @@
             this.panel1.Size = new System.Drawing.Size(630, 35);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -269,16 +279,6 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // leave_apply_new
             // 

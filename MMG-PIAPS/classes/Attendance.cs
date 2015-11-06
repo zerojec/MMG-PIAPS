@@ -149,8 +149,8 @@ namespace MMG_PIAPS.classes
                     li.Text = ctr.ToString();
                     li.SubItems.Add(r["fullname"].ToString());                  
                     li.SubItems.Add(r["position_"].ToString());
-                    li.SubItems.Add(r["date_time"].ToString());
-                    li.SubItems.Add(r["state"].ToString());
+                    li.SubItems.Add(Convert.ToDateTime(r["date_"].ToString()).ToString("MMMM dd, yyyy"));
+                    li.SubItems.Add(r["attendance"].ToString());
                 // li.SubItems.Add(Convert.ToDateTime(r["date_updated"].ToString()).ToLongDateString());
                     lv.Items.Add(li);
                     ctr++;

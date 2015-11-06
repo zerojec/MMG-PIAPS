@@ -3,6 +3,7 @@ using MMG_PIAPS.modules;
 using MMG_PIAPS.userctrl;
 using MMG_PIAPS.userctrl.attendance;
 using MMG_PIAPS.userctrl.benefit;
+using MMG_PIAPS.userctrl.day_marker;
 using MMG_PIAPS.userctrl.emp;
 using MMG_PIAPS.userctrl.emp_benefit;
 using MMG_PIAPS.userctrl.emp_restriction;
@@ -101,7 +102,6 @@ namespace MMG_PIAPS.forms
             {               
                 CreateThisButton(view_profile_Click, Image.FromHbitmap(Properties.Resources.eomployee_profile.GetHbitmap()), "Profile");                             
             }
-
 
             //IF CURRENT USER CAN VIEW ATTENDANCE
             if (Global.CURRENT_USER.restriction.CAN_VIEW_ATTENDANCE)
@@ -509,10 +509,21 @@ namespace MMG_PIAPS.forms
             lbldbcon.Text = db.con.State.ToString();
             lblCurrentDateAndTime.Text = "Today is : " +  DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToLongTimeString();
 
+
+
             tbldataPanel.Width = 0;
             tbldataPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.None;
             CurrUserPic.Width = 0;
             tbldataPanel.Controls.Clear();
+
+
+            if (!Global.CURRENT_USER.ISLOGGEDIN) {
+                Global.CURRENT_USER = null;
+                frmLogin frm = new frmLogin();
+                frm.Show();
+                timer1.Enabled = false;
+                this.Dispose();
+            }
          
          }
 
@@ -645,6 +656,15 @@ namespace MMG_PIAPS.forms
         private void timer2_Tick(object sender, EventArgs e)
         {
             
+        }
+
+        private void holidaysSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            day_marker_ctrl c = new day_marker_ctrl();
+            c.Width = pnlops.Width;
+            c.Height = pnlops.Height;
+            pnlops.Controls.Add(c);
         }
     }
 }

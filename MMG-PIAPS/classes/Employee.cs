@@ -7,6 +7,7 @@ using MySql.Data.MySqlClient;
 using MMG_PIAPS.modules;
 using System.Data;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace MMG_PIAPS.classes
 {
@@ -31,9 +32,8 @@ namespace MMG_PIAPS.classes
         public String COOP_MEMBERSHIP_ID { get; set; }
         public String tinno { get; set; }
 
-
-
-
+        public string password { get; set; }
+        public Boolean ISLOGGEDIN { get; set; }
 
 
         public Boolean save()
@@ -42,8 +42,11 @@ namespace MMG_PIAPS.classes
             cmd.Connection = db.con;
             cmd.CommandText = "EMP_INSERT";
             cmd.CommandType = CommandType.StoredProcedure;
+          
 
-            cmd.Parameters.AddWithValue("_empid", empid);
+          
+
+            cmd.Parameters.AddWithValue("_empid", Convert.ToInt32(empid).ToString("0000"));
             cmd.Parameters.AddWithValue("_fname", fname);
             cmd.Parameters.AddWithValue("_lname", lname);
             cmd.Parameters.AddWithValue("_mname", mname);
@@ -53,19 +56,30 @@ namespace MMG_PIAPS.classes
             cmd.Parameters.AddWithValue("_address", address);
             cmd.Parameters.AddWithValue("_emp_status", emp_status);
             cmd.Parameters.AddWithValue("_imagearr", pic);
-            cmd.Parameters.AddWithValue("_imagesize", pic.Length);
+            int length = (pic != null) ? pic.Length : 0;
+            cmd.Parameters.AddWithValue("_imagesize", length);
             cmd.Parameters.AddWithValue("_emp_position", position); 
             cmd.Parameters.AddWithValue("_branchid", branch);
             cmd.Parameters.AddWithValue("_tinno", tinno);
+          
+            
+            //encrypt password
+            using (MD5 md5Hash = MD5.Create())
+            {
+                string hash = Global.GetMd5Hash(md5Hash, password);
+                cmd.Parameters.AddWithValue("_pword", hash);
+            }
+                       
 
+              
             try
             {
                 //db.con.Open();
                 cmd.ExecuteNonQuery();
                 
                 BasicPay p = new BasicPay();
-                p.empid = empid;
-                p.basic_pay = basic_pay;
+                p.empid = Convert.ToInt32(this.empid).ToString("0000");
+                p.basic_pay = this.basic_pay;
                 p.date_updated = DateTime.Now;
                 
                 if (p.save()){
@@ -79,9 +93,48 @@ namespace MMG_PIAPS.classes
             {
                 db.err = null;
                 db.err = e;
+
+                Logger.WriteErrorLog("ERROR : EMPLOYEE SAVE MODULE :" + e.Message);
                 return false;
             }
         }//end save
+
+
+
+
+
+
+
+        public Boolean delete()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = db.con;
+            cmd.CommandText = "EMP_DELETE";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("_empid", Convert.ToInt32(empid).ToString("0000"));
+      
+            try
+            {
+                //db.con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                db.err = null;
+                db.err = e;
+
+                Logger.WriteErrorLog("ERROR : EMPLOYEE SAVE MODULE :" + e.Message);
+                return false;
+            }
+        }//end save
+
+
+
+
+
+
 
 
         public Boolean update()
@@ -121,6 +174,47 @@ namespace MMG_PIAPS.classes
                 return false;
             }
         }
+
+
+
+
+
+
+
+
+        public Boolean update_password()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = db.con;
+            cmd.CommandText = "EMP_UPDATE_PASSWORD";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("_empid", empid);
+            using (MD5 md5Hash = MD5.Create())
+            {
+                string hash = Global.GetMd5Hash(md5Hash, password);
+                cmd.Parameters.AddWithValue("_pword", hash);
+            }
+
+
+            try
+            {
+                //db.con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                db.err = null;
+                db.err = e;
+                Logger.WriteErrorLog("ERROR EMPLOYEE_UPDATE_PASSWORD :" + e.Message);
+                return false;
+            }
+        }
+
+
+
+
 
 
 
@@ -246,6 +340,53 @@ namespace MMG_PIAPS.classes
             }
 
         }
+
+
+
+
+
+        public Employee SELECT_BY_IDPASS()
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "EMP_SELECT_BY_IDPASS");
+            cmd.Parameters.AddWithValue("_empid", empid);
+            cmd.Parameters.AddWithValue("_pword", password);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+
+            if (dt != null)
+            {
+                if (dt.Rows.Count > 0)
+                {
+                    Employee e = new Employee();
+                    foreach (DataRow r in dt.Rows)
+                    {
+                        e.empid = r["empid"].ToString();
+                        e.fname = r["fname"].ToString();
+                        e.lname = r["lname"].ToString();
+                        e.mname = r["mname"].ToString();
+                        e.address = r["address"].ToString();
+                        e.birthdate = Convert.ToDateTime(r["birthday"].ToString());
+                        e.contactno = r["contactno"].ToString();
+                        e.gender = r["gender"].ToString();
+                        e.COOP_MEMBERSHIP_ID = r["COOP_MEMBERSHIP_ID"].ToString();
+                        e.tinno = r["tinno"].ToString();
+                        e.password = r["pword"].ToString();
+
+                    }
+                    return e;
+                }
+                else { return null; }
+
+            }
+            else
+            {
+                return null;
+            }
+
+        }
+
 
 
         public Byte[] GET_IMAGE_BY_ID(){
@@ -585,8 +726,19 @@ namespace MMG_PIAPS.classes
 
 
 
+            public bool Logout()
+            {
+                this.ISLOGGEDIN = false;
+                if (ISLOGGEDIN == false)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
 
-
+            }
 
 
 

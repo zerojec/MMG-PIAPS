@@ -72,7 +72,7 @@
             this.viewPaidUpCapitalToolStripMenuItem.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewPaidUpCapitalToolStripMenuItem.Name = "viewPaidUpCapitalToolStripMenuItem";
             this.viewPaidUpCapitalToolStripMenuItem.Size = new System.Drawing.Size(181, 24);
-            this.viewPaidUpCapitalToolStripMenuItem.Text = "Capital Buidl-Up";
+            this.viewPaidUpCapitalToolStripMenuItem.Text = "Capital Build-Up";
             this.viewPaidUpCapitalToolStripMenuItem.Click += new System.EventHandler(this.viewPaidUpCapitalToolStripMenuItem_Click);
             // 
             // contextMenu

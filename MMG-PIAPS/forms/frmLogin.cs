@@ -6,12 +6,16 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 
 namespace MMG_PIAPS
 {
+ 
+    
     public partial class frmLogin : Form
     {
         public frmLogin()
@@ -21,19 +25,50 @@ namespace MMG_PIAPS
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-           
+            Global.CURRENT_USER = new Employee();
+            //Global.CREATE_JECBASCO();
         
         }      
         private void txtid_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode.ToString().Equals("Return"))
             {
+                txtpassword.Focus();
+            }
+        }
+
+
+        private void txtid_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tztpassword_KeyDown(object sender, KeyEventArgs e)
+        {
+
+           
+
+
+
+           if (e.KeyCode.ToString().Equals("Return"))
+            {
 
                 Employee emp, emp1 = new Employee();
-                emp1.empid = txtid.Text;
-                emp = emp1.SELECT_BY_ID();
+                emp1.empid = txtid.Text;                
+                String hash;
+                using (MD5 md5Hash = MD5.Create())
+                {               
+                    hash = Global.GetMd5Hash(md5Hash, txtpassword.Text);
+                }
 
-                if (emp != null) {
+                emp1.password = hash;
+                emp = emp1.SELECT_BY_IDPASS();
+
+                //MessageBox.Show(hash);
+
+                if (emp != null)
+                {
+
 
                     Global.CURRENT_USER.empid = emp.empid;
                     Global.CURRENT_USER = emp;
@@ -47,30 +82,29 @@ namespace MMG_PIAPS
                     Emp_Restriction r = new Emp_Restriction();
                     //SET CURRENT USER RESTRICTION 
                     r.empid = Global.CURRENT_USER.empid;
-                    Global.CURRENT_USER.restriction=r.SELECT_BY_ID();
+                    Global.CURRENT_USER.restriction = r.SELECT_BY_ID();
                     Global.CURRENT_USER.LIST_BENEFITS();
 
-                    
+
                     //GET CURRENT USER LATEST SCHEDULE
                     Emp_Sched es = new Emp_Sched();
                     es.empid = Global.CURRENT_USER.empid;
                     Global.CURRENT_USER.schedule = es.SELECT_BY_EMPID();
 
+                    Global.CURRENT_USER.ISLOGGEDIN = true;
 
                     frmMain f = new frmMain();
                     f.Show();
-                 
-                    this.Hide(); 
-                              
+
+                    this.Hide();
+
                 }
-                
-               
+                else {
+                    MessageBox.Show("Nothing found");
+                }
+
+
             }
-        }
-
-        private void txtid_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
