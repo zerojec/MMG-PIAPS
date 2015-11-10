@@ -163,7 +163,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 400F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 3, 0);
             this.tableLayoutPanel3.Controls.Add(this.txtMemberID, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.txtCurrentPaidUp, 2, 1);
@@ -210,7 +210,7 @@
             this.tableLayoutPanel3.SetRowSpan(this.tableLayoutPanel4, 7);
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(139, 216);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(140, 216);
             this.tableLayoutPanel4.TabIndex = 42;
             // 
             // label8
@@ -220,7 +220,7 @@
             this.label8.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(3, 8);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(133, 19);
+            this.label8.Size = new System.Drawing.Size(134, 19);
             this.label8.TabIndex = 0;
             this.label8.Text = "Transaction List";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -233,7 +233,7 @@
             this.lstTransactionList.ItemHeight = 15;
             this.lstTransactionList.Location = new System.Drawing.Point(3, 38);
             this.lstTransactionList.Name = "lstTransactionList";
-            this.lstTransactionList.Size = new System.Drawing.Size(133, 175);
+            this.lstTransactionList.Size = new System.Drawing.Size(134, 175);
             this.lstTransactionList.TabIndex = 1;
             // 
             // txtMemberID

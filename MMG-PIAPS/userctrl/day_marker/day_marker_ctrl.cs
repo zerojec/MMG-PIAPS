@@ -14,6 +14,10 @@ namespace MMG_PIAPS.userctrl.day_marker
     {
 
        
+
+
+
+
         public day_marker_ctrl()
         {
             InitializeComponent();
@@ -48,7 +52,10 @@ namespace MMG_PIAPS.userctrl.day_marker
                 Day_Marker dm = new Day_Marker();
 
                 day_marker_update c = new day_marker_update();
-                
+
+
+               // MessageBox.Show(dateoftheyear);
+
                 c.dm = dm.SELECT_BY_DATE(dateoftheyear);
 
                 c.Width = pnlops.Width;

@@ -1,6 +1,7 @@
 C:\projects\MMG-PIAPS\MMG-PIAPS\bin\Debug\MMG-PIAPS.exe.config
 C:\projects\MMG-PIAPS\MMG-PIAPS\bin\Debug\MMG-PIAPS.exe
 C:\projects\MMG-PIAPS\MMG-PIAPS\bin\Debug\MMG-PIAPS.pdb
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.attendance.frmAttendance_Fixer.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.emp.frmChangePassword.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.emp.frmEmpBasicPay.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.emp.frmEmpBranchAssignment.resources
@@ -14,12 +15,18 @@ C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.frmMain.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.Properties.Resources.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.attendance.attendance_ctrl.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.attendance.attendance_current_user.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.attendance.attendance_entry.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.attendance.attendance_new.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.benefit.benefit_ctrl.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.benefit.benefit_new.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.custom.mit_decimal_textbox.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.custom.mit_sched_template.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.custom.mit_time_ctrl.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.cutoff.cutoff_ctrl.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.cutoff.cutoff_new.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.day_marker.day_marker_ctrl.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.day_marker.day_marker_new.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.day_marker.day_marker_update.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.emp_ctrl.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.emp.emp_new.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.emp.emp_profile_current_user.resources
@@ -62,6 +69,6 @@ C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.supply_request.supp
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.csproj.GenerateResource.Cache
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.exe
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.pdb
-C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.day_marker.day_marker_ctrl.resources
-C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.day_marker.day_marker_new.resources
-C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.day_marker.day_marker_update.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.cutoff.cutoff_details_ctrl.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.cutoff.frmCutoffDetails.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG-PIAPS.csprojResolveAssemblyReference.cache

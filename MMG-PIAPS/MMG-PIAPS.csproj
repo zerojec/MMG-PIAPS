@@ -68,6 +68,8 @@
     <Compile Include="classes\BasicPay.cs" />
     <Compile Include="classes\Benefit.cs" />
     <Compile Include="classes\Branch.cs" />
+    <Compile Include="classes\Cutoff.cs" />
+    <Compile Include="classes\Cutoff_Details.cs" />
     <Compile Include="classes\Day_Marker.cs" />
     <Compile Include="classes\Member.cs" />
     <Compile Include="classes\Employee.cs" />
@@ -85,6 +87,18 @@
     <Compile Include="classes\Person.cs" />
     <Compile Include="classes\Position.cs" />
     <Compile Include="classes\Schedule.cs" />
+    <Compile Include="forms\attendance\frmAttendance_Fixer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\attendance\frmAttendance_Fixer.Designer.cs">
+      <DependentUpon>frmAttendance_Fixer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\cutoff\frmCutoffDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\cutoff\frmCutoffDetails.Designer.cs">
+      <DependentUpon>frmCutoffDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\emp\frmChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +175,12 @@
     <Compile Include="userctrl\attendance\attendance_ctrl.Designer.cs">
       <DependentUpon>attendance_ctrl.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\attendance\attendance_entry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\attendance\attendance_entry.Designer.cs">
+      <DependentUpon>attendance_entry.cs</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\attendance\attendance_new.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -202,6 +222,24 @@
     </Compile>
     <Compile Include="userctrl\custom\mit_time_ctrl.Designer.cs">
       <DependentUpon>mit_time_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\cutoff\cutoff_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\cutoff\cutoff_ctrl.Designer.cs">
+      <DependentUpon>cutoff_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\cutoff\cutoff_details_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\cutoff\cutoff_details_ctrl.Designer.cs">
+      <DependentUpon>cutoff_details_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\cutoff\cutoff_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\cutoff\cutoff_new.Designer.cs">
+      <DependentUpon>cutoff_new.cs</DependentUpon>
     </Compile>
     <Compile Include="userctrl\day_marker\day_marker_ctrl.cs">
       <SubType>UserControl</SubType>
@@ -455,6 +493,12 @@
     <Compile Include="userctrl\supply_request\supply_request_ctrl.Designer.cs">
       <DependentUpon>supply_request_ctrl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="forms\attendance\frmAttendance_Fixer.resx">
+      <DependentUpon>frmAttendance_Fixer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\cutoff\frmCutoffDetails.resx">
+      <DependentUpon>frmCutoffDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\emp\frmChangePassword.resx">
       <DependentUpon>frmChangePassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -496,6 +540,9 @@
     <EmbeddedResource Include="userctrl\attendance\attendance_current_user.resx">
       <DependentUpon>attendance_current_user.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\attendance\attendance_entry.resx">
+      <DependentUpon>attendance_entry.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userctrl\attendance\attendance_new.resx">
       <DependentUpon>attendance_new.cs</DependentUpon>
     </EmbeddedResource>
@@ -513,6 +560,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\custom\mit_time_ctrl.resx">
       <DependentUpon>mit_time_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\cutoff\cutoff_ctrl.resx">
+      <DependentUpon>cutoff_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\cutoff\cutoff_details_ctrl.resx">
+      <DependentUpon>cutoff_details_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\cutoff\cutoff_new.resx">
+      <DependentUpon>cutoff_new.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\day_marker\day_marker_ctrl.resx">
       <DependentUpon>day_marker_ctrl.cs</DependentUpon>
@@ -952,6 +1008,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\mmg.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

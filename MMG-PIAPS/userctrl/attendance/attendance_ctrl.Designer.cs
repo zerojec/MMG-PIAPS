@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -46,11 +47,14 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.attendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlops = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.contextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -89,7 +93,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
             this.tableLayoutPanel2.Controls.Add(this.btnNew, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(164, 0);
@@ -103,9 +107,9 @@
             // 
             this.btnNew.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnNew.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.Location = new System.Drawing.Point(357, 3);
+            this.btnNew.Location = new System.Drawing.Point(354, 3);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(134, 34);
+            this.btnNew.Size = new System.Drawing.Size(137, 34);
             this.btnNew.TabIndex = 0;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
@@ -121,7 +125,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
             this.tableLayoutPanel3.Controls.Add(this.dtpTo, 4, 0);
             this.tableLayoutPanel3.Controls.Add(this.chkDate, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.chkEmp, 0, 0);
@@ -134,16 +138,16 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(354, 40);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(351, 40);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // dtpTo
             // 
             this.dtpTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpTo.Location = new System.Drawing.Point(226, 9);
+            this.dtpTo.Location = new System.Drawing.Point(222, 9);
             this.dtpTo.Name = "dtpTo";
-            this.dtpTo.Size = new System.Drawing.Size(35, 22);
+            this.dtpTo.Size = new System.Drawing.Size(33, 22);
             this.dtpTo.TabIndex = 4;
             // 
             // chkDate
@@ -151,7 +155,7 @@
             this.chkDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.chkDate.AutoSize = true;
             this.chkDate.ForeColor = System.Drawing.Color.White;
-            this.chkDate.Location = new System.Drawing.Point(112, 10);
+            this.chkDate.Location = new System.Drawing.Point(110, 10);
             this.chkDate.Margin = new System.Windows.Forms.Padding(0);
             this.chkDate.Name = "chkDate";
             this.chkDate.Size = new System.Drawing.Size(70, 19);
@@ -182,25 +186,25 @@
             this.cboEmp.FormattingEnabled = true;
             this.cboEmp.Location = new System.Drawing.Point(73, 9);
             this.cboEmp.Name = "cboEmp";
-            this.cboEmp.Size = new System.Drawing.Size(36, 23);
+            this.cboEmp.Size = new System.Drawing.Size(34, 23);
             this.cboEmp.TabIndex = 1;
             // 
             // dtpFrom
             // 
             this.dtpFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFrom.Location = new System.Drawing.Point(185, 9);
+            this.dtpFrom.Location = new System.Drawing.Point(183, 9);
             this.dtpFrom.Name = "dtpFrom";
-            this.dtpFrom.Size = new System.Drawing.Size(35, 22);
+            this.dtpFrom.Size = new System.Drawing.Size(33, 22);
             this.dtpFrom.TabIndex = 3;
             // 
             // btnFilter
             // 
             this.btnFilter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnFilter.Font = new System.Drawing.Font("Tw Cen MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilter.Location = new System.Drawing.Point(267, 3);
+            this.btnFilter.Location = new System.Drawing.Point(261, 3);
             this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(84, 34);
+            this.btnFilter.Size = new System.Drawing.Size(87, 34);
             this.btnFilter.TabIndex = 5;
             this.btnFilter.Text = "Filter";
             this.btnFilter.UseVisualStyleBackColor = true;
@@ -226,6 +230,7 @@
             this.columnHeader7,
             this.columnHeader8,
             this.columnHeader2});
+            this.lv.ContextMenuStrip = this.contextMenu;
             this.lv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lv.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lv.FullRowSelect = true;
@@ -262,6 +267,22 @@
             this.columnHeader2.Text = "Attendance";
             this.columnHeader2.Width = 250;
             // 
+            // contextMenu
+            // 
+            this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.attendanceToolStripMenuItem});
+            this.contextMenu.Name = "contextMenu";
+            this.contextMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.contextMenu.Size = new System.Drawing.Size(217, 28);
+            // 
+            // attendanceToolStripMenuItem
+            // 
+            this.attendanceToolStripMenuItem.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.attendanceToolStripMenuItem.Name = "attendanceToolStripMenuItem";
+            this.attendanceToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
+            this.attendanceToolStripMenuItem.Text = "Attendance Correction";
+            this.attendanceToolStripMenuItem.Click += new System.EventHandler(this.attendanceToolStripMenuItem_Click);
+            // 
             // pnlops
             // 
             this.pnlops.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -285,6 +306,7 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.contextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -310,5 +332,7 @@
         private System.Windows.Forms.Button btnFilter;
         private System.Windows.Forms.Panel pnlops;
         private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ContextMenuStrip contextMenu;
+        private System.Windows.Forms.ToolStripMenuItem attendanceToolStripMenuItem;
     }
 }

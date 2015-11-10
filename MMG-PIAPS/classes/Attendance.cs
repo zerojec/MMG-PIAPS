@@ -41,6 +41,32 @@ namespace MMG_PIAPS.classes
 
 
 
+
+
+
+
+        public Boolean delete()
+        {
+
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "ATTENDANCE_DELETE");
+            cmd.Parameters.AddWithValue("_empid", empid);
+            cmd.Parameters.AddWithValue("_thisdate", date_time);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                db.err = null;
+                db.err = e;
+                Logger.WriteErrorLog(e.Message.ToString());
+                return false;
+            }
+        }//end save
+
         public DataTable SELECT_ALL()
         {
             DataTable dt = new DataTable();
@@ -59,6 +85,32 @@ namespace MMG_PIAPS.classes
             }
 
         }//end select all
+
+
+
+
+        public DataTable SELECT_BYID_BYDATE(DateTime thisdate)
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "ATTENDANCE_BYID_BYDATE");
+            cmd.Parameters.AddWithValue("_empid", empid);
+            cmd.Parameters.AddWithValue("_thisdate", thisdate);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog("ATTENDANCE ATTENDANCE_BYID_BYDATE MODULE :" + e.Message);
+                return null;
+            }
+
+        }//end select all
+
+
 
 
         public DataTable SELECT_BETWEEN_DATES(DateTime from, DateTime to)
@@ -139,7 +191,16 @@ namespace MMG_PIAPS.classes
             Attendance a = new Attendance();
             DataTable dt = new DataTable();
 
-            dt = a.SELECT_ALL();
+            String month = DateTime.Now.ToString("MMMM");
+            String year = DateTime.Now.ToString("yyyy");
+            int firstday = 1;
+            int lastday= DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month);
+
+            DateTime from_ = Convert.ToDateTime(month + " " + firstday.ToString() + ", " + year.ToString());
+            DateTime to_= Convert.ToDateTime(month + " " + lastday.ToString() + ", " + year.ToString());
+
+
+            dt = a.SELECT_BETWEEN_DATES(from_,to_);
             if (dt != null)
             {
                 int ctr = 1;
@@ -150,7 +211,8 @@ namespace MMG_PIAPS.classes
                     li.SubItems.Add(r["fullname"].ToString());                  
                     li.SubItems.Add(r["position_"].ToString());
                     li.SubItems.Add(Convert.ToDateTime(r["date_"].ToString()).ToString("MMMM dd, yyyy"));
-                    li.SubItems.Add(r["attendance"].ToString());
+                    li.SubItems.Add(Convert.ToDateTime(r["attendance"].ToString()).ToString("HH:mm:ss"));
+                    li.Tag = r["empid"].ToString();
                 // li.SubItems.Add(Convert.ToDateTime(r["date_updated"].ToString()).ToLongDateString());
                     lv.Items.Add(li);
                     ctr++;

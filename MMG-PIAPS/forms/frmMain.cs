@@ -3,6 +3,7 @@ using MMG_PIAPS.modules;
 using MMG_PIAPS.userctrl;
 using MMG_PIAPS.userctrl.attendance;
 using MMG_PIAPS.userctrl.benefit;
+using MMG_PIAPS.userctrl.cutoff;
 using MMG_PIAPS.userctrl.day_marker;
 using MMG_PIAPS.userctrl.emp;
 using MMG_PIAPS.userctrl.emp_benefit;
@@ -110,6 +111,8 @@ namespace MMG_PIAPS.forms
             }
 
 
+           
+
             //IF CURRENT USER CAN VIEW RESTRICTION
             if (Global.CURRENT_USER.restriction.CAN_VIEW_RESTRICTION)
             {
@@ -190,6 +193,12 @@ namespace MMG_PIAPS.forms
                 CreateThisAdminButton(administer_attendance_Click, Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap()), "Attendance");
             }
 
+            if (Global.CURRENT_USER.restriction.CAN_ADMINISTER_CUTOFF)
+            {
+                CreateThisAdminButton(administer_cutoff_Click, Image.FromHbitmap(Properties.Resources.supply_request.GetHbitmap()), "Cutoff");
+            }
+
+
 
             if (Global.CURRENT_USER.restriction.CAN_ADMINISTER_SUPPLY_REQUEST)
             {
@@ -239,7 +248,7 @@ namespace MMG_PIAPS.forms
             b.Text = Title;
             //b.Image = img;
            // b.ImageAlign = ContentAlignment.MiddleCenter;
-            b.Width = 150;
+            b.Width = 120;
 
             var margin = b.Margin;
 
@@ -361,6 +370,16 @@ namespace MMG_PIAPS.forms
             //throw new NotImplementedException();
         }
 
+        void administer_cutoff_Click(object sender, EventArgs e)
+        {
+            pnlops.Controls.Clear();
+            cutoff_ctrl eu = new cutoff_ctrl();
+            eu.Width = pnlops.Width;
+            eu.Height = pnlops.Height;
+            pnlops.Controls.Add(eu);
+
+            //throw new NotImplementedException();
+        }
 
 
         void view_supply_request_Click(object sender, EventArgs e)
@@ -489,6 +508,9 @@ namespace MMG_PIAPS.forms
             pnlops.Controls.Add(eu); 
             //throw new NotImplementedException();
         }
+
+
+      
 
         void update_employee_Click(object sender, EventArgs e)
         {

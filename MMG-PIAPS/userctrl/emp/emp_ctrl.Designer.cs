@@ -47,6 +47,7 @@
             this.viewBenefitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlops = new System.Windows.Forms.Panel();
+            this.attendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -186,10 +187,11 @@
             this.viewProfileToolStripMenuItem,
             this.viewScheduleToolStripMenuItem,
             this.viewBenefitsToolStripMenuItem,
-            this.updateInfoToolStripMenuItem});
+            this.updateInfoToolStripMenuItem,
+            this.attendanceToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
             this.contextMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.contextMenu.Size = new System.Drawing.Size(154, 122);
+            this.contextMenu.Size = new System.Drawing.Size(154, 146);
             this.contextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenu_Opening);
             // 
             // viewProfileToolStripMenuItem
@@ -235,6 +237,14 @@
             this.pnlops.TabIndex = 2;
             this.pnlops.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlops_Paint);
             // 
+            // attendanceToolStripMenuItem
+            // 
+            this.attendanceToolStripMenuItem.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.attendanceToolStripMenuItem.Name = "attendanceToolStripMenuItem";
+            this.attendanceToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.attendanceToolStripMenuItem.Text = "Attendance";
+            this.attendanceToolStripMenuItem.Click += new System.EventHandler(this.attendanceToolStripMenuItem_Click);
+            // 
             // emp_ctrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -273,5 +283,6 @@
         private System.Windows.Forms.ToolStripMenuItem updateInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewScheduleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewBenefitsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem attendanceToolStripMenuItem;
     }
 }

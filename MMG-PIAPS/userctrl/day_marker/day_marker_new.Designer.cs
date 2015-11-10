@@ -37,18 +37,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dtdateoftheyear = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -70,8 +70,8 @@
             this.cbotype.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbotype.FormattingEnabled = true;
             this.cbotype.Items.AddRange(new object[] {
-            "Regular Holiday",
-            "Special Non-Working Holiday"});
+            "REGULAR_HOLIDAY",
+            "SPECIAL_NON_WORKING_HOLIDAY"});
             this.cbotype.Location = new System.Drawing.Point(115, 66);
             this.cbotype.Name = "cbotype";
             this.cbotype.Size = new System.Drawing.Size(170, 23);
@@ -128,6 +128,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(708, 35);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -218,16 +228,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(708, 173);
             this.tableLayoutPanel1.TabIndex = 34;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // day_marker_new
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -238,11 +238,11 @@
             this.Size = new System.Drawing.Size(708, 173);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

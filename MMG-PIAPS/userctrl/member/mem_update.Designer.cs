@@ -67,8 +67,8 @@
             this.chkfiftyk = new System.Windows.Forms.CheckBox();
             this.chkpatronage = new System.Windows.Forms.CheckBox();
             this.chkattendance = new System.Windows.Forms.CheckBox();
-            this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.txtid = new System.Windows.Forms.Label();
+            this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -570,10 +570,6 @@
             this.chkattendance.UseVisualStyleBackColor = true;
             this.chkattendance.CheckedChanged += new System.EventHandler(this.chkattendance_CheckedChanged);
             // 
-            // ofd
-            // 
-            this.ofd.FileName = "openFileDialog1";
-            // 
             // txtid
             // 
             this.txtid.AutoSize = true;
@@ -589,6 +585,10 @@
             this.txtid.TabIndex = 4;
             this.txtid.Text = "Standing :";
             this.txtid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ofd
+            // 
+            this.ofd.FileName = "openFileDialog1";
             // 
             // mem_update
             // 

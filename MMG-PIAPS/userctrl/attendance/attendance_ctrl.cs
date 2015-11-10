@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using MMG_PIAPS.classes;
+using MMG_PIAPS.forms.attendance;
 
 namespace MMG_PIAPS.userctrl.attendance
 {
@@ -106,8 +107,10 @@ namespace MMG_PIAPS.userctrl.attendance
                     li.Text = ctr.ToString();
                     li.SubItems.Add(r["fullname"].ToString());
                     li.SubItems.Add(r["position_"].ToString());
-                    li.SubItems.Add(r["date_time"].ToString());
-                    li.SubItems.Add(r["state"].ToString());
+                    li.SubItems.Add(Convert.ToDateTime(r["date_"].ToString()).ToShortDateString());
+                    li.SubItems.Add(r["attendance"].ToString());
+                    li.Tag = r["empid"].ToString();
+
                     // li.SubItems.Add(Convert.ToDateTime(r["date_updated"].ToString()).ToLongDateString());
                     lv.Items.Add(li);
                     ctr++;
@@ -139,8 +142,10 @@ namespace MMG_PIAPS.userctrl.attendance
                     li.Text = ctr.ToString();
                     li.SubItems.Add(r["fullname"].ToString());
                     li.SubItems.Add(r["position_"].ToString());
-                    li.SubItems.Add(r["date_time"].ToString());
-                    li.SubItems.Add(r["state"].ToString());
+                    li.SubItems.Add(Convert.ToDateTime(r["date_"].ToString()).ToString("MMMM dd, yyyy"));
+                    li.SubItems.Add(Convert.ToDateTime(r["attendance"].ToString()).ToString("hh:mm:ss tt"));
+                 
+                    li.Tag = r["empid"].ToString();
                     // li.SubItems.Add(Convert.ToDateTime(r["date_updated"].ToString()).ToLongDateString());
                     lv.Items.Add(li);
                     ctr++;
@@ -174,8 +179,9 @@ namespace MMG_PIAPS.userctrl.attendance
                         li.Text = ctr.ToString();
                         li.SubItems.Add(r["fullname"].ToString());
                         li.SubItems.Add(r["position_"].ToString());
-                        li.SubItems.Add(r["date_time"].ToString());
-                        li.SubItems.Add(r["state"].ToString());
+                        li.SubItems.Add(Convert.ToDateTime(r["date_"].ToString()).ToLongDateString());
+                        li.SubItems.Add(r["attendance"].ToString());
+                        li.Tag = r["empid"].ToString();
                         // li.SubItems.Add(Convert.ToDateTime(r["date_updated"].ToString()).ToLongDateString());
                         lv.Items.Add(li);
                         ctr++;
@@ -188,8 +194,36 @@ namespace MMG_PIAPS.userctrl.attendance
 
             }
 
-        }// end load between dates
+        }
 
+        private void attendanceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+
+            if (lv.SelectedItems.Count > 0)
+            {
+                String id = lv.SelectedItems[0].Tag.ToString();
+
+                DateTime dtime = Convert.ToDateTime(lv.SelectedItems[0].SubItems[3].Text);
+
+                Employee emp, emp1 = new Employee();
+                emp1.empid = id;
+
+                emp = emp1.SELECT_BY_ID();
+
+                emp.GET_CURRENT_POSITION();
+                emp.GET_IMAGE_BY_ID();
+
+                pnlops.Controls.Clear();
+
+                frmAttendance_Fixer c = new frmAttendance_Fixer();
+                c.emp = emp;
+                c.thisdate = dtime;
+                c.ShowDialog();
+
+            }
+
+        }
 
     }
 }

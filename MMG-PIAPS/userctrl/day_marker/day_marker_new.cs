@@ -45,7 +45,9 @@ namespace MMG_PIAPS.userctrl.day_marker
 
         private void btncancel_Click(object sender, EventArgs e)
         {
-
+            this.Parent.Height = 0;
+            this.Parent.Controls.Clear();
+            this.Dispose();
         }
     }
 }

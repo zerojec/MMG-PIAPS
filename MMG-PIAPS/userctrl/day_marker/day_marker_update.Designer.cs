@@ -141,8 +141,8 @@
             this.cbotype.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbotype.FormattingEnabled = true;
             this.cbotype.Items.AddRange(new object[] {
-            "Regular Holiday",
-            "Special Non-Working Holiday"});
+            "REGULAR_HOLIDAY",
+            "SPECIAL_NON_WORKING_HOLIDAY"});
             this.cbotype.Location = new System.Drawing.Point(115, 66);
             this.cbotype.Name = "cbotype";
             this.cbotype.Size = new System.Drawing.Size(177, 23);

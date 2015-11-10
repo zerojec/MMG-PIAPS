@@ -13,6 +13,10 @@ namespace MMG_PIAPS.classes
    public class Day_Marker
     {
 
+
+
+
+
         public DateTime dateoftheyear { get; set; }
         public String type_{get;set;}
         public String name_of_holiday{get;set;}
@@ -38,8 +42,6 @@ namespace MMG_PIAPS.classes
                 return false;
             }            
         }//end save
-
-
 
 
 
@@ -179,10 +181,6 @@ namespace MMG_PIAPS.classes
 
 
 
-
-
-
-
           public void LoadInListView(ListView lv)
           {
 
@@ -207,6 +205,10 @@ namespace MMG_PIAPS.classes
               }
 
           }//end load in listview
+
+
+
+
 
 
 

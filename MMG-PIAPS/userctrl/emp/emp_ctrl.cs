@@ -11,6 +11,7 @@ using MMG_PIAPS.classes;
 using MMG_PIAPS.modules;
 using MMG_PIAPS.forms;
 using System.IO;
+using MMG_PIAPS.userctrl.attendance;
 
 namespace MMG_PIAPS.userctrl
 {
@@ -208,6 +209,35 @@ namespace MMG_PIAPS.userctrl
             pnlops.Height = c.Height;
 
             pnlops.Controls.Add(c);
+        }
+
+        private void attendanceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (lv.SelectedItems.Count > 0)
+            {
+                String id = lv.SelectedItems[0].SubItems[1].Text;
+
+
+                Employee emp, emp1 = new Employee();
+                emp1.empid = id;
+
+                emp = emp1.SELECT_BY_ID();
+
+                emp.GET_BASIC_PAY();
+                emp.GET_BRANCH_ASSIGNMENT();
+                emp.GET_EMPLOYMENT_STATUS();
+                emp.GET_IMAGE_BY_ID();
+                emp.GET_CURRENT_POSITION();
+
+                pnlops.Controls.Clear();
+
+                attendance_entry c = new attendance_entry();
+                c.emp = emp;
+                c.Width = pnlops.Width;
+                pnlops.Height = c.Height;
+
+                pnlops.Controls.Add(c);
+            }
         }
     }
 }
