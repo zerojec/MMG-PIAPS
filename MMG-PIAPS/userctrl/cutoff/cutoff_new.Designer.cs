@@ -34,21 +34,21 @@
             this.btnsave = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.txtcutoff_id = new System.Windows.Forms.TextBox();
-            this.dtto_date = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dtfrom_date = new System.Windows.Forms.DateTimePicker();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtcutoff_id = new System.Windows.Forms.TextBox();
+            this.dtfrom_date = new System.Windows.Forms.DateTimePicker();
+            this.dtto_date = new System.Windows.Forms.DateTimePicker();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -117,6 +117,16 @@
             this.panel1.Size = new System.Drawing.Size(672, 35);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -127,69 +137,6 @@
             this.label1.Size = new System.Drawing.Size(174, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Generate Cutoff";
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            // 
-            // txtcutoff_id
-            // 
-            this.txtcutoff_id.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtcutoff_id.Enabled = false;
-            this.txtcutoff_id.Location = new System.Drawing.Point(115, 5);
-            this.txtcutoff_id.Name = "txtcutoff_id";
-            this.txtcutoff_id.Size = new System.Drawing.Size(159, 22);
-            this.txtcutoff_id.TabIndex = 37;
-            // 
-            // dtto_date
-            // 
-            this.dtto_date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtto_date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtto_date.Location = new System.Drawing.Point(115, 66);
-            this.dtto_date.Name = "dtto_date";
-            this.dtto_date.Size = new System.Drawing.Size(159, 22);
-            this.dtto_date.TabIndex = 31;
-            this.dtto_date.ValueChanged += new System.EventHandler(this.dtto_date_ValueChanged);
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 39);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 15);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "From Date :";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Cutoff ID :";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(52, 69);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 15);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "To Date :";
-            // 
-            // dtfrom_date
-            // 
-            this.dtfrom_date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtfrom_date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtfrom_date.Location = new System.Drawing.Point(115, 36);
-            this.dtfrom_date.Name = "dtfrom_date";
-            this.dtfrom_date.Size = new System.Drawing.Size(159, 22);
-            this.dtfrom_date.TabIndex = 32;
-            this.dtfrom_date.ValueChanged += new System.EventHandler(this.dtfrom_date_ValueChanged);
             // 
             // tableLayoutPanel3
             // 
@@ -214,15 +161,68 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(666, 95);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
-            // pictureBox1
+            // label3
             // 
-            this.pictureBox1.Image = global::MMG_PIAPS.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(52, 69);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 15);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "To Date :";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(47, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 15);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Cutoff ID :";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(39, 39);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 15);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "From Date :";
+            // 
+            // txtcutoff_id
+            // 
+            this.txtcutoff_id.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtcutoff_id.Enabled = false;
+            this.txtcutoff_id.Location = new System.Drawing.Point(115, 5);
+            this.txtcutoff_id.Name = "txtcutoff_id";
+            this.txtcutoff_id.Size = new System.Drawing.Size(159, 22);
+            this.txtcutoff_id.TabIndex = 37;
+            // 
+            // dtfrom_date
+            // 
+            this.dtfrom_date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtfrom_date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtfrom_date.Location = new System.Drawing.Point(115, 36);
+            this.dtfrom_date.Name = "dtfrom_date";
+            this.dtfrom_date.Size = new System.Drawing.Size(159, 22);
+            this.dtfrom_date.TabIndex = 32;
+            this.dtfrom_date.ValueChanged += new System.EventHandler(this.dtfrom_date_ValueChanged);
+            // 
+            // dtto_date
+            // 
+            this.dtto_date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtto_date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtto_date.Location = new System.Drawing.Point(115, 66);
+            this.dtto_date.Name = "dtto_date";
+            this.dtto_date.Size = new System.Drawing.Size(159, 22);
+            this.dtto_date.TabIndex = 31;
+            this.dtto_date.ValueChanged += new System.EventHandler(this.dtto_date_ValueChanged);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
             // 
             // cutoff_new
             // 
@@ -236,9 +236,9 @@
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

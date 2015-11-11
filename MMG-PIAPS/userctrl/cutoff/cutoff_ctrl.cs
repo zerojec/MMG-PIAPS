@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using MMG_PIAPS.classes;
 using MMG_PIAPS.forms.cutoff;
 using MMG_PIAPS.modules;
+using MMG_PIAPS.userctrl.payroll_generator;
 
 namespace MMG_PIAPS.userctrl.cutoff
 {
@@ -79,6 +80,33 @@ namespace MMG_PIAPS.userctrl.cutoff
                     }
                 }
             }
+        }
+
+        private void generatePayrollToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (lv.SelectedItems.Count > 0)
+            {
+
+                string cutoff_id = lv.SelectedItems[0].SubItems[1].Text;
+                Cutoff cd, cd1 = new Cutoff();
+                cd1.cutoff_id = cutoff_id;
+                cd= cd1.SELECT_BY_ID();
+
+                payroll_generator_ctrl c = new payroll_generator_ctrl();
+
+                pnlops.Controls.Clear();
+
+                c.cutoff = cd;
+                c.Width = pnlops.Width;
+                pnlops.Height = c.Height;
+                pnlops.Controls.Add(c);
+                
+
+
+               
+            }
+
         }
 
       

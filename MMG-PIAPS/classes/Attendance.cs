@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace MMG_PIAPS.classes
 {
-    class Attendance
+    public class Attendance
     {
         public String empid{get;set;}
         public int state{get;set;}
@@ -185,6 +185,34 @@ namespace MMG_PIAPS.classes
         }//end select bween dates
 
 
+
+
+
+
+
+
+        public DataTable SELECT_BY_EMPID_BW_DATES(DateTime from, DateTime to, non_static_dbcon usethisconnection)
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            usethisconnection.SET_COMMAND_PARAMS(cmd, "ATTENDANCE_BY_EMPID_BW_DATES");
+            cmd.Parameters.AddWithValue("_empid", empid);
+            cmd.Parameters.AddWithValue("_from", from);
+            cmd.Parameters.AddWithValue("_to", to);
+
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog("ATTENDANCE_BY_EMPID_BW_DATES MODULE:" + e.Message);
+                return null;
+            }
+
+        }//end select bween dates
         public void LoadInListView(ListView lv)
         {
 

@@ -84,6 +84,7 @@
     <Compile Include="classes\Member_Standing.cs" />
     <Compile Include="classes\PassSlip.cs" />
     <Compile Include="classes\Payment.cs" />
+    <Compile Include="classes\Payroll_Generator.cs" />
     <Compile Include="classes\Person.cs" />
     <Compile Include="classes\Position.cs" />
     <Compile Include="classes\Schedule.cs" />
@@ -162,6 +163,7 @@
     <Compile Include="modules\db.cs" />
     <Compile Include="modules\EventClassHolder.cs" />
     <Compile Include="modules\Global.cs" />
+    <Compile Include="modules\non_static_dbcon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -445,6 +447,18 @@
     <Compile Include="userctrl\passslip\passslip_new.Designer.cs">
       <DependentUpon>passslip_new.cs</DependentUpon>
     </Compile>
+    <Compile Include="userctrl\payroll_generator\emp_payroll_new.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\payroll_generator\emp_payroll_new.Designer.cs">
+      <DependentUpon>emp_payroll_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userctrl\payroll_generator\payroll_generator_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userctrl\payroll_generator\payroll_generator_ctrl.Designer.cs">
+      <DependentUpon>payroll_generator_ctrl.cs</DependentUpon>
+    </Compile>
     <Compile Include="userctrl\schedule\sched_ctrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -671,6 +685,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\passslip\passslip_new.resx">
       <DependentUpon>passslip_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\payroll_generator\emp_payroll_new.resx">
+      <DependentUpon>emp_payroll_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userctrl\payroll_generator\payroll_generator_ctrl.resx">
+      <DependentUpon>payroll_generator_ctrl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userctrl\schedule\sched_ctrl.resx">
       <DependentUpon>sched_ctrl.cs</DependentUpon>

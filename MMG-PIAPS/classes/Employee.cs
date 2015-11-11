@@ -13,7 +13,10 @@ namespace MMG_PIAPS.classes
 {
     public class Employee : Person
     {
-      
+
+
+        //public non_static_dbcon usethisconnection= new non_static_dbcon();
+
         private String _position;
         private DateTime _date_hired;
         private String _emp_status;
@@ -345,6 +348,57 @@ namespace MMG_PIAPS.classes
 
 
 
+
+
+
+
+
+        public Employee SELECT_BY_ID(non_static_dbcon usethisconnection)
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            usethisconnection.SET_COMMAND_PARAMS(cmd, "EMP_SELECT_BY_ID");
+            cmd.Parameters.AddWithValue("_empid", empid);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+
+            if (dt != null)
+            {
+                if (dt.Rows.Count > 0)
+                {
+                    Employee e = new Employee();
+                    foreach (DataRow r in dt.Rows)
+                    {
+                        e.empid = r["empid"].ToString();
+                        e.fname = r["fname"].ToString();
+                        e.lname = r["lname"].ToString();
+                        e.mname = r["mname"].ToString();
+                        e.address = r["address"].ToString();
+                        e.birthdate = Convert.ToDateTime(r["birthday"].ToString());
+                        e.contactno = r["contactno"].ToString();
+                        e.gender = r["gender"].ToString();
+                        e.COOP_MEMBERSHIP_ID = r["COOP_MEMBERSHIP_ID"].ToString();
+                        e.tinno = r["tinno"].ToString();
+
+                    }
+                    return e;
+                }
+                else { return null; }
+
+            }
+            else
+            {
+                return null;
+            }
+
+        }
+
+
+
+
+
+
+
         public Employee SELECT_BY_IDPASS()
         {
             DataTable dt = new DataTable();
@@ -415,6 +469,42 @@ namespace MMG_PIAPS.classes
 
 
 
+
+
+
+
+
+
+        public Byte[] GET_IMAGE_BY_ID(non_static_dbcon usethisconnection)
+        {
+
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            usethisconnection.SET_COMMAND_PARAMS(cmd, "EMP_PIC_SELECT_BY_ID");
+            cmd.Parameters.AddWithValue("_empid", empid);
+
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+
+            if (dt != null)
+            {
+                if (dt.Rows.Count > 0)
+                {
+                    Byte[] image = dt.Rows[0].Field<Byte[]>("imagebyte");
+                    pic = image;
+                    return image;
+
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            else
+            {
+                return null;
+            }
+        }
 
 
 
@@ -527,6 +617,61 @@ namespace MMG_PIAPS.classes
                     return "";
                 }
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            public String GET_CURRENT_POSITION(non_static_dbcon usethisconnection)
+            {
+
+                DataTable dt = new DataTable();
+                MySqlCommand cmd = new MySqlCommand();
+                usethisconnection.SET_COMMAND_PARAMS(cmd, "EMP_POSITION_SELECT_LATEST_BY_ID");
+                cmd.Parameters.AddWithValue("_empid", empid);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(dt);
+
+                if (dt != null)
+                {
+                    if (dt.Rows.Count > 0)
+                    {
+                        String pos = "";
+                        pos = (dt.Rows[0].Field<String>("position_") != null) ? dt.Rows[0].Field<String>("position_") : "";
+                        position = pos;
+                        return pos;
+                    }
+                    else
+                    {
+                        return "";
+                    }
+                }
+                else
+                {
+                    return "";
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
 
             public Boolean SET_CURRENT_POSITION() {
 

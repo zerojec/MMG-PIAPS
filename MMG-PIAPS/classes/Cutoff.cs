@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace MMG_PIAPS.classes
 {
-    class Cutoff
+    public class Cutoff
     {
         public string cutoff_id { get; set; }
         public DateTime from_date { get; set; }
@@ -91,6 +91,52 @@ namespace MMG_PIAPS.classes
 
         }//end select all
 
+
+
+
+
+
+        public Cutoff SELECT_BY_ID()
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "CUTOFF_SELECT_BYID");
+            cmd.Parameters.AddWithValue("_cutoff_id", cutoff_id);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            try
+            {
+                da.Fill(dt);
+                if (dt != null)
+                {
+
+                    if (dt.Rows.Count > 0)
+                    {
+                        DataRow dr = dt.Rows[0];
+                        Cutoff c = new Cutoff();
+                        c.from_date = Convert.ToDateTime(dr["from_date"].ToString());
+                        c.to_date = Convert.ToDateTime(dr["to_date"].ToString());
+                        c.cutoff_id = dr["cutoff_id"].ToString();
+
+                        return c;
+
+                    }
+                    else {
+                        return null;
+                    }
+                }
+                else {
+                    return null;
+                
+                }
+               
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog("CUTOFF_SELECT ALL MODULE : " + e.Message);
+                return null;
+            }
+
+        }//end select all
 
 
 
