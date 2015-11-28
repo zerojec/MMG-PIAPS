@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\Attendance.cs" />
+    <Compile Include="classes\AttSchedParser.cs" />
     <Compile Include="classes\BasicPay.cs" />
     <Compile Include="classes\Benefit.cs" />
     <Compile Include="classes\Branch.cs" />

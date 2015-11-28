@@ -105,5 +105,17 @@ namespace MMG_PIAPS.Properties {
                 this["MEMBER_CBU_NOT_LOANABLE"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("6")]
+        public int MIN_LATE_GRACE_PERIOD {
+            get {
+                return ((int)(this["MIN_LATE_GRACE_PERIOD"]));
+            }
+            set {
+                this["MIN_LATE_GRACE_PERIOD"] = value;
+            }
+        }
     }
 }

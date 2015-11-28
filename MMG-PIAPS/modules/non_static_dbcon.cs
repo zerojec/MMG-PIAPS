@@ -86,6 +86,8 @@ namespace MMG_PIAPS.modules
             try
             {
                 if (con.State == System.Data.ConnectionState.Open) {
+                   
+                    
                     con.Close();
                     if (con.State == System.Data.ConnectionState.Closed)
                     {
@@ -106,6 +108,8 @@ namespace MMG_PIAPS.modules
                 return false;
             }
         }
+
+
 
         public void SET_COMMAND_PARAMS(MySqlCommand cmd, String sql)
         {

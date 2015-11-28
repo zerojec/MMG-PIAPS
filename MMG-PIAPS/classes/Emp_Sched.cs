@@ -21,6 +21,9 @@ namespace MMG_PIAPS.classes
         public String sun { get; set; }
 
 
+
+
+
         public Boolean save() { 
             MySqlCommand cmd = new MySqlCommand();
             db.SET_COMMAND_PARAMS(cmd, "EMP_SCHEDULE_INSERT");
@@ -43,6 +46,8 @@ namespace MMG_PIAPS.classes
                 return false;
             }                   
         }//end save
+
+
 
 
 
@@ -97,6 +102,57 @@ namespace MMG_PIAPS.classes
 
 
 
+
+
+        //for asychronous transaction
+
+        public Emp_Sched SELECT_BY_EMPID(non_static_dbcon usethisconnection)
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            usethisconnection.SET_COMMAND_PARAMS(cmd, "EMP_SCHED_SELECT_BY_EMPID");
+            cmd.Parameters.AddWithValue("_empid", empid);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+
+            if (dt != null)
+            {
+                if (dt.Rows.Count > 0)
+                {
+                    DataRow r = dt.Rows[0];
+
+                    Emp_Sched es = new Emp_Sched();
+
+                    es.empid = r["empid"].ToString();
+                    es.mon = r["mon"].ToString();
+                    es.tue = r["tue"].ToString();
+                    es.wed = r["wed"].ToString();
+                    es.thu = r["thu"].ToString();
+                    es.fri = r["fri"].ToString();
+                    es.sat = r["sat"].ToString();
+                    es.sun = r["sun"].ToString();
+
+                    return es;
+
+                }
+                else { return null; }
+
+            }
+            else
+            {
+                return null;
+            }
+
+        }
+
+
+
+
+
+
+
+
+
         public DataTable SELECT_ALL()
         {
             DataTable dt = new DataTable();
@@ -117,6 +173,14 @@ namespace MMG_PIAPS.classes
         }
 
 
+
+
+
+
+
+
+
+
         public void LoadEmpSched(ComboBox cbo)
         {
             Emp_Sched es = new Emp_Sched();
@@ -132,6 +196,13 @@ namespace MMG_PIAPS.classes
             }
 
         }
+
+
+
+
+
+
+
 
         public void LoadEmpSchedInListView(ListView lv)
         {
@@ -161,6 +232,19 @@ namespace MMG_PIAPS.classes
                 }
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         }

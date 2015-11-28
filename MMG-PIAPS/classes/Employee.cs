@@ -275,6 +275,37 @@ namespace MMG_PIAPS.classes
 
 
 
+
+        public DataTable SELECT_BY_BRANCH()
+        {
+
+            //1-Tabaco
+            //2-Central Office
+            //3-Polangui
+            //4-Ligao
+            //5-Albay
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "EMP_SELECT_BY_BRANCH");
+            cmd.Parameters.AddWithValue("_bracnchid", branch);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog(e.Message);
+                return null;
+            }
+        }
+
+
+
+
+
+
         public DataTable SELECT_REGULAR()
         {
             DataTable dt = new DataTable();

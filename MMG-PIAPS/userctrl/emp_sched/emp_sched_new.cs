@@ -74,7 +74,7 @@ namespace MMG_PIAPS.userctrl.emp_sched
             if (cboEmp.Text != "") 
             { 
                 String[] c = cboEmp.Text.ToString().Split('-');
-                String id = c[1] + "-" + c[2];
+                String id = c[1];
                 Employee emp1, emp2 = new Employee();
                 emp2.empid =id;
 

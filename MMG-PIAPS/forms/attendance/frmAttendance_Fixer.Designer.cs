@@ -154,6 +154,7 @@
             this.dttime_.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dttime_.Location = new System.Drawing.Point(115, 35);
             this.dttime_.Name = "dttime_";
+            this.dttime_.ShowUpDown = true;
             this.dttime_.Size = new System.Drawing.Size(189, 25);
             this.dttime_.TabIndex = 10;
             // 

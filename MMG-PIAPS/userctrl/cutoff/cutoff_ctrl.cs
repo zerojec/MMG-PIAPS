@@ -89,18 +89,28 @@ namespace MMG_PIAPS.userctrl.cutoff
             {
 
                 string cutoff_id = lv.SelectedItems[0].SubItems[1].Text;
-                Cutoff cd, cd1 = new Cutoff();
-                cd1.cutoff_id = cutoff_id;
-                cd= cd1.SELECT_BY_ID();
+                Cutoff c, c1 = new Cutoff();
+                c1.cutoff_id = cutoff_id;
+                c= c1.SELECT_BY_ID();
 
-                payroll_generator_ctrl c = new payroll_generator_ctrl();
+
+                //PAYROLL GENERATOR USER INTERFACE
+                payroll_generator_ctrl pgctrl = new payroll_generator_ctrl();
+
+
+                //PASS A DATATABLE TO PAYROLL GENERATOR
+                Cutoff_Details cd1 = new Cutoff_Details();
+                cd1.cutoff_id = c1.cutoff_id;
+                DataTable cutoffdetailsdt = cd1.SELECT_BYID();
+
+                pgctrl.cutoffdetailsdt = cutoffdetailsdt;
 
                 pnlops.Controls.Clear();
 
-                c.cutoff = cd;
-                c.Width = pnlops.Width;
-                pnlops.Height = c.Height;
-                pnlops.Controls.Add(c);
+                pgctrl.cutoff = c;
+                pgctrl.Width = pnlops.Width;
+                pnlops.Height = pgctrl.Height;
+                pnlops.Controls.Add(pgctrl);
                 
 
 

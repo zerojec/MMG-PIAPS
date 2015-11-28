@@ -15,7 +15,7 @@ namespace MMG_PIAPS.userctrl.payroll_generator
 
         List<Employee> lstemp = new List<Employee> { };
         public Cutoff cutoff = new Cutoff();
-
+        public DataTable cutoffdetailsdt= new DataTable();
 
         public payroll_generator_ctrl()
         {
@@ -28,7 +28,8 @@ namespace MMG_PIAPS.userctrl.payroll_generator
             pnlops.Controls.Clear();
            
             Employee emp= new Employee();
-            DataTable empdt= emp.SELECT_ALL();
+           
+            DataTable empdt = emp.SELECT_ALL();
 
 
             label1.Text = "Payroll Generator : FROM :" + cutoff.from_date.ToShortDateString() + " - " + cutoff.to_date.ToShortDateString() + " Total Employee [" + empdt.Rows.Count.ToString() + "]"; 
@@ -40,6 +41,7 @@ namespace MMG_PIAPS.userctrl.payroll_generator
             
                 emp_payroll_new ep = new emp_payroll_new();
                 ep.cutoff = cutoff;
+                ep.cutoffdetailsdt = cutoffdetailsdt;
                 ep.empid = empid; ;
                 ep.Dock = DockStyle.Top;
                 ep.Width = pnlops.Width - 40;
