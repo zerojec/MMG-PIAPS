@@ -213,6 +213,47 @@ namespace MMG_PIAPS.classes
             }
 
         }//end select bween dates
+
+
+
+
+
+
+
+        public String SELECT_STR_BY_EMPID_BY_DATE(DateTime thisdate, non_static_dbcon usethisconnection)
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            usethisconnection.SET_COMMAND_PARAMS(cmd, "ATTENDANCE_STR_BY_EMPID_BY_DATE");
+            cmd.Parameters.AddWithValue("_empid", empid);
+            cmd.Parameters.AddWithValue("_thisdate", thisdate);
+   
+
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            try
+            {
+                da.Fill(dt);
+                if (dt != null)
+                {
+                    return dt.Rows[0].Field<String>("attendance");
+                }
+                else {
+                    return "";
+                }
+
+                //return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog("ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:" + e.Message);
+                return "";
+            }
+
+        }//end str select bween dates
+
+
+
+
         public void LoadInListView(ListView lv)
         {
 

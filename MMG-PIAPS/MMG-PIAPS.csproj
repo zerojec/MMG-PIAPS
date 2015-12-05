@@ -51,9 +51,12 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="MySql.Data, Version=6.8.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -89,6 +92,11 @@
     <Compile Include="classes\Person.cs" />
     <Compile Include="classes\Position.cs" />
     <Compile Include="classes\Schedule.cs" />
+    <Compile Include="datasets\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="forms\attendance\frmAttendance_Fixer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +168,12 @@
     </Compile>
     <Compile Include="forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\reports\frmCutoffAttendanceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\reports\frmCutoffAttendanceReport.Designer.cs">
+      <DependentUpon>frmCutoffAttendanceReport.cs</DependentUpon>
     </Compile>
     <Compile Include="modules\db.cs" />
     <Compile Include="modules\EventClassHolder.cs" />
@@ -508,6 +522,8 @@
     <Compile Include="userctrl\supply_request\supply_request_ctrl.Designer.cs">
       <DependentUpon>supply_request_ctrl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="bin\Debug\reports\attendance_subreport.rdlc" />
+    <EmbeddedResource Include="bin\Debug\reports\atttendance_cutoff.rdlc" />
     <EmbeddedResource Include="forms\attendance\frmAttendance_Fixer.resx">
       <DependentUpon>frmAttendance_Fixer.cs</DependentUpon>
     </EmbeddedResource>
@@ -543,6 +559,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\reports\frmCutoffAttendanceReport.resx">
+      <DependentUpon>frmCutoffAttendanceReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -718,6 +737,17 @@
       <DependentUpon>supply_request_current_user.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="datasets\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="datasets\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="datasets\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\DataSources\MMG_PIAPS.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

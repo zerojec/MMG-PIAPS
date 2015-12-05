@@ -42,3 +42,1805 @@
 --------------------------------------------------------------
 11/12/2015 2:33:24 AM:Invalid use of group function
 --------------------------------------------------------------
+12/4/2015 1:17:30 AM:Parameter '_branchid' not found in the collection.
+--------------------------------------------------------------
+12/4/2015 1:21:09 AM:Parameter '_branchid' not found in the collection.
+--------------------------------------------------------------
+12/4/2015 1:38:08 AM:Index was outside the bounds of the array.
+--------------------------------------------------------------
+12/4/2015 1:40:02 AM:Index was outside the bounds of the array.
+--------------------------------------------------------------
+12/5/2015 8:23:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:18 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:18 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:18 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:18 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:18 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:18 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:18 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:18 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:18 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:19 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:19 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:19 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:19 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:19 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:19 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:19 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:19 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:19 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:20 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:20 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:20 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:20 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:20 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:20 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:20 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:20 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:20 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:21 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:21 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:21 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:21 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:21 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:21 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:21 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:21 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:21 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:22 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:22 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:22 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:22 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:22 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:22 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:22 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:22 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:22 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:23 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:23 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:23 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:23 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:23 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:23 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:23 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:23 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:23 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:24 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:24 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:24 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:24 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:24 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:24 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:24 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:24 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:24 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:25 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:25 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:25 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:25 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:25 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:25 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:25 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:25 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:25 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:25 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:26 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:26 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:26 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:26 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:26 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:26 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:26 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:26 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:26 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:27 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:27 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:27 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:27 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:27 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:27 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:27 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:27 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:27 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:28 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:28 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:28 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:28 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:28 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:28 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:28 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:28 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:28 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:29 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:29 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:29 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:29 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:29 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:29 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:29 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:29 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:29 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:30 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:30 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:30 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:30 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:30 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:30 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:30 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:30 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:30 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:31 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:31 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:31 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:31 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:31 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:31 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:31 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:31 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:31 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:32 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:32 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:32 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:32 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:32 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:32 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:32 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:32 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:32 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:33 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:33 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:33 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:33 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:33 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:33 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:33 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:33 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:33 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:33 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:34 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:34 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:34 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:34 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:34 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:34 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:34 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:34 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:34 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:38 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:38 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:38 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:38 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:38 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:38 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:38 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:38 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:38 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:39 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:39 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:39 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:39 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:39 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:39 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:39 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:39 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:39 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:39 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:40 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:40 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:40 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:40 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:40 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:40 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:40 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:40 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:40 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:41 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:41 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:41 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:41 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:41 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:41 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:41 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:41 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:41 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:42 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:42 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:42 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:42 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:42 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:42 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:42 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:42 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:42 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:43 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:43 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:43 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:43 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:43 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:43 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:43 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:43 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:43 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:44 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:44 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:44 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:44 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:44 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:44 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:44 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:44 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:44 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:45 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:45 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:45 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:45 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:45 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:45 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:45 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:45 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:45 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:45 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:46 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:46 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:46 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:46 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:46 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:46 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:46 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:46 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:46 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:49 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:49 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:49 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:49 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:49 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:49 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:49 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:49 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:49 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:50 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:50 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:50 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:50 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:50 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:50 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:50 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:50 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:50 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:51 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:51 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:51 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:51 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:51 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:51 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:51 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:51 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:51 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:52 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:52 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:52 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:52 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:52 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:52 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:52 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:52 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:52 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:52 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:53 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:53 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:53 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:53 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:53 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:53 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:53 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:53 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:53 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:54 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:54 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:54 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:54 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:23:54 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:Unknown column 'a.date_time' in 'group statement'
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:47 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:35:48 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:40:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:35 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:36 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:41:37 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:12 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:12 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:12 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:12 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:12 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:12 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:13 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:14 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:15 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:16 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:45:17 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:06 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:49:07 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:00 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:00 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:00 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:01 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:02 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:03 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:04 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------
+12/5/2015 8:50:05 AM:ATTENDANCE_STR_BY_EMPID_BW_DATES MODULE:There is no row at position 0.
+--------------------------------------------------------------

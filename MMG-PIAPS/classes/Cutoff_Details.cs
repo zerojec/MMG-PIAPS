@@ -17,8 +17,6 @@ namespace MMG_PIAPS.classes
         public string holiday_name { get; set; }
 
 
-
-
         public Boolean save()
         {
             MySqlCommand cmd = new MySqlCommand();

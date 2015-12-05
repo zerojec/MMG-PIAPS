@@ -343,6 +343,8 @@ namespace MMG_PIAPS.userctrl.payroll_generator
                              //4 HERE MEANS 
                              //TIME-IN, TIME-OUT, TIME-IN, TIME-OUT
                              //THERE ARE 4 WORDS IN BETWEEN COMMA ","
+
+
                              if ((SPLITTED_BIOMETRICS_ATTENDANCE.Length == 4))
                              {
                                  AM_IN_ATT = Convert.ToDateTime(d.ToShortDateString() + " " + SPLITTED_BIOMETRICS_ATTENDANCE[0]);
@@ -356,10 +358,11 @@ namespace MMG_PIAPS.userctrl.payroll_generator
                                  TimeSpan am_out_diff = AM_OUT_SCHED-AM_OUT_ATT;
                                  int am_ut = ((int)am_out_diff.TotalMinutes > 0) ? Math.Abs((int)am_out_diff.TotalMinutes) : 0;
 
-                                 li.SubItems.Add((am_late+ am_ut).ToString());  
+                                 li.SubItems.Add((am_late+ am_ut).ToString());
+                                 
 
                              }
-                             else if ((SPLITTED_BIOMETRICS_ATTENDANCE.Length >=2) && (SPLITTED_BIOMETRICS_ATTENDANCE.Length < 4) )
+                             else if ((SPLITTED_BIOMETRICS_ATTENDANCE.Length ==2))
                              {
                                  IN_ATT = Convert.ToDateTime(d.ToShortDateString() + " " + SPLITTED_BIOMETRICS_ATTENDANCE[0]);
                                  OUT_ATT = Convert.ToDateTime(d.ToShortDateString() + " " + SPLITTED_BIOMETRICS_ATTENDANCE[1]);
@@ -385,12 +388,17 @@ namespace MMG_PIAPS.userctrl.payroll_generator
                                      li.SubItems.Add("TOTAL_HOURS : " + HOURS_IN_SERVICE.Subtract(LUNCH_BREAK).ToString());
                                     
 
-                                 }
+                                 }                                
                                  else {
-                                     li.SubItems.Add("ATTENDANCE IS PM_ONLY");
+                                     li.SubItems.Add("ATTENDANCE IS PM_ONLY...");
                                      //CHECK FOR HOURS_IN_SERVICE
-                                 };
-                                            
+                                     //li.SubItems.Add("INAPPROPRIATE ATTENDANCE...");
+                                 }
+
+                             }
+                             else if ((SPLITTED_BIOMETRICS_ATTENDANCE.Length == 3) || (SPLITTED_BIOMETRICS_ATTENDANCE.Length > 4))
+                             {
+                                 li.SubItems.Add("INAPPROPRIATE ATTENDANCE...");
                              }
 
 

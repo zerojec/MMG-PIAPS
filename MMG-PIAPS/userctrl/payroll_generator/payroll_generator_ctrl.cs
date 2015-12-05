@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using MMG_PIAPS.classes;
+using MMG_PIAPS.forms.reports;
 
 namespace MMG_PIAPS.userctrl.payroll_generator
 {
@@ -25,30 +26,65 @@ namespace MMG_PIAPS.userctrl.payroll_generator
         private void btnStart_Click(object sender, EventArgs e)
         {
 
-            pnlops.Controls.Clear();
-           
-            Employee emp= new Employee();
-           
-            DataTable empdt = emp.SELECT_ALL();
 
-
-            label1.Text = "Payroll Generator : FROM :" + cutoff.from_date.ToShortDateString() + " - " + cutoff.to_date.ToShortDateString() + " Total Employee [" + empdt.Rows.Count.ToString() + "]"; 
-
-            foreach (DataRow dr in empdt.Rows)
+            if (btnStart.Text == "Start")
             {
 
-                String empid = dr["empid"].ToString();       
-            
-                emp_payroll_new ep = new emp_payroll_new();
-                ep.cutoff = cutoff;
-                ep.cutoffdetailsdt = cutoffdetailsdt;
-                ep.empid = empid; ;
-                ep.Dock = DockStyle.Top;
-                ep.Width = pnlops.Width - 40;
 
-                pnlops.Controls.Add(ep);
+                pnlops.Controls.Clear();
+                Employee emp = new Employee();
+                //1-Tabaco Lab
+                //2-Central Office
+                //3-Legazpi
+                //4-Ligao
+                //5-Polangui
+                emp.branch = "2";// LOAD CENTRAL EMPLOYEES
+                //DataTable empdt = emp.SELECT_ALL();
+                DataTable empdt = emp.SELECT_BY_BRANCH();
 
+                if (empdt != null)
+                {
+                    label1.Text = "Payroll Generator : FROM :" + cutoff.from_date.ToShortDateString() + " - " + cutoff.to_date.ToShortDateString() + " Total Employee [" + empdt.Rows.Count.ToString() + "]";
+
+                    foreach (DataRow dr in empdt.Rows)
+                    {
+
+                        String empid = dr["empid"].ToString();
+
+                        emp_payroll_new ep = new emp_payroll_new();
+                        ep.cutoff = cutoff;
+                        ep.cutoffdetailsdt = cutoffdetailsdt;
+                        ep.empid = empid; ;
+                        ep.Dock = DockStyle.Top;
+                        ep.Width = pnlops.Width - 40;
+
+                        pnlops.Controls.Add(ep);
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("EMPLOYEE BY BRANCH NOT WORKING...");
+                }
+
+                btnStart.Text = "Print";
             }
+            else {
+
+                frmCutoffAttendanceReport frm = new frmCutoffAttendanceReport();
+
+                frm.cutoff_date_from = cutoff.from_date;
+                frm.cutoff_date_to = cutoff.to_date;
+                frm.cutoffdetailsdt = cutoffdetailsdt;
+
+                frm.ShowDialog();
+
+                btnStart.Text = "Start";
+            }
+          
+
+         
+           
 
             
 

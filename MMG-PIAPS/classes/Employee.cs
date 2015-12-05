@@ -287,7 +287,7 @@ namespace MMG_PIAPS.classes
             DataTable dt = new DataTable();
             MySqlCommand cmd = new MySqlCommand();
             db.SET_COMMAND_PARAMS(cmd, "EMP_SELECT_BY_BRANCH");
-            cmd.Parameters.AddWithValue("_bracnchid", branch);
+            cmd.Parameters.AddWithValue("_branchid", branch);
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
             try
             {

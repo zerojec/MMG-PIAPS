@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="server=localhost;user id=root;database=mmgmapiapsdb" IsAppSettingsProperty="false" Modifier="Assembly" Name="localhost(mmgmapiapsdb)" ParameterPrefix="@" Provider="MySql.Data.MySqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="mmgmapiapsdbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="mmgmapiapsdbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MMG_PIAPS.Properties.Settings.GlobalReference.Default.mmgmapiapsdbConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="emp_select_allTableAdapter" GeneratorDataComponentClassName="emp_select_allTableAdapter" Name="emp_select_all" UserDataComponentName="emp_select_allTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="mmgmapiapsdbConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>`mmgmapiapsdb`.`EMP_SELECT_ALL`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="empid" DataSetColumn="empid" />
+              <Mapping SourceColumn="lname" DataSetColumn="lname" />
+              <Mapping SourceColumn="fname" DataSetColumn="fname" />
+              <Mapping SourceColumn="mname" DataSetColumn="mname" />
+              <Mapping SourceColumn="address" DataSetColumn="address" />
+              <Mapping SourceColumn="contactno" DataSetColumn="contactno" />
+              <Mapping SourceColumn="gender" DataSetColumn="gender" />
+              <Mapping SourceColumn="birthday" DataSetColumn="birthday" />
+              <Mapping SourceColumn="datehired" DataSetColumn="datehired" />
+              <Mapping SourceColumn="tinno" DataSetColumn="tinno" />
+              <Mapping SourceColumn="position_" DataSetColumn="position_" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="cutoffattendance" msprop:Generator_TableClassName="cutoffattendanceDataTable" msprop:Generator_TableVarName="tablecutoffattendance" msprop:Generator_RowChangedName="cutoffattendanceRowChanged" msprop:Generator_TablePropName="cutoffattendance" msprop:Generator_RowDeletingName="cutoffattendanceRowDeleting" msprop:Generator_RowChangingName="cutoffattendanceRowChanging" msprop:Generator_RowEvHandlerName="cutoffattendanceRowChangeEventHandler" msprop:Generator_RowDeletedName="cutoffattendanceRowDeleted" msprop:Generator_RowClassName="cutoffattendanceRow" msprop:Generator_UserTableName="cutoffattendance" msprop:Generator_RowEvArgName="cutoffattendanceRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="empid" msprop:Generator_ColumnVarNameInTable="columnempid" msprop:Generator_ColumnPropNameInRow="empid" msprop:Generator_ColumnPropNameInTable="empidColumn" msprop:Generator_UserColumnName="empid" type="xs:string" minOccurs="0" />
+              <xs:element name="no" msprop:Generator_ColumnVarNameInTable="columnno" msprop:Generator_ColumnPropNameInRow="no" msprop:Generator_ColumnPropNameInTable="noColumn" msprop:Generator_UserColumnName="no" type="xs:short" minOccurs="0" />
+              <xs:element name="date_" msprop:Generator_ColumnVarNameInTable="columndate_" msprop:Generator_ColumnPropNameInRow="date_" msprop:Generator_ColumnPropNameInTable="date_Column" msprop:Generator_UserColumnName="date_" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="attendance_" msprop:Generator_ColumnVarNameInTable="columnattendance_" msprop:Generator_ColumnPropNameInRow="attendance_" msprop:Generator_ColumnPropNameInTable="attendance_Column" msprop:Generator_UserColumnName="attendance_" type="xs:string" minOccurs="0" />
+              <xs:element name="status_" msprop:Generator_ColumnVarNameInTable="columnstatus_" msprop:Generator_ColumnPropNameInRow="status_" msprop:Generator_ColumnPropNameInTable="status_Column" msprop:Generator_UserColumnName="status_" type="xs:string" minOccurs="0" />
+              <xs:element name="day_type" msprop:Generator_ColumnVarNameInTable="columnday_type" msprop:Generator_ColumnPropNameInRow="day_type" msprop:Generator_ColumnPropNameInTable="day_typeColumn" msprop:Generator_UserColumnName="day_type" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="emp_select_all" msprop:Generator_TableClassName="emp_select_allDataTable" msprop:Generator_TableVarName="tableemp_select_all" msprop:Generator_RowChangedName="emp_select_allRowChanged" msprop:Generator_TablePropName="emp_select_all" msprop:Generator_RowDeletingName="emp_select_allRowDeleting" msprop:Generator_RowChangingName="emp_select_allRowChanging" msprop:Generator_RowEvHandlerName="emp_select_allRowChangeEventHandler" msprop:Generator_RowDeletedName="emp_select_allRowDeleted" msprop:Generator_RowClassName="emp_select_allRow" msprop:Generator_UserTableName="emp_select_all" msprop:Generator_RowEvArgName="emp_select_allRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="empid" msprop:Generator_ColumnVarNameInTable="columnempid" msprop:Generator_ColumnPropNameInRow="empid" msprop:Generator_ColumnPropNameInTable="empidColumn" msprop:Generator_UserColumnName="empid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lname" msprop:Generator_ColumnVarNameInTable="columnlname" msprop:Generator_ColumnPropNameInRow="lname" msprop:Generator_ColumnPropNameInTable="lnameColumn" msprop:Generator_UserColumnName="lname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fname" msprop:Generator_ColumnVarNameInTable="columnfname" msprop:Generator_ColumnPropNameInRow="fname" msprop:Generator_ColumnPropNameInTable="fnameColumn" msprop:Generator_UserColumnName="fname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mname" msprop:Generator_ColumnVarNameInTable="columnmname" msprop:Generator_ColumnPropNameInRow="mname" msprop:Generator_ColumnPropNameInTable="mnameColumn" msprop:Generator_UserColumnName="mname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_ColumnVarNameInTable="columnaddress" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_UserColumnName="address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="contactno" msprop:Generator_ColumnVarNameInTable="columncontactno" msprop:Generator_ColumnPropNameInRow="contactno" msprop:Generator_ColumnPropNameInTable="contactnoColumn" msprop:Generator_UserColumnName="contactno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gender" msprop:Generator_ColumnVarNameInTable="columngender" msprop:Generator_ColumnPropNameInRow="gender" msprop:Generator_ColumnPropNameInTable="genderColumn" msprop:Generator_UserColumnName="gender">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="birthday" msprop:Generator_ColumnVarNameInTable="columnbirthday" msprop:Generator_ColumnPropNameInRow="birthday" msprop:Generator_ColumnPropNameInTable="birthdayColumn" msprop:Generator_UserColumnName="birthday" type="xs:dateTime" />
+              <xs:element name="datehired" msprop:Generator_ColumnVarNameInTable="columndatehired" msprop:Generator_ColumnPropNameInRow="datehired" msprop:Generator_ColumnPropNameInTable="datehiredColumn" msprop:Generator_UserColumnName="datehired" type="xs:dateTime" />
+              <xs:element name="tinno" msprop:Generator_ColumnVarNameInTable="columntinno" msprop:Generator_ColumnPropNameInRow="tinno" msprop:Generator_ColumnPropNameInTable="tinnoColumn" msprop:Generator_UserColumnName="tinno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="position_" msprop:Generator_ColumnVarNameInTable="columnposition_" msprop:Generator_ColumnPropNameInRow="position_" msprop:Generator_ColumnPropNameInTable="position_Column" msprop:Generator_UserColumnName="position_" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65535" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_img" msprop:Generator_ColumnVarNameInTable="columnemp_img" msprop:Generator_ColumnPropNameInRow="emp_img" msprop:Generator_ColumnPropNameInTable="emp_imgColumn" msprop:Generator_UserColumnName="emp_img" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="emp_img" msprop:Generator_TableClassName="emp_imgDataTable" msprop:Generator_TableVarName="tableemp_img" msprop:Generator_RowChangedName="emp_imgRowChanged" msprop:Generator_TablePropName="emp_img" msprop:Generator_RowDeletingName="emp_imgRowDeleting" msprop:Generator_RowChangingName="emp_imgRowChanging" msprop:Generator_RowEvHandlerName="emp_imgRowChangeEventHandler" msprop:Generator_RowDeletedName="emp_imgRowDeleted" msprop:Generator_RowClassName="emp_imgRow" msprop:Generator_UserTableName="emp_img" msprop:Generator_RowEvArgName="emp_imgRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="empid" msprop:Generator_ColumnVarNameInTable="columnempid" msprop:Generator_ColumnPropNameInRow="empid" msprop:Generator_ColumnPropNameInTable="empidColumn" msprop:Generator_UserColumnName="empid" type="xs:string" minOccurs="0" />
+              <xs:element name="image" msprop:Generator_ColumnVarNameInTable="columnimage" msprop:Generator_ColumnPropNameInRow="image" msprop:Generator_ColumnPropNameInTable="imageColumn" msprop:Generator_UserColumnName="image" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:emp_select_all" />
+      <xs:field xpath="mstns:empid" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="emp_select_all_cutoffattendance" msdata:parent="emp_select_all" msdata:child="cutoffattendance" msdata:parentkey="empid" msdata:childkey="empid" msprop:Generator_UserChildTable="cutoffattendance" msprop:Generator_ChildPropName="GetcutoffattendanceRows" msprop:Generator_UserRelationName="emp_select_all_cutoffattendance" msprop:Generator_ParentPropName="emp_select_allRow" msprop:Generator_RelationVarName="relationemp_select_all_cutoffattendance" msprop:Generator_UserParentTable="emp_select_all" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
