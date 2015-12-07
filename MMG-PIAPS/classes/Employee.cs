@@ -272,6 +272,25 @@ namespace MMG_PIAPS.classes
 
 
 
+        public DataTable SELECT_IDS()
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand cmd = new MySqlCommand();
+            db.SET_COMMAND_PARAMS(cmd, "EMP_SELECT_IDS");
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            try
+            {
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception e)
+            {
+                Logger.WriteErrorLog(e.Message);
+                return null;
+            }
+        }
+
+
 
 
 

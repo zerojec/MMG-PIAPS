@@ -10,6 +10,7 @@ C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.emp.frmEmpTinNo.resour
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.frmConnectXLS.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.frmLogin.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.frmMain.resources
+C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.frmLoadEverything.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.forms.reports.frmCutoffAttendanceReport.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.Properties.Resources.resources
 C:\projects\MMG-PIAPS\MMG-PIAPS\obj\Debug\MMG_PIAPS.userctrl.attendance.attendance_ctrl.resources

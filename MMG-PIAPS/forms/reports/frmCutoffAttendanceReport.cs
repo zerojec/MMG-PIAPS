@@ -47,7 +47,6 @@ namespace MMG_PIAPS.forms.reports
             var directory = System.IO.Path.GetDirectoryName(path);
             directory += "\\reports\\atttendance_cutoff.rdlc";
 
-
           
             //C:\projects\MMG-PIAPS\MMG-PIAPS\bin\Debug\reports\cutoff_attendance.rdlc
             //C:\projects\MMG-PIAPS\MMG-PIAPS\bin\Debug\reports\atttendance_cutoff.rdlc
@@ -83,7 +82,12 @@ namespace MMG_PIAPS.forms.reports
                 //=====================================
 
 
-
+                //FOR SUBREPORT DATASOURCE
+                //POPULATE THE DATASET, FOR SUBREPORT USAGE
+                //WITH THE EMPLOYEE'S ATTENDANCE FROM BIOMETRICS
+                //THEN CHECKS THE ATTENDANCE WHETHER GOOD (IN,OUT,IN,OUT)
+                //OR INAPPROPRIATE (IN ONLY, OR (IN, OUT, IN), OR (IN,OUT,OUT,IN,OUT)
+                //AND OTHER IMPROPER ATTENDANCE LOGS
                 int x = 1;
                 foreach (DataRow cutoffitem in cutoffdetailsdt.Rows)
                 {
@@ -103,24 +107,59 @@ namespace MMG_PIAPS.forms.reports
                     //COMPARE CUTOFF DATE WITH ATTENDANCE HERE
                     //==============================================
                     String attendance;
+                   
+                    String status;
+
                     if (cn.CONNECT())
                     {
                         Attendance att = new Attendance();
                         att.empid = e1.empid;
 
+
                         attendance = att.SELECT_STR_BY_EMPID_BY_DATE(d, cn);
+
+                        String[] attarr= attendance.Split(',');
+
+                        if (attendance != "")
+                        {
+                            if ((attarr.Length == 3) || (attarr.Length > 4))
+                            {
+                                status = "INAPPROPRIATE";
+                            }
+                            else if ((attarr.Length == 2) || attarr.Length == 4)
+                            {
+                                status = "GOOD";
+                            }
+                            else {
+                                status = "INAPPROPRIATE";
+                            }
+                        }
+                        else {
+                            status = "";
+                        }
+                      
+
+                   
+
+
                     }
                     else {
                         attendance = "";
+                        status = "";
                     }
 
                     cn.DISCONNECT();
 
-                    c["attendance_"] = attendance;
-
+                    c["attendance_"] = attendance;                    
                     //===============================================
                     c["day_type"] = cutoffitem["day_type"].ToString();
-                    c["status_"] = "GOOD";
+
+
+                    
+                    
+
+
+                    c["status_"] = status;
                     cutoffdt.Rows.Add(c);
 
                     x++;
@@ -136,11 +175,6 @@ namespace MMG_PIAPS.forms.reports
 
 
 
-            //SETUP CUTOFF_DETAILS WITH ATTENDANCE
-            //WILL PRINTOUT CUTOFF DATES
-            //THEN PRINT ATTENDANCE IF THE EMPLOYEE
-            //HAS ATTENDANCE ON THAT DATE          
-           
 
           
 

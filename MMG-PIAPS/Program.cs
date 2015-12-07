@@ -1,4 +1,5 @@
 ﻿using MMG_PIAPS.classes;
+using MMG_PIAPS.forms;
 using MMG_PIAPS.modules;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace MMG_PIAPS
             Application.SetCompatibleTextRenderingDefault(false);
                       
             if (db.CONNECT()){                            
-                Application.Run(new frmLogin());
+                Application.Run(new frmLoadEverything());
             }else{
                 MessageBox.Show("There is a problem with database connection : \n\n" + db.err.Message.ToString(), "Error");
             }

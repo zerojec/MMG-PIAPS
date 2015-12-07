@@ -169,6 +169,12 @@
     <Compile Include="forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\frmLoadEverything.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmLoadEverything.Designer.cs">
+      <DependentUpon>frmLoadEverything.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\reports\frmCutoffAttendanceReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -559,6 +565,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmLoadEverything.resx">
+      <DependentUpon>frmLoadEverything.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\reports\frmCutoffAttendanceReport.resx">
       <DependentUpon>frmCutoffAttendanceReport.cs</DependentUpon>

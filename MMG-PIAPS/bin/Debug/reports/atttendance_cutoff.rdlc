@@ -6,12 +6,12 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>6.29786in</Width>
+              <Width>6.40524in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>4.70909in</Height>
+              <Height>3.45084in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -24,7 +24,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="ID : " + Fields!empid.Value +  "  POSITION : " + Fields!position_.Value</Value>
+                                  <Value>="ID : " + Fields!empid.Value</Value>
                                   <Style>
                                     <FontFamily>Tw Cen MT</FontFamily>
                                     <FontSize>12pt</FontSize>
@@ -37,7 +37,7 @@
                           </Paragraphs>
                           <rd:DefaultName>empid</rd:DefaultName>
                           <Top>0.00019in</Top>
-                          <Left>0.88551in</Left>
+                          <Left>0.93844in</Left>
                           <Height>0.23611in</Height>
                           <Width>3.65512in</Width>
                           <Style>
@@ -57,7 +57,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!lname.Value + ", " + Fields!fname.Value + " " + Fields!mname.Value</Value>
+                                  <Value>="NAME :" + Fields!lname.Value + ", " + Fields!fname.Value + " " + Fields!mname.Value</Value>
                                   <Style>
                                     <FontFamily>Tw Cen MT</FontFamily>
                                     <FontSize>12pt</FontSize>
@@ -70,7 +70,7 @@
                           </Paragraphs>
                           <rd:DefaultName>lname</rd:DefaultName>
                           <Top>0.25019in</Top>
-                          <Left>0.88551in</Left>
+                          <Left>0.93844in</Left>
                           <Height>0.23339in</Height>
                           <Width>3.65512in</Width>
                           <ZIndex>1</ZIndex>
@@ -90,6 +90,7 @@
                           <MIMEType>image/jpeg</MIMEType>
                           <Sizing>FitProportional</Sizing>
                           <Top>0.01408in</Top>
+                          <Left>0.05293in</Left>
                           <Height>0.72297in</Height>
                           <Width>0.82995in</Width>
                           <ZIndex>2</ZIndex>
@@ -106,7 +107,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!contactno.Value</Value>
+                                  <Value>="POSITION : " + Fields!position_.Value + "  CONTACT : " + Fields!contactno.Value</Value>
                                   <Style>
                                     <FontFamily>Tw Cen MT</FontFamily>
                                     <FontSize>12pt</FontSize>
@@ -119,9 +120,9 @@
                           </Paragraphs>
                           <rd:DefaultName>contactno</rd:DefaultName>
                           <Top>0.48705in</Top>
-                          <Left>0.88551in</Left>
+                          <Left>0.93844in</Left>
                           <Height>0.25in</Height>
-                          <Width>3.65512in</Width>
+                          <Width>5.24887in</Width>
                           <ZIndex>3</ZIndex>
                           <Style>
                             <Border>
@@ -155,9 +156,9 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox11</rd:DefaultName>
                           <Top>0.82038in</Top>
-                          <Left>0.00938in</Left>
+                          <Left>0.06231in</Left>
                           <Height>0.24071in</Height>
-                          <Width>6.28848in</Width>
+                          <Width>6.23554in</Width>
                           <ZIndex>4</ZIndex>
                           <Style>
                             <Border>
@@ -177,8 +178,9 @@
                             </Parameter>
                           </Parameters>
                           <Top>1.06109in</Top>
-                          <Height>3.57855in</Height>
-                          <Width>6.29786in</Width>
+                          <Left>0.06231in</Left>
+                          <Height>0.67013in</Height>
+                          <Width>6.23554in</Width>
                           <ZIndex>5</ZIndex>
                           <Style>
                             <Border>
@@ -186,6 +188,183 @@
                             </Border>
                           </Style>
                         </Subreport>
+                        <Rectangle Name="Rectangle2">
+                          <ReportItems>
+                            <Textbox Name="Textbox2">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>REGULAR_HOLIDAY (X2)</Value>
+                                      <Style>
+                                        <FontFamily>Tw Cen MT</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                        <Color>DimGray</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <ListStyle>Bulleted</ListStyle>
+                                  <ListLevel>1</ListLevel>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>SPECIAL_NON_WORKING_HOLIDAY (X1.2)</Value>
+                                      <Style>
+                                        <FontFamily>Tw Cen MT</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                        <Color>DimGray</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <ListStyle>Bulleted</ListStyle>
+                                  <ListLevel>1</ListLevel>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>REGULAR_DAY (X1)</Value>
+                                      <Style>
+                                        <FontFamily>Tw Cen MT</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                        <Color>DimGray</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <ListStyle>Bulleted</ListStyle>
+                                  <ListLevel>1</ListLevel>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>REST_DAY (X1.2)</Value>
+                                      <Style>
+                                        <FontFamily>Tw Cen MT</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                        <Color>DimGray</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <ListStyle>Bulleted</ListStyle>
+                                  <ListLevel>1</ListLevel>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox2</rd:DefaultName>
+                              <Top>0.11345in</Top>
+                              <Left>0.11085in</Left>
+                              <Height>0.68317in</Height>
+                              <Width>2.56766in</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <Top>1.87061in</Top>
+                          <Left>0.05293in</Left>
+                          <Height>0.81477in</Height>
+                          <Width>6.24492in</Width>
+                          <ZIndex>6</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Rectangle Name="Rectangle3">
+                          <ReportItems>
+                            <Textbox Name="Textbox8">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Mission : “To establish a quality health care system that is affordable, adequate and accessible to the   community.”</Value>
+                                      <Style>
+                                        <FontFamily>Tw Cen MT</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                        <Color>DimGray</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox2</rd:DefaultName>
+                              <Top>0.01389in</Top>
+                              <Left>0.11085in</Left>
+                              <Height>0.62129in</Height>
+                              <Width>2.56766in</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox9">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Vision:  “MMGHHSC – Albay envisions a participative and interactive community; enjoying an improved quality of life through affordable, adequate, accessible, available and comprehensive community-oriented health care program.”</Value>
+                                      <Style>
+                                        <FontFamily>Tw Cen MT</FontFamily>
+                                        <FontSize>8pt</FontSize>
+                                        <Color>DimGray</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox2</rd:DefaultName>
+                              <Top>0.01389in</Top>
+                              <Left>2.74795in</Left>
+                              <Height>0.62129in</Height>
+                              <Width>3.38643in</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <Top>2.74094in</Top>
+                          <Left>0.05293in</Left>
+                          <Height>0.68069in</Height>
+                          <Width>6.24492in</Width>
+                          <ZIndex>7</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
                       </ReportItems>
                       <KeepTogether>true</KeepTogether>
                       <DocumentMapLabel>=Fields!lname.Value + ", " + Fields!fname.Value + " " + Fields!mname.Value</DocumentMapLabel>
@@ -229,9 +408,8 @@
           </SortExpression>
         </SortExpressions>
         <Top>0.07213in</Top>
-        <Left>0.05293in</Left>
-        <Height>4.70909in</Height>
-        <Width>6.29786in</Width>
+        <Height>3.45084in</Height>
+        <Width>6.40524in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -239,10 +417,10 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>4.78122in</Height>
+    <Height>3.52297in</Height>
     <Style />
   </Body>
-  <Width>6.35079in</Width>
+  <Width>6.40524in</Width>
   <Page>
     <PageHeader>
       <Height>0.65503in</Height>
@@ -304,7 +482,6 @@
             <Border>
               <Color>DarkGreen</Color>
               <Style>Solid</Style>
-              <Width>3pt</Width>
             </Border>
           </Style>
         </Line>
@@ -327,7 +504,7 @@
           <rd:DefaultName>Textbox3</rd:DefaultName>
           <Top>0.31738in</Top>
           <Left>1.39837in</Left>
-          <Height>0.19444in</Height>
+          <Height>0.24738in</Height>
           <Width>2.77928in</Width>
           <ZIndex>3</ZIndex>
           <Style>
@@ -361,7 +538,7 @@
           <rd:DefaultName>Textbox3</rd:DefaultName>
           <Left>4.87359in</Left>
           <Height>0.21471in</Height>
-          <Width>1.47719in</Width>
+          <Width>1.42426in</Width>
           <ZIndex>4</ZIndex>
           <Style>
             <Border>
@@ -392,9 +569,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
           <Top>0.2256in</Top>
-          <Left>4.87444in</Left>
-          <Height>0.25in</Height>
-          <Width>1.47635in</Width>
+          <Left>4.87359in</Left>
+          <Height>0.28622in</Height>
+          <Width>1.42426in</Width>
           <ZIndex>5</ZIndex>
           <Style>
             <Border>
